@@ -2,129 +2,271 @@ export const ProductsPage = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section class="bg-gradient-to-r from-primary to-secondary text-white py-16">
-        <div class="container mx-auto px-6">
-          <div class="text-center">
-            <h1 class="text-5xl font-bold mb-6">Rockwell Automation Products</h1>
-            <p class="text-xl text-blue-100 max-w-3xl mx-auto">
-              High-quality Allen-Bradley automation products integrated and supported by certified professionals
+      <section className="bg-gradient-to-r from-primary to-secondary text-white py-16">
+        <div className="container mx-auto px-6">
+          <div className="text-center">
+            <h1
+              className="text-5xl font-bold mb-6"
+              data-translate="productsPage.heroTitle"
+            >
+              Rockwell Automation Products
+            </h1>
+            <p
+              className="text-xl text-blue-100 max-w-3xl mx-auto"
+              data-translate="productsPage.heroSubtitle"
+            >
+              High-quality Allen-Bradley automation products integrated and
+              supported by certified professionals
             </p>
           </div>
         </div>
       </section>
 
       {/* Controllers (PLC) */}
-      <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-12">
-            <div class="inline-flex items-center bg-primary/10 rounded-full px-6 py-2 mb-6">
-              <i class="fas fa-microchip text-primary mr-2"></i>
-              <span class="text-primary font-semibold">Controllers (PLC)</span>
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center bg-primary/10 rounded-full px-6 py-2 mb-6">
+              <i className="fas fa-microchip text-primary mr-2"></i>
+              <span
+                className="text-primary font-semibold"
+                data-translate="productsPage.controllersBadge"
+              >
+                Controllers (PLC)
+              </span>
             </div>
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Allen-Bradley Controllers</h2>
-            <p class="text-xl text-gray-600">Industry-leading programmable logic controllers for all applications</p>
+            <h2
+              className="text-4xl font-bold text-gray-800 mb-4"
+              data-translate="productsPage.controllersTitle"
+            >
+              Allen-Bradley Controllers
+            </h2>
+            <p
+              className="text-xl text-gray-600"
+              data-translate="productsPage.controllersSubtitle"
+            >
+              Industry-leading programmable logic controllers for all
+              applications
+            </p>
           </div>
 
-          <div class="grid lg:grid-cols-3 gap-8">
-            <div class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-8 hover:shadow-lg transition-shadow">
-              <div class="flex items-center justify-center mb-6">
-                <div class="w-20 h-20 bg-primary/20 rounded-lg flex items-center justify-center">
-                  <i class="fas fa-server text-primary text-3xl"></i>
+          <div className="grid lg:grid-cols-3 gap-8">
+            <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-8 hover:shadow-lg transition-shadow">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-20 h-20 bg-primary/20 rounded-lg flex items-center justify-center">
+                  <i className="fas fa-server text-primary text-3xl"></i>
                 </div>
               </div>
-              <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">ControlLogix</h3>
-              <p class="text-gray-600 mb-6 text-center">
-                High-performance controller for complex applications requiring advanced control capabilities
+              <h3
+                className="text-2xl font-bold text-gray-800 mb-4 text-center"
+                data-translate="productsPage.controlLogixTitle"
+              >
+                ControlLogix
+              </h3>
+              <p
+                className="text-gray-600 mb-6 text-center"
+                data-translate="productsPage.controlLogixDesc"
+              >
+                High-performance controller for complex applications requiring
+                advanced control capabilities
               </p>
-              <div class="space-y-3">
-                <div class="flex items-center">
-                  <i class="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span class="text-gray-700">Modular architecture</span>
+              <div className="space-y-3">
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
+                  <span
+                    className="text-gray-700"
+                    data-translate="productsPage.modularArchitecture"
+                  >
+                    Modular architecture
+                  </span>
                 </div>
-                <div class="flex items-center">
-                  <i class="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span class="text-gray-700">Integrated motion control</span>
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
+                  <span
+                    className="text-gray-700"
+                    data-translate="productsPage.integratedMotion"
+                  >
+                    Integrated motion control
+                  </span>
                 </div>
-                <div class="flex items-center">
-                  <i class="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span class="text-gray-700">Advanced networking</span>
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
+                  <span
+                    className="text-gray-700"
+                    data-translate="productsPage.advancedNetworking"
+                  >
+                    Advanced networking
+                  </span>
                 </div>
-                <div class="flex items-center">
-                  <i class="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span class="text-gray-700">Redundancy options</span>
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
+                  <span
+                    className="text-gray-700"
+                    data-translate="productsPage.redundancyOptions"
+                  >
+                    Redundancy options
+                  </span>
                 </div>
               </div>
-              <div class="mt-6 pt-6 border-t border-gray-200">
-                <h4 class="font-semibold text-gray-800 mb-2">Ideal Applications:</h4>
-                <p class="text-sm text-gray-600">Large manufacturing systems, process control, complex machinery</p>
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <h4
+                  className="font-semibold text-gray-800 mb-2"
+                  data-translate="productsPage.idealApplications"
+                >
+                  Ideal Applications:
+                </h4>
+                <p
+                  className="text-sm text-gray-600"
+                  data-translate="productsPage.controlLogixApps"
+                >
+                  Large manufacturing systems, process control, complex
+                  machinery
+                </p>
               </div>
             </div>
 
-            <div class="bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-xl p-8 hover:shadow-lg transition-shadow">
-              <div class="flex items-center justify-center mb-6">
-                <div class="w-20 h-20 bg-secondary/20 rounded-lg flex items-center justify-center">
-                  <i class="fas fa-cube text-secondary text-3xl"></i>
+            <div className="bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-xl p-8 hover:shadow-lg transition-shadow">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-20 h-20 bg-secondary/20 rounded-lg flex items-center justify-center">
+                  <i className="fas fa-cube text-secondary text-3xl"></i>
                 </div>
               </div>
-              <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">CompactLogix</h3>
-              <p class="text-gray-600 mb-6 text-center">
-                Compact, all-in-one controller perfect for mid-range applications
+              <h3
+                className="text-2xl font-bold text-gray-800 mb-4 text-center"
+                data-translate="productsPage.compactLogixTitle"
+              >
+                CompactLogix
+              </h3>
+              <p
+                className="text-gray-600 mb-6 text-center"
+                data-translate="productsPage.compactLogixDesc"
+              >
+                Compact, all-in-one controller perfect for mid-range
+                applications
               </p>
-              <div class="space-y-3">
-                <div class="flex items-center">
-                  <i class="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span class="text-gray-700">Integrated I/O and communications</span>
+              <div className="space-y-3">
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
+                  <span
+                    className="text-gray-700"
+                    data-translate="productsPage.integratedIO"
+                  >
+                    Integrated I/O and communications
+                  </span>
                 </div>
-                <div class="flex items-center">
-                  <i class="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span class="text-gray-700">Built-in Ethernet networking</span>
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
+                  <span
+                    className="text-gray-700"
+                    data-translate="productsPage.builtInEthernet"
+                  >
+                    Built-in Ethernet networking
+                  </span>
                 </div>
-                <div class="flex items-center">
-                  <i class="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span class="text-gray-700">Motion control capabilities</span>
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
+                  <span
+                    className="text-gray-700"
+                    data-translate="productsPage.motionCapabilities"
+                  >
+                    Motion control capabilities
+                  </span>
                 </div>
-                <div class="flex items-center">
-                  <i class="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span class="text-gray-700">Cost-effective solution</span>
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
+                  <span
+                    className="text-gray-700"
+                    data-translate="productsPage.costEffective"
+                  >
+                    Cost-effective solution
+                  </span>
                 </div>
               </div>
-              <div class="mt-6 pt-6 border-t border-gray-200">
-                <h4 class="font-semibold text-gray-800 mb-2">Ideal Applications:</h4>
-                <p class="text-sm text-gray-600">Packaging machines, material handling, small to medium systems</p>
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <h4
+                  className="font-semibold text-gray-800 mb-2"
+                  data-translate="productsPage.idealApplications"
+                >
+                  Ideal Applications:
+                </h4>
+                <p
+                  className="text-sm text-gray-600"
+                  data-translate="productsPage.compactLogixApps"
+                >
+                  Packaging machines, material handling, small to medium systems
+                </p>
               </div>
             </div>
 
-            <div class="bg-gradient-to-br from-accent/5 to-accent/10 rounded-xl p-8 hover:shadow-lg transition-shadow">
-              <div class="flex items-center justify-center mb-6">
-                <div class="w-20 h-20 bg-accent/20 rounded-lg flex items-center justify-center">
-                  <i class="fas fa-microchip text-accent text-3xl"></i>
+            <div className="bg-gradient-to-br from-accent/5 to-accent/10 rounded-xl p-8 hover:shadow-lg transition-shadow">
+              <div className="flex items-center justify-center mb-6">
+                <div className="w-20 h-20 bg-accent/20 rounded-lg flex items-center justify-center">
+                  <i className="fas fa-microchip text-accent text-3xl"></i>
                 </div>
               </div>
-              <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Micro800</h3>
-              <p class="text-gray-600 mb-6 text-center">
+              <h3
+                className="text-2xl font-bold text-gray-800 mb-4 text-center"
+                data-translate="productsPage.micro800Title"
+              >
+                Micro800
+              </h3>
+              <p
+                className="text-gray-600 mb-6 text-center"
+                data-translate="productsPage.micro800Desc"
+              >
                 Entry-level controllers for basic automation requirements
               </p>
-              <div class="space-y-3">
-                <div class="flex items-center">
-                  <i class="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span class="text-gray-700">Easy programming</span>
+              <div className="space-y-3">
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
+                  <span
+                    className="text-gray-700"
+                    data-translate="productsPage.easyProgramming"
+                  >
+                    Easy programming
+                  </span>
                 </div>
-                <div class="flex items-center">
-                  <i class="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span class="text-gray-700">Built-in I/O</span>
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
+                  <span
+                    className="text-gray-700"
+                    data-translate="productsPage.builtInIO"
+                  >
+                    Built-in I/O
+                  </span>
                 </div>
-                <div class="flex items-center">
-                  <i class="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span class="text-gray-700">Ethernet connectivity</span>
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
+                  <span
+                    className="text-gray-700"
+                    data-translate="productsPage.ethernetConnectivity"
+                  >
+                    Ethernet connectivity
+                  </span>
                 </div>
-                <div class="flex items-center">
-                  <i class="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span class="text-gray-700">Affordable pricing</span>
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
+                  <span
+                    className="text-gray-700"
+                    data-translate="productsPage.affordablePricing"
+                  >
+                    Affordable pricing
+                  </span>
                 </div>
               </div>
-              <div class="mt-6 pt-6 border-t border-gray-200">
-                <h4 class="font-semibold text-gray-800 mb-2">Ideal Applications:</h4>
-                <p class="text-sm text-gray-600">Simple machinery, standalone equipment, basic process control</p>
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <h4
+                  className="font-semibold text-gray-800 mb-2"
+                  data-translate="productsPage.idealApplications"
+                >
+                  Ideal Applications:
+                </h4>
+                <p
+                  className="text-sm text-gray-600"
+                  data-translate="productsPage.micro800Apps"
+                >
+                  Simple machinery, standalone equipment, basic process control
+                </p>
               </div>
             </div>
           </div>
@@ -132,83 +274,178 @@ export const ProductsPage = () => {
       </section>
 
       {/* Drives */}
-      <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-12">
-            <div class="inline-flex items-center bg-secondary/10 rounded-full px-6 py-2 mb-6">
-              <i class="fas fa-tachometer-alt text-secondary mr-2"></i>
-              <span class="text-secondary font-semibold">Motor Drives</span>
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center bg-secondary/10 rounded-full px-6 py-2 mb-6">
+              <i className="fas fa-tachometer-alt text-secondary mr-2"></i>
+              <span
+                className="text-secondary font-semibold"
+                data-translate="productsPage.drivesBadge"
+              >
+                Motor Drives
+              </span>
             </div>
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">PowerFlex Drive Series</h2>
-            <p class="text-xl text-gray-600">Advanced AC and DC drives for precise motor control</p>
+            <h2
+              className="text-4xl font-bold text-gray-800 mb-4"
+              data-translate="productsPage.drivesTitle"
+            >
+              PowerFlex Drive Series
+            </h2>
+            <p
+              className="text-xl text-gray-600"
+              data-translate="productsPage.drivesSubtitle"
+            >
+              Advanced AC and DC drives for precise motor control
+            </p>
           </div>
 
-          <div class="grid lg:grid-cols-2 gap-12 mb-12">
+          <div className="grid lg:grid-cols-2 gap-12 mb-12">
             <div>
-              <h3 class="text-3xl font-bold text-gray-800 mb-8">AC Drives / Inverters</h3>
-              <div class="space-y-6">
-                <div class="bg-white rounded-xl p-6 shadow-md">
-                  <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                      <i class="fas fa-bolt text-blue-600"></i>
+              <h3
+                className="text-3xl font-bold text-gray-800 mb-8"
+                data-translate="productsPage.acDrivesTitle"
+              >
+                AC Drives / Inverters
+              </h3>
+              <div className="space-y-6">
+                <div className="bg-white rounded-xl p-6 shadow-md">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                      <i className="fas fa-bolt text-blue-600"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-800">PowerFlex 525</h4>
+                    <h4
+                      className="text-xl font-bold text-gray-800"
+                      data-translate="productsPage.powerFlex525Title"
+                    >
+                      PowerFlex 525
+                    </h4>
                   </div>
-                  <p class="text-gray-600 mb-3">
-                    Compact drive for basic to advanced applications with integrated safety features
+                  <p
+                    className="text-gray-600 mb-3"
+                    data-translate="productsPage.powerFlex525Desc"
+                  >
+                    Compact drive for basic to advanced applications with
+                    integrated safety features
                   </p>
-                  <div class="grid grid-cols-2 gap-4 text-sm">
+                  <div className="grid grid-cols-2 gap-4 text-sm">
                     <div>
-                      <span class="font-medium text-gray-700">Power Range:</span>
-                      <br />0.4 to 22 kW
+                      <span
+                        className="font-medium text-gray-700"
+                        data-translate="productsPage.powerRange"
+                      >
+                        Power Range:
+                      </span>
+                      <br />
+                      <span data-translate="productsPage.powerFlex525Range">
+                        0.4 to 22 kW
+                      </span>
                     </div>
                     <div>
-                      <span class="font-medium text-gray-700">Applications:</span>
-                      <br />Pumps, fans, conveyors
+                      <span
+                        className="font-medium text-gray-700"
+                        data-translate="productsPage.applications"
+                      >
+                        Applications:
+                      </span>
+                      <br />
+                      <span data-translate="productsPage.powerFlex525Apps">
+                        Pumps, fans, conveyors
+                      </span>
                     </div>
                   </div>
                 </div>
 
-                <div class="bg-white rounded-xl p-6 shadow-md">
-                  <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                      <i class="fas fa-cogs text-green-600"></i>
+                <div className="bg-white rounded-xl p-6 shadow-md">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                      <i className="fas fa-cogs text-green-600"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-800">PowerFlex 753</h4>
+                    <h4
+                      className="text-xl font-bold text-gray-800"
+                      data-translate="productsPage.powerFlex753Title"
+                    >
+                      PowerFlex 753
+                    </h4>
                   </div>
-                  <p class="text-gray-600 mb-3">
-                    High-performance drive with advanced control algorithms and networking
+                  <p
+                    className="text-gray-600 mb-3"
+                    data-translate="productsPage.powerFlex753Desc"
+                  >
+                    High-performance drive with advanced control algorithms and
+                    networking
                   </p>
-                  <div class="grid grid-cols-2 gap-4 text-sm">
+                  <div className="grid grid-cols-2 gap-4 text-sm">
                     <div>
-                      <span class="font-medium text-gray-700">Power Range:</span>
-                      <br />0.4 to 2.3 MW
+                      <span
+                        className="font-medium text-gray-700"
+                        data-translate="productsPage.powerRange"
+                      >
+                        Power Range:
+                      </span>
+                      <br />
+                      <span data-translate="productsPage.powerFlex753Range">
+                        0.4 to 2.3 MW
+                      </span>
                     </div>
                     <div>
-                      <span class="font-medium text-gray-700">Applications:</span>
-                      <br />Process control, precision applications
+                      <span
+                        className="font-medium text-gray-700"
+                        data-translate="productsPage.applications"
+                      >
+                        Applications:
+                      </span>
+                      <br />
+                      <span data-translate="productsPage.powerFlex753Apps">
+                        Process control, precision applications
+                      </span>
                     </div>
                   </div>
                 </div>
 
-                <div class="bg-white rounded-xl p-6 shadow-md">
-                  <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                      <i class="fas fa-server text-purple-600"></i>
+                <div className="bg-white rounded-xl p-6 shadow-md">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                      <i className="fas fa-server text-purple-600"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-800">PowerFlex 755</h4>
+                    <h4
+                      className="text-xl font-bold text-gray-800"
+                      data-translate="productsPage.powerFlex755Title"
+                    >
+                      PowerFlex 755
+                    </h4>
                   </div>
-                  <p class="text-gray-600 mb-3">
-                    Modular drive system for complex applications requiring maximum flexibility
+                  <p
+                    className="text-gray-600 mb-3"
+                    data-translate="productsPage.powerFlex755Desc"
+                  >
+                    Modular drive system for complex applications requiring
+                    maximum flexibility
                   </p>
-                  <div class="grid grid-cols-2 gap-4 text-sm">
+                  <div className="grid grid-cols-2 gap-4 text-sm">
                     <div>
-                      <span class="font-medium text-gray-700">Power Range:</span>
-                      <br />90 kW to 5.7 MW
+                      <span
+                        className="font-medium text-gray-700"
+                        data-translate="productsPage.powerRange"
+                      >
+                        Power Range:
+                      </span>
+                      <br />
+                      <span data-translate="productsPage.powerFlex755Range">
+                        90 kW to 5.7 MW
+                      </span>
                     </div>
                     <div>
-                      <span class="font-medium text-gray-700">Applications:</span>
-                      <br />Large motors, harsh environments
+                      <span
+                        className="font-medium text-gray-700"
+                        data-translate="productsPage.applications"
+                      >
+                        Applications:
+                      </span>
+                      <br />
+                      <span data-translate="productsPage.powerFlex755Apps">
+                        Large motors, harsh environments
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -216,86 +453,156 @@ export const ProductsPage = () => {
             </div>
 
             <div>
-              <h3 class="text-3xl font-bold text-gray-800 mb-8">DC Drives & Special Applications</h3>
-              <div class="space-y-6">
-                <div class="bg-white rounded-xl p-6 shadow-md">
-                  <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
-                      <i class="fas fa-battery-three-quarters text-red-600"></i>
+              <h3
+                className="text-3xl font-bold text-gray-800 mb-8"
+                data-translate="productsPage.dcDrivesTitle"
+              >
+                DC Drives & Special Applications
+              </h3>
+              <div className="space-y-6">
+                <div className="bg-white rounded-xl p-6 shadow-md">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                      <i className="fas fa-battery-three-quarters text-red-600"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-800">PowerFlex DC</h4>
+                    <h4
+                      className="text-xl font-bold text-gray-800"
+                      data-translate="productsPage.powerFlexDCTitle"
+                    >
+                      PowerFlex DC
+                    </h4>
                   </div>
-                  <p class="text-gray-600 mb-4">
-                    High-performance DC drives for applications requiring precise speed and torque control
+                  <p
+                    className="text-gray-600 mb-4"
+                    data-translate="productsPage.powerFlexDCDesc"
+                  >
+                    High-performance DC drives for applications requiring
+                    precise speed and torque control
                   </p>
-                  <div class="space-y-2 text-sm text-gray-600">
-                    <div class="flex items-center">
-                      <i class="fas fa-check text-green-600 mr-2"></i>
-                      Regenerative capabilities
+                  <div className="space-y-2 text-sm text-gray-600">
+                    <div className="flex items-center">
+                      <i className="fas fa-check text-green-600 mr-2"></i>
+                      <span data-translate="productsPage.regenerativeCapabilities">
+                        Regenerative capabilities
+                      </span>
                     </div>
-                    <div class="flex items-center">
-                      <i class="fas fa-check text-green-600 mr-2"></i>
-                      Field weakening control
+                    <div className="flex items-center">
+                      <i className="fas fa-check text-green-600 mr-2"></i>
+                      <span data-translate="productsPage.fieldWeakening">
+                        Field weakening control
+                      </span>
                     </div>
-                    <div class="flex items-center">
-                      <i class="fas fa-check text-green-600 mr-2"></i>
-                      Advanced diagnostics
+                    <div className="flex items-center">
+                      <i className="fas fa-check text-green-600 mr-2"></i>
+                      <span data-translate="productsPage.advancedDiagnostics">
+                        Advanced diagnostics
+                      </span>
                     </div>
                   </div>
                 </div>
 
-                <div class="bg-white rounded-xl p-6 shadow-md">
-                  <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4">
-                      <i class="fas fa-thermometer-half text-indigo-600"></i>
+                <div className="bg-white rounded-xl p-6 shadow-md">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4">
+                      <i className="fas fa-thermometer-half text-indigo-600"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-800">PowerFlex 755T</h4>
+                    <h4
+                      className="text-xl font-bold text-gray-800"
+                      data-translate="productsPage.powerFlex755TTitle"
+                    >
+                      PowerFlex 755T
+                    </h4>
                   </div>
-                  <p class="text-gray-600 mb-4">
-                    Total Force Technology drives designed for harsh industrial environments
+                  <p
+                    className="text-gray-600 mb-4"
+                    data-translate="productsPage.powerFlex755TDesc"
+                  >
+                    Total Force Technology drives designed for harsh industrial
+                    environments
                   </p>
-                  <div class="space-y-2 text-sm text-gray-600">
-                    <div class="flex items-center">
-                      <i class="fas fa-check text-green-600 mr-2"></i>
-                      Enhanced environmental protection
+                  <div className="space-y-2 text-sm text-gray-600">
+                    <div className="flex items-center">
+                      <i className="fas fa-check text-green-600 mr-2"></i>
+                      <span data-translate="productsPage.enhancedProtection">
+                        Enhanced environmental protection
+                      </span>
                     </div>
-                    <div class="flex items-center">
-                      <i class="fas fa-check text-green-600 mr-2"></i>
-                      Reduced harmonic distortion
+                    <div className="flex items-center">
+                      <i className="fas fa-check text-green-600 mr-2"></i>
+                      <span data-translate="productsPage.reducedHarmonic">
+                        Reduced harmonic distortion
+                      </span>
                     </div>
-                    <div class="flex items-center">
-                      <i class="fas fa-check text-green-600 mr-2"></i>
-                      Extended operating temperature range
+                    <div className="flex items-center">
+                      <i className="fas fa-check text-green-600 mr-2"></i>
+                      <span data-translate="productsPage.extendedTemp">
+                        Extended operating temperature range
+                      </span>
                     </div>
                   </div>
                 </div>
 
-                <div class="bg-gradient-to-br from-accent/5 to-orange-100 rounded-xl p-6">
-                  <h4 class="font-bold text-gray-800 mb-4">Drive Applications</h4>
-                  <div class="grid grid-cols-2 gap-4 text-sm">
+                <div className="bg-gradient-to-br from-accent/5 to-orange-100 rounded-xl p-6">
+                  <h4
+                    className="font-bold text-gray-800 mb-4"
+                    data-translate="productsPage.driveApplicationsTitle"
+                  >
+                    Drive Applications
+                  </h4>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
                     <div>
-                      <i class="fas fa-fan text-blue-600 mr-2"></i>
-                      <span class="text-gray-700">HVAC Systems</span>
+                      <i className="fas fa-fan text-blue-600 mr-2"></i>
+                      <span
+                        className="text-gray-700"
+                        data-translate="productsPage.hvacSystems"
+                      >
+                        HVAC Systems
+                      </span>
                     </div>
                     <div>
-                      <i class="fas fa-tint text-blue-600 mr-2"></i>
-                      <span class="text-gray-700">Pump Control</span>
+                      <i className="fas fa-tint text-blue-600 mr-2"></i>
+                      <span
+                        className="text-gray-700"
+                        data-translate="productsPage.pumpControl"
+                      >
+                        Pump Control
+                      </span>
                     </div>
                     <div>
-                      <i class="fas fa-conveyor-belt text-blue-600 mr-2"></i>
-                      <span class="text-gray-700">Conveyor Systems</span>
+                      <i className="fas fa-conveyor-belt text-blue-600 mr-2"></i>
+                      <span
+                        className="text-gray-700"
+                        data-translate="productsPage.conveyorSystems"
+                      >
+                        Conveyor Systems
+                      </span>
                     </div>
                     <div>
-                      <i class="fas fa-compress text-blue-600 mr-2"></i>
-                      <span class="text-gray-700">Compressors</span>
+                      <i className="fas fa-compress text-blue-600 mr-2"></i>
+                      <span
+                        className="text-gray-700"
+                        data-translate="productsPage.compressors"
+                      >
+                        Compressors
+                      </span>
                     </div>
                     <div>
-                      <i class="fas fa-industry text-blue-600 mr-2"></i>
-                      <span class="text-gray-700">Process Control</span>
+                      <i className="fas fa-industry text-blue-600 mr-2"></i>
+                      <span
+                        className="text-gray-700"
+                        data-translate="productsPage.processControl"
+                      >
+                        Process Control
+                      </span>
                     </div>
                     <div>
-                      <i class="fas fa-cogs text-blue-600 mr-2"></i>
-                      <span class="text-gray-700">Machine Tools</span>
+                      <i className="fas fa-cogs text-blue-600 mr-2"></i>
+                      <span
+                        className="text-gray-700"
+                        data-translate="productsPage.machineTools"
+                      >
+                        Machine Tools
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -306,74 +613,163 @@ export const ProductsPage = () => {
       </section>
 
       {/* Motion Control */}
-      <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-          <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div class="inline-flex items-center bg-green-100 rounded-full px-6 py-2 mb-6">
-                <i class="fas fa-sync text-green-600 mr-2"></i>
-                <span class="text-green-600 font-semibold">Motion Control</span>
+              <div className="inline-flex items-center bg-green-100 rounded-full px-6 py-2 mb-6">
+                <i className="fas fa-sync text-green-600 mr-2"></i>
+                <span
+                  className="text-green-600 font-semibold"
+                  data-translate="productsPage.motionBadge"
+                >
+                  Motion Control
+                </span>
               </div>
-              <h2 class="text-4xl font-bold text-gray-800 mb-6">Kinetix Servo Systems</h2>
-              <p class="text-gray-600 mb-6 leading-relaxed">
-                Precision servo drives and motors for demanding motion control applications. 
-                The Kinetix family provides integrated motion solutions with superior performance 
-                and flexibility for complex automation systems.
+              <h2
+                className="text-4xl font-bold text-gray-800 mb-6"
+                data-translate="productsPage.motionTitle"
+              >
+                Kinetix Servo Systems
+              </h2>
+              <p
+                className="text-gray-600 mb-6 leading-relaxed"
+                data-translate="productsPage.motionDesc"
+              >
+                Precision servo drives and motors for demanding motion control
+                applications. The Kinetix family provides integrated motion
+                solutions with superior performance and flexibility for complex
+                automation systems.
               </p>
-              <div class="space-y-4">
-                <div class="flex items-start">
-                  <i class="fas fa-rocket text-green-600 mt-1 mr-3"></i>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <i className="fas fa-rocket text-green-600 mt-1 mr-3"></i>
                   <div>
-                    <h4 class="font-semibold text-gray-800">High Performance</h4>
-                    <p class="text-gray-600 text-sm">Exceptional speed, accuracy, and repeatability</p>
+                    <h4
+                      className="font-semibold text-gray-800"
+                      data-translate="productsPage.highPerformance"
+                    >
+                      High Performance
+                    </h4>
+                    <p
+                      className="text-gray-600 text-sm"
+                      data-translate="productsPage.highPerformanceDesc"
+                    >
+                      Exceptional speed, accuracy, and repeatability
+                    </p>
                   </div>
                 </div>
-                <div class="flex items-start">
-                  <i class="fas fa-link text-green-600 mt-1 mr-3"></i>
+                <div className="flex items-start">
+                  <i className="fas fa-link text-green-600 mt-1 mr-3"></i>
                   <div>
-                    <h4 class="font-semibold text-gray-800">Integrated Control</h4>
-                    <p class="text-gray-600 text-sm">Seamless integration with ControlLogix systems</p>
+                    <h4
+                      className="font-semibold text-gray-800"
+                      data-translate="productsPage.integratedControl"
+                    >
+                      Integrated Control
+                    </h4>
+                    <p
+                      className="text-gray-600 text-sm"
+                      data-translate="productsPage.integratedControlDesc"
+                    >
+                      Seamless integration with ControlLogix systems
+                    </p>
                   </div>
                 </div>
-                <div class="flex items-start">
-                  <i class="fas fa-tools text-green-600 mt-1 mr-3"></i>
+                <div className="flex items-start">
+                  <i className="fas fa-tools text-green-600 mt-1 mr-3"></i>
                   <div>
-                    <h4 class="font-semibold text-gray-800">Easy Configuration</h4>
-                    <p class="text-gray-600 text-sm">Simple setup and commissioning tools</p>
+                    <h4
+                      className="font-semibold text-gray-800"
+                      data-translate="productsPage.easyConfiguration"
+                    >
+                      Easy Configuration
+                    </h4>
+                    <p
+                      className="text-gray-600 text-sm"
+                      data-translate="productsPage.easyConfigurationDesc"
+                    >
+                      Simple setup and commissioning tools
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="bg-gradient-to-br from-green-50 to-blue-100 rounded-2xl p-8">
-              <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Kinetix Product Range</h3>
-              <div class="space-y-4">
-                <div class="bg-white rounded-lg p-4 shadow-md">
-                  <div class="flex items-center justify-between mb-2">
-                    <h4 class="font-bold text-gray-800">Servo Drives</h4>
-                    <i class="fas fa-microchip text-green-600"></i>
+            <div className="bg-gradient-to-br from-green-50 to-blue-100 rounded-2xl p-8">
+              <h3
+                className="text-2xl font-bold text-gray-800 mb-6 text-center"
+                data-translate="productsPage.kinetixRangeTitle"
+              >
+                Kinetix Product Range
+              </h3>
+              <div className="space-y-4">
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <div className="flex items-center justify-between mb-2">
+                    <h4
+                      className="font-bold text-gray-800"
+                      data-translate="productsPage.servoDrives"
+                    >
+                      Servo Drives
+                    </h4>
+                    <i className="fas fa-microchip text-green-600"></i>
                   </div>
-                  <p class="text-sm text-gray-600">Kinetix 5700, 5500, 350 series drives</p>
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="productsPage.servoDrivesDesc"
+                  >
+                    Kinetix 5700, 5500, 350 series drives
+                  </p>
                 </div>
-                <div class="bg-white rounded-lg p-4 shadow-md">
-                  <div class="flex items-center justify-between mb-2">
-                    <h4 class="font-bold text-gray-800">Servo Motors</h4>
-                    <i class="fas fa-cog text-green-600"></i>
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <div className="flex items-center justify-between mb-2">
+                    <h4
+                      className="font-bold text-gray-800"
+                      data-translate="productsPage.servoMotors"
+                    >
+                      Servo Motors
+                    </h4>
+                    <i className="fas fa-cog text-green-600"></i>
                   </div>
-                  <p class="text-sm text-gray-600">Rotary and linear servo motor options</p>
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="productsPage.servoMotorsDesc"
+                  >
+                    Rotary and linear servo motor options
+                  </p>
                 </div>
-                <div class="bg-white rounded-lg p-4 shadow-md">
-                  <div class="flex items-center justify-between mb-2">
-                    <h4 class="font-bold text-gray-800">Motion Controllers</h4>
-                    <i class="fas fa-gamepad text-green-600"></i>
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <div className="flex items-center justify-between mb-2">
+                    <h4
+                      className="font-bold text-gray-800"
+                      data-translate="productsPage.motionControllers"
+                    >
+                      Motion Controllers
+                    </h4>
+                    <i className="fas fa-gamepad text-green-600"></i>
                   </div>
-                  <p class="text-sm text-gray-600">Standalone and integrated motion control</p>
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="productsPage.motionControllersDesc"
+                  >
+                    Standalone and integrated motion control
+                  </p>
                 </div>
-                <div class="bg-white rounded-lg p-4 shadow-md">
-                  <div class="flex items-center justify-between mb-2">
-                    <h4 class="font-bold text-gray-800">Actuators</h4>
-                    <i class="fas fa-expand-arrows-alt text-green-600"></i>
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <div className="flex items-center justify-between mb-2">
+                    <h4
+                      className="font-bold text-gray-800"
+                      data-translate="productsPage.actuators"
+                    >
+                      Actuators
+                    </h4>
+                    <i className="fas fa-expand-arrows-alt text-green-600"></i>
                   </div>
-                  <p class="text-sm text-gray-600">Electric cylinders and linear actuators</p>
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="productsPage.actuatorsDesc"
+                  >
+                    Electric cylinders and linear actuators
+                  </p>
                 </div>
               </div>
             </div>
@@ -382,67 +778,131 @@ export const ProductsPage = () => {
       </section>
 
       {/* HMI & Visualization */}
-      <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-12">
-            <div class="inline-flex items-center bg-indigo-100 rounded-full px-6 py-2 mb-6">
-              <i class="fas fa-desktop text-indigo-600 mr-2"></i>
-              <span class="text-indigo-600 font-semibold">Operator Interface & Visualization</span>
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center bg-indigo-100 rounded-full px-6 py-2 mb-6">
+              <i className="fas fa-desktop text-indigo-600 mr-2"></i>
+              <span
+                className="text-indigo-600 font-semibold"
+                data-translate="productsPage.hmiBadge"
+              >
+                Operator Interface & Visualization
+              </span>
             </div>
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">PanelView & FactoryTalk Solutions</h2>
-            <p class="text-xl text-gray-600">Intuitive operator interfaces and powerful visualization software</p>
+            <h2
+              className="text-4xl font-bold text-gray-800 mb-4"
+              data-translate="productsPage.hmiTitle"
+            >
+              PanelView & FactoryTalk Solutions
+            </h2>
+            <p
+              className="text-xl text-gray-600"
+              data-translate="productsPage.hmiSubtitle"
+            >
+              Intuitive operator interfaces and powerful visualization software
+            </p>
           </div>
 
-          <div class="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12">
             <div>
-              <h3 class="text-3xl font-bold text-gray-800 mb-8">PanelView Operator Interfaces</h3>
-              <div class="space-y-6">
-                <div class="bg-white rounded-xl p-6 shadow-md">
-                  <h4 class="text-xl font-bold text-gray-800 mb-3">PanelView 5000</h4>
-                  <p class="text-gray-600 mb-4">
-                    Advanced graphic terminals with multi-touch displays and enhanced performance
+              <h3
+                className="text-3xl font-bold text-gray-800 mb-8"
+                data-translate="productsPage.panelViewTitle"
+              >
+                PanelView Operator Interfaces
+              </h3>
+              <div className="space-y-6">
+                <div className="bg-white rounded-xl p-6 shadow-md">
+                  <h4
+                    className="text-xl font-bold text-gray-800 mb-3"
+                    data-translate="productsPage.panelView5000Title"
+                  >
+                    PanelView 5000
+                  </h4>
+                  <p
+                    className="text-gray-600 mb-4"
+                    data-translate="productsPage.panelView5000Desc"
+                  >
+                    Advanced graphic terminals with multi-touch displays and
+                    enhanced performance
                   </p>
-                  <div class="grid grid-cols-2 gap-4 text-sm">
-                    <div class="space-y-2">
-                      <div class="flex items-center">
-                        <i class="fas fa-tv text-indigo-600 mr-2"></i>
-                        <span class="text-gray-700">4" to 15" displays</span>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div className="space-y-2">
+                      <div className="flex items-center">
+                        <i className="fas fa-tv text-indigo-600 mr-2"></i>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.displaySizes"
+                        >
+                          4" to 15" displays
+                        </span>
                       </div>
-                      <div class="flex items-center">
-                        <i class="fas fa-hand-pointer text-indigo-600 mr-2"></i>
-                        <span class="text-gray-700">Multi-touch capability</span>
+                      <div className="flex items-center">
+                        <i className="fas fa-hand-pointer text-indigo-600 mr-2"></i>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.multiTouch"
+                        >
+                          Multi-touch capability
+                        </span>
                       </div>
                     </div>
-                    <div class="space-y-2">
-                      <div class="flex items-center">
-                        <i class="fas fa-ethernet text-indigo-600 mr-2"></i>
-                        <span class="text-gray-700">Ethernet connectivity</span>
+                    <div className="space-y-2">
+                      <div className="flex items-center">
+                        <i className="fas fa-ethernet text-indigo-600 mr-2"></i>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.ethernetConn"
+                        >
+                          Ethernet connectivity
+                        </span>
                       </div>
-                      <div class="flex items-center">
-                        <i class="fas fa-shield-alt text-indigo-600 mr-2"></i>
-                        <span class="text-gray-700">Industrial rated</span>
+                      <div className="flex items-center">
+                        <i className="fas fa-shield-alt text-indigo-600 mr-2"></i>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.industrialRated"
+                        >
+                          Industrial rated
+                        </span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="bg-white rounded-xl p-6 shadow-md">
-                  <h4 class="text-xl font-bold text-gray-800 mb-3">PanelView Plus 7</h4>
-                  <p class="text-gray-600 mb-4">
-                    Cost-effective terminals with built-in communication and application flexibility
+                <div className="bg-white rounded-xl p-6 shadow-md">
+                  <h4
+                    className="text-xl font-bold text-gray-800 mb-3"
+                    data-translate="productsPage.panelViewPlus7Title"
+                  >
+                    PanelView Plus 7
+                  </h4>
+                  <p
+                    className="text-gray-600 mb-4"
+                    data-translate="productsPage.panelViewPlus7Desc"
+                  >
+                    Cost-effective terminals with built-in communication and
+                    application flexibility
                   </p>
-                  <div class="space-y-2 text-sm text-gray-600">
-                    <div class="flex items-center">
-                      <i class="fas fa-check text-green-600 mr-2"></i>
-                      Multiple screen sizes available
+                  <div className="space-y-2 text-sm text-gray-600">
+                    <div className="flex items-center">
+                      <i className="fas fa-check text-green-600 mr-2"></i>
+                      <span data-translate="productsPage.multipleScreens">
+                        Multiple screen sizes available
+                      </span>
                     </div>
-                    <div class="flex items-center">
-                      <i class="fas fa-check text-green-600 mr-2"></i>
-                      Web browser capabilities
+                    <div className="flex items-center">
+                      <i className="fas fa-check text-green-600 mr-2"></i>
+                      <span data-translate="productsPage.webBrowser">
+                        Web browser capabilities
+                      </span>
                     </div>
-                    <div class="flex items-center">
-                      <i class="fas fa-check text-green-600 mr-2"></i>
-                      Recipe management
+                    <div className="flex items-center">
+                      <i className="fas fa-check text-green-600 mr-2"></i>
+                      <span data-translate="productsPage.recipeManagement">
+                        Recipe management
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -450,62 +910,119 @@ export const ProductsPage = () => {
             </div>
 
             <div>
-              <h3 class="text-3xl font-bold text-gray-800 mb-8">FactoryTalk Software</h3>
-              <div class="space-y-6">
-                <div class="bg-white rounded-xl p-6 shadow-md">
-                  <h4 class="text-xl font-bold text-gray-800 mb-3">FactoryTalk View SE</h4>
-                  <p class="text-gray-600 mb-4">
-                    Scalable HMI/SCADA software for plant-wide visualization and control
+              <h3
+                className="text-3xl font-bold text-gray-800 mb-8"
+                data-translate="productsPage.factoryTalkTitle"
+              >
+                FactoryTalk Software
+              </h3>
+              <div className="space-y-6">
+                <div className="bg-white rounded-xl p-6 shadow-md">
+                  <h4
+                    className="text-xl font-bold text-gray-800 mb-3"
+                    data-translate="productsPage.factoryTalkSETitle"
+                  >
+                    FactoryTalk View SE
+                  </h4>
+                  <p
+                    className="text-gray-600 mb-4"
+                    data-translate="productsPage.factoryTalkSEDesc"
+                  >
+                    Scalable HMI/SCADA software for plant-wide visualization and
+                    control
                   </p>
-                  <div class="space-y-2 text-sm text-gray-600">
-                    <div class="flex items-center">
-                      <i class="fas fa-chart-line text-indigo-600 mr-2"></i>
-                      Real-time and historical trending
+                  <div className="space-y-2 text-sm text-gray-600">
+                    <div className="flex items-center">
+                      <i className="fas fa-chart-line text-indigo-600 mr-2"></i>
+                      <span data-translate="productsPage.realtimeTrending">
+                        Real-time and historical trending
+                      </span>
                     </div>
-                    <div class="flex items-center">
-                      <i class="fas fa-bell text-indigo-600 mr-2"></i>
-                      Alarm management system
+                    <div className="flex items-center">
+                      <i className="fas fa-bell text-indigo-600 mr-2"></i>
+                      <span data-translate="productsPage.alarmManagement">
+                        Alarm management system
+                      </span>
                     </div>
-                    <div class="flex items-center">
-                      <i class="fas fa-users text-indigo-600 mr-2"></i>
-                      Multi-user security system
+                    <div className="flex items-center">
+                      <i className="fas fa-users text-indigo-600 mr-2"></i>
+                      <span data-translate="productsPage.multiUserSecurity">
+                        Multi-user security system
+                      </span>
                     </div>
-                    <div class="flex items-center">
-                      <i class="fas fa-file-alt text-indigo-600 mr-2"></i>
-                      Comprehensive reporting tools
+                    <div className="flex items-center">
+                      <i className="fas fa-file-alt text-indigo-600 mr-2"></i>
+                      <span data-translate="productsPage.reportingTools">
+                        Comprehensive reporting tools
+                      </span>
                     </div>
                   </div>
                 </div>
 
-                <div class="bg-gradient-to-br from-indigo-50 to-purple-100 rounded-xl p-6">
-                  <h4 class="font-bold text-gray-800 mb-4">Visualization Capabilities</h4>
-                  <div class="grid grid-cols-2 gap-4 text-sm">
-                    <div class="space-y-3">
+                <div className="bg-gradient-to-br from-indigo-50 to-purple-100 rounded-xl p-6">
+                  <h4
+                    className="font-bold text-gray-800 mb-4"
+                    data-translate="productsPage.visualizationCapabilities"
+                  >
+                    Visualization Capabilities
+                  </h4>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div className="space-y-3">
                       <div>
-                        <i class="fas fa-palette text-purple-600 mr-2"></i>
-                        <span class="text-gray-700">Rich Graphics</span>
+                        <i className="fas fa-palette text-purple-600 mr-2"></i>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.richGraphics"
+                        >
+                          Rich Graphics
+                        </span>
                       </div>
                       <div>
-                        <i class="fas fa-mobile-alt text-purple-600 mr-2"></i>
-                        <span class="text-gray-700">Remote Access</span>
+                        <i className="fas fa-mobile-alt text-purple-600 mr-2"></i>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.remoteAccess"
+                        >
+                          Remote Access
+                        </span>
                       </div>
                       <div>
-                        <i class="fas fa-database text-purple-600 mr-2"></i>
-                        <span class="text-gray-700">Data Logging</span>
+                        <i className="fas fa-database text-purple-600 mr-2"></i>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.dataLogging"
+                        >
+                          Data Logging
+                        </span>
                       </div>
                     </div>
-                    <div class="space-y-3">
+                    <div className="space-y-3">
                       <div>
-                        <i class="fas fa-chart-pie text-purple-600 mr-2"></i>
-                        <span class="text-gray-700">Analytics</span>
+                        <i className="fas fa-chart-pie text-purple-600 mr-2"></i>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.analytics"
+                        >
+                          Analytics
+                        </span>
                       </div>
                       <div>
-                        <i class="fas fa-cloud text-purple-600 mr-2"></i>
-                        <span class="text-gray-700">Cloud Connectivity</span>
+                        <i className="fas fa-cloud text-purple-600 mr-2"></i>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.cloudConnectivity"
+                        >
+                          Cloud Connectivity
+                        </span>
                       </div>
                       <div>
-                        <i class="fas fa-cog text-purple-600 mr-2"></i>
-                        <span class="text-gray-700">Custom Applications</span>
+                        <i className="fas fa-cog text-purple-600 mr-2"></i>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.customApplications"
+                        >
+                          Custom Applications
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -517,89 +1034,206 @@ export const ProductsPage = () => {
       </section>
 
       {/* Networking */}
-      <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-12">
-            <div class="inline-flex items-center bg-blue-100 rounded-full px-6 py-2 mb-6">
-              <i class="fas fa-network-wired text-blue-600 mr-2"></i>
-              <span class="text-blue-600 font-semibold">Industrial Networking</span>
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center bg-blue-100 rounded-full px-6 py-2 mb-6">
+              <i className="fas fa-network-wired text-blue-600 mr-2"></i>
+              <span
+                className="text-blue-600 font-semibold"
+                data-translate="productsPage.networkingBadge"
+              >
+                Industrial Networking
+              </span>
             </div>
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Stratix Ethernet Switches</h2>
-            <p class="text-xl text-gray-600">Robust industrial networking solutions for reliable communication</p>
+            <h2
+              className="text-4xl font-bold text-gray-800 mb-4"
+              data-translate="productsPage.networkingTitle"
+            >
+              Stratix Ethernet Switches
+            </h2>
+            <p
+              className="text-xl text-gray-600"
+              data-translate="productsPage.networkingSubtitle"
+            >
+              Robust industrial networking solutions for reliable communication
+            </p>
           </div>
 
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 lg:p-12">
-            <div class="grid lg:grid-cols-2 gap-12">
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 lg:p-12">
+            <div className="grid lg:grid-cols-2 gap-12">
               <div>
-                <h3 class="text-2xl font-bold text-gray-800 mb-6">Managed Switches</h3>
-                <div class="space-y-4">
-                  <div class="bg-white rounded-lg p-4 shadow-md">
-                    <h4 class="font-bold text-gray-800 mb-2">Advanced Features</h4>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                      <li>• VLAN support and traffic management</li>
-                      <li>• Quality of Service (QoS) prioritization</li>
-                      <li>• Network redundancy protocols</li>
-                      <li>• SNMP monitoring and diagnostics</li>
+                <h3
+                  className="text-2xl font-bold text-gray-800 mb-6"
+                  data-translate="productsPage.managedSwitchesTitle"
+                >
+                  Managed Switches
+                </h3>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4 shadow-md">
+                    <h4
+                      className="font-bold text-gray-800 mb-2"
+                      data-translate="productsPage.advancedFeatures"
+                    >
+                      Advanced Features
+                    </h4>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      <li data-translate="productsPage.vlanSupport">
+                        • VLAN support and traffic management
+                      </li>
+                      <li data-translate="productsPage.qosPrioritization">
+                        • Quality of Service (QoS) prioritization
+                      </li>
+                      <li data-translate="productsPage.networkRedundancy">
+                        • Network redundancy protocols
+                      </li>
+                      <li data-translate="productsPage.snmpMonitoring">
+                        • SNMP monitoring and diagnostics
+                      </li>
                     </ul>
                   </div>
-                  <div class="bg-white rounded-lg p-4 shadow-md">
-                    <h4 class="font-bold text-gray-800 mb-2">Security Features</h4>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                      <li>• Port-based access control</li>
-                      <li>• MAC address filtering</li>
-                      <li>• Industrial firewall capabilities</li>
-                      <li>• Secure remote management</li>
+                  <div className="bg-white rounded-lg p-4 shadow-md">
+                    <h4
+                      className="font-bold text-gray-800 mb-2"
+                      data-translate="productsPage.securityFeatures"
+                    >
+                      Security Features
+                    </h4>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      <li data-translate="productsPage.portAccess">
+                        • Port-based access control
+                      </li>
+                      <li data-translate="productsPage.macFiltering">
+                        • MAC address filtering
+                      </li>
+                      <li data-translate="productsPage.industrialFirewall">
+                        • Industrial firewall capabilities
+                      </li>
+                      <li data-translate="productsPage.secureRemote">
+                        • Secure remote management
+                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
 
               <div>
-                <h3 class="text-2xl font-bold text-gray-800 mb-6">Unmanaged Switches</h3>
-                <div class="space-y-4">
-                  <div class="bg-white rounded-lg p-4 shadow-md">
-                    <h4 class="font-bold text-gray-800 mb-2">Simple & Reliable</h4>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                      <li>• Plug-and-play operation</li>
-                      <li>• Industrial temperature rating</li>
-                      <li>• DIN rail mounting options</li>
-                      <li>• Cost-effective networking</li>
+                <h3
+                  className="text-2xl font-bold text-gray-800 mb-6"
+                  data-translate="productsPage.unmanagedSwitchesTitle"
+                >
+                  Unmanaged Switches
+                </h3>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-4 shadow-md">
+                    <h4
+                      className="font-bold text-gray-800 mb-2"
+                      data-translate="productsPage.simpleReliable"
+                    >
+                      Simple & Reliable
+                    </h4>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      <li data-translate="productsPage.plugAndPlay">
+                        • Plug-and-play operation
+                      </li>
+                      <li data-translate="productsPage.industrialTemp">
+                        • Industrial temperature rating
+                      </li>
+                      <li data-translate="productsPage.dinRailMounting">
+                        • DIN rail mounting options
+                      </li>
+                      <li data-translate="productsPage.costEffectiveNet">
+                        • Cost-effective networking
+                      </li>
                     </ul>
                   </div>
-                  <div class="bg-white rounded-lg p-4 shadow-md">
-                    <h4 class="font-bold text-gray-800 mb-2">Applications</h4>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                      <li>• Small control systems</li>
-                      <li>• Device-level networking</li>
-                      <li>• Machine-level communication</li>
-                      <li>• Basic Ethernet connectivity</li>
+                  <div className="bg-white rounded-lg p-4 shadow-md">
+                    <h4
+                      className="font-bold text-gray-800 mb-2"
+                      data-translate="productsPage.unmanagedApps"
+                    >
+                      Applications
+                    </h4>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      <li data-translate="productsPage.smallControlSystems">
+                        • Small control systems
+                      </li>
+                      <li data-translate="productsPage.deviceLevel">
+                        • Device-level networking
+                      </li>
+                      <li data-translate="productsPage.machineLevel">
+                        • Machine-level communication
+                      </li>
+                      <li data-translate="productsPage.basicEthernet">
+                        • Basic Ethernet connectivity
+                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="mt-8 pt-8 border-t border-blue-200">
-              <div class="grid md:grid-cols-4 gap-6 text-center">
+            <div className="mt-8 pt-8 border-t border-blue-200">
+              <div className="grid md:grid-cols-4 gap-6 text-center">
                 <div>
-                  <i class="fas fa-tachometer-alt text-blue-600 text-3xl mb-2"></i>
-                  <h4 class="font-bold text-gray-800">High Performance</h4>
-                  <p class="text-sm text-gray-600">Gigabit Ethernet speeds</p>
+                  <i className="fas fa-tachometer-alt text-blue-600 text-3xl mb-2"></i>
+                  <h4
+                    className="font-bold text-gray-800"
+                    data-translate="productsPage.gigabitSpeed"
+                  >
+                    High Performance
+                  </h4>
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="productsPage.gigabitSpeedDesc"
+                  >
+                    Gigabit Ethernet speeds
+                  </p>
                 </div>
                 <div>
-                  <i class="fas fa-shield-alt text-blue-600 text-3xl mb-2"></i>
-                  <h4 class="font-bold text-gray-800">Industrial Grade</h4>
-                  <p class="text-sm text-gray-600">Harsh environment rated</p>
+                  <i className="fas fa-shield-alt text-blue-600 text-3xl mb-2"></i>
+                  <h4
+                    className="font-bold text-gray-800"
+                    data-translate="productsPage.industrialGrade"
+                  >
+                    Industrial Grade
+                  </h4>
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="productsPage.industrialGradeDesc"
+                  >
+                    Harsh environment rated
+                  </p>
                 </div>
                 <div>
-                  <i class="fas fa-link text-blue-600 text-3xl mb-2"></i>
-                  <h4 class="font-bold text-gray-800">EtherNet/IP</h4>
-                  <p class="text-sm text-gray-600">Native protocol support</p>
+                  <i className="fas fa-link text-blue-600 text-3xl mb-2"></i>
+                  <h4
+                    className="font-bold text-gray-800"
+                    data-translate="productsPage.ethernetIP"
+                  >
+                    EtherNet/IP
+                  </h4>
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="productsPage.ethernetIPDesc"
+                  >
+                    Native protocol support
+                  </p>
                 </div>
                 <div>
-                  <i class="fas fa-sync text-blue-600 text-3xl mb-2"></i>
-                  <h4 class="font-bold text-gray-800">Redundancy</h4>
-                  <p class="text-sm text-gray-600">Network fault tolerance</p>
+                  <i className="fas fa-sync text-blue-600 text-3xl mb-2"></i>
+                  <h4
+                    className="font-bold text-gray-800"
+                    data-translate="productsPage.redundancy"
+                  >
+                    Redundancy
+                  </h4>
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="productsPage.redundancyDesc"
+                  >
+                    Network fault tolerance
+                  </p>
                 </div>
               </div>
             </div>
@@ -608,43 +1242,80 @@ export const ProductsPage = () => {
       </section>
 
       {/* Product Integration Benefits */}
-      <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Why Choose Our Rockwell Integration?</h2>
-            <p class="text-xl text-gray-600">Certified expertise ensures optimal product performance and support</p>
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2
+              className="text-4xl font-bold text-gray-800 mb-4"
+              data-translate="productsPage.integrationTitle"
+            >
+              Why Choose Our Rockwell Integration?
+            </h2>
+            <p
+              className="text-xl text-gray-600"
+              data-translate="productsPage.integrationSubtitle"
+            >
+              Certified expertise ensures optimal product performance and
+              support
+            </p>
           </div>
 
-          <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i class="fas fa-certificate text-primary text-3xl"></i>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
+              <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i className="fas fa-certificate text-primary text-3xl"></i>
               </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-4">Certified Integration</h3>
-              <p class="text-gray-600">
-                Our Silver System Integrator status ensures proper product selection, 
-                configuration, and integration for optimal performance.
+              <h3
+                className="text-xl font-bold text-gray-800 mb-4"
+                data-translate="productsPage.certifiedIntegration"
+              >
+                Certified Integration
+              </h3>
+              <p
+                className="text-gray-600"
+                data-translate="productsPage.certifiedIntegrationDesc"
+              >
+                Our Silver System Integrator status ensures proper product
+                selection, configuration, and integration for optimal
+                performance.
               </p>
             </div>
 
-            <div class="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i class="fas fa-tools text-secondary text-3xl"></i>
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
+              <div className="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i className="fas fa-tools text-secondary text-3xl"></i>
               </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-4">Complete Support</h3>
-              <p class="text-gray-600">
-                From initial design through commissioning and ongoing maintenance, 
-                we provide comprehensive support for all Rockwell products.
+              <h3
+                className="text-xl font-bold text-gray-800 mb-4"
+                data-translate="productsPage.completeSupport"
+              >
+                Complete Support
+              </h3>
+              <p
+                className="text-gray-600"
+                data-translate="productsPage.completeSupportDesc"
+              >
+                From initial design through commissioning and ongoing
+                maintenance, we provide comprehensive support for all Rockwell
+                products.
               </p>
             </div>
 
-            <div class="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div class="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i class="fas fa-handshake text-accent text-3xl"></i>
+            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
+              <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i className="fas fa-handshake text-accent text-3xl"></i>
               </div>
-              <h3 class="text-xl font-bold text-gray-800 mb-4">Warranty & Service</h3>
-              <p class="text-gray-600">
-                All products come with manufacturer warranty plus our additional 
+              <h3
+                className="text-xl font-bold text-gray-800 mb-4"
+                data-translate="productsPage.warrantyService"
+              >
+                Warranty & Service
+              </h3>
+              <p
+                className="text-gray-600"
+                data-translate="productsPage.warrantyServiceDesc"
+              >
+                All products come with manufacturer warranty plus our additional
                 service guarantees and local technical support.
               </p>
             </div>
@@ -653,24 +1324,43 @@ export const ProductsPage = () => {
       </section>
 
       {/* Call to Action */}
-      <section class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
-        <div class="container mx-auto px-6 text-center">
-          <h2 class="text-4xl font-bold mb-4">Ready to Implement Rockwell Automation?</h2>
-          <p class="text-xl mb-8 text-blue-100">
-            Consult with our certified engineers to select the perfect products for your application
+      <section className="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+        <div className="container mx-auto px-6 text-center">
+          <h2
+            className="text-4xl font-bold mb-4"
+            data-translate="productsPage.ctaTitle"
+          >
+            Ready to Implement Rockwell Automation?
+          </h2>
+          <p
+            className="text-xl mb-8 text-blue-100"
+            data-translate="productsPage.ctaSubtitle"
+          >
+            Consult with our certified engineers to select the perfect products
+            for your application
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-colors inline-flex items-center justify-center">
-              <i class="fas fa-phone mr-2"></i>
-              Get Product Consultation
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/contact"
+              className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-colors inline-flex items-center justify-center"
+            >
+              <i className="fas fa-phone mr-2"></i>
+              <span data-translate="productsPage.ctaConsultation">
+                Get Product Consultation
+              </span>
             </a>
-            <a href="/services" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all inline-flex items-center justify-center">
-              <i class="fas fa-cogs mr-2"></i>
-              Integration Services
+            <a
+              href="/services"
+              className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all inline-flex items-center justify-center"
+            >
+              <i className="fas fa-cogs mr-2"></i>
+              <span data-translate="productsPage.ctaServices">
+                Integration Services
+              </span>
             </a>
           </div>
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
