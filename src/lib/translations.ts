@@ -620,6 +620,227 @@ export const translations: { [lang: string]: Translation } = {
       ctaProducts: "Lihat Produk Kami",
     },
 
+    // Products Page - INDONESIAN
+    productsPage: {
+      heroTitle: "Produk Rockwell Automation",
+      heroSubtitle:
+        "Produk otomasi Allen-Bradley berkualitas tinggi yang diintegrasikan dan didukung oleh profesional bersertifikat",
+
+      // Controllers Section
+      controllersBadge: "Kontroler (PLC)",
+      controllersTitle: "Kontroler Allen-Bradley",
+      controllersSubtitle:
+        "Programmable logic controllers terdepan di industri untuk semua aplikasi",
+
+      controlLogixTitle: "ControlLogix",
+      controlLogixDesc:
+        "Kontroler performa tinggi untuk aplikasi kompleks yang memerlukan kemampuan kontrol canggih",
+      compactLogixTitle: "CompactLogix",
+      compactLogixDesc:
+        "Kontroler all-in-one yang kompak, sempurna untuk aplikasi menengah",
+      micro800Title: "Micro800",
+      micro800Desc: "Kontroler entry-level untuk kebutuhan otomasi dasar",
+
+      modularArchitecture: "Arsitektur modular",
+      integratedMotion: "Kontrol motion terintegrasi",
+      advancedNetworking: "Networking canggih",
+      redundancyOptions: "Opsi redundansi",
+      idealApplications: "Aplikasi Ideal:",
+      controlLogixApps:
+        "Sistem manufaktur besar, kontrol proses, mesin kompleks",
+
+      integratedIO: "I/O dan komunikasi terintegrasi",
+      builtInEthernet: "Networking Ethernet built-in",
+      motionCapabilities: "Kemampuan kontrol motion",
+      costEffective: "Solusi hemat biaya",
+      compactLogixApps:
+        "Mesin packaging, material handling, sistem kecil hingga menengah",
+
+      easyProgramming: "Pemrograman mudah",
+      builtInIO: "I/O built-in",
+      ethernetConnectivity: "Konektivitas Ethernet",
+      affordablePricing: "Harga terjangkau",
+      micro800Apps:
+        "Mesin sederhana, peralatan standalone, kontrol proses dasar",
+
+      // Drives Section
+      drivesBadge: "Motor Drives",
+      drivesTitle: "Seri PowerFlex Drive",
+      drivesSubtitle: "AC dan DC drives canggih untuk kontrol motor presisi",
+
+      acDrivesTitle: "AC Drives / Inverter",
+      dcDrivesTitle: "DC Drives & Aplikasi Khusus",
+
+      powerFlex525Title: "PowerFlex 525",
+      powerFlex525Desc:
+        "Drive kompak untuk aplikasi dasar hingga lanjutan dengan fitur keselamatan terintegrasi",
+      powerRange: "Rentang Daya:",
+      powerFlex525Range: "0,4 hingga 22 kW",
+      applications: "Aplikasi:",
+      powerFlex525Apps: "Pompa, kipas, konveyor",
+
+      powerFlex753Title: "PowerFlex 753",
+      powerFlex753Desc:
+        "Drive performa tinggi dengan algoritma kontrol canggih dan networking",
+      powerFlex753Range: "0,4 hingga 2,3 MW",
+      powerFlex753Apps: "Kontrol proses, aplikasi presisi",
+
+      powerFlex755Title: "PowerFlex 755",
+      powerFlex755Desc:
+        "Sistem drive modular untuk aplikasi kompleks yang memerlukan fleksibilitas maksimum",
+      powerFlex755Range: "90 kW hingga 5,7 MW",
+      powerFlex755Apps: "Motor besar, lingkungan keras",
+
+      powerFlexDCTitle: "PowerFlex DC",
+      powerFlexDCDesc:
+        "DC drives performa tinggi untuk aplikasi yang memerlukan kontrol kecepatan dan torsi presisi",
+      regenerativeCapabilities: "Kemampuan regeneratif",
+      fieldWeakening: "Kontrol field weakening",
+      advancedDiagnostics: "Diagnostik canggih",
+
+      powerFlex755TTitle: "PowerFlex 755T",
+      powerFlex755TDesc:
+        "Drives Total Force Technology yang dirancang untuk lingkungan industri keras",
+      enhancedProtection: "Proteksi lingkungan yang ditingkatkan",
+      reducedHarmonic: "Distorsi harmonik berkurang",
+      extendedTemp: "Rentang suhu operasi diperluas",
+
+      driveApplicationsTitle: "Aplikasi Drive",
+      hvacSystems: "Sistem HVAC",
+      pumpControl: "Kontrol Pompa",
+      conveyorSystems: "Sistem Konveyor",
+      compressors: "Kompresor",
+      processControl: "Kontrol Proses",
+      machineTools: "Peralatan Mesin",
+
+      // Motion Control Section
+      motionBadge: "Motion Control",
+      motionTitle: "Sistem Servo Kinetix",
+      motionDesc:
+        "Servo drives dan motor presisi untuk aplikasi motion control yang menuntut. Keluarga Kinetix menyediakan solusi motion terintegrasi dengan performa dan fleksibilitas superior untuk sistem otomasi kompleks.",
+
+      highPerformance: "Performa Tinggi",
+      highPerformanceDesc: "Kecepatan, akurasi, dan repeatability luar biasa",
+      integratedControl: "Kontrol Terintegrasi",
+      integratedControlDesc: "Integrasi mulus dengan sistem ControlLogix",
+      easyConfiguration: "Konfigurasi Mudah",
+      easyConfigurationDesc: "Setup dan commissioning tools yang sederhana",
+
+      kinetixRangeTitle: "Jajaran Produk Kinetix",
+      servoDrives: "Servo Drives",
+      servoDrivesDesc: "Drives seri Kinetix 5700, 5500, 350",
+      servoMotors: "Servo Motors",
+      servoMotorsDesc: "Opsi servo motor rotary dan linear",
+      motionControllers: "Motion Controllers",
+      motionControllersDesc: "Kontrol motion standalone dan terintegrasi",
+      actuators: "Aktuator",
+      actuatorsDesc: "Silinder listrik dan aktuator linear",
+
+      // HMI Section
+      hmiBadge: "Antarmuka Operator & Visualisasi",
+      hmiTitle: "Solusi PanelView & FactoryTalk",
+      hmiSubtitle:
+        "Antarmuka operator intuitif dan software visualisasi yang powerful",
+
+      panelViewTitle: "Antarmuka Operator PanelView",
+      panelView5000Title: "PanelView 5000",
+      panelView5000Desc:
+        "Terminal grafis canggih dengan display multi-touch dan performa yang ditingkatkan",
+      displaySizes: 'Display 4" hingga 15"',
+      multiTouch: "Kemampuan multi-touch",
+      ethernetConn: "Konektivitas Ethernet",
+      industrialRated: "Rating industri",
+
+      panelViewPlus7Title: "PanelView Plus 7",
+      panelViewPlus7Desc:
+        "Terminal hemat biaya dengan komunikasi built-in dan fleksibilitas aplikasi",
+      multipleScreens: "Berbagai ukuran layar tersedia",
+      webBrowser: "Kemampuan web browser",
+      recipeManagement: "Manajemen resep",
+
+      factoryTalkTitle: "Software FactoryTalk",
+      factoryTalkSETitle: "FactoryTalk View SE",
+      factoryTalkSEDesc:
+        "Software HMI/SCADA scalable untuk visualisasi dan kontrol seluruh pabrik",
+      realtimeTrending: "Trending real-time dan historis",
+      alarmManagement: "Sistem manajemen alarm",
+      multiUserSecurity: "Sistem keamanan multi-user",
+      reportingTools: "Tools pelaporan komprehensif",
+
+      visualizationCapabilities: "Kemampuan Visualisasi",
+      richGraphics: "Grafis Kaya",
+      remoteAccess: "Akses Remote",
+      dataLogging: "Data Logging",
+      analytics: "Analitik",
+      cloudConnectivity: "Konektivitas Cloud",
+      customApplications: "Aplikasi Kustom",
+
+      // Networking Section
+      networkingBadge: "Industrial Networking",
+      networkingTitle: "Switch Ethernet Stratix",
+      networkingSubtitle:
+        "Solusi networking industri yang tangguh untuk komunikasi yang andal",
+
+      managedSwitchesTitle: "Managed Switches",
+      advancedFeatures: "Fitur Canggih",
+      vlanSupport: "• Dukungan VLAN dan manajemen traffic",
+      qosPrioritization: "• Prioritas Quality of Service (QoS)",
+      networkRedundancy: "• Protokol redundansi jaringan",
+      snmpMonitoring: "• Monitoring dan diagnostik SNMP",
+
+      securityFeatures: "Fitur Keamanan",
+      portAccess: "• Kontrol akses berbasis port",
+      macFiltering: "• Filtering alamat MAC",
+      industrialFirewall: "• Kemampuan firewall industri",
+      secureRemote: "• Manajemen remote yang aman",
+
+      unmanagedSwitchesTitle: "Unmanaged Switches",
+      simpleReliable: "Sederhana & Andal",
+      plugAndPlay: "• Operasi plug-and-play",
+      industrialTemp: "• Rating suhu industri",
+      dinRailMounting: "• Opsi mounting DIN rail",
+      costEffectiveNet: "• Networking hemat biaya",
+
+      unmanagedApps: "Aplikasi",
+      smallControlSystems: "• Sistem kontrol kecil",
+      deviceLevel: "• Networking tingkat perangkat",
+      machineLevel: "• Komunikasi tingkat mesin",
+      basicEthernet: "• Konektivitas Ethernet dasar",
+
+      gigabitSpeed: "Performa Tinggi",
+      gigabitSpeedDesc: "Kecepatan Gigabit Ethernet",
+      industrialGrade: "Grade Industri",
+      industrialGradeDesc: "Rating lingkungan keras",
+      ethernetIP: "EtherNet/IP",
+      ethernetIPDesc: "Dukungan protokol native",
+      redundancy: "Redundansi",
+      redundancyDesc: "Toleransi kesalahan jaringan",
+
+      // Integration Benefits Section
+      integrationTitle: "Mengapa Memilih Integrasi Rockwell Kami?",
+      integrationSubtitle:
+        "Keahlian bersertifikat memastikan performa dan dukungan produk optimal",
+
+      certifiedIntegration: "Integrasi Bersertifikat",
+      certifiedIntegrationDesc:
+        "Status Silver System Integrator kami memastikan pemilihan, konfigurasi, dan integrasi produk yang tepat untuk performa optimal.",
+
+      completeSupport: "Dukungan Lengkap",
+      completeSupportDesc:
+        "Dari desain awal hingga commissioning dan pemeliharaan berkelanjutan, kami menyediakan dukungan komprehensif untuk semua produk Rockwell.",
+
+      warrantyService: "Garansi & Layanan",
+      warrantyServiceDesc:
+        "Semua produk dilengkapi dengan garansi pabrikan plus garansi layanan tambahan kami dan dukungan teknis lokal.",
+
+      // CTA Section
+      ctaTitle: "Siap Mengimplementasikan Rockwell Automation?",
+      ctaSubtitle:
+        "Konsultasikan dengan insinyur bersertifikat kami untuk memilih produk yang sempurna untuk aplikasi Anda",
+      ctaConsultation: "Dapatkan Konsultasi Produk",
+      ctaServices: "Layanan Integrasi",
+    },
+
     // Industries Section
     industries: {
       title: "Industri yang Kami Layani",
