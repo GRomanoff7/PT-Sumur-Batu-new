@@ -38,9 +38,9 @@ export const Homepage = () => {
         {/* Gradient Overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10"></div>
 
-        {/* Content positioned on LEFT */} 
+        {/* Content positioned on LEFT */}
         <div className="container mx-auto px-6 relative z-20">
-          <div className="max-w-2xl"> 
+          <div className="max-w-2xl">
             <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
               <i className="fas fa-award text-accent mr-2"></i>
               <span className="text-sm font-medium" data-translate="hero.badge">
@@ -271,126 +271,210 @@ export const Homepage = () => {
       </section>
 
       {/* Key Services Overview */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4"
               data-translate="services.title"
             >
               Our Core Services
             </h2>
             <p
-              className="text-xl text-gray-600"
+              className="text-xl text-gray-600 max-w-2xl mx-auto"
               data-translate="services.subtitle"
             >
               Comprehensive automation solutions tailored to your industry needs
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                <i className="fas fa-drafting-compass text-primary text-2xl"></i>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src="https://mgx-backend-cdn.metadl.com/generate/images/873261/2025-12-30/fef38393-42b8-43b0-885f-f46a210eb608.png"
+                  alt="Control System Design"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                  <h3
+                    className="text-2xl font-bold mb-2 leading-tight"
+                    data-translate="services.controlSystem.title"
+                  >
+                    Control System Design
+                  </h3>
+                </div>
               </div>
-              <h3
-                className="text-xl font-semibold text-gray-800 mb-4"
-                data-translate="services.controlSystem.title"
-              >
-                Control System Design
-              </h3>
-              <p
-                className="text-gray-600 mb-4"
-                data-translate="services.controlSystem.description"
-              >
-                Custom control system architecture and engineering design for
-                optimal performance.
-              </p>
-              <a
-                href="/services"
-                className="text-primary font-medium inline-flex items-center"
-              >
-                <span data-translate="services.learnMore">Learn More</span>{" "}
-                <i className="fas fa-arrow-right ml-2 text-sm"></i>
-              </a>
+              <div className="p-6">
+                <p
+                  className="text-gray-600 leading-relaxed mb-4"
+                  data-translate="services.controlSystem.description"
+                >
+                  Custom control system architecture and engineering design for
+                  optimal performance.
+                </p>
+                <a
+                  href="/services"
+                  className="inline-flex items-center text-primary font-semibold group-hover:gap-3 transition-all duration-300"
+                >
+                  <span data-translate="services.learnMore">Learn More</span>
+                  <svg
+                    className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
-                <i className="fas fa-code text-secondary text-2xl"></i>
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src="https://mgx-backend-cdn.metadl.com/generate/images/873261/2025-12-30/f6172df2-d435-4635-b2a7-9df83e012da2.png"
+                  alt="PLC & HMI/SCADA Programming"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                  <h3
+                    className="text-2xl font-bold mb-2 leading-tight"
+                    data-translate="services.plcProgramming.title"
+                  >
+                    PLC & HMI/SCADA Programming
+                  </h3>
+                </div>
               </div>
-              <h3
-                className="text-xl font-semibold text-gray-800 mb-4"
-                data-translate="services.plcProgramming.title"
-              >
-                PLC & HMI/SCADA Programming
-              </h3>
-              <p
-                className="text-gray-600 mb-4"
-                data-translate="services.plcProgramming.description"
-              >
-                Advanced programming solutions for Allen-Bradley controllers and
-                visualization systems.
-              </p>
-              <a
-                href="/services"
-                className="text-primary font-medium inline-flex items-center"
-              >
-                <span data-translate="services.learnMore">Learn More</span>{" "}
-                <i className="fas fa-arrow-right ml-2 text-sm"></i>
-              </a>
+              <div className="p-6">
+                <p
+                  className="text-gray-600 leading-relaxed mb-4"
+                  data-translate="services.plcProgramming.description"
+                >
+                  Advanced programming solutions for Allen-Bradley controllers
+                  and visualization systems.
+                </p>
+                <a
+                  href="/services"
+                  className="inline-flex items-center text-primary font-semibold group-hover:gap-3 transition-all duration-300"
+                >
+                  <span data-translate="services.learnMore">Learn More</span>
+                  <svg
+                    className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mb-6">
-                <i className="fas fa-industry text-accent text-2xl"></i>
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src="https://mgx-backend-cdn.metadl.com/generate/images/873261/2025-12-30/878da9c1-84aa-46fa-ac54-e9ae7f8610bc.png"
+                  alt="Control Panel & MCC Manufacturing"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                  <h3
+                    className="text-2xl font-bold mb-2 leading-tight"
+                    data-translate="services.controlPanel.title"
+                  >
+                    Control Panel & MCC Manufacturing
+                  </h3>
+                </div>
               </div>
-              <h3
-                className="text-xl font-semibold text-gray-800 mb-4"
-                data-translate="services.controlPanel.title"
-              >
-                Control Panel & MCC Manufacturing
-              </h3>
-              <p
-                className="text-gray-600 mb-4"
-                data-translate="services.controlPanel.description"
-              >
-                Cubic Modular Systems and custom panel fabrication with quality
-                assurance.
-              </p>
-              <a
-                href="/services"
-                className="text-primary font-medium inline-flex items-center"
-              >
-                <span data-translate="services.learnMore">Learn More</span>{" "}
-                <i className="fas fa-arrow-right ml-2 text-sm"></i>
-              </a>
+              <div className="p-6">
+                <p
+                  className="text-gray-600 leading-relaxed mb-4"
+                  data-translate="services.controlPanel.description"
+                >
+                  Cubic Modular Systems and custom panel fabrication with
+                  quality assurance.
+                </p>
+                <a
+                  href="/services"
+                  className="inline-flex items-center text-primary font-semibold group-hover:gap-3 transition-all duration-300"
+                >
+                  <span data-translate="services.learnMore">Learn More</span>
+                  <svg
+                    className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
-                <i className="fas fa-wrench text-green-600 text-2xl"></i>
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src="https://mgx-backend-cdn.metadl.com/generate/images/873261/2025-12-30/e64c490d-f7e7-4b94-b900-16ec7ec1bcbd.png"
+                  alt="Technical Support & Commissioning"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                  <h3
+                    className="text-2xl font-bold mb-2 leading-tight"
+                    data-translate="services.technicalSupport.title"
+                  >
+                    Technical Support & Commissioning
+                  </h3>
+                </div>
               </div>
-              <h3
-                className="text-xl font-semibold text-gray-800 mb-4"
-                data-translate="services.technicalSupport.title"
-              >
-                Technical Support & Commissioning
-              </h3>
-              <p
-                className="text-gray-600 mb-4"
-                data-translate="services.technicalSupport.description"
-              >
-                Comprehensive support services including troubleshooting and
-                system commissioning.
-              </p>
-              <a
-                href="/services"
-                className="text-primary font-medium inline-flex items-center"
-              >
-                <span data-translate="services.learnMore">Learn More</span>{" "}
-                <i className="fas fa-arrow-right ml-2 text-sm"></i>
-              </a>
+              <div className="p-6">
+                <p
+                  className="text-gray-600 leading-relaxed mb-4"
+                  data-translate="services.technicalSupport.description"
+                >
+                  Comprehensive support services including troubleshooting and
+                  system commissioning.
+                </p>
+                <a
+                  href="/services"
+                  className="inline-flex items-center text-primary font-semibold group-hover:gap-3 transition-all duration-300"
+                >
+                  <span data-translate="services.learnMore">Learn More</span>
+                  <svg
+                    className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
