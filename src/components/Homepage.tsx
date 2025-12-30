@@ -3,63 +3,48 @@ export const Homepage = () => {
   const customers = [
     {
       name: "PT Nestle Indonesia",
-      logo: "https://share.google/lwG4ajcdDsRWAyRUv",
-      url: "https://share.google/lwG4ajcdDsRWAyRUv",
+      logo: "/static/logo/nestle.jpeg",
+      url: "https://www.nestle.co.id",
     },
     {
-      name: "PT Pupuk Kalimantan Timur",
-      logo: "https://logo.clearbit.com/pupukkaltim.com",
+      name: "PT Sorini Agro Asia Corporindo",
+      logo: "/static/logo/sorini.jpeg",
       url: "https://pupukkaltim.com",
     },
     {
-      name: "PT Krakatau Steel",
-      logo: "https://logo.clearbit.com/krakatausteel.com",
+      name: "PT Surya Pamenang",
+      logo: "/static/logo/surya_pamenang.png",
       url: "https://krakatausteel.com",
     },
     {
-      name: "PT Petrokimia Gresik",
-      logo: "https://logo.clearbit.com/petrokimia-gresik.com",
+      name: "PT Fajar Surya Wisesa",
+      logo: "/static/logo/fajar_surya.png",
       url: "https://petrokimia-gresik.com",
     },
     {
-      name: "PT Freeport Indonesia",
-      logo: "https://logo.clearbit.com/ptfi.co.id",
+      name: "PT Amman Mineral Nusa Tenggara",
+      logo: "/static/logo/amman.jpeg",
       url: "https://ptfi.co.id",
     },
     {
-      name: "PT Indocement",
-      logo: "https://logo.clearbit.com/indocement.co.id",
+      name: "PT Suez Water Treatment Indonesia",
+      logo: "/static/logo/suez.png",
       url: "https://indocement.co.id",
     },
     {
-      name: "PT Holcim Indonesia",
-      logo: "https://logo.clearbit.com/holcim.co.id",
+      name: "PT. Tirta Lyonnaise Medan",
+      logo: "/static/logos/holcim.svg",
       url: "https://holcim.co.id",
     },
     {
-      name: "PT Unilever Indonesia",
-      logo: "https://logo.clearbit.com/unilever.co.id",
+      name: "PT Tumbakmas Inti Mulia",
+      logo: "/static/logo/tumbakmas.jpeg",
       url: "https://unilever.co.id",
     },
     {
-      name: "PT Astra International",
-      logo: "https://logo.clearbit.com/astra.co.id",
+      name: "PT Lintech Duta Pratama",
+      logo: "/static/logo/lintech.jpeg",
       url: "https://astra.co.id",
-    },
-    {
-      name: "PT Pertamina",
-      logo: "https://logo.clearbit.com/pertamina.com",
-      url: "https://pertamina.com",
-    },
-    {
-      name: "PT PLN",
-      logo: "https://logo.clearbit.com/pln.co.id",
-      url: "https://pln.co.id",
-    },
-    {
-      name: "PT Telkom Indonesia",
-      logo: "https://logo.clearbit.com/telkom.co.id",
-      url: "https://telkom.co.id",
     },
   ];
 
