@@ -670,13 +670,13 @@ export const Homepage = () => {
                     href={customer.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="h-16 flex items-center justify-center w-full hover:opacity-80 transition-opacity group"
+                    className="flex items-center justify-center w-full hover:opacity-80 transition-opacity"
                     title={customer.name}
                   >
                     <img
                       src={customer.logo}
                       alt={customer.name}
-                      className="max-h-12 max-w-[140px] w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                      className="h-14 w-auto object-contain transition-all duration-300"
                     />
                   </a>
                 </div>
@@ -688,13 +688,13 @@ export const Homepage = () => {
                     href={customer.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="h-16 flex items-center justify-center w-full hover:opacity-80 transition-opacity group"
+                    className="flex items-center justify-center w-full hover:opacity-80 transition-opacity"
                     title={customer.name}
                   >
                     <img
                       src={customer.logo}
                       alt={customer.name}
-                      className="max-h-12 max-w-[140px] w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                      className="h-14 w-auto object-contain transition-all duration-300"
                     />
                   </a>
                 </div>
