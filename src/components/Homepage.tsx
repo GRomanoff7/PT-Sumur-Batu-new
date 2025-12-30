@@ -594,7 +594,7 @@ export const Homepage = () => {
         </div>
       </section>
 
-      {/* Our Valued Customers */}
+      {/* Our Valued Customers - Infinite Scroll Animation */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
@@ -612,24 +612,35 @@ export const Homepage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
-            {[...Array(6)].map((_, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow"
-              >
-                <div className="h-16 flex items-center justify-center">
-                  <div className="w-full h-12 bg-gray-200 rounded flex items-center justify-center">
+          <div className="logo-scroll-container py-8">
+            <div className="logo-scroll-track">
+              {/* First set of logos */}
+              {[...Array(12)].map((_, index) => (
+                <div key={`logo-1-${index}`} className="logo-item">
+                  <div className="h-16 flex items-center justify-center w-full">
                     <span
                       className="text-gray-500 text-sm font-medium"
                       data-translate="customers.clientLogo"
                     >
-                      Client Logo
+                      Client Logo {index + 1}
                     </span>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {[...Array(12)].map((_, index) => (
+                <div key={`logo-2-${index}`} className="logo-item">
+                  <div className="h-16 flex items-center justify-center w-full">
+                    <span
+                      className="text-gray-500 text-sm font-medium"
+                      data-translate="customers.clientLogo"
+                    >
+                      Client Logo {index + 1}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
