@@ -2,58 +2,63 @@ export const Homepage = () => {
   // Customer data - easily customizable
   const customers = [
     {
-      name: "PT Semen Indonesia",
-      url: "https://semenindonesia.com",
+      name: "PT Nestle Indonesia",
+      logo: "https://share.google/lwG4ajcdDsRWAyRUv",
+      url: "https://share.google/lwG4ajcdDsRWAyRUv",
     },
     {
       name: "PT Pupuk Kalimantan Timur",
-      logo: "/images/PupukKaltim.jpg",
+      logo: "https://logo.clearbit.com/pupukkaltim.com",
       url: "https://pupukkaltim.com",
     },
     {
       name: "PT Krakatau Steel",
-      logo: "/images/KrakatauSteel.jpg",
+      logo: "https://logo.clearbit.com/krakatausteel.com",
       url: "https://krakatausteel.com",
     },
     {
       name: "PT Petrokimia Gresik",
-      logo: "/images/Petrokimia.jpg",
+      logo: "https://logo.clearbit.com/petrokimia-gresik.com",
       url: "https://petrokimia-gresik.com",
     },
     {
       name: "PT Freeport Indonesia",
-      logo: "/images/Freeport.jpg",
+      logo: "https://logo.clearbit.com/ptfi.co.id",
       url: "https://ptfi.co.id",
     },
     {
       name: "PT Indocement",
-      logo: "/static/images/customers/indocement.png",
+      logo: "https://logo.clearbit.com/indocement.co.id",
       url: "https://indocement.co.id",
     },
     {
       name: "PT Holcim Indonesia",
-      logo: "/static/images/customers/holcim.png",
+      logo: "https://logo.clearbit.com/holcim.co.id",
       url: "https://holcim.co.id",
     },
     {
       name: "PT Unilever Indonesia",
-      logo: "/static/images/customers/unilever.png",
+      logo: "https://logo.clearbit.com/unilever.co.id",
       url: "https://unilever.co.id",
     },
     {
       name: "PT Astra International",
-      logo: "/images/Astra.jpg",
+      logo: "https://logo.clearbit.com/astra.co.id",
       url: "https://astra.co.id",
     },
     {
       name: "PT Pertamina",
-      logo: "/static/images/customers/pertamina.png",
+      logo: "https://logo.clearbit.com/pertamina.com",
       url: "https://pertamina.com",
     },
-    { name: "PT PLN", logo: "/images/PLN.jpg", url: "https://pln.co.id" },
+    {
+      name: "PT PLN",
+      logo: "https://logo.clearbit.com/pln.co.id",
+      url: "https://pln.co.id",
+    },
     {
       name: "PT Telkom Indonesia",
-      logo: "/images/Telkom.jpg",
+      logo: "https://logo.clearbit.com/telkom.co.id",
       url: "https://telkom.co.id",
     },
   ];
