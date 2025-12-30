@@ -1,4 +1,63 @@
 export const Homepage = () => {
+  // Customer data - easily customizable
+  const customers = [
+    {
+      name: "PT Semen Indonesia",
+      url: "https://semenindonesia.com",
+    },
+    {
+      name: "PT Pupuk Kalimantan Timur",
+      logo: "/images/PupukKaltim.jpg",
+      url: "https://pupukkaltim.com",
+    },
+    {
+      name: "PT Krakatau Steel",
+      logo: "/images/KrakatauSteel.jpg",
+      url: "https://krakatausteel.com",
+    },
+    {
+      name: "PT Petrokimia Gresik",
+      logo: "/images/Petrokimia.jpg",
+      url: "https://petrokimia-gresik.com",
+    },
+    {
+      name: "PT Freeport Indonesia",
+      logo: "/images/Freeport.jpg",
+      url: "https://ptfi.co.id",
+    },
+    {
+      name: "PT Indocement",
+      logo: "/static/images/customers/indocement.png",
+      url: "https://indocement.co.id",
+    },
+    {
+      name: "PT Holcim Indonesia",
+      logo: "/static/images/customers/holcim.png",
+      url: "https://holcim.co.id",
+    },
+    {
+      name: "PT Unilever Indonesia",
+      logo: "/static/images/customers/unilever.png",
+      url: "https://unilever.co.id",
+    },
+    {
+      name: "PT Astra International",
+      logo: "/images/Astra.jpg",
+      url: "https://astra.co.id",
+    },
+    {
+      name: "PT Pertamina",
+      logo: "/static/images/customers/pertamina.png",
+      url: "https://pertamina.com",
+    },
+    { name: "PT PLN", logo: "/images/PLN.jpg", url: "https://pln.co.id" },
+    {
+      name: "PT Telkom Indonesia",
+      logo: "/images/Telkom.jpg",
+      url: "https://telkom.co.id",
+    },
+  ];
+
   return (
     <div>
       {/* Hero Section with Auto-Sliding Background */}
@@ -594,7 +653,7 @@ export const Homepage = () => {
         </div>
       </section>
 
-      {/* Our Valued Customers - Infinite Scroll Animation */}
+      {/* Our Valued Customers - Infinite Scroll Animation with Clickable Logos */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
@@ -615,29 +674,39 @@ export const Homepage = () => {
           <div className="logo-scroll-container py-8">
             <div className="logo-scroll-track">
               {/* First set of logos */}
-              {[...Array(12)].map((_, index) => (
+              {customers.map((customer, index) => (
                 <div key={`logo-1-${index}`} className="logo-item">
-                  <div className="h-16 flex items-center justify-center w-full">
-                    <span
-                      className="text-gray-500 text-sm font-medium"
-                      data-translate="customers.clientLogo"
-                    >
-                      Client Logo {index + 1}
-                    </span>
-                  </div>
+                  <a
+                    href={customer.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="h-16 flex items-center justify-center w-full hover:opacity-80 transition-opacity group"
+                    title={customer.name}
+                  >
+                    <img
+                      src={customer.logo}
+                      alt={customer.name}
+                      className="max-h-12 max-w-[140px] w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                    />
+                  </a>
                 </div>
               ))}
               {/* Duplicate set for seamless loop */}
-              {[...Array(12)].map((_, index) => (
+              {customers.map((customer, index) => (
                 <div key={`logo-2-${index}`} className="logo-item">
-                  <div className="h-16 flex items-center justify-center w-full">
-                    <span
-                      className="text-gray-500 text-sm font-medium"
-                      data-translate="customers.clientLogo"
-                    >
-                      Client Logo {index + 1}
-                    </span>
-                  </div>
+                  <a
+                    href={customer.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="h-16 flex items-center justify-center w-full hover:opacity-80 transition-opacity group"
+                    title={customer.name}
+                  >
+                    <img
+                      src={customer.logo}
+                      alt={customer.name}
+                      className="max-h-12 max-w-[140px] w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                    />
+                  </a>
                 </div>
               ))}
             </div>
