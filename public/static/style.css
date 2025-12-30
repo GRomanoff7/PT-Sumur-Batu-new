@@ -78,11 +78,9 @@
 /* Language switcher button styles */
 .lang-btn {
   cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.lang-btn:hover {
-  transform: translateY(-1px);
+  transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 /* Smooth transitions for language changes */

@@ -2,7 +2,6 @@
 (function () {
   "use strict";
 
-  // Import translations from src/lib/translations.ts
   const translations = {
     en: {
       nav: {
@@ -78,8 +77,6 @@
         },
         learnMore: "Learn More",
       },
-
-      // Services Page - COMPLETE
       servicesPage: {
         heroTitle: "Our Services",
         heroSubtitle:
@@ -183,149 +180,19 @@
         ctaConsultation: "Get Free Consultation",
         ctaProducts: "View Our Products",
       },
-
-      // Industries Page - COMPLETE
       industries: {
         title: "Industries We Serve",
         subtitle: "Expertise across diverse industrial sectors",
-        heroTitle: "Industries We Serve",
-        heroSubtitle:
-          "Comprehensive automation solutions across diverse industrial sectors with proven expertise and results",
         waterTreatment: "Water Treatment",
-        waterTreatmentFull: "Water & Wastewater Treatment",
-        waterTreatmentDesc:
-          "Advanced automation solutions for water and wastewater treatment facilities, ensuring efficient operations, regulatory compliance, and optimal resource utilization. Our systems provide real-time monitoring and control of critical processes.",
-        processControlSystems: "Process Control Systems",
-        processControlSystemsDesc:
-          "Automated control of filtration, chemical dosing, and treatment processes",
-        scadaIntegration: "SCADA Integration",
-        scadaIntegrationDesc:
-          "Centralized monitoring and control of multiple treatment facilities",
-        complianceReporting: "Compliance Reporting",
-        complianceReportingDesc:
-          "Automated data collection and reporting for regulatory compliance",
-        filtrationSystems: "Filtration Systems",
-        chemicalDosing: "Chemical Dosing",
-        qualityMonitoring: "Quality Monitoring",
-        wasteManagement: "Waste Management",
         pulpPaper: "Pulp and Paper",
-        pulpPaperFull: "Pulp & Paper Manufacturing",
-        pulpPaperDesc:
-          "Comprehensive automation solutions for pulp and paper production facilities, from wood preparation to final product packaging. Our systems optimize production efficiency, quality control, and resource utilization while ensuring environmental compliance.",
-        processControlAreas: "Process Control Areas",
-        woodPreparation: "Wood Preparation",
-        woodPreparationDesc: "Chipping and screening automation",
-        pulpProcessing: "Pulp Processing",
-        pulpProcessingDesc: "Digester and bleaching control",
-        paperMachine: "Paper Machine",
-        paperMachineDesc: "Formation and pressing systems",
-        finishingPackaging: "Finishing & Packaging",
-        finishingPackagingDesc: "Winding and cutting control",
-        productionOptimization: "Production Optimization",
-        productionOptimizationDesc:
-          "Maximizing throughput while maintaining quality standards",
-        processControl: "Process Control",
-        processControlDesc: "Temperature, pressure, and flow control systems",
-        environmentalControls: "Environmental Controls",
-        environmentalControlsDesc:
-          "Emission monitoring and waste reduction systems",
         metalIndustry: "Metal Industry",
-        metalIndustryFull: "Metal Processing & Manufacturing",
-        metalIndustryDesc:
-          "Advanced automation for steel, aluminum, and other metal processing operations",
-        smeltingRefining: "Smelting & Refining",
-        furnaceTempControl: "Furnace temperature control",
-        alloyComposition: "Alloy composition monitoring",
-        safetyInterlocks: "Safety interlock systems",
-        emissionControl: "Emission control systems",
-        rollingForming: "Rolling & Forming",
-        rollGapPositioning: "Roll gap positioning",
-        speedSync: "Speed synchronization",
-        thicknessControl: "Thickness control",
-        qualityInspection: "Quality inspection",
-        cuttingFinishing: "Cutting & Finishing",
-        precisionCutting: "Precision cutting systems",
-        surfaceTreatment: "Surface treatment control",
-        packagingAutomation: "Packaging automation",
-        inventoryManagement: "Inventory management",
         mining: "Mining",
-        miningFull: "Mining & Mineral Processing",
-        miningDesc:
-          "Robust automation systems designed for harsh mining environments, from extraction to processing. Our solutions enhance safety, productivity, and operational efficiency while meeting stringent environmental and safety standards.",
-        safetySystems: "Safety Systems",
-        materialHandling: "Material Handling",
-        crushingGrinding: "Crushing & Grinding",
-        separationSystems: "Separation Systems",
-        dewatering: "Dewatering",
-        processMonitoring: "Process Monitoring",
-        miningApplications: "Mining Applications",
-        extractionTransport: "Extraction & Transportation",
-        extractionTransportDesc:
-          "Conveyor systems, crushers, and material handling automation",
-        processingRefining: "Processing & Refining",
-        processingRefiningDesc:
-          "Flotation, grinding, and separation process control",
-        environmentalControl: "Environmental Control",
-        environmentalControlDesc:
-          "Dust suppression, water treatment, and waste management",
-        additionalIndustries: "Additional Industries",
-        additionalIndustriesDesc:
-          "Expanding our expertise across diverse industrial sectors",
         processPlants: "Process Plants",
-        processPlantsFull:
-          "Chemical, food, and pharmaceutical processing automation",
-        batchProcessing: "Batch processing control",
-        recipeManagement: "Recipe management",
-        qualityAssurance: "Quality assurance systems",
-        regulatoryCompliance: "Regulatory compliance",
-        materialHandlingFull: "Warehouse and distribution center automation",
-        conveyorSystems: "Conveyor systems",
-        sortingRouting: "Sorting and routing",
-        inventoryTracking: "Inventory tracking",
-        automatedStorage: "Automated storage",
-        consumerGoods: "Consumer Goods",
-        consumerGoodsFull:
-          "Manufacturing machinery automation for consumer products",
-        productionLine: "Production line control",
-        packagingAuto: "Packaging automation",
-        traceability: "Traceability systems",
+        materialHandling: "Material Handling",
         powerPlant: "Power Plant",
-        powerPlantFull: "Power generation and distribution system automation",
-        turbineControl: "Turbine control systems",
-        loadDispatch: "Load dispatch automation",
-        protectionSystems: "Protection systems",
-        gridSync: "Grid synchronization",
         printing: "Printing",
-        printingFull: "Modern printing press automation and control systems",
-        webTension: "Web tension control",
-        registration: "Registration systems",
-        colorManagement: "Color management",
-        foodBeverage: "Food & Beverage",
-        foodBeverageFull: "Hygienic automation solutions for food processing",
-        cipSystems: "CIP systems",
-        temperatureControl: "Temperature control",
-        batchTracking: "Batch tracking",
-        safetyCompliance: "Safety compliance",
-        whyChooseUs: "Why Industries Choose Us",
-        whyChooseUsDesc:
-          "Proven expertise and results across all industrial sectors",
-        certifiedExpertise: "Certified Expertise",
-        certifiedExpertiseDesc:
-          "Rockwell Automation Silver System Integrator with proven industry knowledge",
-        experiencedTeam: "Experienced Team",
-        experiencedTeamDesc:
-          "30+ professionals with deep understanding of industrial processes",
-        longTermPartnership: "Long-term Partnership",
-        longTermPartnershipDesc:
-          "Committed to ongoing support and system optimization",
-        readyToAutomate: "Ready to Automate Your Industry?",
-        readyToAutomateDesc:
-          "Contact our industry experts to discuss your specific automation requirements",
-        discussProject: "Discuss Your Project",
-        viewServices: "View Our Services",
+        exploreAll: "Explore All Industries",
       },
-
-      // Products Page - COMPLETE
       productsPage: {
         heroTitle: "Rockwell Automation Products",
         heroSubtitle:
@@ -507,7 +374,6 @@
         ctaConsultation: "Get Product Consultation",
         ctaServices: "Integration Services",
       },
-
       about: {
         heroTitle: "About PT Sumur Batu",
         heroSubtitle:
@@ -696,8 +562,6 @@
         email: "SumurBatu@gmail.com",
       },
     },
-
-    // INDONESIAN TRANSLATIONS
     id: {
       nav: {
         home: "Beranda",
@@ -772,8 +636,6 @@
         },
         learnMore: "Pelajari Lebih Lanjut",
       },
-
-      // Services Page - INDONESIAN COMPLETE
       servicesPage: {
         heroTitle: "Layanan Kami",
         heroSubtitle:
@@ -810,7 +672,7 @@
         motionControlDesc: "Sistem Servo Kinetix",
         advancedProgramming: "Pemrograman Lanjutan",
         advancedProgrammingDesc:
-          "Ladder logic, structured text, dan function blocks",
+          "Ladder logic, structured text, and function blocks",
         systemIntegration: "Integrasi Sistem",
         systemIntegrationDesc: "Konektivitas mulus antara semua komponen",
         testingDebugging: "Testing & Debugging",
@@ -878,19 +740,14 @@
         ctaConsultation: "Konsultasi Gratis",
         ctaProducts: "Lihat Produk Kami",
       },
-
-      // Products Page - INDONESIAN COMPLETE
       productsPage: {
         heroTitle: "Produk Rockwell Automation",
         heroSubtitle:
           "Produk otomasi Allen-Bradley berkualitas tinggi yang diintegrasikan dan didukung oleh profesional bersertifikat",
-
-        // Controllers Section
         controllersBadge: "Kontroler (PLC)",
         controllersTitle: "Kontroler Allen-Bradley",
         controllersSubtitle:
           "Programmable logic controllers terdepan di industri untuk semua aplikasi",
-
         controlLogixTitle: "ControlLogix",
         controlLogixDesc:
           "Kontroler performa tinggi untuk aplikasi kompleks yang memerlukan kemampuan kontrol canggih",
@@ -899,7 +756,6 @@
           "Kontroler all-in-one yang kompak, sempurna untuk aplikasi menengah",
         micro800Title: "Micro800",
         micro800Desc: "Kontroler entry-level untuk kebutuhan otomasi dasar",
-
         modularArchitecture: "Arsitektur modular",
         integratedMotion: "Kontrol motion terintegrasi",
         advancedNetworking: "Networking canggih",
@@ -907,29 +763,23 @@
         idealApplications: "Aplikasi Ideal:",
         controlLogixApps:
           "Sistem manufaktur besar, kontrol proses, mesin kompleks",
-
         integratedIO: "I/O dan komunikasi terintegrasi",
         builtInEthernet: "Networking Ethernet built-in",
         motionCapabilities: "Kemampuan kontrol motion",
         costEffective: "Solusi hemat biaya",
         compactLogixApps:
           "Mesin packaging, material handling, sistem kecil hingga menengah",
-
         easyProgramming: "Pemrograman mudah",
         builtInIO: "I/O built-in",
         ethernetConnectivity: "Konektivitas Ethernet",
         affordablePricing: "Harga terjangkau",
         micro800Apps:
           "Mesin sederhana, peralatan standalone, kontrol proses dasar",
-
-        // Drives Section
         drivesBadge: "Motor Drives",
         drivesTitle: "Seri PowerFlex Drive",
         drivesSubtitle: "AC dan DC drives canggih untuk kontrol motor presisi",
-
         acDrivesTitle: "AC Drives / Inverter",
         dcDrivesTitle: "DC Drives & Aplikasi Khusus",
-
         powerFlex525Title: "PowerFlex 525",
         powerFlex525Desc:
           "Drive kompak untuk aplikasi dasar hingga lanjutan dengan fitur keselamatan terintegrasi",
@@ -937,33 +787,28 @@
         powerFlex525Range: "0,4 hingga 22 kW",
         applications: "Aplikasi:",
         powerFlex525Apps: "Pompa, kipas, konveyor",
-
         powerFlex753Title: "PowerFlex 753",
         powerFlex753Desc:
           "Drive performa tinggi dengan algoritma kontrol canggih dan networking",
         powerFlex753Range: "0,4 hingga 2,3 MW",
         powerFlex753Apps: "Kontrol proses, aplikasi presisi",
-
         powerFlex755Title: "PowerFlex 755",
         powerFlex755Desc:
           "Sistem drive modular untuk aplikasi kompleks yang memerlukan fleksibilitas maksimum",
         powerFlex755Range: "90 kW hingga 5,7 MW",
         powerFlex755Apps: "Motor besar, lingkungan keras",
-
         powerFlexDCTitle: "PowerFlex DC",
         powerFlexDCDesc:
           "DC drives performa tinggi untuk aplikasi yang memerlukan kontrol kecepatan dan torsi presisi",
         regenerativeCapabilities: "Kemampuan regeneratif",
         fieldWeakening: "Kontrol field weakening",
         advancedDiagnostics: "Diagnostik canggih",
-
         powerFlex755TTitle: "PowerFlex 755T",
         powerFlex755TDesc:
           "Drives Total Force Technology yang dirancang untuk lingkungan industri keras",
         enhancedProtection: "Proteksi lingkungan yang ditingkatkan",
         reducedHarmonic: "Distorsi harmonik berkurang",
         extendedTemp: "Rentang suhu operasi diperluas",
-
         driveApplicationsTitle: "Aplikasi Drive",
         hvacSystems: "Sistem HVAC",
         pumpControl: "Kontrol Pompa",
@@ -971,20 +816,16 @@
         compressors: "Kompresor",
         processControl: "Kontrol Proses",
         machineTools: "Peralatan Mesin",
-
-        // Motion Control Section
         motionBadge: "Motion Control",
         motionTitle: "Sistem Servo Kinetix",
         motionDesc:
-          "Servo drives dan motor presisi untuk aplikasi motion control yang menuntut. Keluarga Kinetix menyediakan solusi motion terintegrasi dengan performa dan fleksibilitas superior untuk sistem otomasi kompleks.",
-
+          "Servo drives dan motor presisi untuk aplikasi motion control yang menuntut.",
         highPerformance: "Performa Tinggi",
         highPerformanceDesc: "Kecepatan, akurasi, dan repeatability luar biasa",
         integratedControl: "Kontrol Terintegrasi",
         integratedControlDesc: "Integrasi mulus dengan sistem ControlLogix",
         easyConfiguration: "Konfigurasi Mudah",
         easyConfigurationDesc: "Setup dan commissioning tools yang sederhana",
-
         kinetixRangeTitle: "Jajaran Produk Kinetix",
         servoDrives: "Servo Drives",
         servoDrivesDesc: "Drives seri Kinetix 5700, 5500, 350",
@@ -994,13 +835,10 @@
         motionControllersDesc: "Kontrol motion standalone dan terintegrasi",
         actuators: "Aktuator",
         actuatorsDesc: "Silinder listrik dan aktuator linear",
-
-        // HMI Section
         hmiBadge: "Antarmuka Operator & Visualisasi",
         hmiTitle: "Solusi PanelView & FactoryTalk",
         hmiSubtitle:
           "Antarmuka operator intuitif dan software visualisasi yang powerful",
-
         panelViewTitle: "Antarmuka Operator PanelView",
         panelView5000Title: "PanelView 5000",
         panelView5000Desc:
@@ -1009,14 +847,12 @@
         multiTouch: "Kemampuan multi-touch",
         ethernetConn: "Konektivitas Ethernet",
         industrialRated: "Rating industri",
-
         panelViewPlus7Title: "PanelView Plus 7",
         panelViewPlus7Desc:
           "Terminal hemat biaya dengan komunikasi built-in dan fleksibilitas aplikasi",
         multipleScreens: "Berbagai ukuran layar tersedia",
         webBrowser: "Kemampuan web browser",
         recipeManagement: "Manajemen resep",
-
         factoryTalkTitle: "Software FactoryTalk",
         factoryTalkSETitle: "FactoryTalk View SE",
         factoryTalkSEDesc:
@@ -1025,7 +861,6 @@
         alarmManagement: "Sistem manajemen alarm",
         multiUserSecurity: "Sistem keamanan multi-user",
         reportingTools: "Tools pelaporan komprehensif",
-
         visualizationCapabilities: "Kemampuan Visualisasi",
         richGraphics: "Grafis Kaya",
         remoteAccess: "Akses Remote",
@@ -1033,39 +868,32 @@
         analytics: "Analitik",
         cloudConnectivity: "Konektivitas Cloud",
         customApplications: "Aplikasi Kustom",
-
-        // Networking Section
         networkingBadge: "Industrial Networking",
         networkingTitle: "Switch Ethernet Stratix",
         networkingSubtitle:
           "Solusi networking industri yang tangguh untuk komunikasi yang andal",
-
         managedSwitchesTitle: "Managed Switches",
         advancedFeatures: "Fitur Canggih",
         vlanSupport: "• Dukungan VLAN dan manajemen traffic",
         qosPrioritization: "• Prioritas Quality of Service (QoS)",
         networkRedundancy: "• Protokol redundansi jaringan",
         snmpMonitoring: "• Monitoring dan diagnostik SNMP",
-
         securityFeatures: "Fitur Keamanan",
         portAccess: "• Kontrol akses berbasis port",
         macFiltering: "• Filtering alamat MAC",
         industrialFirewall: "• Kemampuan firewall industri",
         secureRemote: "• Manajemen remote yang aman",
-
         unmanagedSwitchesTitle: "Unmanaged Switches",
         simpleReliable: "Sederhana & Andal",
         plugAndPlay: "• Operasi plug-and-play",
         industrialTemp: "• Rating suhu industri",
         dinRailMounting: "• Opsi mounting DIN rail",
         costEffectiveNet: "• Networking hemat biaya",
-
         unmanagedApps: "Aplikasi",
         smallControlSystems: "• Sistem kontrol kecil",
         deviceLevel: "• Networking tingkat perangkat",
         machineLevel: "• Komunikasi tingkat mesin",
         basicEthernet: "• Konektivitas Ethernet dasar",
-
         gigabitSpeed: "Performa Tinggi",
         gigabitSpeedDesc: "Kecepatan Gigabit Ethernet",
         industrialGrade: "Grade Industri",
@@ -1074,171 +902,24 @@
         ethernetIPDesc: "Dukungan protokol native",
         redundancy: "Redundansi",
         redundancyDesc: "Toleransi kesalahan jaringan",
-
-        // Integration Benefits Section
         integrationTitle: "Mengapa Memilih Integrasi Rockwell Kami?",
         integrationSubtitle:
           "Keahlian bersertifikat memastikan performa dan dukungan produk optimal",
-
         certifiedIntegration: "Integrasi Bersertifikat",
         certifiedIntegrationDesc:
           "Status Silver System Integrator kami memastikan pemilihan, konfigurasi, and integrasi produk yang tepat untuk performa optimal.",
-
         completeSupport: "Dukungan Lengkap",
         completeSupportDesc:
           "Dari desain awal hingga commissioning dan pemeliharaan berkelanjutan, kami menyediakan dukungan komprehensif untuk semua produk Rockwell.",
-
         warrantyService: "Garansi & Layanan",
         warrantyServiceDesc:
           "Semua produk dilengkapi dengan garansi pabrikan plus garansi layanan tambahan kami dan dukungan teknis lokal.",
-
-        // CTA Section
         ctaTitle: "Siap Mengimplementasikan Rockwell Automation?",
         ctaSubtitle:
           "Konsultasikan dengan insinyur bersertifikat kami untuk memilih produk yang sempurna untuk aplikasi Anda",
         ctaConsultation: "Dapatkan Konsultasi Produk",
         ctaServices: "Layanan Integrasi",
       },
-
-      // Industries Page - INDONESIAN COMPLETE
-      industries: {
-        title: "Industri yang Kami Layani",
-        subtitle: "Keahlian di berbagai sektor industri",
-        heroTitle: "Industri yang Kami Layani",
-        heroSubtitle:
-          "Solusi otomasi komprehensif di berbagai sektor industri dengan keahlian dan hasil yang terbukti",
-        waterTreatment: "Pengolahan Air",
-        waterTreatmentFull: "Pengolahan Air & Air Limbah",
-        waterTreatmentDesc:
-          "Solusi otomasi canggih untuk fasilitas pengolahan air dan air limbah, memastikan operasi efisien, kepatuhan regulasi, and pemanfaatan sumber daya optimal. Sistem kami menyediakan pemantauan dan kontrol real-time untuk proses kritis.",
-        processControlSystems: "Sistem Kontrol Proses",
-        processControlSystemsDesc:
-          "Kontrol otomatis filtrasi, dosis kimia, and proses pengolahan",
-        scadaIntegration: "Integrasi SCADA",
-        scadaIntegrationDesc:
-          "Pemantauan and kontrol terpusat untuk berbagai fasilitas pengolahan",
-        complianceReporting: "Pelaporan Kepatuhan",
-        complianceReportingDesc:
-          "Pengumpulan data and pelaporan otomatis untuk kepatuhan regulasi",
-        filtrationSystems: "Sistem Filtrasi",
-        chemicalDosing: "Dosis Kimia",
-        qualityMonitoring: "Pemantauan Kualitas",
-        wasteManagement: "Manajemen Limbah",
-        pulpPaper: "Pulp dan Kertas",
-        pulpPaperFull: "Manufaktur Pulp & Kertas",
-        pulpPaperDesc:
-          "Solusi otomasi komprehensif untuk fasilitas produksi pulp and kertas, dari persiapan kayu hingga pengemasan produk akhir. Sistem kami mengoptimalkan efisiensi produksi, kontrol kualitas, and pemanfaatan sumber daya sambil memastikan kepatuhan lingkungan.",
-        processControlAreas: "Area Kontrol Proses",
-        woodPreparation: "Persiapan Kayu",
-        woodPreparationDesc: "Otomasi chipping and screening",
-        pulpProcessing: "Pemrosesan Pulp",
-        pulpProcessingDesc: "Kontrol digester and bleaching",
-        paperMachine: "Mesin Kertas",
-        paperMachineDesc: "Sistem formasi and pressing",
-        finishingPackaging: "Finishing & Pengemasan",
-        finishingPackagingDesc: "Kontrol winding and cutting",
-        productionOptimization: "Optimisasi Produksi",
-        productionOptimizationDesc:
-          "Memaksimalkan throughput sambil mempertahankan standar kualitas",
-        processControl: "Kontrol Proses",
-        processControlDesc: "Sistem kontrol suhu, tekanan, and aliran",
-        environmentalControls: "Kontrol Lingkungan",
-        environmentalControlsDesc:
-          "Pemantauan emisi and sistem pengurangan limbah",
-        metalIndustry: "Industri Logam",
-        metalIndustryFull: "Pemrosesan & Manufaktur Logam",
-        metalIndustryDesc:
-          "Otomasi canggih untuk operasi pemrosesan baja, aluminium, and logam lainnya",
-        smeltingRefining: "Peleburan & Pemurnian",
-        furnaceTempControl: "Kontrol suhu tungku",
-        alloyComposition: "Pemantauan komposisi alloy",
-        safetyInterlocks: "Sistem interlock keselamatan",
-        emissionControl: "Sistem kontrol emisi",
-        rollingForming: "Rolling & Forming",
-        rollGapPositioning: "Positioning gap roll",
-        speedSync: "Sinkronisasi kecepatan",
-        thicknessControl: "Kontrol ketebalan",
-        qualityInspection: "Inspeksi kualitas",
-        cuttingFinishing: "Pemotongan & Finishing",
-        precisionCutting: "Sistem pemotongan presisi",
-        surfaceTreatment: "Kontrol perlakuan permukaan",
-        packagingAutomation: "Otomasi pengemasan",
-        inventoryManagement: "Manajemen inventori",
-        mining: "Pertambangan",
-        miningFull: "Pertambangan & Pemrosesan Mineral",
-        miningDesc:
-          "Sistem otomasi tangguh yang dirancang untuk lingkungan pertambangan keras, dari ekstraksi hingga pemrosesan. Solusi kami meningkatkan keselamatan, produktivitas, and efisiensi operasional sambil memenuhi standar lingkungan and keselamatan yang ketat.",
-        safetySystems: "Sistem Keselamatan",
-        materialHandling: "Material Handling",
-        crushingGrinding: "Crushing & Grinding",
-        separationSystems: "Sistem Pemisahan",
-        dewatering: "Dewatering",
-        processMonitoring: "Pemantauan Proses",
-        miningApplications: "Aplikasi Pertambangan",
-        extractionTransport: "Ekstraksi & Transportasi",
-        extractionTransportDesc:
-          "Sistem konveyor, crusher, and otomasi material handling",
-        processingRefining: "Pemrosesan & Pemurnian",
-        processingRefiningDesc:
-          "Kontrol proses flotasi, grinding, and pemisahan",
-        environmentalControl: "Kontrol Lingkungan",
-        environmentalControlDesc:
-          "Penekanan debu, pengolahan air, and manajemen limbah",
-        additionalIndustries: "Industri Tambahan",
-        additionalIndustriesDesc:
-          "Memperluas keahlian kami di berbagai sektor industri",
-        processPlants: "Pabrik Proses",
-        processPlantsFull: "Otomasi pemrosesan kimia, makanan, and farmasi",
-        batchProcessing: "Kontrol batch processing",
-        recipeManagement: "Manajemen resep",
-        qualityAssurance: "Sistem jaminan kualitas",
-        regulatoryCompliance: "Kepatuhan regulasi",
-        materialHandlingFull: "Otomasi gudang and pusat distribusi",
-        conveyorSystems: "Sistem konveyor",
-        sortingRouting: "Penyortiran and routing",
-        inventoryTracking: "Pelacakan inventori",
-        automatedStorage: "Penyimpanan otomatis",
-        consumerGoods: "Barang Konsumen",
-        consumerGoodsFull: "Otomasi mesin manufaktur untuk produk konsumen",
-        productionLine: "Kontrol lini produksi",
-        packagingAuto: "Otomasi pengemasan",
-        traceability: "Sistem traceability",
-        powerPlant: "Pembangkit Listrik",
-        powerPlantFull: "Otomasi sistem pembangkit and distribusi listrik",
-        turbineControl: "Sistem kontrol turbin",
-        loadDispatch: "Otomasi dispatch beban",
-        protectionSystems: "Sistem proteksi",
-        gridSync: "Sinkronisasi grid",
-        printing: "Percetakan",
-        printingFull: "Otomasi and sistem kontrol mesin cetak modern",
-        webTension: "Kontrol tegangan web",
-        registration: "Sistem registrasi",
-        colorManagement: "Manajemen warna",
-        foodBeverage: "Makanan & Minuman",
-        foodBeverageFull: "Solusi otomasi higienis untuk pemrosesan makanan",
-        cipSystems: "Sistem CIP",
-        temperatureControl: "Kontrol suhu",
-        batchTracking: "Pelacakan batch",
-        safetyCompliance: "Kepatuhan keselamatan",
-        whyChooseUs: "Mengapa Industri Memilih Kami",
-        whyChooseUsDesc:
-          "Keahlian and hasil yang terbukti di semua sektor industri",
-        certifiedExpertise: "Keahlian Bersertifikat",
-        certifiedExpertiseDesc:
-          "Silver System Integrator Rockwell Automation dengan pengetahuan industri yang terbukti",
-        experiencedTeam: "Tim Berpengalaman",
-        experiencedTeamDesc:
-          "30+ profesional dengan pemahaman mendalam tentang proses industri",
-        longTermPartnership: "Kemitraan Jangka Panjang",
-        longTermPartnershipDesc:
-          "Berkomitmen untuk dukungan berkelanjutan and optimisasi sistem",
-        readyToAutomate: "Siap Mengotomatisasi Industri Anda?",
-        readyToAutomateDesc:
-          "Hubungi ahli industri kami untuk mendiskusikan kebutuhan otomasi spesifik Anda",
-        discussProject: "Diskusikan Proyek Anda",
-        viewServices: "Lihat Layanan Kami",
-      },
-
       about: {
         heroTitle: "Tentang PT Sumur Batu",
         heroSubtitle:
@@ -1473,11 +1154,11 @@
     allButtons.forEach((btn) => {
       const btnLang = btn.id.includes("en") ? "en" : "id";
       if (btnLang === lang) {
-        btn.classList.add("bg-primary", "text-white");
-        btn.classList.remove("text-gray-600", "hover:bg-gray-100");
+        btn.classList.add("bg-white", "text-primary", "shadow-sm");
+        btn.classList.remove("text-gray-500", "hover:text-gray-700");
       } else {
-        btn.classList.remove("bg-primary", "text-white");
-        btn.classList.add("text-gray-600", "hover:bg-gray-100");
+        btn.classList.remove("bg-white", "text-primary", "shadow-sm");
+        btn.classList.add("text-gray-500", "hover:text-gray-700");
       }
     });
   }

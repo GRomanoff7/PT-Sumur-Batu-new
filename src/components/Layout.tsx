@@ -53,10 +53,16 @@ export const Layout = ({ children }: { children: any }) => {
                   <i className="fas fa-cogs text-white text-xl"></i>
                 </div>
                 <div>
-                  <h1 className="text-xl font-bold text-gray-800" data-translate="company.name">
+                  <h1
+                    className="text-xl font-bold text-gray-800"
+                    data-translate="company.name"
+                  >
                     PT Sumur Batu
                   </h1>
-                  <p className="text-sm text-gray-600" data-translate="company.tagline">
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="company.tagline"
+                  >
                     Automation Engineering
                   </p>
                 </div>
@@ -107,21 +113,21 @@ export const Layout = ({ children }: { children: any }) => {
                   Contact Us
                 </a>
 
-                {/* Desktop Language Switcher */}
+                {/* Desktop Language Switcher - Modern Pill Design */}
                 <div className="language-switcher ml-6 pl-6 border-l border-gray-200">
-                  <div className="flex items-center space-x-2">
+                  <div className="bg-gray-100 p-1 rounded-full flex items-center shadow-inner">
                     <button
                       id="lang-en"
-                      className="lang-btn px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
+                      className="lang-btn flex items-center space-x-1 px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-300"
                     >
-                      EN
+                      <i className="fas fa-globe text-[10px] opacity-70"></i>
+                      <span>EN</span>
                     </button>
-                    <span className="text-gray-300">|</span>
                     <button
                       id="lang-id"
-                      className="lang-btn px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
+                      className="lang-btn flex items-center space-x-1 px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-300"
                     >
-                      ID
+                      <span>ID</span>
                     </button>
                   </div>
                 </div>
@@ -129,18 +135,18 @@ export const Layout = ({ children }: { children: any }) => {
 
               {/* Mobile menu button area */}
               <div className="lg:hidden flex items-center space-x-3">
-                {/* Mobile Language Switcher */}
-                <div className="language-switcher">
-                  <div className="flex items-center space-x-1">
+                {/* Mobile Language Switcher - Modern Pill Design */}
+                <div className="language-switcher mr-2">
+                  <div className="bg-gray-100 p-0.5 rounded-full flex items-center">
                     <button
                       id="lang-en-mobile"
-                      className="lang-btn px-2 py-1 rounded text-xs font-medium transition-all duration-200"
+                      className="lang-btn px-3 py-1 rounded-full text-[10px] font-bold transition-all"
                     >
                       EN
                     </button>
                     <button
                       id="lang-id-mobile"
-                      className="lang-btn px-2 py-1 rounded text-xs font-medium transition-all duration-200"
+                      className="lang-btn px-3 py-1 rounded-full text-[10px] font-bold transition-all"
                     >
                       ID
                     </button>
@@ -216,16 +222,29 @@ export const Layout = ({ children }: { children: any }) => {
                   <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
                     <i className="fas fa-cogs text-white"></i>
                   </div>
-                  <h3 className="text-xl font-bold" data-translate="company.name">PT Sumur Batu</h3>
+                  <h3
+                    className="text-xl font-bold"
+                    data-translate="company.name"
+                  >
+                    PT Sumur Batu
+                  </h3>
                 </div>
-                <p className="text-gray-300 mb-4" data-translate="footer.description">
+                <p
+                  className="text-gray-300 mb-4"
+                  data-translate="footer.description"
+                >
                   Official Silver System Integrator for Rockwell Automation.
                   Your partner in automation and drives system engineering since
                   2007.
                 </p>
               </div>
               <div>
-                <h4 className="text-lg font-semibold mb-4" data-translate="footer.quickLinks">Quick Links</h4>
+                <h4
+                  className="text-lg font-semibold mb-4"
+                  data-translate="footer.quickLinks"
+                >
+                  Quick Links
+                </h4>
                 <ul className="space-y-2">
                   <li>
                     <a
@@ -257,11 +276,18 @@ export const Layout = ({ children }: { children: any }) => {
                 </ul>
               </div>
               <div>
-                <h4 className="text-lg font-semibold mb-4" data-translate="footer.contactInfo">Contact Info</h4>
+                <h4
+                  className="text-lg font-semibold mb-4"
+                  data-translate="footer.contactInfo"
+                >
+                  Contact Info
+                </h4>
                 <div className="space-y-2 text-gray-300">
                   <p>
                     <i className="fas fa-map-marker-alt mr-2"></i>
-                    <span data-translate="company.location">Surabaya, East Java</span>
+                    <span data-translate="company.location">
+                      Surabaya, East Java
+                    </span>
                   </p>
                   <p>
                     <i className="fas fa-phone mr-2"></i>
@@ -269,13 +295,21 @@ export const Layout = ({ children }: { children: any }) => {
                   </p>
                   <p>
                     <i className="fas fa-envelope mr-1"></i>
-                    <span data-translate="company.email">SumurBatu@gmail.com</span>
+                    <span data-translate="company.email">
+                      SumurBatu@gmail.com
+                    </span>
                   </p>
                 </div>
               </div>
             </div>
             <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-              <p>&copy; 2024 <span data-translate="company.name">PT Sumur Batu</span>. <span data-translate="footer.copyright">All rights reserved.</span></p>
+              <p>
+                &copy; 2024{" "}
+                <span data-translate="company.name">PT Sumur Batu</span>.{" "}
+                <span data-translate="footer.copyright">
+                  All rights reserved.
+                </span>
+              </p>
             </div>
           </div>
         </footer>
