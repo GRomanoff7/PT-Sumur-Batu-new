@@ -38,9 +38,9 @@ export const Homepage = () => {
         {/* Gradient Overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10"></div>
 
-        {/* Content positioned on LEFT */}
+        {/* Content positioned on LEFT */} 
         <div className="container mx-auto px-6 relative z-20">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl"> 
             <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
               <i className="fas fa-award text-accent mr-2"></i>
               <span className="text-sm font-medium" data-translate="hero.badge">
