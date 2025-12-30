@@ -325,7 +325,189 @@
         viewServices: "View Our Services",
       },
 
-      // Rest of the translations (about, products, contact, etc.)
+      // Products Page - COMPLETE
+      productsPage: {
+        heroTitle: "Rockwell Automation Products",
+        heroSubtitle:
+          "High-quality Allen-Bradley automation products integrated and supported by certified professionals",
+        controllersBadge: "Controllers (PLC)",
+        controllersTitle: "Allen-Bradley Controllers",
+        controllersSubtitle:
+          "Industry-leading programmable logic controllers for all applications",
+        controlLogixTitle: "ControlLogix",
+        controlLogixDesc:
+          "High-performance controller for complex applications requiring advanced control capabilities",
+        compactLogixTitle: "CompactLogix",
+        compactLogixDesc:
+          "Compact, all-in-one controller perfect for mid-range applications",
+        micro800Title: "Micro800",
+        micro800Desc:
+          "Entry-level controllers for basic automation requirements",
+        modularArchitecture: "Modular architecture",
+        integratedMotion: "Integrated motion control",
+        advancedNetworking: "Advanced networking",
+        redundancyOptions: "Redundancy options",
+        idealApplications: "Ideal Applications:",
+        controlLogixApps:
+          "Large manufacturing systems, process control, complex machinery",
+        integratedIO: "Integrated I/O and communications",
+        builtInEthernet: "Built-in Ethernet networking",
+        motionCapabilities: "Motion control capabilities",
+        costEffective: "Cost-effective solution",
+        compactLogixApps:
+          "Packaging machines, material handling, small to medium systems",
+        easyProgramming: "Easy programming",
+        builtInIO: "Built-in I/O",
+        ethernetConnectivity: "Ethernet connectivity",
+        affordablePricing: "Affordable pricing",
+        micro800Apps:
+          "Simple machinery, standalone equipment, basic process control",
+        drivesBadge: "Motor Drives",
+        drivesTitle: "PowerFlex Drive Series",
+        drivesSubtitle: "Advanced AC and DC drives for precise motor control",
+        acDrivesTitle: "AC Drives / Inverters",
+        dcDrivesTitle: "DC Drives & Special Applications",
+        powerFlex525Title: "PowerFlex 525",
+        powerFlex525Desc:
+          "Compact drive for basic to advanced applications with integrated safety features",
+        powerRange: "Power Range:",
+        powerFlex525Range: "0.4 to 22 kW",
+        applications: "Applications:",
+        powerFlex525Apps: "Pumps, fans, conveyors",
+        powerFlex753Title: "PowerFlex 753",
+        powerFlex753Desc:
+          "High-performance drive with advanced control algorithms and networking",
+        powerFlex753Range: "0.4 to 2.3 MW",
+        powerFlex753Apps: "Process control, precision applications",
+        powerFlex755Title: "PowerFlex 755",
+        powerFlex755Desc:
+          "Modular drive system for complex applications requiring maximum flexibility",
+        powerFlex755Range: "90 kW to 5.7 MW",
+        powerFlex755Apps: "Large motors, harsh environments",
+        powerFlexDCTitle: "PowerFlex DC",
+        powerFlexDCDesc:
+          "High-performance DC drives for applications requiring precise speed and torque control",
+        regenerativeCapabilities: "Regenerative capabilities",
+        fieldWeakening: "Field weakening control",
+        advancedDiagnostics: "Advanced diagnostics",
+        powerFlex755TTitle: "PowerFlex 755T",
+        powerFlex755TDesc:
+          "Total Force Technology drives designed for harsh industrial environments",
+        enhancedProtection: "Enhanced environmental protection",
+        reducedHarmonic: "Reduced harmonic distortion",
+        extendedTemp: "Extended operating temperature range",
+        driveApplicationsTitle: "Drive Applications",
+        hvacSystems: "HVAC Systems",
+        pumpControl: "Pump Control",
+        conveyorSystems: "Conveyor Systems",
+        compressors: "Compressors",
+        processControl: "Process Control",
+        machineTools: "Machine Tools",
+        motionBadge: "Motion Control",
+        motionTitle: "Kinetix Servo Systems",
+        motionDesc:
+          "Precision servo drives and motors for demanding motion control applications.",
+        highPerformance: "High Performance",
+        highPerformanceDesc: "Exceptional speed, accuracy, and repeatability",
+        integratedControl: "Integrated Control",
+        integratedControlDesc: "Seamless integration with ControlLogix systems",
+        easyConfiguration: "Easy Configuration",
+        easyConfigurationDesc: "Simple setup and commissioning tools",
+        kinetixRangeTitle: "Kinetix Product Range",
+        servoDrives: "Servo Drives",
+        servoDrivesDesc: "Kinetix 5700, 5500, 350 series drives",
+        servoMotors: "Servo Motors",
+        servoMotorsDesc: "Rotary and linear servo motor options",
+        motionControllers: "Motion Controllers",
+        motionControllersDesc: "Standalone and integrated motion control",
+        actuators: "Actuators",
+        actuatorsDesc: "Electric cylinders and linear actuators",
+        hmiBadge: "Operator Interface & Visualization",
+        hmiTitle: "PanelView & FactoryTalk Solutions",
+        hmiSubtitle:
+          "Intuitive operator interfaces and powerful visualization software",
+        panelViewTitle: "PanelView Operator Interfaces",
+        panelView5000Title: "PanelView 5000",
+        panelView5000Desc:
+          "Advanced graphic terminals with multi-touch displays and enhanced performance",
+        displaySizes: '4" to 15" displays',
+        multiTouch: "Multi-touch capability",
+        ethernetConn: "Ethernet connectivity",
+        industrialRated: "Industrial rated",
+        panelViewPlus7Title: "PanelView Plus 7",
+        panelViewPlus7Desc:
+          "Cost-effective terminals with built-in communication and application flexibility",
+        multipleScreens: "Multiple screen sizes available",
+        webBrowser: "Web browser capabilities",
+        recipeManagement: "Recipe management",
+        factoryTalkTitle: "FactoryTalk Software",
+        factoryTalkSETitle: "FactoryTalk View SE",
+        factoryTalkSEDesc:
+          "Scalable HMI/SCADA software for plant-wide visualization and control",
+        realtimeTrending: "Real-time and historical trending",
+        alarmManagement: "Alarm management system",
+        multiUserSecurity: "Multi-user security system",
+        reportingTools: "Comprehensive reporting tools",
+        visualizationCapabilities: "Visualization Capabilities",
+        richGraphics: "Rich Graphics",
+        remoteAccess: "Remote Access",
+        dataLogging: "Data Logging",
+        analytics: "Analytics",
+        cloudConnectivity: "Cloud Connectivity",
+        customApplications: "Custom Applications",
+        networkingBadge: "Industrial Networking",
+        networkingTitle: "Stratix Ethernet Switches",
+        networkingSubtitle:
+          "Robust industrial networking solutions for reliable communication",
+        managedSwitchesTitle: "Managed Switches",
+        advancedFeatures: "Advanced Features",
+        vlanSupport: "• VLAN support and traffic management",
+        qosPrioritization: "• Quality of Service (QoS) prioritization",
+        networkRedundancy: "• Network redundancy protocols",
+        snmpMonitoring: "• SNMP monitoring and diagnostics",
+        securityFeatures: "Security Features",
+        portAccess: "• Port-based access control",
+        macFiltering: "• MAC address filtering",
+        industrialFirewall: "• Industrial firewall capabilities",
+        secureRemote: "• Secure remote management",
+        unmanagedSwitchesTitle: "Unmanaged Switches",
+        simpleReliable: "Simple & Reliable",
+        plugAndPlay: "• Plug-and-play operation",
+        industrialTemp: "• Industrial temperature rating",
+        dinRailMounting: "• DIN rail mounting options",
+        costEffectiveNet: "• Cost-effective networking",
+        unmanagedApps: "Applications",
+        smallControlSystems: "• Small control systems",
+        deviceLevel: "• Device-level networking",
+        machineLevel: "• Machine-level communication",
+        basicEthernet: "• Basic Ethernet connectivity",
+        gigabitSpeed: "High Performance",
+        gigabitSpeedDesc: "Gigabit Ethernet speeds",
+        industrialGrade: "Industrial Grade",
+        industrialGradeDesc: "Harsh environment rated",
+        ethernetIP: "EtherNet/IP",
+        ethernetIPDesc: "Native protocol support",
+        redundancy: "Redundancy",
+        redundancyDesc: "Network fault tolerance",
+        integrationTitle: "Why Choose Our Rockwell Integration?",
+        integrationSubtitle:
+          "Certified expertise ensures optimal product performance and support",
+        certifiedIntegration: "Certified Integration",
+        certifiedIntegrationDesc:
+          "Our Silver System Integrator status ensures proper product selection, configuration, and integration for optimal performance.",
+        completeSupport: "Complete Support",
+        completeSupportDesc:
+          "From initial design through commissioning and ongoing maintenance, we provide comprehensive support for all Rockwell products.",
+        warrantyService: "Warranty & Service",
+        warrantyServiceDesc:
+          "All products come with manufacturer warranty plus our additional service guarantees and local technical support.",
+        ctaTitle: "Ready to Implement Rockwell Automation?",
+        ctaSubtitle:
+          "Consult with our certified engineers to select the perfect products for your application",
+        ctaConsultation: "Get Product Consultation",
+        ctaServices: "Integration Services",
+      },
+
       about: {
         heroTitle: "About PT Sumur Batu",
         heroSubtitle:
@@ -900,7 +1082,7 @@
 
         certifiedIntegration: "Integrasi Bersertifikat",
         certifiedIntegrationDesc:
-          "Status Silver System Integrator kami memastikan pemilihan, konfigurasi, dan integrasi produk yang tepat untuk performa optimal.",
+          "Status Silver System Integrator kami memastikan pemilihan, konfigurasi, and integrasi produk yang tepat untuk performa optimal.",
 
         completeSupport: "Dukungan Lengkap",
         completeSupportDesc:
@@ -928,16 +1110,16 @@
         waterTreatment: "Pengolahan Air",
         waterTreatmentFull: "Pengolahan Air & Air Limbah",
         waterTreatmentDesc:
-          "Solusi otomasi canggih untuk fasilitas pengolahan air dan air limbah, memastikan operasi efisien, kepatuhan regulasi, dan pemanfaatan sumber daya optimal. Sistem kami menyediakan pemantauan dan kontrol real-time untuk proses kritis.",
+          "Solusi otomasi canggih untuk fasilitas pengolahan air dan air limbah, memastikan operasi efisien, kepatuhan regulasi, and pemanfaatan sumber daya optimal. Sistem kami menyediakan pemantauan dan kontrol real-time untuk proses kritis.",
         processControlSystems: "Sistem Kontrol Proses",
         processControlSystemsDesc:
-          "Kontrol otomatis filtrasi, dosis kimia, dan proses pengolahan",
+          "Kontrol otomatis filtrasi, dosis kimia, and proses pengolahan",
         scadaIntegration: "Integrasi SCADA",
         scadaIntegrationDesc:
-          "Pemantauan dan kontrol terpusat untuk berbagai fasilitas pengolahan",
+          "Pemantauan and kontrol terpusat untuk berbagai fasilitas pengolahan",
         complianceReporting: "Pelaporan Kepatuhan",
         complianceReportingDesc:
-          "Pengumpulan data dan pelaporan otomatis untuk kepatuhan regulasi",
+          "Pengumpulan data and pelaporan otomatis untuk kepatuhan regulasi",
         filtrationSystems: "Sistem Filtrasi",
         chemicalDosing: "Dosis Kimia",
         qualityMonitoring: "Pemantauan Kualitas",
@@ -945,28 +1127,28 @@
         pulpPaper: "Pulp dan Kertas",
         pulpPaperFull: "Manufaktur Pulp & Kertas",
         pulpPaperDesc:
-          "Solusi otomasi komprehensif untuk fasilitas produksi pulp dan kertas, dari persiapan kayu hingga pengemasan produk akhir. Sistem kami mengoptimalkan efisiensi produksi, kontrol kualitas, dan pemanfaatan sumber daya sambil memastikan kepatuhan lingkungan.",
+          "Solusi otomasi komprehensif untuk fasilitas produksi pulp and kertas, dari persiapan kayu hingga pengemasan produk akhir. Sistem kami mengoptimalkan efisiensi produksi, kontrol kualitas, and pemanfaatan sumber daya sambil memastikan kepatuhan lingkungan.",
         processControlAreas: "Area Kontrol Proses",
         woodPreparation: "Persiapan Kayu",
-        woodPreparationDesc: "Otomasi chipping dan screening",
+        woodPreparationDesc: "Otomasi chipping and screening",
         pulpProcessing: "Pemrosesan Pulp",
-        pulpProcessingDesc: "Kontrol digester dan bleaching",
+        pulpProcessingDesc: "Kontrol digester and bleaching",
         paperMachine: "Mesin Kertas",
-        paperMachineDesc: "Sistem formasi dan pressing",
+        paperMachineDesc: "Sistem formasi and pressing",
         finishingPackaging: "Finishing & Pengemasan",
-        finishingPackagingDesc: "Kontrol winding dan cutting",
+        finishingPackagingDesc: "Kontrol winding and cutting",
         productionOptimization: "Optimisasi Produksi",
         productionOptimizationDesc:
           "Memaksimalkan throughput sambil mempertahankan standar kualitas",
         processControl: "Kontrol Proses",
-        processControlDesc: "Sistem kontrol suhu, tekanan, dan aliran",
+        processControlDesc: "Sistem kontrol suhu, tekanan, and aliran",
         environmentalControls: "Kontrol Lingkungan",
         environmentalControlsDesc:
-          "Pemantauan emisi dan sistem pengurangan limbah",
+          "Pemantauan emisi and sistem pengurangan limbah",
         metalIndustry: "Industri Logam",
         metalIndustryFull: "Pemrosesan & Manufaktur Logam",
         metalIndustryDesc:
-          "Otomasi canggih untuk operasi pemrosesan baja, aluminium, dan logam lainnya",
+          "Otomasi canggih untuk operasi pemrosesan baja, aluminium, and logam lainnya",
         smeltingRefining: "Peleburan & Pemurnian",
         furnaceTempControl: "Kontrol suhu tungku",
         alloyComposition: "Pemantauan komposisi alloy",
@@ -985,7 +1167,7 @@
         mining: "Pertambangan",
         miningFull: "Pertambangan & Pemrosesan Mineral",
         miningDesc:
-          "Sistem otomasi tangguh yang dirancang untuk lingkungan pertambangan keras, dari ekstraksi hingga pemrosesan. Solusi kami meningkatkan keselamatan, produktivitas, dan efisiensi operasional sambil memenuhi standar lingkungan dan keselamatan yang ketat.",
+          "Sistem otomasi tangguh yang dirancang untuk lingkungan pertambangan keras, dari ekstraksi hingga pemrosesan. Solusi kami meningkatkan keselamatan, produktivitas, and efisiensi operasional sambil memenuhi standar lingkungan and keselamatan yang ketat.",
         safetySystems: "Sistem Keselamatan",
         materialHandling: "Material Handling",
         crushingGrinding: "Crushing & Grinding",
@@ -995,25 +1177,25 @@
         miningApplications: "Aplikasi Pertambangan",
         extractionTransport: "Ekstraksi & Transportasi",
         extractionTransportDesc:
-          "Sistem konveyor, crusher, dan otomasi material handling",
+          "Sistem konveyor, crusher, and otomasi material handling",
         processingRefining: "Pemrosesan & Pemurnian",
         processingRefiningDesc:
-          "Kontrol proses flotasi, grinding, dan pemisahan",
+          "Kontrol proses flotasi, grinding, and pemisahan",
         environmentalControl: "Kontrol Lingkungan",
         environmentalControlDesc:
-          "Penekanan debu, pengolahan air, dan manajemen limbah",
+          "Penekanan debu, pengolahan air, and manajemen limbah",
         additionalIndustries: "Industri Tambahan",
         additionalIndustriesDesc:
           "Memperluas keahlian kami di berbagai sektor industri",
         processPlants: "Pabrik Proses",
-        processPlantsFull: "Otomasi pemrosesan kimia, makanan, dan farmasi",
+        processPlantsFull: "Otomasi pemrosesan kimia, makanan, and farmasi",
         batchProcessing: "Kontrol batch processing",
         recipeManagement: "Manajemen resep",
         qualityAssurance: "Sistem jaminan kualitas",
         regulatoryCompliance: "Kepatuhan regulasi",
-        materialHandlingFull: "Otomasi gudang dan pusat distribusi",
+        materialHandlingFull: "Otomasi gudang and pusat distribusi",
         conveyorSystems: "Sistem konveyor",
-        sortingRouting: "Penyortiran dan routing",
+        sortingRouting: "Penyortiran and routing",
         inventoryTracking: "Pelacakan inventori",
         automatedStorage: "Penyimpanan otomatis",
         consumerGoods: "Barang Konsumen",
@@ -1022,13 +1204,13 @@
         packagingAuto: "Otomasi pengemasan",
         traceability: "Sistem traceability",
         powerPlant: "Pembangkit Listrik",
-        powerPlantFull: "Otomasi sistem pembangkit dan distribusi listrik",
+        powerPlantFull: "Otomasi sistem pembangkit and distribusi listrik",
         turbineControl: "Sistem kontrol turbin",
         loadDispatch: "Otomasi dispatch beban",
         protectionSystems: "Sistem proteksi",
         gridSync: "Sinkronisasi grid",
         printing: "Percetakan",
-        printingFull: "Otomasi dan sistem kontrol mesin cetak modern",
+        printingFull: "Otomasi and sistem kontrol mesin cetak modern",
         webTension: "Kontrol tegangan web",
         registration: "Sistem registrasi",
         colorManagement: "Manajemen warna",
@@ -1040,7 +1222,7 @@
         safetyCompliance: "Kepatuhan keselamatan",
         whyChooseUs: "Mengapa Industri Memilih Kami",
         whyChooseUsDesc:
-          "Keahlian dan hasil yang terbukti di semua sektor industri",
+          "Keahlian and hasil yang terbukti di semua sektor industri",
         certifiedExpertise: "Keahlian Bersertifikat",
         certifiedExpertiseDesc:
           "Silver System Integrator Rockwell Automation dengan pengetahuan industri yang terbukti",
@@ -1049,7 +1231,7 @@
           "30+ profesional dengan pemahaman mendalam tentang proses industri",
         longTermPartnership: "Kemitraan Jangka Panjang",
         longTermPartnershipDesc:
-          "Berkomitmen untuk dukungan berkelanjutan dan optimisasi sistem",
+          "Berkomitmen untuk dukungan berkelanjutan and optimisasi sistem",
         readyToAutomate: "Siap Mengotomatisasi Industri Anda?",
         readyToAutomateDesc:
           "Hubungi ahli industri kami untuk mendiskusikan kebutuhan otomasi spesifik Anda",
@@ -1057,7 +1239,6 @@
         viewServices: "Lihat Layanan Kami",
       },
 
-      // Rest of Indonesian translations
       about: {
         heroTitle: "Tentang PT Sumur Batu",
         heroSubtitle:
@@ -1081,17 +1262,17 @@
           "Menjadi salah satu perusahaan terbaik di bidang Otomasi dan Drives System Engineering di Indonesia, regional, dan global, menetapkan standar keunggulan dalam solusi otomasi industri.",
         ourMission: "Misi Kami",
         missionText:
-          "Menjadi perusahaan engineering yang memberikan solusi dan layanan terbaik untuk pelanggan, menghadirkan sistem otomasi yang inovatif, andal, dan hemat biaya yang meningkatkan efisiensi operasional dan mendorong kesuksesan bisnis.",
+          "Menjadi perusahaan engineering yang memberikan solusi dan layanan terbaik untuk pelanggan, menghadirkan sistem otomasi yang inovatif, andal, and hemat biaya yang meningkatkan efisiensi operasional and mendorong kesuksesan bisnis.",
         partnershipTitle: "Kemitraan Rockwell Automation",
         partnershipSubtitle:
           "Keahlian bersertifikat dalam teknologi otomasi terdepan",
         silverIntegrator: "Silver System Integrator",
         partnershipStatusTitle: "Status Kemitraan Resmi",
         partnershipDesc:
-          "Status Silver System Integrator kami dengan Rockwell Automation menunjukkan komitmen kami terhadap keunggulan dan keahlian dalam mengimplementasikan solusi otomasi Allen-Bradley. Kemitraan ini memastikan akses ke teknologi, pelatihan, dan dukungan terbaru.",
-        certifiedExpertise: "Keahlian teknis dan pelatihan bersertifikat",
+          "Status Silver System Integrator kami dengan Rockwell Automation menunjukkan komitmen kami terhadap keunggulan and keahlian dalam mengimplementasikan solusi otomasi Allen-Bradley. Kemitraan ini memastikan akses ke teknologi, pelatihan, and dukungan terbaru.",
+        certifiedExpertise: "Keahlian teknis and pelatihan bersertifikat",
         latestTechnology: "Akses ke teknologi Rockwell Automation terbaru",
-        qualityAssurance: "Jaminan kualitas dan keandalan",
+        qualityAssurance: "Jaminan kualitas and keandalan",
         programDisciplines: "Disiplin Program",
         discipline: "Disiplin",
         status: "Status",
@@ -1114,13 +1295,13 @@
         adminLogistics: "Admin & Logistik",
         continuousLearning: "Pembelajaran & Pengembangan Berkelanjutan",
         learningDesc:
-          "Tim kami berkomitmen untuk peningkatan keterampilan berkelanjutan melalui program pelatihan internal dan eksternal yang komprehensif, memastikan kami tetap di garis depan teknologi otomasi dan praktik terbaik industri.",
+          "Tim kami berkomitmen untuk peningkatan keterampilan berkelanjutan melalui program pelatihan internal and eksternal yang komprehensif, memastikan kami tetap di garis depan teknologi otomasi and praktik terbaik industri.",
         rockwellTraining: "Pelatihan Rockwell",
         technicalWorkshops: "Workshop Teknis",
         industryConferences: "Konferensi Industri",
         ctaTitle: "Siap Bekerja dengan Tim Ahli Kami?",
         ctaSubtitle:
-          "Rasakan perbedaan yang dapat dibuat oleh keahlian bersertifikat dan pengalaman terbukti untuk proyek otomasi Anda",
+          "Rasakan perbedaan yang dapat dibuat oleh keahlian bersertifikat and pengalaman terbukti untuk proyek otomasi Anda",
         startProject: "Mulai Proyek Anda",
         ourServices: "Layanan Kami",
       },
@@ -1172,7 +1353,7 @@
         projectDetailsPlaceholder:
           "Silakan jelaskan kebutuhan proyek Anda, timeline, atau pertanyaan spesifik...",
         privacyPolicy:
-          "Saya setuju dengan kebijakan privasi PT Sumur Batu dan menyetujui untuk dihubungi terkait pertanyaan saya.",
+          "Saya setuju dengan kebijakan privasi PT Sumur Batu and menyetujui untuk dihubungi terkait pertanyaan saya.",
         sendMessageBtn: "Kirim Pesan",
         firstNamePlaceholder: "Masukkan nama depan Anda",
         lastNamePlaceholder: "Masukkan nama belakang Anda",
@@ -1187,10 +1368,10 @@
           "Terletak di area industri utama Surabaya dengan akses mudah ke fasilitas manufaktur",
         easyAccess: "Akses Mudah",
         easyAccessDesc:
-          "Lokasi nyaman dengan fasilitas parkir dan konektivitas jalan utama",
+          "Lokasi nyaman dengan fasilitas parkir and konektivitas jalan utama",
         transportLinks: "Koneksi Transportasi",
         transportLinksDesc:
-          "Dekat dengan Bandara Internasional Juanda dan jaringan transportasi utama",
+          "Dekat dengan Bandara Internasional Juanda and jaringan transportasi utama",
         directions: "Petunjuk Arah",
         directionsDesc:
           "Kantor kami terletak di Jl. Raya Kalirungkut, mudah diakses dari pusat Surabaya. Cari kompleks Rungkut Megah Raya.",
@@ -1203,10 +1384,10 @@
           "Berbagai cara untuk menghubungi ahli otomasi kami",
         callUsNow: "Hubungi Kami Sekarang",
         callUsDesc:
-          "Berbicara langsung dengan tim teknis kami untuk bantuan dan konsultasi segera",
+          "Berbicara langsung dengan tim teknis kami untuk bantuan and konsultasi segera",
         emailUs: "Email Kami",
         emailUsDesc:
-          "Kirim kebutuhan proyek detail dan terima proposal teknis komprehensif",
+          "Kirim kebutuhan proyek detail and terima proposal teknis komprehensif",
         scheduleVisit: "Jadwalkan Kunjungan",
         scheduleVisitDesc:
           "Atur konsultasi on-site untuk mendiskusikan kebutuhan otomasi Anda secara detail",
@@ -1233,7 +1414,7 @@
       },
       footer: {
         description:
-          "Silver System Integrator resmi untuk Rockwell Automation. Partner Anda dalam otomasi dan drives system engineering sejak 2007.",
+          "Silver System Integrator resmi untuk Rockwell Automation. Partner Anda dalam otomasi and drives system engineering sejak 2007.",
         quickLinks: "Tautan Cepat",
         contactInfo: "Info Kontak",
         copyright: "Hak cipta dilindungi.",

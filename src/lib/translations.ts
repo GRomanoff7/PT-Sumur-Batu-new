@@ -204,6 +204,227 @@ export const translations: { [lang: string]: Translation } = {
       ctaProducts: "View Our Products",
     },
 
+    // Products Page
+    productsPage: {
+      heroTitle: "Rockwell Automation Products",
+      heroSubtitle:
+        "High-quality Allen-Bradley automation products integrated and supported by certified professionals",
+
+      // Controllers Section
+      controllersBadge: "Controllers (PLC)",
+      controllersTitle: "Allen-Bradley Controllers",
+      controllersSubtitle:
+        "Industry-leading programmable logic controllers for all applications",
+
+      controlLogixTitle: "ControlLogix",
+      controlLogixDesc:
+        "High-performance controller for complex applications requiring advanced control capabilities",
+      compactLogixTitle: "CompactLogix",
+      compactLogixDesc:
+        "Compact, all-in-one controller perfect for mid-range applications",
+      micro800Title: "Micro800",
+      micro800Desc: "Entry-level controllers for basic automation requirements",
+
+      modularArchitecture: "Modular architecture",
+      integratedMotion: "Integrated motion control",
+      advancedNetworking: "Advanced networking",
+      redundancyOptions: "Redundancy options",
+      idealApplications: "Ideal Applications:",
+      controlLogixApps:
+        "Large manufacturing systems, process control, complex machinery",
+
+      integratedIO: "Integrated I/O and communications",
+      builtInEthernet: "Built-in Ethernet networking",
+      motionCapabilities: "Motion control capabilities",
+      costEffective: "Cost-effective solution",
+      compactLogixApps:
+        "Packaging machines, material handling, small to medium systems",
+
+      easyProgramming: "Easy programming",
+      builtInIO: "Built-in I/O",
+      脫thernetConnectivity: "Ethernet connectivity",
+      affordablePricing: "Affordable pricing",
+      micro800Apps:
+        "Simple machinery, standalone equipment, basic process control",
+
+      // Drives Section
+      drivesBadge: "Motor Drives",
+      drivesTitle: "PowerFlex Drive Series",
+      drivesSubtitle: "Advanced AC and DC drives for precise motor control",
+
+      acDrivesTitle: "AC Drives / Inverters",
+      dcDrivesTitle: "DC Drives & Special Applications",
+
+      powerFlex525Title: "PowerFlex 525",
+      powerFlex525Desc:
+        "Compact drive for basic to advanced applications with integrated safety features",
+      powerRange: "Power Range:",
+      powerFlex525Range: "0.4 to 22 kW",
+      applications: "Applications:",
+      powerFlex525Apps: "Pumps, fans, conveyors",
+
+      powerFlex753Title: "PowerFlex 753",
+      powerFlex753Desc:
+        "High-performance drive with advanced control algorithms and networking",
+      powerFlex753Range: "0.4 to 2.3 MW",
+      powerFlex753Apps: "Process control, precision applications",
+
+      powerFlex755Title: "PowerFlex 755",
+      powerFlex755Desc:
+        "Modular drive system for complex applications requiring maximum flexibility",
+      powerFlex755Range: "90 kW to 5.7 MW",
+      powerFlex755Apps: "Large motors, harsh environments",
+
+      powerFlexDCTitle: "PowerFlex DC",
+      powerFlexDCDesc:
+        "High-performance DC drives for applications requiring precise speed and torque control",
+      regenerativeCapabilities: "Regenerative capabilities",
+      fieldWeakening: "Field weakening control",
+      advancedDiagnostics: "Advanced diagnostics",
+
+      powerFlex755TTitle: "PowerFlex 755T",
+      powerFlex755TDesc:
+        "Total Force Technology drives designed for harsh industrial environments",
+      enhancedProtection: "Enhanced environmental protection",
+      reducedHarmonic: "Reduced harmonic distortion",
+      extendedTemp: "Extended operating temperature range",
+
+      driveApplicationsTitle: "Drive Applications",
+      hvacSystems: "HVAC Systems",
+      pumpControl: "Pump Control",
+      conveyorSystems: "Conveyor Systems",
+      compressors: "Compressors",
+      processControl: "Process Control",
+      machineTools: "Machine Tools",
+
+      // Motion Control Section
+      motionBadge: "Motion Control",
+      motionTitle: "Kinetix Servo Systems",
+      motionDesc:
+        "Precision servo drives and motors for demanding motion control applications. The Kinetix family provides integrated motion solutions with superior performance and flexibility for complex automation systems.",
+
+      highPerformance: "High Performance",
+      highPerformanceDesc: "Exceptional speed, accuracy, and repeatability",
+      integratedControl: "Integrated Control",
+      integratedControlDesc: "Seamless integration with ControlLogix systems",
+      easyConfiguration: "Easy Configuration",
+      easyConfigurationDesc: "Simple setup and commissioning tools",
+
+      kinetixRangeTitle: "Kinetix Product Range",
+      servoDrives: "Servo Drives",
+      servoDrivesDesc: "Kinetix 5700, 5500, 350 series drives",
+      servoMotors: "Servo Motors",
+      servoMotorsDesc: "Rotary and linear servo motor options",
+      motionControllers: "Motion Controllers",
+      motionControllersDesc: "Standalone and integrated motion control",
+      actuators: "Actuators",
+      actuatorsDesc: "Electric cylinders and linear actuators",
+
+      // HMI Section
+      hmiBadge: "Operator Interface & Visualization",
+      hmiTitle: "PanelView & FactoryTalk Solutions",
+      hmiSubtitle:
+        "Intuitive operator interfaces and powerful visualization software",
+
+      panelViewTitle: "PanelView Operator Interfaces",
+      panelView5000Title: "PanelView 5000",
+      panelView5000Desc:
+        "Advanced graphic terminals with multi-touch displays and enhanced performance",
+      displaySizes: '4" to 15" displays',
+      multiTouch: "Multi-touch capability",
+      ethernetConn: "Ethernet connectivity",
+      industrialRated: "Industrial rated",
+
+      panelViewPlus7Title: "PanelView Plus 7",
+      panelViewPlus7Desc:
+        "Cost-effective terminals with built-in communication and application flexibility",
+      multipleScreens: "Multiple screen sizes available",
+      webBrowser: "Web browser capabilities",
+      recipeManagement: "Recipe management",
+
+      factoryTalkTitle: "FactoryTalk Software",
+      factoryTalkSETitle: "FactoryTalk View SE",
+      factoryTalkSEDesc:
+        "Scalable HMI/SCADA software for plant-wide visualization and control",
+      realtimeTrending: "Real-time and historical trending",
+      alarmManagement: "Alarm management system",
+      multiUserSecurity: "Multi-user security system",
+      reportingTools: "Comprehensive reporting tools",
+
+      visualizationCapabilities: "Visualization Capabilities",
+      richGraphics: "Rich Graphics",
+      remoteAccess: "Remote Access",
+      dataLogging: "Data Logging",
+      analytics: "Analytics",
+      cloudConnectivity: "Cloud Connectivity",
+      customApplications: "Custom Applications",
+
+      // Networking Section
+      networkingBadge: "Industrial Networking",
+      networkingTitle: "Stratix Ethernet Switches",
+      networkingSubtitle:
+        "Robust industrial networking solutions for reliable communication",
+
+      managedSwitchesTitle: "Managed Switches",
+      advancedFeatures: "Advanced Features",
+      vlanSupport: "• VLAN support and traffic management",
+      qosPrioritization: "• Quality of Service (QoS) prioritization",
+      networkRedundancy: "• Network redundancy protocols",
+      snmpMonitoring: "• SNMP monitoring and diagnostics",
+
+      securityFeatures: "Security Features",
+      portAccess: "• Port-based access control",
+      macFiltering: "• MAC address filtering",
+      industrialFirewall: "• Industrial firewall capabilities",
+      secureRemote: "• Secure remote management",
+
+      unmanagedSwitchesTitle: "Unmanaged Switches",
+      simpleReliable: "Simple & Reliable",
+      plugAndPlay: "• Plug-and-play operation",
+      industrialTemp: "• Industrial temperature rating",
+      dinRailMounting: "• DIN rail mounting options",
+      costEffectiveNet: "• Cost-effective networking",
+
+      unmanagedApps: "Applications",
+      smallControlSystems: "• Small control systems",
+      deviceLevel: "• Device-level networking",
+      machineLevel: "• Machine-level communication",
+      basicEthernet: "• Basic Ethernet connectivity",
+
+      gigabitSpeed: "High Performance",
+      gigabitSpeedDesc: "Gigabit Ethernet speeds",
+      industrialGrade: "Industrial Grade",
+      industrialGradeDesc: "Harsh environment rated",
+      ethernetIP: "EtherNet/IP",
+      ethernetIPDesc: "Native protocol support",
+      redundancy: "Redundancy",
+      redundancyDesc: "Network fault tolerance",
+
+      // Integration Benefits Section
+      integrationTitle: "Why Choose Our Rockwell Integration?",
+      integrationSubtitle:
+        "Certified expertise ensures optimal product performance and support",
+
+      certifiedIntegration: "Certified Integration",
+      certifiedIntegrationDesc:
+        "Our Silver System Integrator status ensures proper product selection, configuration, and integration for optimal performance.",
+
+      completeSupport: "Complete Support",
+      completeSupportDesc:
+        "From initial design through commissioning and ongoing maintenance, we provide comprehensive support for all Rockwell products.",
+
+      warrantyService: "Warranty & Service",
+      warrantyServiceDesc:
+        "All products come with manufacturer warranty plus our additional service guarantees and local technical support.",
+
+      // CTA Section
+      ctaTitle: "Ready to Implement Rockwell Automation?",
+      ctaSubtitle:
+        "Consult with our certified engineers to select the perfect products for your application",
+      ctaConsultation: "Get Product Consultation",
+      ctaServices: "Integration Services",
+    },
+
     // Industries Section
     industries: {
       title: "Industries We Serve",
@@ -823,7 +1044,7 @@ export const translations: { [lang: string]: Translation } = {
 
       certifiedIntegration: "Integrasi Bersertifikat",
       certifiedIntegrationDesc:
-        "Status Silver System Integrator kami memastikan pemilihan, konfigurasi, dan integrasi produk yang tepat untuk performa optimal.",
+        "Status Silver System Integrator kami memastikan pemilihan, konfigurasi, and integrasi produk yang tepat untuk performa optimal.",
 
       completeSupport: "Dukungan Lengkap",
       completeSupportDesc:
