@@ -9,22 +9,22 @@ export const Homepage = () => {
     {
       name: "PT Sorini Agro Asia Corporindo",
       logo: "/static/logo/sorini.jpeg",
-      url: "https://pupukkaltim.com",
+      url: "https://www.cargill.co.id/id/lokasi",
     },
     {
       name: "PT Surya Pamenang",
       logo: "/static/logo/surya_pamenang.png",
-      url: "https://krakatausteel.com",
+      url: "https://www.suryapamenang.com/",
     },
     {
       name: "PT Fajar Surya Wisesa",
       logo: "/static/logo/fajar_surya.png",
-      url: "https://petrokimia-gresik.com",
+      url: "https://www.fajarpaper.com/?lang=id",
     },
     {
       name: "PT Amman Mineral Nusa Tenggara",
       logo: "/static/logo/amman.jpeg",
-      url: "https://ptfi.co.id",
+      url: "https://www.amman.co.id/id",
     },
     {
       name: "PT Suez Water Treatment Indonesia",
