@@ -50,8 +50,11 @@ export const Homepage = () => {
 
   return (
     <div>
-      {/* Hero Section with Auto-Sliding Background */}
-      <section className="hero-section relative overflow-hidden text-white py-20 lg:py-32">
+      {/* Hero Section with Auto-Sliding Background - Modern & Elegant */}
+      <section
+        className="hero-section relative overflow-hidden text-white py-24 lg:py-40"
+        data-testid="hero-section"
+      >
         {/* Sliding Background Images */}
         <div className="hero-slider">
           <div
@@ -84,56 +87,106 @@ export const Homepage = () => {
           ></div>
         </div>
 
-        {/* Gradient Overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10"></div>
+        {/* Enhanced Multi-Layer Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent z-10"></div>
 
-        {/* Content positioned on LEFT */}
-        <div className="container mx-auto px-6 relative z-20">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
-              <i className="fas fa-award text-accent mr-2"></i>
-              <span className="text-sm font-medium" data-translate="hero.badge">
+        {/* Decorative Geometric Elements */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl z-10 animate-pulse-slow"></div>
+        <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-3xl z-10 animate-pulse-slower"></div>
+
+        {/* Content positioned on LEFT with enhanced animations */}
+        <div className="container mx-auto px-6 lg:px-12 relative z-20">
+          <div className="max-w-3xl">
+            {/* Enhanced Badge with Glassmorphism */}
+            <div
+              className="inline-flex items-center bg-white/15 backdrop-blur-md rounded-full px-6 py-3 mb-8 border border-white/20 shadow-2xl hover:bg-white/20 transition-all duration-300 hero-badge-animate"
+              data-testid="hero-badge"
+            >
+              <i className="fas fa-award text-accent mr-3 text-lg animate-pulse-badge"></i>
+              <span
+                className="text-sm font-semibold tracking-wide"
+                data-translate="hero.badge"
+              >
                 Silver System Integrator Partner
               </span>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              <span data-translate="hero.title">Your Partner in</span>
+
+            {/* Enhanced Typography with Better Hierarchy */}
+            <h1
+              className="text-5xl lg:text-7xl font-extrabold mb-8 leading-tight hero-title-animate"
+              data-testid="hero-title"
+            >
               <span
-                className="text-accent block"
+                className="block mb-2 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent"
+                data-translate="hero.title"
+              >
+                Your Partner in
+              </span>
+              <span
+                className="block text-accent drop-shadow-2xl text-6xl lg:text-8xl mb-2 hero-accent-glow"
                 data-translate="hero.titleAccent"
               >
                 Automation
               </span>
-              <span data-translate="hero.titleEnd">Engineering</span>
+              <span
+                className="block bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent"
+                data-translate="hero.titleEnd"
+              >
+                Engineering
+              </span>
             </h1>
+
+            {/* Enhanced Description */}
             <p
-              className="text-xl mb-8 text-blue-100 leading-relaxed"
+              className="text-xl lg:text-2xl mb-10 text-blue-50 leading-relaxed max-w-2xl font-light hero-description-animate"
               data-translate="hero.description"
+              data-testid="hero-description"
             >
               Official Silver System Integrator for Rockwell Automation.
               Delivering cutting-edge control systems, PLC programming, and
               industrial automation solutions since 2007.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+
+            {/* Modern CTA Buttons with Enhanced Effects */}
+            <div className="flex flex-col sm:flex-row gap-5 hero-cta-animate">
               <a
                 href="/contact"
-                className="bg-secondary hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors inline-flex items-center justify-center"
+                className="group relative bg-secondary hover:bg-red-700 text-white px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 inline-flex items-center justify-center shadow-2xl hover:shadow-red-500/50 hover:scale-105 overflow-hidden"
+                data-testid="hero-cta-consultation"
               >
-                <i className="fas fa-phone mr-2"></i>
-                <span data-translate="hero.ctaConsultation">
+                <span className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <i className="fas fa-phone mr-3 relative z-10 group-hover:rotate-12 transition-transform duration-300"></i>
+                <span
+                  className="relative z-10"
+                  data-translate="hero.ctaConsultation"
+                >
                   Get Free Consultation
                 </span>
+                <i className="fas fa-arrow-right ml-3 relative z-10 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"></i>
               </a>
               <a
                 href="/about"
-                className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all inline-flex items-center justify-center"
+                className="group relative border-2 border-white/80 text-white hover:bg-white hover:text-primary px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 inline-flex items-center justify-center backdrop-blur-sm hover:shadow-2xl hover:scale-105 overflow-hidden"
+                data-testid="hero-cta-learn-more"
               >
-                <i className="fas fa-info-circle mr-2"></i>
-                <span data-translate="hero.ctaLearnMore">Learn More</span>
+                <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <i className="fas fa-info-circle mr-3 relative z-10 group-hover:rotate-12 transition-transform duration-300"></i>
+                <span
+                  className="relative z-10 group-hover:text-primary transition-colors"
+                  data-translate="hero.ctaLearnMore"
+                >
+                  Learn More
+                </span>
+                <i className="fas fa-arrow-right ml-3 relative z-10 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 group-hover:text-primary"></i>
               </a>
             </div>
           </div>
         </div>
+
+        {/* Decorative Line Element */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-50 z-20"></div>
       </section>
 
       {/* Stats Section with CountUp Animation & Spotlight Effect */}
