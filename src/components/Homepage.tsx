@@ -115,23 +115,23 @@ export const Homepage = () => {
 
             {/* Enhanced Typography with Better Hierarchy */}
             <h1
-              className="text-5xl lg:text-7xl font-extrabold mb-8 leading-tight hero-title-animate"
+              className="text-5xl lg:text-7xl font-extrabold mb-8 leading-normal hero-title-animate"
               data-testid="hero-title"
             >
               <span
-                className="block mb-2 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent"
+                className="block mb-2 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent py-2 decoration-clone"
                 data-translate="hero.title"
               >
                 Your Partner in
               </span>
               <span
-                className="block text-accent drop-shadow-2xl text-6xl lg:text-8xl mb-2 hero-accent-glow"
+                className="block text-accent drop-shadow-2xl text-6xl lg:text-8xl mb-4 py-2 hero-accent-glow"
                 data-translate="hero.titleAccent"
               >
                 Automation
               </span>
               <span
-                className="block bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent"
+                className="block bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent py-3 decoration-clone"
                 data-translate="hero.titleEnd"
               >
                 Engineering
