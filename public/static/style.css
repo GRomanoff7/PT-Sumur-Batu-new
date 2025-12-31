@@ -26,6 +26,8 @@
   opacity: 0;
   animation: slideShow 24s infinite;
   filter: brightness(0.85) contrast(1.1);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  will-change: opacity, transform;
 }
 
 .hero-slide:nth-child(1) {
@@ -45,11 +47,23 @@
 }
 
 @keyframes slideShow {
-  0%, 25% {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  4% {
     opacity: 1;
     transform: scale(1);
   }
-  33%, 100% {
+  21% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  29% {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+  100% {
     opacity: 0;
     transform: scale(1.08);
   }
