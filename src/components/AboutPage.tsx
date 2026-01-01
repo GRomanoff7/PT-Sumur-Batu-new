@@ -4,15 +4,15 @@ export const AboutPage = () => {
       {/* Modern Company Story Section - Replaces Hero Section */}
       <section className="relative py-24 overflow-hidden">
         {/* Background Pattern */}
-        <div 
+        <div
           className="absolute inset-0 z-0 opacity-5"
           style={{
             backgroundImage: `url('https://mgx-backend-cdn.metadl.com/generate/images/876360/2026-01-01/e9456d82-c83f-4c15-8774-d51c3967bf94.png')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         />
-        
+
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-6xl mx-auto">
             {/* Elegant Header */}
@@ -24,7 +24,8 @@ export const AboutPage = () => {
                 Our Journey of Excellence
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Pioneering automation solutions with innovation and expertise since 2007
+                Pioneering automation solutions with innovation and expertise
+                since 2007
               </p>
             </div>
 
@@ -35,28 +36,30 @@ export const AboutPage = () => {
                   <h2 className="text-3xl font-bold text-gray-900 mb-6">
                     Building the Future of Automation
                   </h2>
-                  
+
                   <div className="space-y-6 text-gray-700 leading-relaxed">
                     <p className="text-lg">
-                      Established in 2007 and headquartered in Surabaya, East Java, 
-                      PT Sumur Batu has evolved into a premier automation and drives 
-                      system engineering company, trusted by industries across Indonesia.
+                      Established in 2007 and headquartered in Surabaya, East
+                      Java, PT Sumur Batu has evolved into a premier automation
+                      and drives system engineering company, trusted by
+                      industries across Indonesia.
                     </p>
-                    
+
                     <p className="text-lg">
-                      As an official{' '}
+                      As an official{" "}
                       <span className="font-semibold text-blue-600">
                         Silver System Integrator Partner
-                      </span>{' '}
-                      of Rockwell Automation, we bridge global technological excellence 
-                      with deep local industry understanding.
+                      </span>{" "}
+                      of Rockwell Automation, we bridge global technological
+                      excellence with deep local industry understanding.
                     </p>
-                    
+
                     <p className="text-lg">
-                      Our journey is defined by a relentless pursuit of engineering 
-                      excellence. With over 17 years of experience and a dedicated team 
-                      of 30+ professionals, we continue to redefine industrial automation 
-                      standards across Southeast Asia.
+                      Our journey is defined by a relentless pursuit of
+                      engineering excellence. With over 17 years of experience
+                      and a dedicated team of 30+ professionals, we continue to
+                      redefine industrial automation standards across Southeast
+                      Asia.
                     </p>
                   </div>
                 </div>
@@ -64,28 +67,36 @@ export const AboutPage = () => {
                 {/* Modern Stats Grid */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100">
-                    <div className="text-3xl font-bold text-blue-700 mb-2">2007</div>
+                    <div className="text-3xl font-bold text-blue-700 mb-2">
+                      2007
+                    </div>
                     <div className="text-sm font-medium text-blue-600 uppercase tracking-wider">
                       Year Founded
                     </div>
                   </div>
-                  
+
                   <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 border border-indigo-100">
-                    <div className="text-3xl font-bold text-indigo-700 mb-2">17+</div>
+                    <div className="text-3xl font-bold text-indigo-700 mb-2">
+                      17+
+                    </div>
                     <div className="text-sm font-medium text-indigo-600 uppercase tracking-wider">
                       Years Experience
                     </div>
                   </div>
-                  
+
                   <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-100">
-                    <div className="text-3xl font-bold text-purple-700 mb-2">30+</div>
+                    <div className="text-3xl font-bold text-purple-700 mb-2">
+                      30+
+                    </div>
                     <div className="text-sm font-medium text-purple-600 uppercase tracking-wider">
                       Team Members
                     </div>
                   </div>
-                  
+
                   <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-6 border border-green-100">
-                    <div className="text-3xl font-bold text-green-700 mb-2">500+</div>
+                    <div className="text-3xl font-bold text-green-700 mb-2">
+                      500+
+                    </div>
                     <div className="text-sm font-medium text-green-600 uppercase tracking-wider">
                       Projects Delivered
                     </div>
@@ -97,7 +108,7 @@ export const AboutPage = () => {
               <div className="space-y-8">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
                   <div className="aspect-video bg-gradient-to-br from-gray-900 to-gray-800">
-                    <img 
+                    <img
                       src="https://mgx-backend-cdn.metadl.com/generate/images/876360/2026-01-01/864b3a0b-a206-4d58-aa73-349ddf38e64a.png"
                       alt="Modern Automation Engineering"
                       className="w-full h-full object-cover opacity-90"
@@ -105,8 +116,12 @@ export const AboutPage = () => {
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
                     <div className="text-white">
-                      <div className="text-sm font-medium text-blue-300 mb-1">TECHNOLOGY</div>
-                      <h3 className="text-xl font-semibold">Cutting-Edge Automation Solutions</h3>
+                      <div className="text-sm font-medium text-blue-300 mb-1">
+                        TECHNOLOGY
+                      </div>
+                      <h3 className="text-xl font-semibold">
+                        Cutting-Edge Automation Solutions
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -119,11 +134,13 @@ export const AboutPage = () => {
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-3">Partnership Excellence</h3>
+                      <h3 className="text-xl font-semibold mb-3">
+                        Partnership Excellence
+                      </h3>
                       <p className="text-gray-300 leading-relaxed">
-                        Our Silver System Integrator status with Rockwell Automation 
-                        represents our commitment to certified expertise and 
-                        industry-leading solutions.
+                        Our Silver System Integrator status with Rockwell
+                        Automation represents our commitment to certified
+                        expertise and industry-leading solutions.
                       </p>
                     </div>
                   </div>
@@ -137,9 +154,12 @@ export const AboutPage = () => {
                       </div>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-1">Expert Team</h4>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-1">
+                        Expert Team
+                      </h4>
                       <p className="text-gray-600 text-sm">
-                        30+ skilled professionals dedicated to automation excellence
+                        30+ skilled professionals dedicated to automation
+                        excellence
                       </p>
                     </div>
                   </div>
@@ -150,54 +170,195 @@ export const AboutPage = () => {
         </div>
       </section>
 
-      {/* Vision & Mission */}
-      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+      {/* Vision & Mission - Modern Redesign */}
+      <section className="relative py-24 lg:py-32 bg-gradient-to-b from-gray-50 via-white to-gray-50 overflow-hidden">
+        {/* Decorative Background Elements - Matching Homepage Style */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-500/5 to-transparent rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tl from-indigo-500/5 to-transparent rounded-full blur-3xl animate-pulse-slower"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-500/3 rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Enhanced Header with Homepage Style */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-blue-600"></div>
+              <span className="mx-4 text-sm font-semibold text-blue-600 uppercase tracking-widest">
+                Our Foundation
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-blue-600"></div>
+            </div>
+
+            <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Vision & Mission
+              <br />
+              <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                Guiding Our Journey
+              </span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Guiding principles that drive our commitment to excellence
+            <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
+              The principles that drive our commitment to excellence and
+              innovation in automation engineering
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Vision */}
-            <div className="bg-white rounded-2xl p-8 shadow-soft border border-gray-100 hover:shadow-lg transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl flex items-center justify-center mr-4">
-                  <i className="fas fa-eye text-blue-600 text-2xl"></i>
+          {/* Modern Card Grid with Glassmorphism - Matching Homepage Core Business Section */}
+          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Vision Card */}
+            <div className="group relative">
+              {/* Gradient Border Effect - Visible on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md group-hover:blur-lg"></div>
+
+              {/* Main Card with Glassmorphism */}
+              <div className="relative bg-gradient-to-br from-white/95 via-white/90 to-white/95 backdrop-blur-xl rounded-3xl p-10 lg:p-12 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:-translate-y-2">
+                {/* Background Pattern */}
+                <div
+                  className="absolute inset-0 rounded-3xl opacity-5 group-hover:opacity-10 transition-opacity duration-500"
+                  style={{
+                    backgroundImage: `url('https://mgx-backend-cdn.metadl.com/generate/images/876180/2026-01-01/6abb3230-6eb5-470e-8d60-8574af36538c.png')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                />
+
+                {/* Gradient Overlay on Hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                <div className="relative z-10">
+                  {/* Icon with Gradient Background - Matching Homepage Style */}
+                  <div className="relative w-24 h-24 mx-auto mb-8">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                    <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                      <img
+                        src="https://mgx-backend-cdn.metadl.com/generate/images/876180/2026-01-01/b1c29f6d-a32c-4542-9f99-58088c9207ee.png"
+                        alt="Vision Icon"
+                        className="w-12 h-12"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="text-center">
+                    <div className="inline-flex items-center bg-gradient-to-r from-blue-50 to-indigo-50 rounded-full px-6 py-2 mb-6">
+                      <i className="fas fa-star text-blue-600 mr-2"></i>
+                      <span className="text-blue-700 font-semibold text-sm uppercase tracking-wider">
+                        Our Vision
+                      </span>
+                    </div>
+
+                    <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 group-hover:text-blue-700 transition-colors duration-300">
+                      Leading Automation Excellence
+                    </h3>
+
+                    <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
+                      <p>
+                        To become the premier automation and drives system
+                        engineering company in Indonesia and across Southeast
+                        Asia, setting the standard for excellence in industrial
+                        automation solutions.
+                      </p>
+                      <p className="font-medium text-blue-600">
+                        We envision a future where every industry operates at
+                        peak efficiency through intelligent, reliable, and
+                        innovative automation systems.
+                      </p>
+                    </div>
+
+                    {/* Decorative Bottom Element */}
+                    <div className="mt-8 h-1 w-24 mx-auto bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">
-                  Our Vision
-                </h3>
+
+                {/* Corner Accent Decorations */}
+                <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-blue-500/20 rounded-tl-3xl"></div>
+                <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-indigo-500/20 rounded-br-3xl"></div>
               </div>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                To become one of the best companies in the field of Automation
-                and Drives System Engineering in Indonesia, regionally, and
-                globally, setting the standard for excellence in industrial
-                automation solutions.
-              </p>
             </div>
 
-            {/* Mission */}
-            <div className="bg-white rounded-2xl p-8 shadow-soft border border-gray-100 hover:shadow-lg transition-all duration-300">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl flex items-center justify-center mr-4">
-                  <i className="fas fa-bullseye text-indigo-600 text-2xl"></i>
+            {/* Mission Card */}
+            <div className="group relative">
+              {/* Gradient Border Effect - Visible on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md group-hover:blur-lg"></div>
+
+              {/* Main Card with Glassmorphism */}
+              <div className="relative bg-gradient-to-br from-white/95 via-white/90 to-white/95 backdrop-blur-xl rounded-3xl p-10 lg:p-12 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:-translate-y-2">
+                {/* Background Pattern */}
+                <div
+                  className="absolute inset-0 rounded-3xl opacity-5 group-hover:opacity-10 transition-opacity duration-500"
+                  style={{
+                    backgroundImage: `url('https://mgx-backend-cdn.metadl.com/generate/images/876180/2026-01-01/bba4ab54-fa62-4925-a18d-80059690331a.png')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                />
+
+                {/* Gradient Overlay on Hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-pink-500/5 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                <div className="relative z-10">
+                  {/* Icon with Gradient Background - Matching Homepage Style */}
+                  <div className="relative w-24 h-24 mx-auto mb-8">
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                    <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                      <img
+                        src="https://mgx-backend-cdn.metadl.com/generate/images/876180/2026-01-01/3d886a7e-37eb-4dfa-8b33-55566786309b.png"
+                        alt="Mission Icon"
+                        className="w-12 h-12"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="text-center">
+                    <div className="inline-flex items-center bg-gradient-to-r from-purple-50 to-pink-50 rounded-full px-6 py-2 mb-6">
+                      <i className="fas fa-bullseye text-purple-600 mr-2"></i>
+                      <span className="text-purple-700 font-semibold text-sm uppercase tracking-wider">
+                        Our Mission
+                      </span>
+                    </div>
+
+                    <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 group-hover:text-purple-700 transition-colors duration-300">
+                      Delivering Exceptional Solutions
+                    </h3>
+
+                    <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
+                      <p>
+                        To provide innovative, reliable, and cost-effective
+                        automation solutions that enhance operational efficiency
+                        and drive business success for our customers across
+                        diverse industries.
+                      </p>
+                      <p className="font-medium text-purple-600">
+                        We are committed to engineering excellence, customer
+                        satisfaction, and continuous innovation in every project
+                        we undertake.
+                      </p>
+                    </div>
+
+                    {/* Decorative Bottom Element */}
+                    <div className="mt-8 h-1 w-24 mx-auto bg-gradient-to-r from-purple-500 to-pink-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">
-                  Our Mission
-                </h3>
+
+                {/* Corner Accent Decorations */}
+                <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-purple-500/20 rounded-tl-3xl"></div>
+                <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-pink-500/20 rounded-br-3xl"></div>
               </div>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                To be an engineering company that provides the best solutions
-                and services for customers, delivering innovative, reliable, and
-                cost-effective automation systems that enhance operational
-                efficiency and drive business success.
-              </p>
             </div>
+          </div>
+
+          {/* Connecting Element */}
+          <div className="mt-20 text-center">
+            <div className="inline-flex items-center justify-center">
+              <div className="h-px w-24 bg-gradient-to-r from-blue-500 to-transparent"></div>
+              <div className="mx-4">
+                <div className="w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+              </div>
+              <div className="h-px w-24 bg-gradient-to-l from-purple-500 to-transparent"></div>
+            </div>
+            <p className="text-gray-500 mt-4 text-lg">
+              Together, our Vision and Mission guide every decision and
+              innovation
+            </p>
           </div>
         </div>
       </section>
@@ -267,13 +428,18 @@ export const AboutPage = () => {
                 </h4>
                 <div className="space-y-4">
                   {[
-                    { name: 'Control', status: 'Certified' },
-                    { name: 'Visualization', status: 'Certified' },
-                    { name: 'Low Voltage Drives', status: 'Certified' },
-                    { name: 'CUBIC Modular Assemblies', status: 'Certified' }
+                    { name: "Control", status: "Certified" },
+                    { name: "Visualization", status: "Certified" },
+                    { name: "Low Voltage Drives", status: "Certified" },
+                    { name: "CUBIC Modular Assemblies", status: "Certified" },
                   ].map((discipline, index) => (
-                    <div key={index} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">
-                      <span className="text-gray-700 font-medium">{discipline.name}</span>
+                    <div
+                      key={index}
+                      className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0"
+                    >
+                      <span className="text-gray-700 font-medium">
+                        {discipline.name}
+                      </span>
                       <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
                         <i className="fas fa-check mr-1"></i>
                         {discipline.status}
@@ -295,13 +461,14 @@ export const AboutPage = () => {
               Our Expert Team
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              30+ skilled professionals dedicated to automation excellence and continuous innovation
+              30+ skilled professionals dedicated to automation excellence and
+              continuous innovation
             </p>
           </div>
 
           <div className="relative rounded-3xl overflow-hidden mb-16">
             <div className="aspect-[21/9] bg-gradient-to-r from-gray-900 to-gray-800">
-              <img 
+              <img
                 src="https://mgx-backend-cdn.metadl.com/generate/images/876360/2026-01-01/778d7126-aa44-4f96-bba3-25cb2cfe2806.png"
                 alt="Team Collaboration"
                 className="w-full h-full object-cover opacity-90"
@@ -310,10 +477,13 @@ export const AboutPage = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-900/30 to-indigo-900/30"></div>
             <div className="absolute bottom-0 left-0 right-0 p-8">
               <div className="max-w-3xl">
-                <h3 className="text-2xl font-bold text-white mb-3">Collaborative Excellence</h3>
+                <h3 className="text-2xl font-bold text-white mb-3">
+                  Collaborative Excellence
+                </h3>
                 <p className="text-blue-100">
-                  Our multidisciplinary team combines decades of experience with cutting-edge 
-                  technical expertise to deliver exceptional automation solutions.
+                  Our multidisciplinary team combines decades of experience with
+                  cutting-edge technical expertise to deliver exceptional
+                  automation solutions.
                 </p>
               </div>
             </div>
@@ -321,31 +491,38 @@ export const AboutPage = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {[
-              { 
-                title: 'Senior Automation Engineers', 
-                count: '3', 
-                experience: 'Over 20 years of experience',
+              {
+                title: "Senior Automation Engineers",
+                count: "3",
+                experience: "Over 20 years of experience",
                 stars: 5,
-                color: 'blue'
+                color: "blue",
               },
-              { 
-                title: 'Experienced Engineers', 
-                count: '8', 
-                experience: '3-10 years of experience',
+              {
+                title: "Experienced Engineers",
+                count: "8",
+                experience: "3-10 years of experience",
                 stars: 4,
-                color: 'indigo'
+                color: "indigo",
               },
-              { 
-                title: 'Junior Engineers', 
-                count: '7', 
-                experience: '1-3 years of experience',
+              {
+                title: "Junior Engineers",
+                count: "7",
+                experience: "1-3 years of experience",
                 stars: 3,
-                color: 'purple'
-              }
+                color: "purple",
+              },
             ].map((team, index) => (
-              <div key={index} className="bg-white rounded-2xl p-8 shadow-soft border border-gray-100 hover:shadow-lg transition-all duration-300">
-                <div className={`w-20 h-20 bg-gradient-to-br from-${team.color}-50 to-${team.color}-100 rounded-2xl flex items-center justify-center mx-auto mb-6`}>
-                  <i className={`fas fa-user-tie text-${team.color}-600 text-3xl`}></i>
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-8 shadow-soft border border-gray-100 hover:shadow-lg transition-all duration-300"
+              >
+                <div
+                  className={`w-20 h-20 bg-gradient-to-br from-${team.color}-50 to-${team.color}-100 rounded-2xl flex items-center justify-center mx-auto mb-6`}
+                >
+                  <i
+                    className={`fas fa-user-tie text-${team.color}-600 text-3xl`}
+                  ></i>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
                   {team.title}
@@ -359,9 +536,13 @@ export const AboutPage = () => {
                 <div className="flex justify-center">
                   <div className="flex space-x-1">
                     {[...Array(5)].map((_, i) => (
-                      <i 
+                      <i
                         key={i}
-                        className={`fas ${i < team.stars ? 'fa-star' : 'fa-star'} text-${i < team.stars ? 'yellow-400' : 'gray-300'} text-sm`}
+                        className={`fas ${
+                          i < team.stars ? "fa-star" : "fa-star"
+                        } text-${
+                          i < team.stars ? "yellow-400" : "gray-300"
+                        } text-sm`}
                       ></i>
                     ))}
                   </div>
@@ -408,7 +589,7 @@ export const AboutPage = () => {
               Ready to Transform Your Automation Journey?
             </h2>
             <p className="text-xl mb-8 text-blue-100 leading-relaxed">
-              Partner with certified experts who combine global technology with 
+              Partner with certified experts who combine global technology with
               local expertise to deliver exceptional automation solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
