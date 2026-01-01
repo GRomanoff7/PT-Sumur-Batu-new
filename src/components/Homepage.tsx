@@ -291,18 +291,35 @@ export const Homepage = () => {
         </div>
       </section>
 
-      {/* Core Business Introduction */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
+      {/* Core Business Introduction - Modern & Elegant Redesign */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-primary/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-secondary/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
+              <span className="mx-4 text-sm font-semibold text-primary uppercase tracking-widest">
+                Core Business
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary"></div>
+            </div>
+
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               data-translate="coreBusiness.title"
             >
-              Leading Automation & Drives System Engineering
+              Leading Automation & Drives
+              <br />
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                System Engineering
+              </span>
             </h2>
             <p
-              className="text-xl text-gray-600 max-w-3xl mx-auto"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="coreBusiness.subtitle"
             >
               PT Sumur Batu specializes in comprehensive automation solutions,
@@ -311,63 +328,122 @@ export const Homepage = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-certificate text-primary text-2xl"></i>
+          {/* Modern Card Grid with Glassmorphism */}
+          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {/* Card 1 - Certified Partnership */}
+            <div
+              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2"
+              data-testid="core-business-card-1"
+            >
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-certificate text-primary text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300"
+                  data-translate="coreBusiness.certifiedPartnership.title"
+                >
+                  Certified Partnership
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="coreBusiness.certifiedPartnership.description"
+                >
+                  Official Silver System Integrator status with Rockwell
+                  Automation ensures quality and reliability.
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-primary to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-              <h3
-                className="text-xl font-semibold text-gray-800 mb-2"
-                data-translate="coreBusiness.certifiedPartnership.title"
-              >
-                Certified Partnership
-              </h3>
-              <p
-                className="text-gray-600"
-                data-translate="coreBusiness.certifiedPartnership.description"
-              >
-                Official Silver System Integrator status with Rockwell
-                Automation ensures quality and reliability.
-              </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-users text-secondary text-2xl"></i>
+            {/* Card 2 - Expert Team */}
+            <div
+              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2"
+              data-testid="core-business-card-2"
+            >
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-users text-secondary text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-secondary transition-colors duration-300"
+                  data-translate="coreBusiness.expertTeam.title"
+                >
+                  Expert Team
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="coreBusiness.expertTeam.description"
+                >
+                  30 skilled professionals including senior engineers with over
+                  20 years of experience.
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-secondary to-red-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-              <h3
-                className="text-xl font-semibold text-gray-800 mb-2"
-                data-translate="coreBusiness.expertTeam.title"
-              >
-                Expert Team
-              </h3>
-              <p
-                className="text-gray-600"
-                data-translate="coreBusiness.expertTeam.description"
-              >
-                30 skilled professionals including senior engineers with over 20
-                years of experience.
-              </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-tools text-accent text-2xl"></i>
+            {/* Card 3 - Complete Solutions */}
+            <div
+              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-2"
+              data-testid="core-business-card-3"
+            >
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent to-yellow-500 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-tools text-accent text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-accent transition-colors duration-300"
+                  data-translate="coreBusiness.completeSolutions.title"
+                >
+                  Complete Solutions
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="coreBusiness.completeSolutions.description"
+                >
+                  End-to-end automation services from design and programming to
+                  manufacturing and support.
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-accent to-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-              <h3
-                className="text-xl font-semibold text-gray-800 mb-2"
-                data-translate="coreBusiness.completeSolutions.title"
-              >
-                Complete Solutions
-              </h3>
-              <p
-                className="text-gray-600"
-                data-translate="coreBusiness.completeSolutions.description"
-              >
-                End-to-end automation services from design and programming to
-                manufacturing and support.
-              </p>
             </div>
+          </div>
+
+          {/* Optional CTA or Additional Info */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 text-sm font-medium">
+              Trusted by leading companies across Indonesia for over 17 years
+            </p>
           </div>
         </div>
       </section>
