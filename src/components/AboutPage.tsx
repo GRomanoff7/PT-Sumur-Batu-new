@@ -363,92 +363,205 @@ export const AboutPage = () => {
         </div>
       </section>
 
-      {/* Rockwell Automation Partnership */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Rockwell Automation Partnership
+      {/* Rockwell Automation Partnership - Modern & Elegant Redesign */}
+      <section className="relative py-24 lg:py-32 bg-white overflow-hidden">
+        {/* Decorative Background Elements - Matching Homepage Style */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-500/5 to-transparent rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-gradient-to-tl from-red-500/5 to-transparent rounded-full blur-3xl animate-pulse-slower"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/3 rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Enhanced Header with Homepage Style */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-blue-600"></div>
+              <span className="mx-4 text-sm font-semibold text-blue-600 uppercase tracking-widest">
+                Strategic Partnership
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-blue-600"></div>
+            </div>
+
+            <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              Rockwell Automation
+              <br />
+              <span className="bg-gradient-to-r from-blue-600 via-red-600 to-amber-600 bg-clip-text text-transparent">
+                Partnership Excellence
+              </span>
             </h2>
-            <p className="text-xl text-gray-600">
-              Certified expertise in cutting-edge automation technology
+            <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
+              Certified expertise in cutting-edge automation technology through
+              our official Silver System Integrator status
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 lg:p-12 border border-blue-100">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="inline-flex items-center bg-white rounded-full px-6 py-2 mb-6 shadow-sm">
-                  <i className="fas fa-award text-blue-600 mr-2"></i>
-                  <span className="text-blue-700 font-semibold">
-                    Silver System Integrator
-                  </span>
-                </div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">
-                  Official Partnership Status
-                </h3>
-                <p className="text-gray-700 mb-6 leading-relaxed">
-                  Our Silver System Integrator status with Rockwell Automation
-                  demonstrates our commitment to excellence and expertise in
-                  implementing Allen-Bradley automation solutions. This
-                  partnership ensures access to the latest technology, training,
-                  and support.
-                </p>
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                      <i className="fas fa-check text-green-600 text-sm"></i>
-                    </div>
-                    <span className="text-gray-700">
-                      Certified technical expertise and training
-                    </span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                      <i className="fas fa-check text-green-600 text-sm"></i>
-                    </div>
-                    <span className="text-gray-700">
-                      Access to latest Rockwell Automation technology
-                    </span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                      <i className="fas fa-check text-green-600 text-sm"></i>
-                    </div>
-                    <span className="text-gray-700">
-                      Quality assurance and reliability guarantee
-                    </span>
-                  </div>
-                </div>
-              </div>
+          {/* Main Partnership Card - Matching Homepage Core Business Style */}
+          <div className="max-w-6xl mx-auto">
+            <div className="group relative">
+              {/* Gradient Border Effect - Visible on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-red-500 to-amber-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md group-hover:blur-lg"></div>
 
-              <div className="bg-white rounded-2xl p-8 shadow-soft">
-                <h4 className="text-xl font-bold text-gray-900 mb-6">
-                  Program Disciplines
-                </h4>
-                <div className="space-y-4">
-                  {[
-                    { name: "Control", status: "Certified" },
-                    { name: "Visualization", status: "Certified" },
-                    { name: "Low Voltage Drives", status: "Certified" },
-                    { name: "CUBIC Modular Assemblies", status: "Certified" },
-                  ].map((discipline, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0"
-                    >
-                      <span className="text-gray-700 font-medium">
-                        {discipline.name}
-                      </span>
-                      <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                        <i className="fas fa-check mr-1"></i>
-                        {discipline.status}
-                      </span>
+              {/* Main Card with Glassmorphism */}
+              <div className="relative bg-gradient-to-br from-white/95 via-white/90 to-white/95 backdrop-blur-xl rounded-3xl p-10 lg:p-16 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:-translate-y-2">
+                {/* Background Pattern */}
+                <div
+                  className="absolute inset-0 rounded-3xl opacity-5 group-hover:opacity-10 transition-opacity duration-500"
+                  style={{
+                    backgroundImage: `url('https://mgx-backend-cdn.metadl.com/generate/images/876360/2026-01-01/e9456d82-c83f-4c15-8774-d51c3967bf94.png')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                />
+
+                {/* Gradient Overlay on Hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-red-500/5 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                <div className="relative z-10">
+                  <div className="grid lg:grid-cols-2 gap-12 items-center">
+                    {/* Left Column - Partnership Details */}
+                    <div>
+                      {/* Badge - Matching Homepage Style */}
+                      <div className="inline-flex items-center bg-gradient-to-r from-blue-50 to-red-50 rounded-full px-6 py-3 mb-8 border border-blue-100/50 shadow-sm">
+                        <i className="fas fa-award text-blue-600 mr-3 text-lg"></i>
+                        <span className="text-blue-700 font-bold text-sm uppercase tracking-wider">
+                          Silver System Integrator
+                        </span>
+                      </div>
+
+                      <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 group-hover:text-blue-700 transition-colors duration-300">
+                        Official Partnership Status
+                      </h3>
+
+                      <p className="text-gray-700 text-lg mb-8 leading-relaxed">
+                        Our Silver System Integrator status with Rockwell
+                        Automation demonstrates our commitment to excellence and
+                        expertise in implementing Allen-Bradley automation
+                        solutions. This partnership ensures access to the latest
+                        technology, training, and support.
+                      </p>
+
+                      {/* Benefits List with Modern Design */}
+                      <div className="space-y-4">
+                        <div className="flex items-start group/item">
+                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center mr-4 group-hover/item:scale-110 transition-transform duration-300">
+                            <i className="fas fa-check text-green-600 text-sm"></i>
+                          </div>
+                          <div>
+                            <span className="text-gray-800 font-medium text-lg">
+                              Certified technical expertise and training
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start group/item">
+                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center mr-4 group-hover/item:scale-110 transition-transform duration-300">
+                            <i className="fas fa-check text-green-600 text-sm"></i>
+                          </div>
+                          <div>
+                            <span className="text-gray-800 font-medium text-lg">
+                              Access to latest Rockwell Automation technology
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start group/item">
+                          <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center mr-4 group-hover/item:scale-110 transition-transform duration-300">
+                            <i className="fas fa-check text-green-600 text-sm"></i>
+                          </div>
+                          <div>
+                            <span className="text-gray-800 font-medium text-lg">
+                              Quality assurance and reliability guarantee
+                            </span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  ))}
+
+                    {/* Right Column - Program Disciplines */}
+                    <div>
+                      <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-200/50">
+                        <div className="flex items-center mb-6">
+                          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mr-4">
+                            <i className="fas fa-certificate text-white text-xl"></i>
+                          </div>
+                          <h4 className="text-2xl font-bold text-gray-900">
+                            Program Disciplines
+                          </h4>
+                        </div>
+
+                        <div className="space-y-4">
+                          {[
+                            {
+                              name: "Control",
+                              status: "Certified",
+                              color: "blue",
+                            },
+                            {
+                              name: "Visualization",
+                              status: "Certified",
+                              color: "indigo",
+                            },
+                            {
+                              name: "Low Voltage Drives",
+                              status: "Certified",
+                              color: "purple",
+                            },
+                            {
+                              name: "CUBIC Modular Assemblies",
+                              status: "Certified",
+                              color: "pink",
+                            },
+                          ].map((discipline, index) => (
+                            <div
+                              key={index}
+                              className="group/discipline flex items-center justify-between py-4 px-4 rounded-xl border border-gray-100 hover:border-gray-200 hover:bg-gray-50/50 transition-all duration-300"
+                            >
+                              <div className="flex items-center">
+                                <div
+                                  className={`w-2 h-2 bg-${discipline.color}-500 rounded-full mr-3 group-hover/discipline:scale-150 transition-transform duration-300`}
+                                ></div>
+                                <span className="text-gray-800 font-semibold text-lg">
+                                  {discipline.name}
+                                </span>
+                              </div>
+                              <span className="bg-gradient-to-r from-green-50 to-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-bold border border-green-200/50 flex items-center">
+                                <i className="fas fa-check-circle mr-2"></i>
+                                {discipline.status}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+
+                        {/* Additional Info */}
+                        <div className="mt-8 pt-6 border-t border-gray-200">
+                          <p className="text-gray-600 text-sm leading-relaxed">
+                            All disciplines are certified and maintained through
+                            continuous training and quality assessments
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                {/* Corner Accent Decorations */}
+                <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-blue-500/20 rounded-tl-3xl"></div>
+                <div className="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-red-500/20 rounded-br-3xl"></div>
               </div>
             </div>
+          </div>
+
+          {/* Bottom Trust Indicators */}
+          <div className="mt-16 text-center">
+            <div className="inline-flex items-center justify-center">
+              <div className="h-px w-24 bg-gradient-to-r from-blue-500 to-transparent"></div>
+              <div className="mx-4">
+                <div className="w-3 h-3 bg-gradient-to-r from-blue-500 to-red-500 rounded-full"></div>
+              </div>
+              <div className="h-px w-24 bg-gradient-to-l from-red-500 to-transparent"></div>
+            </div>
+            <p className="text-gray-500 mt-4 text-lg font-medium">
+              Trusted partnership delivering world-class automation solutions
+            </p>
           </div>
         </div>
       </section>
