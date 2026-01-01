@@ -658,114 +658,203 @@ export const Homepage = () => {
         </div>
       </section>
 
-      {/* Industries We Serve */}
-      <section className="py-16 bg-white">
+      {/* Industries We Serve - Enhanced with Images */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4"
               data-translate="industries.title"
             >
               Industries We Serve
             </h2>
             <p
-              className="text-xl text-gray-600"
+              className="text-xl text-gray-600 max-w-2xl mx-auto"
               data-translate="industries.subtitle"
             >
               Expertise across diverse industrial sectors
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-              <i className="fas fa-tint text-blue-600 text-3xl mb-4"></i>
-              <h3
-                className="font-semibold text-gray-800"
-                data-translate="industries.waterTreatment"
-              >
-                Water Treatment
-              </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            {/* Water Treatment */}
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1533163238111-4a7ced54f2e4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHx3YXRlciUyMHRyZWF0bWVudCUyMHBsYW50fGVufDB8fHx8MTc2NzI0MTEwMnww&ixlib=rb-4.1.0&q=85"
+                  alt="Water Treatment"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900 via-blue-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                  <i className="fas fa-tint text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h3
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.waterTreatment"
+                  >
+                    Water Treatment
+                  </h3>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-              <i className="fas fa-leaf text-green-600 text-3xl mb-4"></i>
-              <h3
-                className="font-semibold text-gray-800"
-                data-translate="industries.pulpPaper"
-              >
-                Pulp and Paper
-              </h3>
+            {/* Pulp and Paper */}
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1732984160322-ec48339d8eb7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxwYXBlciUyMG1pbGwlMjBmYWN0b3J5fGVufDB8fHx8MTc2NzI0MTEwN3ww&ixlib=rb-4.1.0&q=85"
+                  alt="Pulp and Paper"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-green-900 via-green-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                  <i className="fas fa-leaf text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h3
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.pulpPaper"
+                  >
+                    Pulp and Paper
+                  </h3>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-              <i className="fas fa-hammer text-gray-600 text-3xl mb-4"></i>
-              <h3
-                className="font-semibold text-gray-800"
-                data-translate="industries.metalIndustry"
-              >
-                Metal Industry
-              </h3>
+            {/* Metal Industry */}
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1764115424769-ebdd2683d5a8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxtZXRhbCUyMG1hbnVmYWN0dXJpbmd8ZW58MHx8fHwxNzY3MjQxMTE1fDA&ixlib=rb-4.1.0&q=85"
+                  alt="Metal Industry"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                  <i className="fas fa-hammer text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h3
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.metalIndustry"
+                  >
+                    Metal Industry
+                  </h3>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-              <i className="fas fa-mountain text-yellow-600 text-3xl mb-4"></i>
-              <h3
-                className="font-semibold text-gray-800"
-                data-translate="industries.mining"
-              >
-                Mining
-              </h3>
+            {/* Mining */}
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.pexels.com/photos/2566850/pexels-photo-2566850.jpeg"
+                  alt="Mining"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-yellow-900 via-yellow-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                  <i className="fas fa-mountain text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h3
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.mining"
+                  >
+                    Mining
+                  </h3>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-              <i className="fas fa-flask text-purple-600 text-3xl mb-4"></i>
-              <h3
-                className="font-semibold text-gray-800"
-                data-translate="industries.processPlants"
-              >
-                Process Plants
-              </h3>
+            {/* Process Plants */}
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1629447388369-760612337eff?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxjaGVtaWNhbCUyMHBsYW50fGVufDB8fHx8MTc2NzI0MTEyN3ww&ixlib=rb-4.1.0&q=85"
+                  alt="Process Plants"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-900 via-purple-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                  <i className="fas fa-flask text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h3
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.processPlants"
+                  >
+                    Process Plants
+                  </h3>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-              <i className="fas fa-conveyor-belt text-orange-600 text-3xl mb-4"></i>
-              <h3
-                className="font-semibold text-gray-800"
-                data-translate="industries.materialHandling"
-              >
-                Material Handling
-              </h3>
+            {/* Material Handling */}
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1592085198739-ffcad7f36b54?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHx3YXJlaG91c2UlMjBhdXRvbWF0aW9ufGVufDB8fHx8MTc2NzI0MTEzMnww&ixlib=rb-4.1.0&q=85"
+                  alt="Material Handling"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-orange-900 via-orange-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                  <i className="fas fa-conveyor-belt text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h3
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.materialHandling"
+                  >
+                    Material Handling
+                  </h3>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-              <i className="fas fa-bolt text-red-600 text-3xl mb-4"></i>
-              <h3
-                className="font-semibold text-gray-800"
-                data-translate="industries.powerPlant"
-              >
-                Power Plant
-              </h3>
+            {/* Power Plant */}
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1509390288171-ce2088f7d08e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwzfHxwb3dlciUyMHBsYW50fGVufDB8fHx8MTc2NzI0MTEzN3ww&ixlib=rb-4.1.0&q=85"
+                  alt="Power Plant"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-red-900 via-red-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                  <i className="fas fa-bolt text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h3
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.powerPlant"
+                  >
+                    Power Plant
+                  </h3>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-lg p-6 text-center hover:shadow-lg transition-shadow">
-              <i className="fas fa-print text-indigo-600 text-3xl mb-4"></i>
-              <h3
-                className="font-semibold text-gray-800"
-                data-translate="industries.printing"
-              >
-                Printing
-              </h3>
+            {/* Printing */}
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1693031630369-bd429a57f115?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwzfHxwcmludGluZyUyMHByZXNzfGVufDB8fHx8MTc2NzI0MTE0M3ww&ixlib=rb-4.1.0&q=85"
+                  alt="Printing"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-indigo-900 via-indigo-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                  <i className="fas fa-print text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h3
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.printing"
+                  >
+                    Printing
+                  </h3>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="text-center mt-8">
+          <div className="text-center mt-12">
             <a
               href="/industries"
-              className="bg-primary hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center"
+              className="bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors inline-flex items-center shadow-lg hover:shadow-xl"
+              data-testid="industries-explore-btn"
             >
               <span data-translate="industries.exploreAll">
                 Explore All Industries
-              </span>{" "}
+              </span>
               <i className="fas fa-arrow-right ml-2"></i>
             </a>
           </div>
