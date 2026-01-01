@@ -566,359 +566,268 @@ export const AboutPage = () => {
         </div>
       </section>
 
-      {/* Our Expert Team - Modern & Elegant Redesign - Matching Homepage Style */}
-      <section className="relative py-24 lg:py-32 bg-gradient-to-b from-gray-50 via-white to-gray-50 overflow-hidden">
-        {/* Decorative Background Elements - Matching Homepage Style */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-500/5 to-transparent rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tl from-indigo-500/5 to-transparent rounded-full blur-3xl animate-pulse-slower"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-500/3 rounded-full blur-3xl"></div>
-
-        <div className="container mx-auto px-6 relative z-10">
-          {/* Enhanced Header with Homepage Style */}
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center justify-center mb-6">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-blue-600"></div>
-              <span className="mx-4 text-sm font-semibold text-blue-600 uppercase tracking-widest">
-                Our People
-              </span>
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-blue-600"></div>
-            </div>
-
-            <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+      {/* Our Expert Team */}
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Our Expert Team
-              <br />
-              <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                Driving Innovation Forward
-              </span>
             </h2>
-            <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               30+ skilled professionals dedicated to automation excellence and
               continuous innovation
             </p>
           </div>
 
-          {/* Team Hero Image Card - Matching Homepage Core Business Style */}
-          <div className="max-w-6xl mx-auto mb-16">
-            <div className="group relative">
-              {/* Gradient Border Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md group-hover:blur-lg"></div>
+          <div className="relative rounded-3xl overflow-hidden mb-16">
+            <div className="aspect-[21/9] bg-gradient-to-r from-gray-900 to-gray-800">
+              <img
+                src="https://mgx-backend-cdn.metadl.com/generate/images/876360/2026-01-01/778d7126-aa44-4f96-bba3-25cb2cfe2806.png"
+                alt="Team Collaboration"
+                className="w-full h-full object-cover opacity-90"
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/30 to-indigo-900/30"></div>
+            <div className="absolute bottom-0 left-0 right-0 p-8">
+              <div className="max-w-3xl">
+                <h3 className="text-2xl font-bold text-white mb-3">
+                  Collaborative Excellence
+                </h3>
+                <p className="text-blue-100">
+                  Our multidisciplinary team combines decades of experience with
+                  cutting-edge technical expertise to deliver exceptional
+                  automation solutions.
+                </p>
+              </div>
+            </div>
+          </div>
 
-              {/* Main Card */}
-              <div className="relative bg-gradient-to-br from-white/95 via-white/90 to-white/95 backdrop-blur-xl rounded-3xl overflow-hidden border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:-translate-y-2">
-                <div className="relative aspect-[21/9] overflow-hidden">
-                  <img
-                    src="https://mgx-backend-cdn.metadl.com/generate/images/876360/2026-01-01/778d7126-aa44-4f96-bba3-25cb2cfe2806.png"
-                    alt="Team Collaboration"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-900/60 via-indigo-900/40 to-purple-900/60"></div>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {[
+              {
+                title: "Senior Automation Engineers",
+                count: "3",
+                experience: "Over 20 years of experience",
+                stars: 5,
+                color: "blue",
+              },
+              {
+                title: "Experienced Engineers",
+                count: "8",
+                experience: "3-10 years of experience",
+                stars: 4,
+                color: "indigo",
+              },
+              {
+                title: "Junior Engineers",
+                count: "7",
+                experience: "1-3 years of experience",
+                stars: 3,
+                color: "purple",
+              },
+            ].map((team, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-8 shadow-soft border border-gray-100 hover:shadow-lg transition-all duration-300"
+              >
+                <div
+                  className={`w-20 h-20 bg-gradient-to-br from-${team.color}-50 to-${team.color}-100 rounded-2xl flex items-center justify-center mx-auto mb-6`}
+                >
+                  <i
+                    className={`fas fa-user-tie text-${team.color}-600 text-3xl`}
+                  ></i>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
+                  {team.title}
+                </h3>
+                <div className="text-3xl font-bold text-center mb-2">
+                  <span className={`text-${team.color}-700`}>{team.count}</span>
+                </div>
+                <p className="text-gray-600 text-center mb-4">
+                  {team.experience}
+                </p>
+                <div className="flex justify-center">
+                  <div className="flex space-x-1">
+                    {[...Array(5)].map((_, i) => (
+                      <i
+                        key={i}
+                        className={`fas ${
+                          i < team.stars ? "fa-star" : "fa-star"
+                        } text-${
+                          i < team.stars ? "yellow-400" : "gray-300"
+                        } text-sm`}
+                      ></i>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
 
-                  {/* Content Overlay */}
-                  <div className="absolute inset-0 flex items-end p-8 lg:p-12">
-                    <div className="max-w-3xl">
-                      <div className="inline-flex items-center bg-white/20 backdrop-blur-md rounded-full px-6 py-2 mb-4">
-                        <i className="fas fa-users text-white mr-2"></i>
-                        <span className="text-white font-semibold text-sm uppercase tracking-wider">
-                          Collaborative Excellence
-                        </span>
+          <div className="text-center mt-16">
+            <div className="bg-white rounded-2xl p-8 shadow-soft border border-gray-100 inline-block max-w-2xl">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Continuous Learning & Development
+              </h3>
+              <p className="text-gray-700 mb-6">
+                Our team is committed to continuous skill improvement through
+                comprehensive internal and external training programs, ensuring
+                we stay at the forefront of automation technology and industry
+                best practices.
+              </p>
+              <div className="flex flex-wrap justify-center gap-3">
+                <span className="bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-100">
+                  <i className="fas fa-certificate mr-2"></i>
+                  Rockwell Training
+                </span>
+                <span className="bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium border border-indigo-100">
+                  <i className="fas fa-book mr-2"></i>
+                  Technical Workshops
+                </span>
+                <span className="bg-purple-50 text-purple-700 px-4 py-2 rounded-full text-sm font-medium border border-purple-100">
+                  <i className="fas fa-users mr-2"></i>
+                  Industry Conferences
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action - Modern Glassmorphism Design - Matching Homepage */}
+      <section className="relative py-24 lg:py-32 bg-gradient-to-b from-gray-50 via-white to-gray-50 overflow-hidden">
+        {/* Decorative Background Elements - Matching Homepage Style */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-500/10 to-transparent rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tl from-red-500/10 to-transparent rounded-full blur-3xl animate-pulse-slower"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-3xl"></div>
+
+        {/* Top Decorative Line */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500/30 to-transparent"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Main Content Container with Glassmorphism */}
+          <div className="max-w-5xl mx-auto">
+            {/* Badge with Glassmorphism - Matching Homepage Style */}
+            <div className="flex justify-center mb-8">
+              <div className="inline-flex items-center bg-white/80 backdrop-blur-md rounded-full px-6 py-3 border border-gray-200/50 shadow-lg hover:shadow-xl hover:bg-white/90 transition-all duration-300">
+                <div className="h-2 w-2 bg-red-600 rounded-full mr-3 animate-pulse"></div>
+                <span className="text-sm font-bold text-gray-700 uppercase tracking-widest">
+                  Let's Work Together
+                </span>
+              </div>
+            </div>
+
+            {/* Main CTA Card with Enhanced Design */}
+            <div className="relative group">
+              {/* Glassmorphism Card */}
+              <div className="relative bg-gradient-to-br from-white/95 via-white/90 to-white/95 backdrop-blur-xl rounded-3xl p-12 lg:p-16 border border-gray-200/50 shadow-2xl">
+                {/* Gradient Overlay on Hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-red-500/5 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-700"></div>
+
+                {/* Spotlight Effect */}
+                <div className="spotlight-overlay"></div>
+
+                <div className="relative z-10 text-center">
+                  {/* Enhanced Typography */}
+                  <h2 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+                    <span className="block mb-2">Ready to Transform</span>
+                    <span className="block bg-gradient-to-r from-blue-600 via-red-600 to-amber-600 bg-clip-text text-transparent">
+                      Your Automation Journey?
+                    </span>
+                  </h2>
+
+                  <p className="text-xl lg:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+                    Partner with certified experts who combine global technology
+                    with local expertise to deliver exceptional automation
+                    solutions
+                  </p>
+
+                  {/* Enhanced CTA Buttons with Modern Effects */}
+                  <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
+                    {/* Primary CTA - Contact */}
+                    <a
+                      href="/contact"
+                      className="group/btn relative bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-600 text-white px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 inline-flex items-center justify-center shadow-xl hover:shadow-2xl hover:shadow-red-600/30 hover:scale-105 overflow-hidden min-w-[280px]"
+                    >
+                      <span className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-800 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
+
+                      {/* Animated Icon Container */}
+                      <div className="relative z-10 mr-3 w-6 h-6 flex items-center justify-center">
+                        <i className="fas fa-handshake transform group-hover/btn:rotate-12 group-hover/btn:scale-110 transition-all duration-300"></i>
                       </div>
-                      <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-                        Multidisciplinary Expertise
-                      </h3>
-                      <p className="text-blue-100 text-lg leading-relaxed">
-                        Our team combines decades of experience with
-                        cutting-edge technical expertise to deliver exceptional
-                        automation solutions across diverse industries.
-                      </p>
+
+                      <span className="relative z-10">Start Your Project</span>
+
+                      <i className="fas fa-arrow-right ml-3 relative z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all duration-300"></i>
+
+                      {/* Shine Effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
+                    </a>
+
+                    {/* Secondary CTA - Services */}
+                    <a
+                      href="/services"
+                      className="group/btn relative bg-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-700 text-blue-600 hover:text-white border-2 border-blue-600 px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-105 overflow-hidden min-w-[280px]"
+                    >
+                      {/* Animated Icon Container */}
+                      <div className="relative z-10 mr-3 w-6 h-6 flex items-center justify-center">
+                        <i className="fas fa-cogs transform group-hover/btn:rotate-180 transition-all duration-500"></i>
+                      </div>
+
+                      <span className="relative z-10">
+                        Explore Our Services
+                      </span>
+
+                      <i className="fas fa-arrow-right ml-3 relative z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all duration-300"></i>
+                    </a>
+                  </div>
+
+                  {/* Additional Trust Indicators */}
+                  <div className="mt-12 pt-8 border-t border-gray-200/50">
+                    <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-gray-500">
+                      <div className="flex items-center">
+                        <i className="fas fa-check-circle text-red-600 mr-2"></i>
+                        <span>Free Consultation</span>
+                      </div>
+                      <div className="flex items-center">
+                        <i className="fas fa-check-circle text-red-600 mr-2"></i>
+                        <span>17+ Years Experience</span>
+                      </div>
+                      <div className="flex items-center">
+                        <i className="fas fa-check-circle text-red-600 mr-2"></i>
+                        <span>Certified Partner</span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Corner Accent Decorations */}
-                <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-blue-500/30 rounded-tl-3xl"></div>
-                <div className="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-purple-500/30 rounded-br-3xl"></div>
+                <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-blue-500/20 rounded-tl-3xl"></div>
+                <div className="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-red-500/20 rounded-br-3xl"></div>
               </div>
-            </div>
-          </div>
 
-          {/* Team Structure Cards - Matching Homepage Core Business Style */}
-          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
-            {/* Senior Engineers Card */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md group-hover:blur-lg"></div>
-
-              <div className="relative bg-gradient-to-br from-white/95 via-white/90 to-white/95 backdrop-blur-xl rounded-3xl p-8 lg:p-10 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:-translate-y-2">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-indigo-500/5 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-
-                <div className="relative z-10">
-                  {/* Icon */}
-                  <div className="relative w-20 h-20 mx-auto mb-6">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                    <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
-                      <i className="fas fa-user-tie text-blue-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                  </div>
-
-                  <div className="text-center">
-                    <div className="inline-flex items-center bg-gradient-to-r from-blue-50 to-blue-100 rounded-full px-4 py-2 mb-4">
-                      <span className="text-blue-700 font-bold text-xs uppercase tracking-wider">
-                        Leadership
-                      </span>
-                    </div>
-
-                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 group-hover:text-blue-700 transition-colors duration-300">
-                      Senior Automation Engineers
-                    </h3>
-
-                    <div className="text-5xl font-bold text-blue-600 mb-3">
-                      3
-                    </div>
-
-                    <p className="text-gray-600 text-lg mb-4 leading-relaxed">
-                      Over 20 years of experience
-                    </p>
-
-                    {/* Star Rating */}
-                    <div className="flex justify-center space-x-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <i
-                          key={i}
-                          className="fas fa-star text-yellow-400 text-sm"
-                        ></i>
-                      ))}
-                    </div>
-
-                    <div className="mt-6 h-1 w-16 mx-auto bg-gradient-to-r from-blue-500 to-blue-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  </div>
-                </div>
-
-                <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-blue-500/20 rounded-tl-3xl"></div>
-                <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-blue-500/20 rounded-br-3xl"></div>
-              </div>
+              {/* Outer Glow Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-red-500/10 to-amber-500/10 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
             </div>
 
-            {/* Experienced Engineers Card */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md group-hover:blur-lg"></div>
-
-              <div className="relative bg-gradient-to-br from-white/95 via-white/90 to-white/95 backdrop-blur-xl rounded-3xl p-8 lg:p-10 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:-translate-y-2">
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-
-                <div className="relative z-10">
-                  {/* Icon */}
-                  <div className="relative w-20 h-20 mx-auto mb-6">
-                    <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                    <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
-                      <i className="fas fa-user-tie text-indigo-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                  </div>
-
-                  <div className="text-center">
-                    <div className="inline-flex items-center bg-gradient-to-r from-indigo-50 to-indigo-100 rounded-full px-4 py-2 mb-4">
-                      <span className="text-indigo-700 font-bold text-xs uppercase tracking-wider">
-                        Core Team
-                      </span>
-                    </div>
-
-                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 group-hover:text-indigo-700 transition-colors duration-300">
-                      Experienced Engineers
-                    </h3>
-
-                    <div className="text-5xl font-bold text-indigo-600 mb-3">
-                      8
-                    </div>
-
-                    <p className="text-gray-600 text-lg mb-4 leading-relaxed">
-                      3-10 years of experience
-                    </p>
-
-                    {/* Star Rating */}
-                    <div className="flex justify-center space-x-1 mb-4">
-                      {[...Array(4)].map((_, i) => (
-                        <i
-                          key={i}
-                          className="fas fa-star text-yellow-400 text-sm"
-                        ></i>
-                      ))}
-                      <i className="fas fa-star text-gray-300 text-sm"></i>
-                    </div>
-
-                    <div className="mt-6 h-1 w-16 mx-auto bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  </div>
-                </div>
-
-                <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-indigo-500/20 rounded-tl-3xl"></div>
-                <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-indigo-500/20 rounded-br-3xl"></div>
-              </div>
-            </div>
-
-            {/* Junior Engineers Card */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-600 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md group-hover:blur-lg"></div>
-
-              <div className="relative bg-gradient-to-br from-white/95 via-white/90 to-white/95 backdrop-blur-xl rounded-3xl p-8 lg:p-10 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:-translate-y-2">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-pink-500/5 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-
-                <div className="relative z-10">
-                  {/* Icon */}
-                  <div className="relative w-20 h-20 mx-auto mb-6">
-                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                    <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
-                      <i className="fas fa-user-tie text-purple-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                  </div>
-
-                  <div className="text-center">
-                    <div className="inline-flex items-center bg-gradient-to-r from-purple-50 to-purple-100 rounded-full px-4 py-2 mb-4">
-                      <span className="text-purple-700 font-bold text-xs uppercase tracking-wider">
-                        Rising Talent
-                      </span>
-                    </div>
-
-                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3 group-hover:text-purple-700 transition-colors duration-300">
-                      Junior Engineers
-                    </h3>
-
-                    <div className="text-5xl font-bold text-purple-600 mb-3">
-                      7
-                    </div>
-
-                    <p className="text-gray-600 text-lg mb-4 leading-relaxed">
-                      1-3 years of experience
-                    </p>
-
-                    {/* Star Rating */}
-                    <div className="flex justify-center space-x-1 mb-4">
-                      {[...Array(3)].map((_, i) => (
-                        <i
-                          key={i}
-                          className="fas fa-star text-yellow-400 text-sm"
-                        ></i>
-                      ))}
-                      {[...Array(2)].map((_, i) => (
-                        <i
-                          key={i}
-                          className="fas fa-star text-gray-300 text-sm"
-                        ></i>
-                      ))}
-                    </div>
-
-                    <div className="mt-6 h-1 w-16 mx-auto bg-gradient-to-r from-purple-500 to-purple-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  </div>
-                </div>
-
-                <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-purple-500/20 rounded-tl-3xl"></div>
-                <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-purple-500/20 rounded-br-3xl"></div>
-              </div>
-            </div>
-          </div>
-
-          {/* Training & Development Card - Matching Homepage CTA Style */}
-          <div className="max-w-4xl mx-auto">
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md group-hover:blur-lg"></div>
-
-              <div className="relative bg-gradient-to-br from-white/95 via-white/90 to-white/95 backdrop-blur-xl rounded-3xl p-10 lg:p-12 border border-gray-200/50 shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:-translate-y-2">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-
-                <div className="relative z-10 text-center">
-                  {/* Icon */}
-                  <div className="relative w-20 h-20 mx-auto mb-6">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                    <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
-                      <i className="fas fa-graduation-cap text-blue-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                  </div>
-
-                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 group-hover:text-blue-700 transition-colors duration-300">
-                    Continuous Learning & Development
-                  </h3>
-
-                  <p className="text-gray-700 text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
-                    Our team is committed to continuous skill improvement
-                    through comprehensive internal and external training
-                    programs, ensuring we stay at the forefront of automation
-                    technology and industry best practices.
-                  </p>
-
-                  {/* Training Tags */}
-                  <div className="flex flex-wrap justify-center gap-4">
-                    <div className="group/tag inline-flex items-center bg-gradient-to-r from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-full px-6 py-3 border border-blue-200/50 transition-all duration-300 hover:scale-105">
-                      <i className="fas fa-certificate text-blue-600 mr-3 group-hover/tag:scale-110 transition-transform duration-300"></i>
-                      <span className="text-blue-700 font-semibold">
-                        Rockwell Training
-                      </span>
-                    </div>
-
-                    <div className="group/tag inline-flex items-center bg-gradient-to-r from-indigo-50 to-indigo-100 hover:from-indigo-100 hover:to-indigo-200 rounded-full px-6 py-3 border border-indigo-200/50 transition-all duration-300 hover:scale-105">
-                      <i className="fas fa-book text-indigo-600 mr-3 group-hover/tag:scale-110 transition-transform duration-300"></i>
-                      <span className="text-indigo-700 font-semibold">
-                        Technical Workshops
-                      </span>
-                    </div>
-
-                    <div className="group/tag inline-flex items-center bg-gradient-to-r from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 rounded-full px-6 py-3 border border-purple-200/50 transition-all duration-300 hover:scale-105">
-                      <i className="fas fa-users text-purple-600 mr-3 group-hover/tag:scale-110 transition-transform duration-300"></i>
-                      <span className="text-purple-700 font-semibold">
-                        Industry Conferences
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="mt-8 h-1 w-24 mx-auto bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                </div>
-
-                <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-blue-500/20 rounded-tl-3xl"></div>
-                <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-purple-500/20 rounded-br-3xl"></div>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom Connecting Element */}
-          <div className="mt-20 text-center">
-            <div className="inline-flex items-center justify-center">
-              <div className="h-px w-24 bg-gradient-to-r from-blue-500 to-transparent"></div>
-              <div className="mx-4">
-                <div className="w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
-              </div>
-              <div className="h-px w-24 bg-gradient-to-l from-purple-500 to-transparent"></div>
-            </div>
-            <p className="text-gray-500 mt-4 text-lg">
-              Empowering innovation through expertise and dedication
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-        <div className="container mx-auto px-6 text-center">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl font-bold mb-6">
-              Ready to Transform Your Automation Journey?
-            </h2>
-            <p className="text-xl mb-8 text-blue-100 leading-relaxed">
-              Partner with certified experts who combine global technology with
-              local expertise to deliver exceptional automation solutions.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* Bottom Contact Info */}
+            <div className="text-center mt-12">
+              <p className="text-gray-500 text-sm font-medium mb-2">
+                Or reach us directly at
+              </p>
               <a
-                href="/contact"
-                className="bg-white text-blue-700 hover:bg-gray-50 px-8 py-4 rounded-xl font-semibold transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-xl"
+                href="tel:+62318798168"
+                className="text-blue-600 hover:text-red-600 font-bold text-lg transition-colors inline-flex items-center"
               >
-                <i className="fas fa-handshake mr-3"></i>
-                Start Your Project
-              </a>
-              <a
-                href="/services"
-                className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-4 rounded-xl font-semibold transition-all duration-300 inline-flex items-center justify-center"
-              >
-                <i className="fas fa-cogs mr-3"></i>
-                Explore Our Services
+                <i className="fas fa-phone-alt mr-2"></i>
+                +62-31-879.8168
               </a>
             </div>
           </div>
         </div>
+
+        {/* Bottom Decorative Line */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-red-500/30 to-transparent"></div>
       </section>
     </div>
   );
