@@ -1061,113 +1061,159 @@ export const ServicesPage = () => {
                 </div>
 
                 {/* Legacy System Migration Grid */}
-                <div className="grid lg:grid-cols-2 gap-8 mb-8">
-                  <div>
-                    <h4
-                      className="text-xl font-bold text-gray-800 mb-6 flex items-center"
-                      data-translate="servicesPage.legacyMigration"
-                    >
-                      <i className="fas fa-exchange-alt text-secondary mr-3"></i>
-                      Legacy System Migration
-                    </h4>
-                    <div className="space-y-4">
-                      <div className="bg-gradient-to-r from-gray-50 to-white rounded-xl p-5 border border-gray-100 hover:border-secondary/30 transition-all duration-300 hover:shadow-md">
-                        <div className="flex items-center justify-between">
-                          <span className="font-semibold text-gray-800">
+                <div className="mb-10">
+                  <h4
+                    className="text-2xl font-bold text-gray-800 mb-8 text-center"
+                    data-translate="servicesPage.legacyMigration"
+                  >
+                    <i className="fas fa-exchange-alt text-secondary mr-3"></i>
+                    Legacy System Migration
+                  </h4>
+                  <div className="grid md:grid-cols-3 gap-6 mb-8">
+                    {/* Allen-Bradley PLC-5 → ControlLogix */}
+                    <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                      <div className="relative h-48 overflow-hidden">
+                        <img
+                          src="https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg"
+                          alt="Legacy PLC-5 System"
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 to-transparent opacity-70"></div>
+                        <div className="absolute bottom-4 left-4">
+                          <i className="fas fa-microchip text-white text-3xl drop-shadow-lg"></i>
+                        </div>
+                      </div>
+                      <div className="p-6">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="font-bold text-gray-800 text-sm">
                             Allen-Bradley PLC-5
                           </span>
-                          <div className="flex items-center space-x-3">
-                            <i className="fas fa-arrow-right text-secondary animate-pulse"></i>
-                          </div>
-                          <span className="font-semibold text-primary">
+                          <i className="fas fa-arrow-right text-secondary animate-pulse"></i>
+                          <span className="font-bold text-primary text-sm">
                             ControlLogix
                           </span>
                         </div>
+                        <p className="text-xs text-gray-600 text-center mt-3">
+                          Migrate from legacy to modern platform
+                        </p>
                       </div>
-                      <div className="bg-gradient-to-r from-gray-50 to-white rounded-xl p-5 border border-gray-100 hover:border-secondary/30 transition-all duration-300 hover:shadow-md">
-                        <div className="flex items-center justify-between">
-                          <span className="font-semibold text-gray-800">
+                    </div>
+
+                    {/* SLC-500 → CompactLogix */}
+                    <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                      <div className="relative h-48 overflow-hidden">
+                        <img
+                          src="https://images.pexels.com/photos/3582392/pexels-photo-3582392.jpeg"
+                          alt="SLC-500 Control System"
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent opacity-70"></div>
+                        <div className="absolute bottom-4 left-4">
+                          <i className="fas fa-sliders-h text-white text-3xl drop-shadow-lg"></i>
+                        </div>
+                      </div>
+                      <div className="p-6">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="font-bold text-gray-800 text-sm">
                             SLC-500
                           </span>
-                          <div className="flex items-center space-x-3">
-                            <i className="fas fa-arrow-right text-secondary animate-pulse"></i>
-                          </div>
-                          <span className="font-semibold text-primary">
+                          <i className="fas fa-arrow-right text-secondary animate-pulse"></i>
+                          <span className="font-bold text-primary text-sm">
                             CompactLogix
                           </span>
                         </div>
+                        <p className="text-xs text-gray-600 text-center mt-3">
+                          Enhanced performance and features
+                        </p>
                       </div>
-                      <div className="bg-gradient-to-r from-gray-50 to-white rounded-xl p-5 border border-gray-100 hover:border-secondary/30 transition-all duration-300 hover:shadow-md">
-                        <div className="flex items-center justify-between">
-                          <span className="font-semibold text-gray-800 text-sm lg:text-base">
-                            Reliance Electric Automax DCS
+                    </div>
+
+                    {/* Reliance Electric Automax DCS → Modern DCS */}
+                    <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                      <div className="relative h-48 overflow-hidden">
+                        <img
+                          src="https://images.pexels.com/photos/19233057/pexels-photo-19233057.jpeg"
+                          alt="Automax DCS Modernization"
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-accent/90 to-transparent opacity-70"></div>
+                        <div className="absolute bottom-4 left-4">
+                          <i className="fas fa-industry text-white text-3xl drop-shadow-lg"></i>
+                        </div>
+                      </div>
+                      <div className="p-6">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="font-bold text-gray-800 text-xs">
+                            Automax DCS
                           </span>
-                          <div className="flex items-center space-x-3">
-                            <i className="fas fa-arrow-right text-secondary animate-pulse"></i>
-                          </div>
-                          <span className="font-semibold text-primary">
+                          <i className="fas fa-arrow-right text-secondary animate-pulse"></i>
+                          <span className="font-bold text-primary text-xs">
                             Modern DCS
                           </span>
                         </div>
+                        <p className="text-xs text-gray-600 text-center mt-3">
+                          Complete system transformation
+                        </p>
                       </div>
                     </div>
                   </div>
+                </div>
 
-                  <div>
-                    <h4
-                      className="text-xl font-bold text-gray-800 mb-6 flex items-center"
-                      data-translate="servicesPage.migrationBenefits"
-                    >
-                      <i className="fas fa-star text-accent mr-3"></i>
-                      Migration Benefits
-                    </h4>
-                    <div className="bg-gradient-to-br from-blue-50 to-primary/5 rounded-2xl p-6 border border-primary/10">
-                      <ul className="space-y-3">
-                        <li className="flex items-start">
-                          <div className="flex-shrink-0 w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-3 mt-0.5">
-                            <i className="fas fa-check text-primary text-sm"></i>
-                          </div>
-                          <span
-                            className="text-gray-700 leading-relaxed"
-                            data-translate="servicesPage.benefit1"
-                          >
-                            Improved system reliability and performance
-                          </span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="flex-shrink-0 w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-3 mt-0.5">
-                            <i className="fas fa-check text-primary text-sm"></i>
-                          </div>
-                          <span
-                            className="text-gray-700 leading-relaxed"
-                            data-translate="servicesPage.benefit2"
-                          >
-                            Enhanced cybersecurity features
-                          </span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="flex-shrink-0 w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-3 mt-0.5">
-                            <i className="fas fa-check text-primary text-sm"></i>
-                          </div>
-                          <span
-                            className="text-gray-700 leading-relaxed"
-                            data-translate="servicesPage.benefit3"
-                          >
-                            Better integration capabilities
-                          </span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="flex-shrink-0 w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-3 mt-0.5">
-                            <i className="fas fa-check text-primary text-sm"></i>
-                          </div>
-                          <span
-                            className="text-gray-700 leading-relaxed"
-                            data-translate="servicesPage.benefit4"
-                          >
-                            Reduced maintenance costs
-                          </span>
-                        </li>
-                      </ul>
+                {/* Migration Benefits - Full Width */}
+                <div className="mb-8">
+                  <h4
+                    className="text-2xl font-bold text-gray-800 mb-6 text-center flex items-center justify-center"
+                    data-translate="servicesPage.migrationBenefits"
+                  >
+                    <i className="fas fa-star text-accent mr-3"></i>
+                    Migration Benefits
+                  </h4>
+                  <div className="bg-gradient-to-br from-blue-50 to-primary/5 rounded-2xl p-8 border border-primary/10">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="flex items-start">
+                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4 mt-0.5">
+                          <i className="fas fa-check text-primary text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700 leading-relaxed"
+                          data-translate="servicesPage.benefit1"
+                        >
+                          Improved system reliability and performance
+                        </span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4 mt-0.5">
+                          <i className="fas fa-check text-primary text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700 leading-relaxed"
+                          data-translate="servicesPage.benefit2"
+                        >
+                          Enhanced cybersecurity features
+                        </span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4 mt-0.5">
+                          <i className="fas fa-check text-primary text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700 leading-relaxed"
+                          data-translate="servicesPage.benefit3"
+                        >
+                          Better integration capabilities
+                        </span>
+                      </div>
+                      <div className="flex items-start">
+                        <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4 mt-0.5">
+                          <i className="fas fa-check text-primary text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700 leading-relaxed"
+                          data-translate="servicesPage.benefit4"
+                        >
+                          Reduced maintenance costs
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
