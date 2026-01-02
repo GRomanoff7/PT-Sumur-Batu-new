@@ -511,8 +511,7 @@ export const ServicesPage = () => {
           {/* Optional CTA or Additional Info */}
           <div className="text-center mt-16">
             <p className="text-gray-500 text-sm font-medium">
-              Expert programming solutions using industry-leading Allen-Bradley
-              platforms
+              Expert programming solutions using industry-leading Allen-Bradley platforms
             </p>
           </div>
         </div>
