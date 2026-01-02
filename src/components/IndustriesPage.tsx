@@ -226,166 +226,221 @@ export const IndustriesPage = () => {
         </div>
       </section>
 
-      {/* Pulp and Paper */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8">
+      {/* Pulp and Paper - Modern & Elegant Design (Updated to match homepage style) */}
+      <section className="relative py-24 bg-gradient-to-b from-gray-50 via-white/30 to-gray-50 overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-green-500/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tl from-green-600/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-green-600"></div>
+              <span className="mx-4 text-sm font-semibold text-green-600 uppercase tracking-widest">
+                Industry Focus
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-green-600"></div>
+            </div>
+
+            <h2
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+              data-translate="industries.pulpPaperFull"
+            >
+              Pulp & Paper
+              <br />
+              <span className="bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">
+                Manufacturing Solutions
+              </span>
+            </h2>
+            <p
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
+              data-translate="industries.pulpPaperDesc"
+            >
+              Comprehensive automation solutions for pulp and paper production
+              facilities, from wood preparation to final product packaging. Our
+              systems optimize production efficiency, quality control, and
+              resource utilization while ensuring environmental compliance.
+            </p>
+          </div>
+
+          {/* Modern Card Grid with Glassmorphism */}
+          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+            {/* Card 1 - Production Optimization */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-green-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-green-600/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-green-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-cogs text-green-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
                 <h3
-                  className="text-2xl font-bold text-gray-800 mb-6 text-center"
-                  data-translate="industries.processControlAreas"
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors duration-300"
+                  data-translate="industries.productionOptimization"
                 >
-                  Process Control Areas
+                  Production Optimization
                 </h3>
-                <div className="space-y-4">
-                  <div className="bg-white rounded-lg p-4 shadow-md flex items-center">
-                    <i className="fas fa-tree text-green-600 mr-4 text-xl"></i>
-                    <div>
-                      <h4
-                        className="font-semibold text-gray-800"
-                        data-translate="industries.woodPreparation"
-                      >
-                        Wood Preparation
-                      </h4>
-                      <p
-                        className="text-sm text-gray-600"
-                        data-translate="industries.woodPreparationDesc"
-                      >
-                        Chipping and screening automation
-                      </p>
-                    </div>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="industries.productionOptimizationDesc"
+                >
+                  Maximizing throughput while maintaining quality standards
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-green-600 to-green-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+
+            {/* Card 2 - Process Control */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-green-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-green-600/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-green-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-thermometer-half text-green-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
                   </div>
-                  <div className="bg-white rounded-lg p-4 shadow-md flex items-center">
-                    <i className="fas fa-industry text-green-600 mr-4 text-xl"></i>
-                    <div>
-                      <h4
-                        className="font-semibold text-gray-800"
-                        data-translate="industries.pulpProcessing"
-                      >
-                        Pulp Processing
-                      </h4>
-                      <p
-                        className="text-sm text-gray-600"
-                        data-translate="industries.pulpProcessingDesc"
-                      >
-                        Digester and bleaching control
-                      </p>
-                    </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors duration-300"
+                  data-translate="industries.processControl"
+                >
+                  Process Control
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="industries.processControlDesc"
+                >
+                  Temperature, pressure, and flow control systems
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-green-600 to-green-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+
+            {/* Card 3 - Environmental Controls */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-green-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-green-600/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-green-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-leaf text-green-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
                   </div>
-                  <div className="bg-white rounded-lg p-4 shadow-md flex items-center">
-                    <i className="fas fa-scroll text-green-600 mr-4 text-xl"></i>
-                    <div>
-                      <h4
-                        className="font-semibold text-gray-800"
-                        data-translate="industries.paperMachine"
-                      >
-                        Paper Machine
-                      </h4>
-                      <p
-                        className="text-sm text-gray-600"
-                        data-translate="industries.paperMachineDesc"
-                      >
-                        Formation and pressing systems
-                      </p>
-                    </div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 shadow-md flex items-center">
-                    <i className="fas fa-boxes text-green-600 mr-4 text-xl"></i>
-                    <div>
-                      <h4
-                        className="font-semibold text-gray-800"
-                        data-translate="industries.finishingPackaging"
-                      >
-                        Finishing & Packaging
-                      </h4>
-                      <p
-                        className="text-sm text-gray-600"
-                        data-translate="industries.finishingPackagingDesc"
-                      >
-                        Winding and cutting control
-                      </p>
-                    </div>
-                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors duration-300"
+                  data-translate="industries.environmentalControls"
+                >
+                  Environmental Controls
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="industries.environmentalControlsDesc"
+                >
+                  Emission monitoring and waste reduction systems
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-green-600 to-green-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Process Control Areas Grid - Modern Design with Images */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHx3b29kJTIwY2hpcHN8ZW58MHx8fHwxNzY3MjQxMTQ5fDA&ixlib=rb-4.1.0&q=85"
+                  alt="Wood Preparation"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-green-900 via-green-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
+                  <i className="fas fa-tree text-5xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h4
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.woodPreparation"
+                  >
+                    Wood Preparation
+                  </h4>
                 </div>
               </div>
             </div>
-            <div className="order-1 lg:order-2">
-              <div className="inline-flex items-center bg-green-100 rounded-full px-6 py-2 mb-6">
-                <i className="fas fa-leaf text-green-600 mr-2"></i>
-                <span
-                  className="text-green-600 font-semibold"
-                  data-translate="industries.pulpPaper"
-                >
-                  Pulp and Paper
-                </span>
+
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxwdWxwJTIwbWlsbHxlbnwwfHx8fDE3NjcyNDExNTR8MA&ixlib=rb-4.1.0&q=85"
+                  alt="Pulp Processing"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-green-900 via-green-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
+                  <i className="fas fa-industry text-5xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h4
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.pulpProcessing"
+                  >
+                    Pulp Processing
+                  </h4>
+                </div>
               </div>
-              <h2
-                className="text-4xl font-bold text-gray-800 mb-6"
-                data-translate="industries.pulpPaperFull"
-              >
-                Pulp & Paper Manufacturing
-              </h2>
-              <p
-                className="text-gray-600 mb-6 leading-relaxed"
-                data-translate="industries.pulpPaperDesc"
-              >
-                Comprehensive automation solutions for pulp and paper production
-                facilities, from wood preparation to final product packaging.
-                Our systems optimize production efficiency, quality control, and
-                resource utilization while ensuring environmental compliance.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <i className="fas fa-cogs text-green-600 mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="industries.productionOptimization"
-                    >
-                      Production Optimization
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="industries.productionOptimizationDesc"
-                    >
-                      Maximizing throughput while maintaining quality standards
-                    </p>
-                  </div>
+            </div>
+
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1732984160322-ec48339d8eb7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxwYXBlciUyMG1pbGwlMjBmYWN0b3J5fGVufDB8fHx8MTc2NzI0MTEwN3ww&ixlib=rb-4.1.0&q=85"
+                  alt="Paper Machine"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-green-900 via-green-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
+                  <i className="fas fa-scroll text-5xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h4
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.paperMachine"
+                  >
+                    Paper Machine
+                  </h4>
                 </div>
-                <div className="flex items-start">
-                  <i className="fas fa-thermometer-half text-green-600 mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="industries.processControl"
-                    >
-                      Process Control
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="industries.processControlDesc"
-                    >
-                      Temperature, pressure, and flow control systems
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <i className="fas fa-leaf text-green-600 mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="industries.environmentalControls"
-                    >
-                      Environmental Controls
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="industries.environmentalControlsDesc"
-                    >
-                      Emission monitoring and waste reduction systems
-                    </p>
-                  </div>
+              </div>
+            </div>
+
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxwYWNrYWdpbmclMjBsaW5lfGVufDB8fHx8MTc2NzI0MTE2MXww&ixlib=rb-4.1.0&q=85"
+                  alt="Finishing & Packaging"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-green-900 via-green-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
+                  <i className="fas fa-boxes text-5xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h4
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.finishingPackaging"
+                  >
+                    Finishing & Packaging
+                  </h4>
                 </div>
               </div>
             </div>
