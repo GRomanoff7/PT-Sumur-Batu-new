@@ -138,47 +138,102 @@ export const ServicesPage = () => {
             </div>
           </div>
 
-          {/* Design Capabilities Grid */}
+          {/* Design Capabilities Grid - Enhanced with Images */}
           <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-12">
             <h3 className="text-3xl font-bold text-gray-800 mb-10 text-center">
               Design Capabilities
             </h3>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-center hover:-translate-y-1">
-                <i className="fas fa-project-diagram text-primary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
-                <h4
-                  className="font-bold text-gray-800 text-lg"
-                  data-translate="servicesPage.systemArchitecture"
-                >
-                  System Architecture
-                </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* System Architecture */}
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/877530/2026-01-01/46884910-97b3-4dc3-9a2b-21da609ee94c.png"
+                    alt="System Architecture"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <i className="fas fa-project-diagram text-white text-3xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+                <div className="p-6 text-center">
+                  <h4
+                    className="font-bold text-gray-800 text-lg"
+                    data-translate="servicesPage.systemArchitecture"
+                  >
+                    System Architecture
+                  </h4>
+                </div>
               </div>
-              <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-center hover:-translate-y-1">
-                <i className="fas fa-cogs text-secondary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
-                <h4
-                  className="font-bold text-gray-800 text-lg"
-                  data-translate="servicesPage.controlDesign"
-                >
-                  Control Design
-                </h4>
+
+              {/* Control Design */}
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/877530/2026-01-01/4a411372-403d-4731-b49f-4d546736d5ef.png"
+                    alt="Control Design"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <i className="fas fa-cogs text-white text-3xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+                <div className="p-6 text-center">
+                  <h4
+                    className="font-bold text-gray-800 text-lg"
+                    data-translate="servicesPage.controlDesign"
+                  >
+                    Control Design
+                  </h4>
+                </div>
               </div>
-              <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-center hover:-translate-y-1">
-                <i className="fas fa-tachometer-alt text-accent text-4xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
-                <h4
-                  className="font-bold text-gray-800 text-lg"
-                  data-translate="servicesPage.driveSystems"
-                >
-                  Drive Systems
-                </h4>
+
+              {/* Drive Systems */}
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/877530/2026-01-01/a2111e79-8f2d-4146-becd-19a0094364a1.png"
+                    alt="Drive Systems"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-accent/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <i className="fas fa-tachometer-alt text-white text-3xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+                <div className="p-6 text-center">
+                  <h4
+                    className="font-bold text-gray-800 text-lg"
+                    data-translate="servicesPage.driveSystems"
+                  >
+                    Drive Systems
+                  </h4>
+                </div>
               </div>
-              <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-center hover:-translate-y-1">
-                <i className="fas fa-shield-alt text-green-600 text-4xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
-                <h4
-                  className="font-bold text-gray-800 text-lg"
-                  data-translate="servicesPage.safetySystems"
-                >
-                  Safety Systems
-                </h4>
+
+              {/* Safety Systems */}
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/877530/2026-01-01/d91bd36d-e00b-4754-8f0a-8bf4557cfabd.png"
+                    alt="Safety Systems"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-green-600/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <i className="fas fa-shield-alt text-white text-3xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+                <div className="p-6 text-center">
+                  <h4
+                    className="font-bold text-gray-800 text-lg"
+                    data-translate="servicesPage.safetySystems"
+                  >
+                    Safety Systems
+                  </h4>
+                </div>
               </div>
             </div>
           </div>
