@@ -825,198 +825,365 @@ export const ServicesPage = () => {
         </div>
       </section>
 
-      {/* Support & Modernization */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center bg-green-100 rounded-full px-6 py-2 mb-6">
-              <i className="fas fa-life-ring text-green-600 mr-2"></i>
-              <span
-                className="text-green-600 font-semibold"
-                data-translate="servicesPage.supportBadge"
-              >
+      {/* Support & Modernization - Modern & Elegant Redesign */}
+      <section className="relative py-24 bg-gradient-to-b from-gray-50 via-white to-gray-50 overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-green-500/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tl from-primary/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-green-600"></div>
+              <span className="mx-4 text-sm font-semibold text-green-600 uppercase tracking-widest">
                 Support & Modernization
               </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-green-600"></div>
             </div>
+
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               data-translate="servicesPage.supportTitle"
             >
-              Technical Support & System Upgrades
+              Technical Support &
+              <br />
+              <span className="bg-gradient-to-r from-green-600 to-primary bg-clip-text text-transparent">
+                System Upgrades
+              </span>
             </h2>
             <p
-              className="text-xl text-gray-600 max-w-3xl mx-auto"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="servicesPage.supportSubtitle"
             >
               Comprehensive support services to keep your systems running
-              optimally and up-to-date
+              optimally and up-to-date with the latest automation technology.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div className="space-y-8">
-              <div className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                    <i className="fas fa-tools text-green-600 text-xl"></i>
-                  </div>
-                  <h3
-                    className="text-xl font-bold text-gray-800"
-                    data-translate="servicesPage.technicalSupportTitle"
-                  >
-                    Technical Support
-                  </h3>
-                </div>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-green-600 mr-2"></i>
-                    <span data-translate="servicesPage.support1">
-                      Troubleshooting and diagnostics
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-green-600 mr-2"></i>
-                    <span data-translate="servicesPage.support2">
-                      System modifications and optimization
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-green-600 mr-2"></i>
-                    <span data-translate="servicesPage.support3">
-                      Commissioning and startup support
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-green-600 mr-2"></i>
-                    <span data-translate="servicesPage.support4">
-                      Preventive maintenance programs
-                    </span>
-                  </li>
-                </ul>
-              </div>
+          {/* Modern Card Grid with Glassmorphism */}
+          <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto mb-16">
+            {/* Card 1 - Technical Support */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-green-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-green-600/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-green-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
 
-              <div className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                    <i className="fas fa-graduation-cap text-blue-600 text-xl"></i>
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-tools text-green-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
                   </div>
-                  <h3
-                    className="text-xl font-bold text-gray-800"
-                    data-translate="servicesPage.trainingTitle"
-                  >
-                    Training Services
-                  </h3>
                 </div>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-blue-600 mr-2"></i>
-                    <span data-translate="servicesPage.training1">
-                      Operator training programs
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-blue-600 mr-2"></i>
-                    <span data-translate="servicesPage.training2">
-                      Maintenance training courses
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-blue-600 mr-2"></i>
-                    <span data-translate="servicesPage.training3">
-                      Technical documentation
-                    </span>
-                  </li>
-                  <li className="flex items-center">
-                    <i className="fas fa-check text-blue-600 mr-2"></i>
-                    <span data-translate="servicesPage.training4">
-                      On-site training sessions
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4">
-                  <i className="fas fa-sync-alt text-secondary text-xl"></i>
-                </div>
                 <h3
-                  className="text-xl font-bold text-gray-800"
-                  data-translate="servicesPage.upgradeTitle"
+                  className="text-2xl font-bold text-gray-900 mb-6 group-hover:text-green-600 transition-colors duration-300"
+                  data-translate="servicesPage.technicalSupportTitle"
                 >
-                  Upgrade & Modernization
+                  Technical Support
                 </h3>
-              </div>
-              <p
-                className="text-gray-600 mb-6"
-                data-translate="servicesPage.upgradeDesc"
-              >
-                Migrate legacy systems to modern platforms for improved
-                performance, reliability, and maintainability.
-              </p>
 
-              <h4
-                className="font-bold text-gray-800 mb-4"
-                data-translate="servicesPage.legacyMigration"
-              >
-                Legacy System Migration
-              </h4>
-              <div className="space-y-3">
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <div className="flex items-center justify-between">
-                    <span className="font-medium text-gray-800">
-                      Allen-Bradley PLC-5
-                    </span>
-                    <i className="fas fa-arrow-right text-secondary"></i>
-                    <span className="font-medium text-primary">
-                      ControlLogix
-                    </span>
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-green-600/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-green-600/20 transition-colors duration-300">
+                      <i className="fas fa-check text-green-600"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.support1"
+                      >
+                        Troubleshooting and diagnostics
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-green-600/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-green-600/20 transition-colors duration-300">
+                      <i className="fas fa-check text-green-600"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.support2"
+                      >
+                        System modifications and optimization
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-green-600/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-green-600/20 transition-colors duration-300">
+                      <i className="fas fa-check text-green-600"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.support3"
+                      >
+                        Commissioning and startup support
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-green-600/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-green-600/20 transition-colors duration-300">
+                      <i className="fas fa-check text-green-600"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.support4"
+                      >
+                        Preventive maintenance programs
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <div className="flex items-center justify-between">
-                    <span className="font-medium text-gray-800">SLC-500</span>
-                    <i className="fas fa-arrow-right text-secondary"></i>
-                    <span className="font-medium text-primary">
-                      CompactLogix
-                    </span>
-                  </div>
-                </div>
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <div className="flex items-center justify-between">
-                    <span className="font-medium text-gray-800">
-                      Reliance Electric Automax DCS
-                    </span>
-                    <i className="fas fa-arrow-right text-secondary"></i>
-                    <span className="font-medium text-primary">Modern DCS</span>
-                  </div>
-                </div>
-              </div>
 
-              <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-                <h5
-                  className="font-semibold text-blue-800 mb-2"
-                  data-translate="servicesPage.migrationBenefits"
-                >
-                  Migration Benefits
-                </h5>
-                <ul className="text-sm text-blue-700 space-y-1">
-                  <li data-translate="servicesPage.benefit1">
-                    • Improved system reliability and performance
-                  </li>
-                  <li data-translate="servicesPage.benefit2">
-                    • Enhanced cybersecurity features
-                  </li>
-                  <li data-translate="servicesPage.benefit3">
-                    • Better integration capabilities
-                  </li>
-                  <li data-translate="servicesPage.benefit4">
-                    • Reduced maintenance costs
-                  </li>
-                </ul>
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-green-600 to-green-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
+
+            {/* Card 2 - Training Services */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-graduation-cap text-primary text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-6 group-hover:text-primary transition-colors duration-300"
+                  data-translate="servicesPage.trainingTitle"
+                >
+                  Training Services
+                </h3>
+
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors duration-300">
+                      <i className="fas fa-check text-primary"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.training1"
+                      >
+                        Operator training programs
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors duration-300">
+                      <i className="fas fa-check text-primary"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.training2"
+                      >
+                        Maintenance training courses
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors duration-300">
+                      <i className="fas fa-check text-primary"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.training3"
+                      >
+                        Technical documentation
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors duration-300">
+                      <i className="fas fa-check text-primary"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.training4"
+                      >
+                        On-site training sessions
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-primary to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Upgrade & Modernization - Full Width Card */}
+          <div className="max-w-7xl mx-auto">
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-10 lg:p-12 border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Header with Modern Icon */}
+                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-8">
+                  <div className="flex items-center mb-6 lg:mb-0">
+                    <div className="relative w-20 h-20 mr-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-secondary to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-sync-alt text-secondary text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <h3
+                        className="text-3xl font-bold text-gray-900 mb-2 group-hover:text-secondary transition-colors duration-300"
+                        data-translate="servicesPage.upgradeTitle"
+                      >
+                        Upgrade & Modernization
+                      </h3>
+                      <p
+                        className="text-gray-600 text-lg"
+                        data-translate="servicesPage.upgradeDesc"
+                      >
+                        Migrate legacy systems to modern platforms for improved
+                        performance, reliability, and maintainability.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Legacy System Migration Grid */}
+                <div className="grid lg:grid-cols-2 gap-8 mb-8">
+                  <div>
+                    <h4
+                      className="text-xl font-bold text-gray-800 mb-6 flex items-center"
+                      data-translate="servicesPage.legacyMigration"
+                    >
+                      <i className="fas fa-exchange-alt text-secondary mr-3"></i>
+                      Legacy System Migration
+                    </h4>
+                    <div className="space-y-4">
+                      <div className="bg-gradient-to-r from-gray-50 to-white rounded-xl p-5 border border-gray-100 hover:border-secondary/30 transition-all duration-300 hover:shadow-md">
+                        <div className="flex items-center justify-between">
+                          <span className="font-semibold text-gray-800">
+                            Allen-Bradley PLC-5
+                          </span>
+                          <div className="flex items-center space-x-3">
+                            <i className="fas fa-arrow-right text-secondary animate-pulse"></i>
+                          </div>
+                          <span className="font-semibold text-primary">
+                            ControlLogix
+                          </span>
+                        </div>
+                      </div>
+                      <div className="bg-gradient-to-r from-gray-50 to-white rounded-xl p-5 border border-gray-100 hover:border-secondary/30 transition-all duration-300 hover:shadow-md">
+                        <div className="flex items-center justify-between">
+                          <span className="font-semibold text-gray-800">
+                            SLC-500
+                          </span>
+                          <div className="flex items-center space-x-3">
+                            <i className="fas fa-arrow-right text-secondary animate-pulse"></i>
+                          </div>
+                          <span className="font-semibold text-primary">
+                            CompactLogix
+                          </span>
+                        </div>
+                      </div>
+                      <div className="bg-gradient-to-r from-gray-50 to-white rounded-xl p-5 border border-gray-100 hover:border-secondary/30 transition-all duration-300 hover:shadow-md">
+                        <div className="flex items-center justify-between">
+                          <span className="font-semibold text-gray-800 text-sm lg:text-base">
+                            Reliance Electric Automax DCS
+                          </span>
+                          <div className="flex items-center space-x-3">
+                            <i className="fas fa-arrow-right text-secondary animate-pulse"></i>
+                          </div>
+                          <span className="font-semibold text-primary">
+                            Modern DCS
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4
+                      className="text-xl font-bold text-gray-800 mb-6 flex items-center"
+                      data-translate="servicesPage.migrationBenefits"
+                    >
+                      <i className="fas fa-star text-accent mr-3"></i>
+                      Migration Benefits
+                    </h4>
+                    <div className="bg-gradient-to-br from-blue-50 to-primary/5 rounded-2xl p-6 border border-primary/10">
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <div className="flex-shrink-0 w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-3 mt-0.5">
+                            <i className="fas fa-check text-primary text-sm"></i>
+                          </div>
+                          <span
+                            className="text-gray-700 leading-relaxed"
+                            data-translate="servicesPage.benefit1"
+                          >
+                            Improved system reliability and performance
+                          </span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="flex-shrink-0 w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-3 mt-0.5">
+                            <i className="fas fa-check text-primary text-sm"></i>
+                          </div>
+                          <span
+                            className="text-gray-700 leading-relaxed"
+                            data-translate="servicesPage.benefit2"
+                          >
+                            Enhanced cybersecurity features
+                          </span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="flex-shrink-0 w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-3 mt-0.5">
+                            <i className="fas fa-check text-primary text-sm"></i>
+                          </div>
+                          <span
+                            className="text-gray-700 leading-relaxed"
+                            data-translate="servicesPage.benefit3"
+                          >
+                            Better integration capabilities
+                          </span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="flex-shrink-0 w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center mr-3 mt-0.5">
+                            <i className="fas fa-check text-primary text-sm"></i>
+                          </div>
+                          <span
+                            className="text-gray-700 leading-relaxed"
+                            data-translate="servicesPage.benefit4"
+                          >
+                            Reduced maintenance costs
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-24 bg-gradient-to-r from-secondary to-red-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Optional CTA or Additional Info */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 text-sm font-medium">
+              Continuous support and modernization services to maximize your
+              automation investment
+            </p>
           </div>
         </div>
       </section>
