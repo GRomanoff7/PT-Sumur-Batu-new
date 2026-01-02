@@ -1,150 +1,193 @@
 export const ServicesPage = () => {
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-16">
-        <div className="container mx-auto px-6">
-          <div className="text-center">
-            <h1
-              className="text-5xl font-bold mb-6"
-              data-translate="servicesPage.heroTitle"
+      {/* Engineering & Design - Modern & Elegant Redesign */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-primary/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-secondary/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
+              <span className="mx-4 text-sm font-semibold text-primary uppercase tracking-widest">
+                Engineering & Design
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary"></div>
+            </div>
+
+            <h2
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+              data-translate="servicesPage.engineeringTitle"
             >
-              Our Services
-            </h1>
+              Control System &
+              <br />
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Drives System Design
+              </span>
+            </h2>
             <p
-              className="text-xl text-blue-100 max-w-3xl mx-auto"
-              data-translate="servicesPage.heroSubtitle"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
+              data-translate="servicesPage.engineeringDesc"
             >
-              Comprehensive automation engineering services from design to
-              deployment and ongoing support
+              Our expert engineers design comprehensive control and drives
+              systems tailored to your specific industrial requirements. We
+              leverage cutting-edge technology and proven methodologies to
+              deliver optimal performance, reliability, and efficiency.
             </p>
           </div>
-        </div>
-      </section>
 
-      {/* Engineering & Design */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center bg-primary/10 rounded-full px-6 py-2 mb-6">
-                <i className="fas fa-drafting-compass text-primary mr-2"></i>
-                <span
-                  className="text-primary font-semibold"
-                  data-translate="servicesPage.engineeringBadge"
+          {/* Modern Card Grid with Glassmorphism */}
+          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+            {/* Card 1 - Custom System Architecture */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-project-diagram text-primary text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300"
+                  data-translate="servicesPage.customArchitecture"
                 >
-                  Engineering & Design
-                </span>
-              </div>
-              <h2
-                className="text-4xl font-bold text-gray-800 mb-6"
-                data-translate="servicesPage.engineeringTitle"
-              >
-                Control System & Drives System Design
-              </h2>
-              <p
-                className="text-gray-600 mb-6 leading-relaxed"
-                data-translate="servicesPage.engineeringDesc"
-              >
-                Our expert engineers design comprehensive control and drives
-                systems tailored to your specific industrial requirements. We
-                leverage cutting-edge technology and proven methodologies to
-                deliver optimal performance, reliability, and efficiency.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <i className="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="servicesPage.customArchitecture"
-                    >
-                      Custom System Architecture
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="servicesPage.customArchitectureDesc"
-                    >
-                      Tailored designs for optimal performance
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <i className="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="servicesPage.scalableSolutions"
-                    >
-                      Scalable Solutions
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="servicesPage.scalableSolutionsDesc"
-                    >
-                      Future-ready systems that grow with your business
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <i className="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="servicesPage.complianceStandards"
-                    >
-                      Compliance & Standards
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="servicesPage.complianceStandardsDesc"
-                    >
-                      Meeting all industrial safety and quality standards
-                    </p>
-                  </div>
-                </div>
+                  Custom System Architecture
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="servicesPage.customArchitectureDesc"
+                >
+                  Tailored designs for optimal performance
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-primary to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-white rounded-lg p-6 shadow-lg text-center">
-                  <i className="fas fa-project-diagram text-primary text-3xl mb-3"></i>
-                  <h4
-                    className="font-bold text-gray-800"
-                    data-translate="servicesPage.systemArchitecture"
-                  >
-                    System Architecture
-                  </h4>
+
+            {/* Card 2 - Scalable Solutions */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-cogs text-secondary text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
                 </div>
-                <div className="bg-white rounded-lg p-6 shadow-lg text-center">
-                  <i className="fas fa-cogs text-secondary text-3xl mb-3"></i>
-                  <h4
-                    className="font-bold text-gray-800"
-                    data-translate="servicesPage.controlDesign"
-                  >
-                    Control Design
-                  </h4>
-                </div>
-                <div className="bg-white rounded-lg p-6 shadow-lg text-center">
-                  <i className="fas fa-tachometer-alt text-accent text-3xl mb-3"></i>
-                  <h4
-                    className="font-bold text-gray-800"
-                    data-translate="servicesPage.driveSystems"
-                  >
-                    Drive Systems
-                  </h4>
-                </div>
-                <div className="bg-white rounded-lg p-6 shadow-lg text-center">
-                  <i className="fas fa-shield-alt text-green-600 text-3xl mb-3"></i>
-                  <h4
-                    className="font-bold text-gray-800"
-                    data-translate="servicesPage.safetySystems"
-                  >
-                    Safety Systems
-                  </h4>
-                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-secondary transition-colors duration-300"
+                  data-translate="servicesPage.scalableSolutions"
+                >
+                  Scalable Solutions
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="servicesPage.scalableSolutionsDesc"
+                >
+                  Future-ready systems that grow with your business
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-secondary to-red-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
+
+            {/* Card 3 - Compliance & Standards */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent to-yellow-500 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-shield-alt text-accent text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-accent transition-colors duration-300"
+                  data-translate="servicesPage.complianceStandards"
+                >
+                  Compliance & Standards
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="servicesPage.complianceStandardsDesc"
+                >
+                  Meeting all industrial safety and quality standards
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-accent to-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Design Capabilities Grid */}
+          <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-12">
+            <h3 className="text-3xl font-bold text-gray-800 mb-10 text-center">
+              Design Capabilities
+            </h3>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-center hover:-translate-y-1">
+                <i className="fas fa-project-diagram text-primary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                <h4
+                  className="font-bold text-gray-800 text-lg"
+                  data-translate="servicesPage.systemArchitecture"
+                >
+                  System Architecture
+                </h4>
+              </div>
+              <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-center hover:-translate-y-1">
+                <i className="fas fa-cogs text-secondary text-4xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                <h4
+                  className="font-bold text-gray-800 text-lg"
+                  data-translate="servicesPage.controlDesign"
+                >
+                  Control Design
+                </h4>
+              </div>
+              <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-center hover:-translate-y-1">
+                <i className="fas fa-tachometer-alt text-accent text-4xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                <h4
+                  className="font-bold text-gray-800 text-lg"
+                  data-translate="servicesPage.driveSystems"
+                >
+                  Drive Systems
+                </h4>
+              </div>
+              <div className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-center hover:-translate-y-1">
+                <i className="fas fa-shield-alt text-green-600 text-4xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                <h4
+                  className="font-bold text-gray-800 text-lg"
+                  data-translate="servicesPage.safetySystems"
+                >
+                  Safety Systems
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          {/* Optional CTA or Additional Info */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 text-sm font-medium">
+              Certified engineering solutions backed by 17+ years of expertise
+            </p>
           </div>
         </div>
       </section>
