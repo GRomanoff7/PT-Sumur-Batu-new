@@ -247,169 +247,273 @@ export const ServicesPage = () => {
         </div>
       </section>
 
-      {/* Programming & Integration */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <div className="bg-gradient-to-br from-secondary/5 to-accent/5 rounded-2xl p-8">
+      {/* Programming & Integration - Modern & Elegant Redesign */}
+      <section className="relative py-24 bg-gradient-to-b from-gray-50 via-white to-gray-50 overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-secondary/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tl from-accent/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-secondary"></div>
+              <span className="mx-4 text-sm font-semibold text-secondary uppercase tracking-widest">
+                Programming & Integration
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-secondary"></div>
+            </div>
+
+            <h2
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+              data-translate="servicesPage.programmingTitle"
+            >
+              PLC & HMI/SCADA
+              <br />
+              <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+                Programming Excellence
+              </span>
+            </h2>
+            <p
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
+              data-translate="servicesPage.programmingDesc"
+            >
+              Our experienced programmers develop sophisticated control logic
+              and intuitive operator interfaces using Allen-Bradley platforms.
+              We ensure seamless integration between all system components for
+              optimal performance and user experience.
+            </p>
+          </div>
+
+          {/* Modern Card Grid with Glassmorphism */}
+          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+            {/* Card 1 - Advanced Programming */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-laptop-code text-secondary text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
                 <h3
-                  className="text-2xl font-bold text-gray-800 mb-6 text-center"
-                  data-translate="servicesPage.programmingCapabilities"
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-secondary transition-colors duration-300"
+                  data-translate="servicesPage.advancedProgramming"
                 >
-                  Programming Capabilities
+                  Advanced Programming
                 </h3>
-                <div className="space-y-4">
-                  <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="flex items-center justify-between">
-                      <span
-                        className="font-semibold text-gray-800"
-                        data-translate="servicesPage.plcProgramming"
-                      >
-                        PLC Programming
-                      </span>
-                      <i className="fas fa-microchip text-primary"></i>
-                    </div>
-                    <div
-                      className="text-sm text-gray-600 mt-1"
-                      data-translate="servicesPage.plcProgrammingDesc"
-                    >
-                      ControlLogix, CompactLogix, Micro800
-                    </div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="flex items-center justify-between">
-                      <span
-                        className="font-semibold text-gray-800"
-                        data-translate="servicesPage.hmiDevelopment"
-                      >
-                        HMI Development
-                      </span>
-                      <i className="fas fa-desktop text-secondary"></i>
-                    </div>
-                    <div
-                      className="text-sm text-gray-600 mt-1"
-                      data-translate="servicesPage.hmiDevelopmentDesc"
-                    >
-                      PanelView, FactoryTalk View
-                    </div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="flex items-center justify-between">
-                      <span
-                        className="font-semibold text-gray-800"
-                        data-translate="servicesPage.scadaSystems"
-                      >
-                        SCADA Systems
-                      </span>
-                      <i className="fas fa-chart-line text-accent"></i>
-                    </div>
-                    <div
-                      className="text-sm text-gray-600 mt-1"
-                      data-translate="servicesPage.scadaSystemsDesc"
-                    >
-                      FactoryTalk View SE
-                    </div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 shadow-md">
-                    <div className="flex items-center justify-between">
-                      <span
-                        className="font-semibold text-gray-800"
-                        data-translate="servicesPage.motionControl"
-                      >
-                        Motion Control
-                      </span>
-                      <i className="fas fa-sync text-green-600"></i>
-                    </div>
-                    <div
-                      className="text-sm text-gray-600 mt-1"
-                      data-translate="servicesPage.motionControlDesc"
-                    >
-                      Kinetix Servo Systems
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="order-1 lg:order-2">
-              <div className="inline-flex items-center bg-secondary/10 rounded-full px-6 py-2 mb-6">
-                <i className="fas fa-code text-secondary mr-2"></i>
-                <span
-                  className="text-secondary font-semibold"
-                  data-translate="servicesPage.programmingBadge"
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="servicesPage.advancedProgrammingDesc"
                 >
-                  Programming & Integration
-                </span>
+                  Ladder logic, structured text, and function blocks
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-secondary to-red-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-              <h2
-                className="text-4xl font-bold text-gray-800 mb-6"
-                data-translate="servicesPage.programmingTitle"
-              >
-                PLC & HMI/SCADA Programming
-              </h2>
-              <p
-                className="text-gray-600 mb-6 leading-relaxed"
-                data-translate="servicesPage.programmingDesc"
-              >
-                Our experienced programmers develop sophisticated control logic
-                and intuitive operator interfaces using Allen-Bradley platforms.
-                We ensure seamless integration between all system components for
-                optimal performance and user experience.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <i className="fas fa-laptop-code text-secondary mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="servicesPage.advancedProgramming"
-                    >
-                      Advanced Programming
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="servicesPage.advancedProgrammingDesc"
-                    >
-                      Ladder logic, structured text, and function blocks
-                    </p>
+            </div>
+
+            {/* Card 2 - System Integration */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent to-yellow-500 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-link text-accent text-3xl group-hover:scale-110 transition-transform duration-300"></i>
                   </div>
                 </div>
-                <div className="flex items-start">
-                  <i className="fas fa-link text-secondary mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="servicesPage.systemIntegration"
-                    >
-                      System Integration
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="servicesPage.systemIntegrationDesc"
-                    >
-                      Seamless connectivity between all components
-                    </p>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-accent transition-colors duration-300"
+                  data-translate="servicesPage.systemIntegration"
+                >
+                  System Integration
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="servicesPage.systemIntegrationDesc"
+                >
+                  Seamless connectivity between all components
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-accent to-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+
+            {/* Card 3 - Testing & Debugging */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-green-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-green-600/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-green-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-bug text-green-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
                   </div>
                 </div>
-                <div className="flex items-start">
-                  <i className="fas fa-bug text-secondary mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="servicesPage.testingDebugging"
-                    >
-                      Testing & Debugging
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="servicesPage.testingDebuggingDesc"
-                    >
-                      Comprehensive testing for reliable operation
-                    </p>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors duration-300"
+                  data-translate="servicesPage.testingDebugging"
+                >
+                  Testing & Debugging
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="servicesPage.testingDebuggingDesc"
+                >
+                  Comprehensive testing for reliable operation
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-green-600 to-green-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Programming Capabilities Grid - Enhanced with Images */}
+          <div className="bg-gradient-to-br from-secondary/5 to-accent/5 rounded-3xl p-12">
+            <h3 className="text-3xl font-bold text-gray-800 mb-10 text-center">
+              Programming Capabilities
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* PLC Programming */}
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/877548/2026-01-01/a27d18f5-c253-41ad-a8c1-65ea87d20993.png"
+                    alt="PLC Programming"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <i className="fas fa-microchip text-white text-3xl drop-shadow-lg"></i>
                   </div>
+                </div>
+                <div className="p-6">
+                  <h4
+                    className="font-bold text-gray-800 text-lg mb-2 text-center"
+                    data-translate="servicesPage.plcProgramming"
+                  >
+                    PLC Programming
+                  </h4>
+                  <p
+                    className="text-sm text-gray-600 text-center"
+                    data-translate="servicesPage.plcProgrammingDesc"
+                  >
+                    ControlLogix, CompactLogix, Micro800
+                  </p>
+                </div>
+              </div>
+
+              {/* HMI Development */}
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/877548/2026-01-01/2187456c-9996-46e4-93d0-2811d4e9af7a.png"
+                    alt="HMI Development"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <i className="fas fa-desktop text-white text-3xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h4
+                    className="font-bold text-gray-800 text-lg mb-2 text-center"
+                    data-translate="servicesPage.hmiDevelopment"
+                  >
+                    HMI Development
+                  </h4>
+                  <p
+                    className="text-sm text-gray-600 text-center"
+                    data-translate="servicesPage.hmiDevelopmentDesc"
+                  >
+                    PanelView, FactoryTalk View
+                  </p>
+                </div>
+              </div>
+
+              {/* SCADA Systems */}
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/877548/2026-01-01/da364c9c-abec-4e93-b5fd-a37ecfb8a2b7.png"
+                    alt="SCADA Systems"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-accent/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <i className="fas fa-chart-line text-white text-3xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h4
+                    className="font-bold text-gray-800 text-lg mb-2 text-center"
+                    data-translate="servicesPage.scadaSystems"
+                  >
+                    SCADA Systems
+                  </h4>
+                  <p
+                    className="text-sm text-gray-600 text-center"
+                    data-translate="servicesPage.scadaSystemsDesc"
+                  >
+                    FactoryTalk View SE
+                  </p>
+                </div>
+              </div>
+
+              {/* Motion Control */}
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/877548/2026-01-01/6e3ece9a-d150-4851-aa80-d457b5e90788.png"
+                    alt="Motion Control"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-green-600/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <i className="fas fa-sync text-white text-3xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h4
+                    className="font-bold text-gray-800 text-lg mb-2 text-center"
+                    data-translate="servicesPage.motionControl"
+                  >
+                    Motion Control
+                  </h4>
+                  <p
+                    className="text-sm text-gray-600 text-center"
+                    data-translate="servicesPage.motionControlDesc"
+                  >
+                    Kinetix Servo Systems
+                  </p>
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Optional CTA or Additional Info */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 text-sm font-medium">
+              Expert programming solutions using industry-leading Allen-Bradley
+              platforms
+            </p>
           </div>
         </div>
       </section>
