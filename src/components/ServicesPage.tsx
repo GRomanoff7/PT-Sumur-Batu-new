@@ -729,9 +729,11 @@ export const ServicesPage = () => {
               {/* Motor Control Centers */}
               <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative h-48 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
-                    <i className="fas fa-bolt text-accent text-6xl opacity-20"></i>
-                  </div>
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/877679/2026-01-01/c470af5d-f679-4211-ae23-dc5879464892.png"
+                    alt="Motor Control Centers"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-accent/80 to-transparent opacity-60"></div>
                   <div className="absolute bottom-4 left-4">
                     <i className="fas fa-bolt text-white text-3xl drop-shadow-lg"></i>
@@ -756,9 +758,11 @@ export const ServicesPage = () => {
               {/* Control Panels */}
               <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative h-48 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                    <i className="fas fa-microchip text-primary text-6xl opacity-20"></i>
-                  </div>
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/877679/2026-01-01/aca25a23-2b82-4871-ace6-7d7ab87ba57f.png"
+                    alt="Control Panels"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-60"></div>
                   <div className="absolute bottom-4 left-4">
                     <i className="fas fa-microchip text-white text-3xl drop-shadow-lg"></i>
@@ -783,9 +787,11 @@ export const ServicesPage = () => {
               {/* Distribution Panels */}
               <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative h-48 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center">
-                    <i className="fas fa-network-wired text-secondary text-6xl opacity-20"></i>
-                  </div>
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/877679/2026-01-01/70ada466-a67c-459d-be53-b7b2480fd6de.png"
+                    alt="Distribution Panels"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-60"></div>
                   <div className="absolute bottom-4 left-4">
                     <i className="fas fa-network-wired text-white text-3xl drop-shadow-lg"></i>
