@@ -511,190 +511,310 @@ export const ServicesPage = () => {
           {/* Optional CTA or Additional Info */}
           <div className="text-center mt-16">
             <p className="text-gray-500 text-sm font-medium">
-              Expert programming solutions using industry-leading Allen-Bradley platforms
+              Expert programming solutions using industry-leading Allen-Bradley
+              platforms
             </p>
           </div>
         </div>
       </section>
 
-      {/* Manufacturing */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center bg-accent/10 rounded-full px-6 py-2 mb-6">
-              <i className="fas fa-industry text-accent mr-2"></i>
-              <span
-                className="text-accent font-semibold"
-                data-translate="servicesPage.manufacturingBadge"
-              >
+      {/* Manufacturing - Modern & Elegant Redesign */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-accent/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-primary/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-accent"></div>
+              <span className="mx-4 text-sm font-semibold text-accent uppercase tracking-widest">
                 Manufacturing
               </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-accent"></div>
             </div>
+
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               data-translate="servicesPage.manufacturingTitle"
             >
-              Control Panel & MCC Manufacturing
+              Control Panel &
+              <br />
+              <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
+                MCC Manufacturing
+              </span>
             </h2>
             <p
-              className="text-xl text-gray-600 max-w-3xl mx-auto"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="servicesPage.manufacturingSubtitle"
             >
               High-quality panel fabrication using both Cubic Modular Systems
-              and custom local panels
+              and custom local panels, delivering superior quality and
+              reliability for your industrial automation needs.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-accent/5 to-primary/5 rounded-xl p-8">
-              <h3
-                className="text-2xl font-bold text-gray-800 mb-6"
-                data-translate="servicesPage.cubicModularTitle"
-              >
-                Cubic Modular Systems
-              </h3>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <i className="fas fa-cube text-accent mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="servicesPage.cubicModular1"
-                  >
-                    Standardized modular design
-                  </span>
+          {/* Modern Card Grid with Glassmorphism */}
+          <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto mb-16">
+            {/* Card 1 - Cubic Modular Systems */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent to-yellow-500 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-cube text-accent text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <i className="fas fa-clock text-accent mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="servicesPage.cubicModular2"
-                  >
-                    Faster assembly and delivery
-                  </span>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-6 group-hover:text-accent transition-colors duration-300"
+                  data-translate="servicesPage.cubicModularTitle"
+                >
+                  Cubic Modular Systems
+                </h3>
+
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent/20 transition-colors duration-300">
+                      <i className="fas fa-cube text-accent"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.cubicModular1"
+                      >
+                        Standardized modular design
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent/20 transition-colors duration-300">
+                      <i className="fas fa-clock text-accent"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.cubicModular2"
+                      >
+                        Faster assembly and delivery
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent/20 transition-colors duration-300">
+                      <i className="fas fa-shield-alt text-accent"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.cubicModular3"
+                      >
+                        Superior quality assurance
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent/20 transition-colors duration-300">
+                      <i className="fas fa-wrench text-accent"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.cubicModular4"
+                      >
+                        Easy maintenance and expansion
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <i className="fas fa-shield-alt text-accent mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="servicesPage.cubicModular3"
-                  >
-                    Superior quality assurance
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <i className="fas fa-wrench text-accent mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="servicesPage.cubicModular4"
-                  >
-                    Easy maintenance and expansion
-                  </span>
-                </div>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-accent to-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-8">
-              <h3
-                className="text-2xl font-bold text-gray-800 mb-6"
-                data-translate="servicesPage.customPanelsTitle"
-              >
-                Custom Local Panels
-              </h3>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <i className="fas fa-tools text-primary mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="servicesPage.customPanels1"
-                  >
-                    Tailored to specific requirements
-                  </span>
+            {/* Card 2 - Custom Local Panels */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-tools text-primary text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <i className="fas fa-dollar-sign text-primary mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="servicesPage.customPanels2"
-                  >
-                    Cost-effective solutions
-                  </span>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-6 group-hover:text-primary transition-colors duration-300"
+                  data-translate="servicesPage.customPanelsTitle"
+                >
+                  Custom Local Panels
+                </h3>
+
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors duration-300">
+                      <i className="fas fa-tools text-primary"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.customPanels1"
+                      >
+                        Tailored to specific requirements
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors duration-300">
+                      <i className="fas fa-dollar-sign text-primary"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.customPanels2"
+                      >
+                        Cost-effective solutions
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors duration-300">
+                      <i className="fas fa-map-marker-alt text-primary"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.customPanels3"
+                      >
+                        Local sourcing and support
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors duration-300">
+                      <i className="fas fa-hammer text-primary"></i>
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-700 leading-relaxed"
+                        data-translate="servicesPage.customPanels4"
+                      >
+                        Skilled local craftsmanship
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <i className="fas fa-map-marker-alt text-primary mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="servicesPage.customPanels3"
-                  >
-                    Local sourcing and support
-                  </span>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-primary to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Manufacturing Capabilities Grid - Enhanced with Images */}
+          <div className="bg-gradient-to-br from-accent/5 to-primary/5 rounded-3xl p-12">
+            <h3 className="text-3xl font-bold text-gray-800 mb-10 text-center">
+              Manufacturing Capabilities
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Motor Control Centers */}
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="relative h-48 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+                    <i className="fas fa-bolt text-accent text-6xl opacity-20"></i>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-accent/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <i className="fas fa-bolt text-white text-3xl drop-shadow-lg"></i>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <i className="fas fa-hammer text-primary mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="servicesPage.customPanels4"
+                <div className="p-6 text-center">
+                  <h4
+                    className="font-bold text-gray-800 text-lg mb-2"
+                    data-translate="servicesPage.motorControlCenters"
                   >
-                    Skilled local craftsmanship
-                  </span>
+                    Motor Control Centers
+                  </h4>
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="servicesPage.motorControlCentersDesc"
+                  >
+                    Complete MCC solutions for motor management
+                  </p>
+                </div>
+              </div>
+
+              {/* Control Panels */}
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="relative h-48 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                    <i className="fas fa-microchip text-primary text-6xl opacity-20"></i>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <i className="fas fa-microchip text-white text-3xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+                <div className="p-6 text-center">
+                  <h4
+                    className="font-bold text-gray-800 text-lg mb-2"
+                    data-translate="servicesPage.controlPanels"
+                  >
+                    Control Panels
+                  </h4>
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="servicesPage.controlPanelsDesc"
+                  >
+                    Custom control panels for automation systems
+                  </p>
+                </div>
+              </div>
+
+              {/* Distribution Panels */}
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="relative h-48 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center">
+                    <i className="fas fa-network-wired text-secondary text-6xl opacity-20"></i>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-4 left-4">
+                    <i className="fas fa-network-wired text-white text-3xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+                <div className="p-6 text-center">
+                  <h4
+                    className="font-bold text-gray-800 text-lg mb-2"
+                    data-translate="servicesPage.distributionPanels"
+                  >
+                    Distribution Panels
+                  </h4>
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="servicesPage.distributionPanelsDesc"
+                  >
+                    Power distribution and protection systems
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-2xl p-8">
-            <h3
-              className="text-2xl font-bold text-gray-800 mb-6 text-center"
-              data-translate="servicesPage.manufacturingCapabilities"
-            >
-              Manufacturing Capabilities
-            </h3>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <i className="fas fa-bolt text-accent text-4xl mb-4"></i>
-                <h4
-                  className="font-bold text-gray-800 mb-2"
-                  data-translate="servicesPage.motorControlCenters"
-                >
-                  Motor Control Centers
-                </h4>
-                <p
-                  className="text-gray-600"
-                  data-translate="servicesPage.motorControlCentersDesc"
-                >
-                  Complete MCC solutions for motor management
-                </p>
-              </div>
-              <div className="text-center">
-                <i className="fas fa-microchip text-primary text-4xl mb-4"></i>
-                <h4
-                  className="font-bold text-gray-800 mb-2"
-                  data-translate="servicesPage.controlPanels"
-                >
-                  Control Panels
-                </h4>
-                <p
-                  className="text-gray-600"
-                  data-translate="servicesPage.controlPanelsDesc"
-                >
-                  Custom control panels for automation systems
-                </p>
-              </div>
-              <div className="text-center">
-                <i className="fas fa-network-wired text-secondary text-4xl mb-4"></i>
-                <h4
-                  className="font-bold text-gray-800 mb-2"
-                  data-translate="servicesPage.distributionPanels"
-                >
-                  Distribution Panels
-                </h4>
-                <p
-                  className="text-gray-600"
-                  data-translate="servicesPage.distributionPanelsDesc"
-                >
-                  Power distribution and protection systems
-                </p>
-              </div>
-            </div>
+          {/* Optional CTA or Additional Info */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 text-sm font-medium">
+              Quality manufacturing solutions with both modular and custom
+              approaches
+            </p>
           </div>
         </div>
       </section>
