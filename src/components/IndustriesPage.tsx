@@ -1269,79 +1269,139 @@ export const IndustriesPage = () => {
         </div>
       </section>
 
-      {/* Industry Benefits */}
-      <section className="py-16 bg-gradient-to-r from-primary to-secondary text-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
+      {/* Industry Benefits - UPDATED Modern & Elegant Design matching Homepage style */}
+      <section className="relative py-24 bg-gradient-to-b from-gray-50 via-white/30 to-gray-50 overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-primary/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-secondary/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
+              <span className="mx-4 text-sm font-semibold text-primary uppercase tracking-widest">
+                Our Advantages
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary"></div>
+            </div>
+
             <h2
-              className="text-4xl font-bold mb-4"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               data-translate="industries.whyChooseUs"
             >
-              Why Industries Choose Us
+              Why Industries
+              <br />
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Choose Us
+              </span>
             </h2>
             <p
-              className="text-xl text-blue-100"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="industries.whyChooseUsDesc"
             >
               Proven expertise and results across all industrial sectors
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-award text-white text-3xl"></i>
+          {/* Modern Card Grid with Glassmorphism */}
+          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {/* Card 1 - Certified Expertise */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6 mx-auto">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-award text-primary text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 text-center group-hover:text-primary transition-colors duration-300"
+                  data-translate="industries.certifiedExpertise"
+                >
+                  Certified Expertise
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg text-center"
+                  data-translate="industries.certifiedExpertiseDesc"
+                >
+                  Rockwell Automation Silver System Integrator with proven
+                  industry knowledge
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-primary to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
               </div>
-              <h3
-                className="text-xl font-bold mb-4"
-                data-translate="industries.certifiedExpertise"
-              >
-                Certified Expertise
-              </h3>
-              <p
-                className="text-blue-100"
-                data-translate="industries.certifiedExpertiseDesc"
-              >
-                Rockwell Automation Silver System Integrator with proven
-                industry knowledge
-              </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-users text-white text-3xl"></i>
+            {/* Card 2 - Experienced Team */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6 mx-auto">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-users text-secondary text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 text-center group-hover:text-secondary transition-colors duration-300"
+                  data-translate="industries.experiencedTeam"
+                >
+                  Experienced Team
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg text-center"
+                  data-translate="industries.experiencedTeamDesc"
+                >
+                  30+ professionals with deep understanding of industrial
+                  processes
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-secondary to-red-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
               </div>
-              <h3
-                className="text-xl font-bold mb-4"
-                data-translate="industries.experiencedTeam"
-              >
-                Experienced Team
-              </h3>
-              <p
-                className="text-blue-100"
-                data-translate="industries.experiencedTeamDesc"
-              >
-                30+ professionals with deep understanding of industrial
-                processes
-              </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-handshake text-white text-3xl"></i>
+            {/* Card 3 - Long-term Partnership */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6 mx-auto">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent to-yellow-500 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-handshake text-accent text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 text-center group-hover:text-accent transition-colors duration-300"
+                  data-translate="industries.longTermPartnership"
+                >
+                  Long-term Partnership
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg text-center"
+                  data-translate="industries.longTermPartnershipDesc"
+                >
+                  Committed to ongoing support and system optimization
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-accent to-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
               </div>
-              <h3
-                className="text-xl font-bold mb-4"
-                data-translate="industries.longTermPartnership"
-              >
-                Long-term Partnership
-              </h3>
-              <p
-                className="text-blue-100"
-                data-translate="industries.longTermPartnershipDesc"
-              >
-                Committed to ongoing support and system optimization
-              </p>
             </div>
           </div>
         </div>
