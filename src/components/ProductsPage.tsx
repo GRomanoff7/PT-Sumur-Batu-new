@@ -1,48 +1,38 @@
 export const ProductsPage = () => {
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-16">
-        <div className="container mx-auto px-6">
-          <div className="text-center">
-            <h1
-              className="text-5xl font-bold mb-6"
-              data-translate="productsPage.heroTitle"
-            >
-              Rockwell Automation Products
-            </h1>
-            <p
-              className="text-xl text-blue-100 max-w-3xl mx-auto"
-              data-translate="productsPage.heroSubtitle"
-            >
-              High-quality Allen-Bradley automation products integrated and
-              supported by certified professionals
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Controllers (PLC) - Modern & Elegant Redesign */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-primary/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-secondary/5 to-transparent rounded-full blur-3xl"></div>
 
-      {/* Controllers (PLC) */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center bg-primary/10 rounded-full px-6 py-2 mb-6">
-              <i className="fas fa-microchip text-primary mr-2"></i>
-              <span
-                className="text-primary font-semibold"
-                data-translate="productsPage.controllersBadge"
-              >
-                Controllers (PLC)
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
+              <span className="mx-4 text-sm font-semibold text-primary uppercase tracking-widest">
+                <i className="fas fa-microchip mr-2"></i>
+                <span data-translate="productsPage.controllersBadge">
+                  Controllers (PLC)
+                </span>
               </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary"></div>
             </div>
+
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               data-translate="productsPage.controllersTitle"
             >
-              Allen-Bradley Controllers
+              Allen-Bradley
+              <br />
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Controllers
+              </span>
             </h2>
             <p
-              className="text-xl text-gray-600"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="productsPage.controllersSubtitle"
             >
               Industry-leading programmable logic controllers for all
@@ -50,225 +40,305 @@ export const ProductsPage = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-8 hover:shadow-lg transition-shadow">
-              <div className="flex items-center justify-center mb-6">
-                <div className="w-20 h-20 bg-primary/20 rounded-lg flex items-center justify-center">
-                  <i className="fas fa-server text-primary text-3xl"></i>
+          {/* Modern Card Grid with Glassmorphism */}
+          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {/* Card 1 - ControlLogix */}
+            <div
+              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2"
+            >
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-server text-primary text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
                 </div>
-              </div>
-              <h3
-                className="text-2xl font-bold text-gray-800 mb-4 text-center"
-                data-translate="productsPage.controlLogixTitle"
-              >
-                ControlLogix
-              </h3>
-              <p
-                className="text-gray-600 mb-6 text-center"
-                data-translate="productsPage.controlLogixDesc"
-              >
-                High-performance controller for complex applications requiring
-                advanced control capabilities
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center">
-                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="productsPage.modularArchitecture"
-                  >
-                    Modular architecture
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="productsPage.integratedMotion"
-                  >
-                    Integrated motion control
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="productsPage.advancedNetworking"
-                  >
-                    Advanced networking
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="productsPage.redundancyOptions"
-                  >
-                    Redundancy options
-                  </span>
-                </div>
-              </div>
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <h4
-                  className="font-semibold text-gray-800 mb-2"
-                  data-translate="productsPage.idealApplications"
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300"
+                  data-translate="productsPage.controlLogixTitle"
                 >
-                  Ideal Applications:
-                </h4>
+                  ControlLogix
+                </h3>
                 <p
-                  className="text-sm text-gray-600"
-                  data-translate="productsPage.controlLogixApps"
+                  className="text-gray-600 leading-relaxed text-lg mb-6"
+                  data-translate="productsPage.controlLogixDesc"
                 >
-                  Large manufacturing systems, process control, complex
-                  machinery
+                  High-performance controller for complex applications requiring
+                  advanced control capabilities
                 </p>
+
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                      <i className="fas fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <span
+                      className="text-gray-700"
+                      data-translate="productsPage.modularArchitecture"
+                    >
+                      Modular architecture
+                    </span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                      <i className="fas fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <span
+                      className="text-gray-700"
+                      data-translate="productsPage.integratedMotion"
+                    >
+                      Integrated motion control
+                    </span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                      <i className="fas fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <span
+                      className="text-gray-700"
+                      data-translate="productsPage.advancedNetworking"
+                    >
+                      Advanced networking
+                    </span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                      <i className="fas fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <span
+                      className="text-gray-700"
+                      data-translate="productsPage.redundancyOptions"
+                    >
+                      Redundancy options
+                    </span>
+                  </div>
+                </div>
+
+                <div className="pt-6 border-t border-gray-200/50">
+                  <h4
+                    className="font-semibold text-gray-800 mb-2 text-sm uppercase tracking-wide"
+                    data-translate="productsPage.idealApplications"
+                  >
+                    Ideal Applications:
+                  </h4>
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="productsPage.controlLogixApps"
+                  >
+                    Large manufacturing systems, process control, complex
+                    machinery
+                  </p>
+                </div>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-primary to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-xl p-8 hover:shadow-lg transition-shadow">
-              <div className="flex items-center justify-center mb-6">
-                <div className="w-20 h-20 bg-secondary/20 rounded-lg flex items-center justify-center">
-                  <i className="fas fa-cube text-secondary text-3xl"></i>
+            {/* Card 2 - CompactLogix */}
+            <div
+              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2"
+            >
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-cube text-secondary text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
                 </div>
-              </div>
-              <h3
-                className="text-2xl font-bold text-gray-800 mb-4 text-center"
-                data-translate="productsPage.compactLogixTitle"
-              >
-                CompactLogix
-              </h3>
-              <p
-                className="text-gray-600 mb-6 text-center"
-                data-translate="productsPage.compactLogixDesc"
-              >
-                Compact, all-in-one controller perfect for mid-range
-                applications
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center">
-                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="productsPage.integratedIO"
-                  >
-                    Integrated I/O and communications
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="productsPage.builtInEthernet"
-                  >
-                    Built-in Ethernet networking
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="productsPage.motionCapabilities"
-                  >
-                    Motion control capabilities
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="productsPage.costEffective"
-                  >
-                    Cost-effective solution
-                  </span>
-                </div>
-              </div>
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <h4
-                  className="font-semibold text-gray-800 mb-2"
-                  data-translate="productsPage.idealApplications"
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-secondary transition-colors duration-300"
+                  data-translate="productsPage.compactLogixTitle"
                 >
-                  Ideal Applications:
-                </h4>
+                  CompactLogix
+                </h3>
                 <p
-                  className="text-sm text-gray-600"
-                  data-translate="productsPage.compactLogixApps"
+                  className="text-gray-600 leading-relaxed text-lg mb-6"
+                  data-translate="productsPage.compactLogixDesc"
                 >
-                  Packaging machines, material handling, small to medium systems
+                  Compact, all-in-one controller perfect for mid-range
+                  applications
                 </p>
+
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                      <i className="fas fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <span
+                      className="text-gray-700"
+                      data-translate="productsPage.integratedIO"
+                    >
+                      Integrated I/O and communications
+                    </span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                      <i className="fas fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <span
+                      className="text-gray-700"
+                      data-translate="productsPage.builtInEthernet"
+                    >
+                      Built-in Ethernet networking
+                    </span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                      <i className="fas fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <span
+                      className="text-gray-700"
+                      data-translate="productsPage.motionCapabilities"
+                    >
+                      Motion control capabilities
+                    </span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                      <i className="fas fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <span
+                      className="text-gray-700"
+                      data-translate="productsPage.costEffective"
+                    >
+                      Cost-effective solution
+                    </span>
+                  </div>
+                </div>
+
+                <div className="pt-6 border-t border-gray-200/50">
+                  <h4
+                    className="font-semibold text-gray-800 mb-2 text-sm uppercase tracking-wide"
+                    data-translate="productsPage.idealApplications"
+                  >
+                    Ideal Applications:
+                  </h4>
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="productsPage.compactLogixApps"
+                  >
+                    Packaging machines, material handling, small to medium systems
+                  </p>
+                </div>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-secondary to-red-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-accent/5 to-accent/10 rounded-xl p-8 hover:shadow-lg transition-shadow">
-              <div className="flex items-center justify-center mb-6">
-                <div className="w-20 h-20 bg-accent/20 rounded-lg flex items-center justify-center">
-                  <i className="fas fa-microchip text-accent text-3xl"></i>
+            {/* Card 3 - Micro800 */}
+            <div
+              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-2"
+            >
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent to-yellow-500 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-microchip text-accent text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
                 </div>
-              </div>
-              <h3
-                className="text-2xl font-bold text-gray-800 mb-4 text-center"
-                data-translate="productsPage.micro800Title"
-              >
-                Micro800
-              </h3>
-              <p
-                className="text-gray-600 mb-6 text-center"
-                data-translate="productsPage.micro800Desc"
-              >
-                Entry-level controllers for basic automation requirements
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center">
-                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="productsPage.easyProgramming"
-                  >
-                    Easy programming
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="productsPage.builtInIO"
-                  >
-                    Built-in I/O
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="productsPage.ethernetConnectivity"
-                  >
-                    Ethernet connectivity
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <i className="fas fa-check-circle text-green-600 mr-3"></i>
-                  <span
-                    className="text-gray-700"
-                    data-translate="productsPage.affordablePricing"
-                  >
-                    Affordable pricing
-                  </span>
-                </div>
-              </div>
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <h4
-                  className="font-semibold text-gray-800 mb-2"
-                  data-translate="productsPage.idealApplications"
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-accent transition-colors duration-300"
+                  data-translate="productsPage.micro800Title"
                 >
-                  Ideal Applications:
-                </h4>
+                  Micro800
+                </h3>
                 <p
-                  className="text-sm text-gray-600"
-                  data-translate="productsPage.micro800Apps"
+                  className="text-gray-600 leading-relaxed text-lg mb-6"
+                  data-translate="productsPage.micro800Desc"
                 >
-                  Simple machinery, standalone equipment, basic process control
+                  Entry-level controllers for basic automation requirements
                 </p>
+
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                      <i className="fas fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <span
+                      className="text-gray-700"
+                      data-translate="productsPage.easyProgramming"
+                    >
+                      Easy programming
+                    </span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                      <i className="fas fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <span
+                      className="text-gray-700"
+                      data-translate="productsPage.builtInIO"
+                    >
+                      Built-in I/O
+                    </span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                      <i className="fas fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <span
+                      className="text-gray-700"
+                      data-translate="productsPage.ethernetConnectivity"
+                    >
+                      Ethernet connectivity
+                    </span>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                      <i className="fas fa-check text-green-600 text-sm"></i>
+                    </div>
+                    <span
+                      className="text-gray-700"
+                      data-translate="productsPage.affordablePricing"
+                    >
+                      Affordable pricing
+                    </span>
+                  </div>
+                </div>
+
+                <div className="pt-6 border-t border-gray-200/50">
+                  <h4
+                    className="font-semibold text-gray-800 mb-2 text-sm uppercase tracking-wide"
+                    data-translate="productsPage.idealApplications"
+                  >
+                    Ideal Applications:
+                  </h4>
+                  <p
+                    className="text-sm text-gray-600"
+                    data-translate="productsPage.micro800Apps"
+                  >
+                    Simple machinery, standalone equipment, basic process control
+                  </p>
+                </div>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-accent to-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
+          </div>
+
+          {/* Optional Additional Info */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 text-sm font-medium">
+              All controllers backed by our certified integration expertise
+            </p>
           </div>
         </div>
       </section>
