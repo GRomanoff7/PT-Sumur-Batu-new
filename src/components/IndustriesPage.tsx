@@ -895,276 +895,374 @@ export const IndustriesPage = () => {
         </div>
       </section>
 
-      {/* Other Industries Grid */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
+      {/* Other Industries Grid - UPDATED Modern & Elegant Design */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-indigo-500/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-purple-600/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-indigo-600"></div>
+              <span className="mx-4 text-sm font-semibold text-indigo-600 uppercase tracking-widest">
+                Additional Expertise
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-indigo-600"></div>
+            </div>
+
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               data-translate="industries.additionalIndustries"
             >
               Additional Industries
+              <br />
+              <span className="bg-gradient-to-r from-indigo-600 to-purple-800 bg-clip-text text-transparent">
+                We Serve
+              </span>
             </h2>
             <p
-              className="text-xl text-gray-600"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="industries.additionalIndustriesDesc"
             >
-              Expanding our expertise across diverse industrial sectors
+              Expanding our expertise across diverse industrial sectors with
+              tailored automation solutions
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
-              <i className="fas fa-flask text-purple-600 text-4xl mb-4"></i>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4"
-                data-translate="industries.processPlants"
-              >
-                Process Plants
-              </h3>
-              <p
-                className="text-gray-600 mb-4"
-                data-translate="industries.processPlantsFull"
-              >
-                Chemical, food, and pharmaceutical processing automation
-              </p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>
-                  •{" "}
-                  <span data-translate="industries.batchProcessing">
-                    Batch processing control
-                  </span>
-                </li>
-                <li>
-                  •{" "}
-                  <span data-translate="industries.recipeManagement">
-                    Recipe management
-                  </span>
-                </li>
-                <li>
-                  •{" "}
-                  <span data-translate="industries.qualityAssurance">
-                    Quality assurance systems
-                  </span>
-                </li>
-                <li>
-                  •{" "}
-                  <span data-translate="industries.regulatoryCompliance">
-                    Regulatory compliance
-                  </span>
-                </li>
-              </ul>
-            </div>
+          {/* Modern Card Grid - 4 Cards in First Row */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto mb-8">
+            {/* Process Plants */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-purple-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-600/10 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
 
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
-              <i className="fas fa-conveyor-belt text-orange-600 text-4xl mb-4"></i>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4"
-                data-translate="industries.materialHandling"
-              >
-                Material Handling
-              </h3>
-              <p
-                className="text-gray-600 mb-4"
-                data-translate="industries.materialHandlingFull"
-              >
-                Warehouse and distribution center automation
-              </p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>
-                  •{" "}
-                  <span data-translate="industries.conveyorSystems">
-                    Conveyor systems
-                  </span>
-                </li>
-                <li>
-                  •{" "}
-                  <span data-translate="industries.sortingRouting">
-                    Sorting and routing
-                  </span>
-                </li>
-                <li>
-                  •{" "}
-                  <span data-translate="industries.inventoryTracking">
-                    Inventory tracking
-                  </span>
-                </li>
-                <li>
-                  •{" "}
-                  <span data-translate="industries.automatedStorage">
-                    Automated storage
-                  </span>
-                </li>
-              </ul>
-            </div>
+              <div className="relative z-10">
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-purple-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-flask text-purple-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
 
-            <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
-              <i className="fas fa-cog text-indigo-600 text-4xl mb-4"></i>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4"
-                data-translate="industries.consumerGoods"
-              >
-                Consumer Goods
-              </h3>
-              <p
-                className="text-gray-600 mb-4"
-                data-translate="industries.consumerGoodsFull"
-              >
-                Manufacturing machinery automation for consumer products
-              </p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>
-                  •{" "}
-                  <span data-translate="industries.productionLine">
-                    Production line control
-                  </span>
-                </li>
-                <li>
-                  •{" "}
-                  <span data-translate="industries.qualityInspection">
-                    Quality inspection
-                  </span>
-                </li>
-                <li>
-                  •{" "}
-                  <span data-translate="industries.packagingAuto">
-                    Packaging automation
-                  </span>
-                </li>
-                <li>
-                  •{" "}
-                  <span data-translate="industries.traceability">
-                    Traceability systems
-                  </span>
-                </li>
-              </ul>
-            </div>
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors duration-300"
+                  data-translate="industries.processPlants"
+                >
+                  Process Plants
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed mb-4"
+                  data-translate="industries.processPlantsFull"
+                >
+                  Chemical, food, and pharmaceutical processing automation
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-purple-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.batchProcessing">
+                      Batch processing control
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-purple-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.recipeManagement">
+                      Recipe management
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-purple-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.qualityAssurance">
+                      Quality assurance systems
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-purple-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.regulatoryCompliance">
+                      Regulatory compliance
+                    </span>
+                  </li>
+                </ul>
 
-            <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
-              <i className="fas fa-bolt text-red-600 text-4xl mb-4"></i>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4"
-                data-translate="industries.powerPlant"
-              >
-                Power Plant
-              </h3>
-              <p
-                className="text-gray-600 mb-4"
-                data-translate="industries.powerPlantFull"
-              >
-                Power generation and distribution system automation
-              </p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>
-                  •{" "}
-                  <span data-translate="industries.turbineControl">
-                    Turbine control systems
-                  </span>
-                </li>
-                <li>
-                  •{" "}
-                  <span data-translate="industries.loadDispatch">
-                    Load dispatch automation
-                  </span>
-                </li>
-                <li>
-                  •{" "}
-                  <span data-translate="industries.protectionSystems">
-                    Protection systems
-                  </span>
-                </li>
-                <li>
-                  •{" "}
-                  <span data-translate="industries.gridSync">
-                    Grid synchronization
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
-              <i className="fas fa-print text-teal-600 text-4xl mb-4"></i>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4"
-                data-translate="industries.printing"
-              >
-                Printing Industry
-              </h3>
-              <p
-                className="text-gray-600 mb-4"
-                data-translate="industries.printingFull"
-              >
-                Modern printing press automation and control systems
-              </p>
-              <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
-                <div>
-                  •{" "}
-                  <span data-translate="industries.webTension">
-                    Web tension control
-                  </span>
-                </div>
-                <div>
-                  •{" "}
-                  <span data-translate="industries.registration">
-                    Registration systems
-                  </span>
-                </div>
-                <div>
-                  •{" "}
-                  <span data-translate="industries.colorManagement">
-                    Color management
-                  </span>
-                </div>
-                <div>
-                  •{" "}
-                  <span data-translate="industries.qualityMonitoring">
-                    Quality monitoring
-                  </span>
-                </div>
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-purple-600 to-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-8 text-center hover:shadow-lg transition-shadow">
-              <i className="fas fa-utensils text-pink-600 text-4xl mb-4"></i>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4"
-                data-translate="industries.foodBeverage"
-              >
-                Food & Beverage
-              </h3>
-              <p
-                className="text-gray-600 mb-4"
-                data-translate="industries.foodBeverageFull"
-              >
-                Hygienic automation solutions for food processing
-              </p>
-              <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
-                <div>
-                  •{" "}
-                  <span data-translate="industries.cipSystems">
-                    CIP systems
-                  </span>
+            {/* Material Handling */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-orange-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-orange-600/10 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-orange-600 to-orange-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-conveyor-belt text-orange-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
                 </div>
-                <div>
-                  •{" "}
-                  <span data-translate="industries.temperatureControl">
-                    Temperature control
-                  </span>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-orange-600 transition-colors duration-300"
+                  data-translate="industries.materialHandling"
+                >
+                  Material Handling
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed mb-4"
+                  data-translate="industries.materialHandlingFull"
+                >
+                  Warehouse and distribution center automation
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-orange-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.conveyorSystems">
+                      Conveyor systems
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-orange-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.sortingRouting">
+                      Sorting and routing
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-orange-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.inventoryTracking">
+                      Inventory tracking
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-orange-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.automatedStorage">
+                      Automated storage
+                    </span>
+                  </li>
+                </ul>
+
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-orange-600 to-orange-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+
+            {/* Consumer Goods */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-indigo-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-600/10 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-cog text-indigo-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
                 </div>
-                <div>
-                  •{" "}
-                  <span data-translate="industries.batchTracking">
-                    Batch tracking
-                  </span>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-indigo-600 transition-colors duration-300"
+                  data-translate="industries.consumerGoods"
+                >
+                  Consumer Goods
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed mb-4"
+                  data-translate="industries.consumerGoodsFull"
+                >
+                  Manufacturing machinery automation for consumer products
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-indigo-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.productionLine">
+                      Production line control
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-indigo-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.qualityInspection">
+                      Quality inspection
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-indigo-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.packagingAuto">
+                      Packaging automation
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-indigo-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.traceability">
+                      Traceability systems
+                    </span>
+                  </li>
+                </ul>
+
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-indigo-600 to-indigo-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+
+            {/* Power Plant */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-red-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-red-600/10 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-bolt text-red-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
                 </div>
-                <div>
-                  •{" "}
-                  <span data-translate="industries.safetyCompliance">
-                    Safety compliance
-                  </span>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors duration-300"
+                  data-translate="industries.powerPlant"
+                >
+                  Power Plant
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed mb-4"
+                  data-translate="industries.powerPlantFull"
+                >
+                  Power generation and distribution system automation
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-red-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.turbineControl">
+                      Turbine control systems
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-red-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.loadDispatch">
+                      Load dispatch automation
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-red-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.protectionSystems">
+                      Protection systems
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-red-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.gridSync">
+                      Grid synchronization
+                    </span>
+                  </li>
+                </ul>
+
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-red-600 to-red-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Row - 2 Cards Centered */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Printing Industry */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-teal-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-teal-600/10 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-teal-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-teal-600 to-teal-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-print text-teal-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
                 </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-600 transition-colors duration-300"
+                  data-translate="industries.printing"
+                >
+                  Printing Industry
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed mb-4"
+                  data-translate="industries.printingFull"
+                >
+                  Modern printing press automation and control systems
+                </p>
+                <div className="grid grid-cols-2 gap-3 text-sm text-gray-600">
+                  <div className="flex items-start">
+                    <i className="fas fa-check-circle text-teal-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.webTension">
+                      Web tension control
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <i className="fas fa-check-circle text-teal-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.registration">
+                      Registration systems
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <i className="fas fa-check-circle text-teal-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.colorManagement">
+                      Color management
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <i className="fas fa-check-circle text-teal-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.qualityMonitoring">
+                      Quality monitoring
+                    </span>
+                  </div>
+                </div>
+
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-teal-600 to-teal-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+
+            {/* Food & Beverage */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-pink-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-pink-600/10 hover:-translate-y-2">
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-pink-600 to-pink-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-utensils text-pink-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-pink-600 transition-colors duration-300"
+                  data-translate="industries.foodBeverage"
+                >
+                  Food & Beverage
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed mb-4"
+                  data-translate="industries.foodBeverageFull"
+                >
+                  Hygienic automation solutions for food processing
+                </p>
+                <div className="grid grid-cols-2 gap-3 text-sm text-gray-600">
+                  <div className="flex items-start">
+                    <i className="fas fa-check-circle text-pink-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.cipSystems">
+                      CIP systems
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <i className="fas fa-check-circle text-pink-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.temperatureControl">
+                      Temperature control
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <i className="fas fa-check-circle text-pink-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.batchTracking">
+                      Batch tracking
+                    </span>
+                  </div>
+                  <div className="flex items-start">
+                    <i className="fas fa-check-circle text-pink-600 mt-1 mr-2 flex-shrink-0"></i>
+                    <span data-translate="industries.safetyCompliance">
+                      Safety compliance
+                    </span>
+                  </div>
+                </div>
+
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-pink-600 to-pink-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
           </div>
