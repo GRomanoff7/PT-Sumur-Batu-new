@@ -44,12 +44,21 @@ export const ProductsPage = () => {
           <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {/* Card 1 - ControlLogix */}
             <div
-              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2"
+              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2"
             >
               {/* Gradient Overlay on Hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-              <div className="relative z-10">
+              {/* Product Image */}
+              <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                <img
+                  src="https://mgx-backend-cdn.metadl.com/generate/images/878636/2026-01-02/79eb4592-2117-43d0-af44-0cebeb46406b.png"
+                  alt="ControlLogix PLC"
+                  className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="relative z-10 p-8">
                 {/* Modern Icon Design */}
                 <div className="relative w-20 h-20 mb-6">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
@@ -142,12 +151,21 @@ export const ProductsPage = () => {
 
             {/* Card 2 - CompactLogix */}
             <div
-              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2"
+              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2"
             >
               {/* Gradient Overlay on Hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-              <div className="relative z-10">
+              {/* Product Image */}
+              <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                <img
+                  src="https://mgx-backend-cdn.metadl.com/generate/images/878636/2026-01-02/8c69aea5-993d-47d1-95e6-5e6b84268424.png"
+                  alt="CompactLogix PLC"
+                  className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="relative z-10 p-8">
                 {/* Modern Icon Design */}
                 <div className="relative w-20 h-20 mb-6">
                   <div className="absolute inset-0 bg-gradient-to-br from-secondary to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
@@ -239,12 +257,21 @@ export const ProductsPage = () => {
 
             {/* Card 3 - Micro800 */}
             <div
-              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-2"
+              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-2"
             >
               {/* Gradient Overlay on Hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-              <div className="relative z-10">
+              {/* Product Image */}
+              <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                <img
+                  src="https://mgx-backend-cdn.metadl.com/generate/images/878636/2026-01-02/10e90ae4-2667-4863-bbdc-9886d6c35fd4.png"
+                  alt="Micro800 PLC"
+                  className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="relative z-10 p-8">
                 {/* Modern Icon Design */}
                 <div className="relative w-20 h-20 mb-6">
                   <div className="absolute inset-0 bg-gradient-to-br from-accent to-yellow-500 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
