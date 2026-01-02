@@ -256,11 +256,14 @@
         miningDesc:
           "Robust automation systems designed for harsh mining environments, from extraction to processing. Our solutions enhance safety, productivity, and operational efficiency while meeting stringent environmental and safety standards.",
         safetySystems: "Safety Systems",
+        safetySystemsDesc: "Advanced safety monitoring and emergency shutdown systems",
         crushingGrinding: "Crushing & Grinding",
         separationSystems: "Separation Systems",
         dewatering: "Dewatering",
         processMonitoring: "Process Monitoring",
+        processMonitoringDesc: "Real-time monitoring and optimization of mineral processing",
         miningApplications: "Mining Applications",
+        materialHandlingMiningDesc: "Automated conveyor and material transport systems",
         extractionTransport: "Extraction & Transportation",
         extractionTransportDesc:
           "Conveyor systems, crushers, and material handling automation",
