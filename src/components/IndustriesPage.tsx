@@ -448,141 +448,226 @@ export const IndustriesPage = () => {
         </div>
       </section>
 
-      {/* Metal Industry */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center bg-gray-100 rounded-full px-6 py-2 mb-6">
-              <i className="fas fa-hammer text-gray-600 mr-2"></i>
-              <span
-                className="text-gray-600 font-semibold"
-                data-translate="industries.metalIndustry"
-              >
-                Metal Industry
+      {/* Metal Industry - Modern & Elegant Design (Updated to match homepage style) */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-gray-500/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-gray-600/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-gray-600"></div>
+              <span className="mx-4 text-sm font-semibold text-gray-600 uppercase tracking-widest">
+                Industry Focus
               </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-gray-600"></div>
             </div>
+
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               data-translate="industries.metalIndustryFull"
             >
-              Metal Processing & Manufacturing
+              Metal Processing &
+              <br />
+              <span className="bg-gradient-to-r from-gray-600 to-gray-800 bg-clip-text text-transparent">
+                Manufacturing Solutions
+              </span>
             </h2>
             <p
-              className="text-xl text-gray-600 max-w-3xl mx-auto"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="industries.metalIndustryDesc"
             >
-              Advanced automation for steel, aluminum, and other metal
-              processing operations
+              Advanced automation solutions for steel, aluminum, and metal
+              processing operations. Our systems enhance precision, safety, and
+              productivity across all stages of metal manufacturing from
+              smelting to finishing.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-8">
-              <i className="fas fa-fire text-red-600 text-4xl mb-6"></i>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4"
-                data-translate="industries.smeltingRefining"
-              >
-                Smelting & Refining
-              </h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-center">
-                  <i className="fas fa-check text-red-600 mr-2 text-sm"></i>
-                  <span data-translate="industries.furnaceTempControl">
-                    Furnace temperature control
-                  </span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check text-red-600 mr-2 text-sm"></i>
-                  <span data-translate="industries.alloyComposition">
-                    Alloy composition monitoring
-                  </span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check text-red-600 mr-2 text-sm"></i>
-                  <span data-translate="industries.safetyInterlocks">
-                    Safety interlock systems
-                  </span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check text-red-600 mr-2 text-sm"></i>
-                  <span data-translate="industries.emissionControl">
-                    Emission control systems
-                  </span>
-                </li>
-              </ul>
+          {/* Modern Card Grid with Glassmorphism */}
+          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+            {/* Card 1 - Smelting & Refining */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-gray-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-gray-600/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-fire text-red-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors duration-300"
+                  data-translate="industries.smeltingRefining"
+                >
+                  Smelting & Refining
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="industries.smeltingRefiningDesc"
+                >
+                  Precision temperature control and safety systems for furnace
+                  operations
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-red-600 to-red-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8">
-              <i className="fas fa-compress-arrows-alt text-blue-600 text-4xl mb-6"></i>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4"
-                data-translate="industries.rollingForming"
-              >
-                Rolling & Forming
-              </h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-center">
-                  <i className="fas fa-check text-blue-600 mr-2 text-sm"></i>
-                  <span data-translate="industries.rollGapPositioning">
-                    Roll gap positioning
-                  </span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check text-blue-600 mr-2 text-sm"></i>
-                  <span data-translate="industries.speedSync">
-                    Speed synchronization
-                  </span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check text-blue-600 mr-2 text-sm"></i>
-                  <span data-translate="industries.thicknessControl">
-                    Thickness control
-                  </span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check text-blue-600 mr-2 text-sm"></i>
-                  <span data-translate="industries.qualityInspection">
-                    Quality inspection
-                  </span>
-                </li>
-              </ul>
+            {/* Card 2 - Rolling & Forming */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-gray-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-gray-600/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-compress-arrows-alt text-blue-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300"
+                  data-translate="industries.rollingForming"
+                >
+                  Rolling & Forming
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="industries.rollingFormingDesc"
+                >
+                  Advanced positioning and synchronization for metal forming
+                  processes
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8">
-              <i className="fas fa-cut text-green-600 text-4xl mb-6"></i>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4"
-                data-translate="industries.cuttingFinishing"
-              >
-                Cutting & Finishing
-              </h3>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-center">
-                  <i className="fas fa-check text-green-600 mr-2 text-sm"></i>
-                  <span data-translate="industries.precisionCutting">
-                    Precision cutting systems
-                  </span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check text-green-600 mr-2 text-sm"></i>
-                  <span data-translate="industries.surfaceTreatment">
-                    Surface treatment control
-                  </span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check text-green-600 mr-2 text-sm"></i>
-                  <span data-translate="industries.packagingAutomation">
-                    Packaging automation
-                  </span>
-                </li>
-                <li className="flex items-center">
-                  <i className="fas fa-check text-green-600 mr-2 text-sm"></i>
-                  <span data-translate="industries.inventoryManagement">
-                    Inventory management
-                  </span>
-                </li>
-              </ul>
+            {/* Card 3 - Cutting & Finishing */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-gray-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-gray-600/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-gray-600 to-gray-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-cut text-gray-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-gray-600 transition-colors duration-300"
+                  data-translate="industries.cuttingFinishing"
+                >
+                  Cutting & Finishing
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="industries.cuttingFinishingDesc"
+                >
+                  Precision cutting, surface treatment, and quality control
+                  automation
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-gray-600 to-gray-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Process Areas Grid - Modern Design with Images */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMGZ1cm5hY2V8ZW58MHx8fHwxNzY3MjQxMTcyfDA&ixlib=rb-4.1.0&q=85"
+                  alt="Furnace Control"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-red-900 via-red-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
+                  <i className="fas fa-fire text-5xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h4
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.furnaceTempControl"
+                  >
+                    Furnace Control
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1764115424769-ebdd2683d5a8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxtZXRhbCUyMG1hbnVmYWN0dXJpbmd8ZW58MHx8fHwxNzY3MjQxMTE1fDA&ixlib=rb-4.1.0&q=85"
+                  alt="Rolling Mills"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
+                  <i className="fas fa-compress-arrows-alt text-5xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h4
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.rollGapPositioning"
+                  >
+                    Rolling Mills
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGN1dHRpbmd8ZW58MHx8fHwxNzY3MjQxMTg3fDA&ixlib=rb-4.1.0&q=85"
+                  alt="Precision Cutting"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
+                  <i className="fas fa-cut text-5xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h4
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.precisionCutting"
+                  >
+                    Precision Cutting
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1565957872295-e50896c7537e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxtZXRhbCUyMHF1YWxpdHklMjBpbnNwZWN0aW9ufGVufDB8fHx8MTc2NzI0MTE5Mnww&ixlib=rb-4.1.0&q=85"
+                  alt="Quality Inspection"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900 via-blue-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
+                  <i className="fas fa-search text-5xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                  <h4
+                    className="text-xl font-bold text-center"
+                    data-translate="industries.qualityInspection"
+                  >
+                    Quality Inspection
+                  </h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>
