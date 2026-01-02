@@ -1,146 +1,220 @@
 export const IndustriesPage = () => {
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 to-primary text-white py-16">
-        <div className="container mx-auto px-6">
-          <div className="text-center">
-            <h1
-              className="text-5xl font-bold mb-6"
-              data-translate="industries.heroTitle"
+      {/* Water Treatment - Modern & Elegant Design */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-500/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-blue-600/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-blue-600"></div>
+              <span className="mx-4 text-sm font-semibold text-blue-600 uppercase tracking-widest">
+                Industry Focus
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-blue-600"></div>
+            </div>
+
+            <h2
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+              data-translate="industries.waterTreatmentFull"
             >
-              Industries We Serve
-            </h1>
+              Water & Wastewater
+              <br />
+              <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                Treatment Solutions
+              </span>
+            </h2>
             <p
-              className="text-xl text-blue-100 max-w-3xl mx-auto"
-              data-translate="industries.heroSubtitle"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
+              data-translate="industries.waterTreatmentDesc"
             >
-              Comprehensive automation solutions across diverse industrial
-              sectors with proven expertise and results
+              Advanced automation solutions for water and wastewater treatment
+              facilities, ensuring efficient operations, regulatory compliance,
+              and optimal resource utilization. Our systems provide real-time
+              monitoring and control of critical processes.
             </p>
           </div>
-        </div>
-      </section>
 
-      {/* Water Treatment */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center bg-blue-100 rounded-full px-6 py-2 mb-6">
-                <i className="fas fa-tint text-blue-600 mr-2"></i>
-                <span
-                  className="text-blue-600 font-semibold"
-                  data-translate="industries.waterTreatment"
+          {/* Modern Card Grid with Glassmorphism */}
+          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+            {/* Card 1 - Process Control Systems */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-blue-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-600/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-cogs text-blue-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300"
+                  data-translate="industries.processControlSystems"
                 >
-                  Water Treatment
-                </span>
-              </div>
-              <h2
-                className="text-4xl font-bold text-gray-800 mb-6"
-                data-translate="industries.waterTreatmentFull"
-              >
-                Water & Wastewater Treatment
-              </h2>
-              <p
-                className="text-gray-600 mb-6 leading-relaxed"
-                data-translate="industries.waterTreatmentDesc"
-              >
-                Advanced automation solutions for water and wastewater treatment
-                facilities, ensuring efficient operations, regulatory
-                compliance, and optimal resource utilization. Our systems
-                provide real-time monitoring and control of critical processes.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <i className="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="industries.processControlSystems"
-                    >
-                      Process Control Systems
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="industries.processControlSystemsDesc"
-                    >
-                      Automated control of filtration, chemical dosing, and
-                      treatment processes
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <i className="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="industries.scadaIntegration"
-                    >
-                      SCADA Integration
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="industries.scadaIntegrationDesc"
-                    >
-                      Centralized monitoring and control of multiple treatment
-                      facilities
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <i className="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="industries.complianceReporting"
-                    >
-                      Compliance Reporting
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="industries.complianceReportingDesc"
-                    >
-                      Automated data collection and reporting for regulatory
-                      compliance
-                    </p>
-                  </div>
-                </div>
+                  Process Control Systems
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="industries.processControlSystemsDesc"
+                >
+                  Automated control of filtration, chemical dosing, and
+                  treatment processes
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-white rounded-lg p-6 shadow-lg text-center">
-                  <i className="fas fa-filter text-blue-600 text-3xl mb-3"></i>
+
+            {/* Card 2 - SCADA Integration */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-blue-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-600/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-network-wired text-blue-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300"
+                  data-translate="industries.scadaIntegration"
+                >
+                  SCADA Integration
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="industries.scadaIntegrationDesc"
+                >
+                  Centralized monitoring and control of multiple treatment
+                  facilities
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+
+            {/* Card 3 - Compliance Reporting */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-blue-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-600/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-clipboard-check text-blue-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300"
+                  data-translate="industries.complianceReporting"
+                >
+                  Compliance Reporting
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="industries.complianceReportingDesc"
+                >
+                  Automated data collection and reporting for regulatory
+                  compliance
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Key Features Grid - Modern Design with Images */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://mgx-backend-cdn.metadl.com/generate/images/877923/2026-01-02/ad4f38a3-9eae-4460-885f-2091409066ca.png"
+                  alt="Filtration Systems"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900 via-blue-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
+                  <i className="fas fa-filter text-5xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
                   <h4
-                    className="font-bold text-gray-800"
+                    className="text-xl font-bold text-center"
                     data-translate="industries.filtrationSystems"
                   >
                     Filtration Systems
                   </h4>
                 </div>
-                <div className="bg-white rounded-lg p-6 shadow-lg text-center">
-                  <i className="fas fa-flask text-blue-600 text-3xl mb-3"></i>
+              </div>
+            </div>
+
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://mgx-backend-cdn.metadl.com/generate/images/877923/2026-01-02/6df084e3-81cf-467c-99b8-6688a1775272.png"
+                  alt="Chemical Dosing"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900 via-blue-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
+                  <i className="fas fa-flask text-5xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
                   <h4
-                    className="font-bold text-gray-800"
+                    className="text-xl font-bold text-center"
                     data-translate="industries.chemicalDosing"
                   >
                     Chemical Dosing
                   </h4>
                 </div>
-                <div className="bg-white rounded-lg p-6 shadow-lg text-center">
-                  <i className="fas fa-chart-line text-blue-600 text-3xl mb-3"></i>
+              </div>
+            </div>
+
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://mgx-backend-cdn.metadl.com/generate/images/877923/2026-01-02/56cb404f-fedd-4545-908d-cb488742b1b8.png"
+                  alt="Quality Monitoring"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900 via-blue-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
+                  <i className="fas fa-chart-line text-5xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
                   <h4
-                    className="font-bold text-gray-800"
+                    className="text-xl font-bold text-center"
                     data-translate="industries.qualityMonitoring"
                   >
                     Quality Monitoring
                   </h4>
                 </div>
-                <div className="bg-white rounded-lg p-6 shadow-lg text-center">
-                  <i className="fas fa-recycle text-blue-600 text-3xl mb-3"></i>
+              </div>
+            </div>
+
+            <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="https://mgx-backend-cdn.metadl.com/generate/images/877923/2026-01-02/6a59dcc6-8e39-487d-945e-564111c55514.png"
+                  alt="Waste Management"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900 via-blue-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
+                  <i className="fas fa-recycle text-5xl mb-4 group-hover:scale-110 transition-transform duration-300"></i>
                   <h4
-                    className="font-bold text-gray-800"
+                    className="text-xl font-bold text-center"
                     data-translate="industries.wasteManagement"
                   >
                     Waste Management
