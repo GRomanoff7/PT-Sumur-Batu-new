@@ -1234,114 +1234,255 @@ export const ServicesPage = () => {
         </div>
       </section>
 
-      {/* Service Process */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
+      {/* Service Process - Modern & Elegant Redesign */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-primary/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tl from-secondary/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/3 rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-secondary"></div>
+              <span className="mx-4 text-sm font-semibold text-secondary uppercase tracking-widest">
+                Our Process
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-secondary"></div>
+            </div>
+
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               data-translate="servicesPage.processTitle"
             >
-              Our Service Process
+              Our Service
+              <br />
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Process
+              </span>
             </h2>
             <p
-              className="text-xl text-gray-600"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="servicesPage.processSubtitle"
             >
               Structured approach ensuring project success from start to finish
             </p>
           </div>
 
-          <div className="grid md:grid-cols-5 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">1</span>
-              </div>
-              <h3
-                className="font-bold text-gray-800 mb-2"
-                data-translate="servicesPage.step1"
-              >
-                Consultation
-              </h3>
-              <p
-                className="text-gray-600 text-sm"
-                data-translate="servicesPage.step1Desc"
-              >
-                Understanding your requirements and challenges
-              </p>
-            </div>
+          {/* Process Steps with Modern Cards and Flow */}
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-5 gap-6 lg:gap-8 relative">
+              {/* Connecting Lines - Hidden on mobile */}
+              <div className="hidden md:block absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary via-accent via-green-600 to-purple-600 opacity-20 z-0"></div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">2</span>
-              </div>
-              <h3
-                className="font-bold text-gray-800 mb-2"
-                data-translate="servicesPage.step2"
-              >
-                Design
-              </h3>
-              <p
-                className="text-gray-600 text-sm"
-                data-translate="servicesPage.step2Desc"
-              >
-                Custom system design and engineering
-              </p>
-            </div>
+              {/* Step 1 - Consultation */}
+              <div className="group relative">
+                <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 h-full">
+                  {/* Gradient Overlay on Hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">3</span>
-              </div>
-              <h3
-                className="font-bold text-gray-800 mb-2"
-                data-translate="servicesPage.step3"
-              >
-                Development
-              </h3>
-              <p
-                className="text-gray-600 text-sm"
-                data-translate="servicesPage.step3Desc"
-              >
-                Programming and panel manufacturing
-              </p>
-            </div>
+                  <div className="relative z-10 text-center">
+                    {/* Modern Icon Design */}
+                    <div className="relative w-20 h-20 mx-auto mb-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <span className="text-primary text-2xl font-extrabold group-hover:scale-110 transition-transform duration-300">
+                          1
+                        </span>
+                      </div>
+                    </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">4</span>
-              </div>
-              <h3
-                className="font-bold text-gray-800 mb-2"
-                data-translate="servicesPage.step4"
-              >
-                Implementation
-              </h3>
-              <p
-                className="text-gray-600 text-sm"
-                data-translate="servicesPage.step4Desc"
-              >
-                Installation and commissioning
-              </p>
-            </div>
+                    <h3
+                      className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300"
+                      data-translate="servicesPage.step1"
+                    >
+                      Consultation
+                    </h3>
+                    <p
+                      className="text-gray-600 leading-relaxed text-sm"
+                      data-translate="servicesPage.step1Desc"
+                    >
+                      Understanding your requirements and challenges
+                    </p>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">5</span>
+                    {/* Decorative Bottom Element */}
+                    <div className="mt-6 h-1 w-12 bg-gradient-to-r from-primary to-blue-400 rounded-full mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
+
+                  {/* Arrow Indicator */}
+                  <div className="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 z-20">
+                    <i className="fas fa-arrow-right text-primary text-xl opacity-30 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"></i>
+                  </div>
+                </div>
               </div>
-              <h3
-                className="font-bold text-gray-800 mb-2"
-                data-translate="servicesPage.step5"
-              >
-                Support
-              </h3>
-              <p
-                className="text-gray-600 text-sm"
-                data-translate="servicesPage.step5Desc"
-              >
-                Ongoing maintenance and optimization
-              </p>
+
+              {/* Step 2 - Design */}
+              <div className="group relative">
+                <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2 h-full">
+                  {/* Gradient Overlay on Hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                  <div className="relative z-10 text-center">
+                    {/* Modern Icon Design */}
+                    <div className="relative w-20 h-20 mx-auto mb-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-secondary to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <span className="text-secondary text-2xl font-extrabold group-hover:scale-110 transition-transform duration-300">
+                          2
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3
+                      className="text-xl font-bold text-gray-900 mb-3 group-hover:text-secondary transition-colors duration-300"
+                      data-translate="servicesPage.step2"
+                    >
+                      Design
+                    </h3>
+                    <p
+                      className="text-gray-600 leading-relaxed text-sm"
+                      data-translate="servicesPage.step2Desc"
+                    >
+                      Custom system design and engineering
+                    </p>
+
+                    {/* Decorative Bottom Element */}
+                    <div className="mt-6 h-1 w-12 bg-gradient-to-r from-secondary to-red-400 rounded-full mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
+
+                  {/* Arrow Indicator */}
+                  <div className="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 z-20">
+                    <i className="fas fa-arrow-right text-secondary text-xl opacity-30 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"></i>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 3 - Development */}
+              <div className="group relative">
+                <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-2 h-full">
+                  {/* Gradient Overlay on Hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                  <div className="relative z-10 text-center">
+                    {/* Modern Icon Design */}
+                    <div className="relative w-20 h-20 mx-auto mb-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-accent to-yellow-500 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <span className="text-accent text-2xl font-extrabold group-hover:scale-110 transition-transform duration-300">
+                          3
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3
+                      className="text-xl font-bold text-gray-900 mb-3 group-hover:text-accent transition-colors duration-300"
+                      data-translate="servicesPage.step3"
+                    >
+                      Development
+                    </h3>
+                    <p
+                      className="text-gray-600 leading-relaxed text-sm"
+                      data-translate="servicesPage.step3Desc"
+                    >
+                      Programming and panel manufacturing
+                    </p>
+
+                    {/* Decorative Bottom Element */}
+                    <div className="mt-6 h-1 w-12 bg-gradient-to-r from-accent to-yellow-400 rounded-full mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
+
+                  {/* Arrow Indicator */}
+                  <div className="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 z-20">
+                    <i className="fas fa-arrow-right text-accent text-xl opacity-30 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"></i>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 4 - Implementation */}
+              <div className="group relative">
+                <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-green-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-green-600/10 hover:-translate-y-2 h-full">
+                  {/* Gradient Overlay on Hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                  <div className="relative z-10 text-center">
+                    {/* Modern Icon Design */}
+                    <div className="relative w-20 h-20 mx-auto mb-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <span className="text-green-600 text-2xl font-extrabold group-hover:scale-110 transition-transform duration-300">
+                          4
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3
+                      className="text-xl font-bold text-gray-900 mb-3 group-hover:text-green-600 transition-colors duration-300"
+                      data-translate="servicesPage.step4"
+                    >
+                      Implementation
+                    </h3>
+                    <p
+                      className="text-gray-600 leading-relaxed text-sm"
+                      data-translate="servicesPage.step4Desc"
+                    >
+                      Installation and commissioning
+                    </p>
+
+                    {/* Decorative Bottom Element */}
+                    <div className="mt-6 h-1 w-12 bg-gradient-to-r from-green-600 to-green-400 rounded-full mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
+
+                  {/* Arrow Indicator */}
+                  <div className="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 z-20">
+                    <i className="fas fa-arrow-right text-green-600 text-xl opacity-30 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"></i>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 5 - Support */}
+              <div className="group relative">
+                <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-purple-600/30 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-600/10 hover:-translate-y-2 h-full">
+                  {/* Gradient Overlay on Hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                  <div className="relative z-10 text-center">
+                    {/* Modern Icon Design */}
+                    <div className="relative w-20 h-20 mx-auto mb-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-purple-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <span className="text-purple-600 text-2xl font-extrabold group-hover:scale-110 transition-transform duration-300">
+                          5
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3
+                      className="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors duration-300"
+                      data-translate="servicesPage.step5"
+                    >
+                      Support
+                    </h3>
+                    <p
+                      className="text-gray-600 leading-relaxed text-sm"
+                      data-translate="servicesPage.step5Desc"
+                    >
+                      Ongoing maintenance and optimization
+                    </p>
+
+                    {/* Decorative Bottom Element */}
+                    <div className="mt-6 h-1 w-12 bg-gradient-to-r from-purple-600 to-purple-400 rounded-full mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          {/* Optional CTA or Additional Info */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 text-sm font-medium">
+              A proven methodology refined over 17+ years of successful projects
+            </p>
           </div>
         </div>
       </section>
