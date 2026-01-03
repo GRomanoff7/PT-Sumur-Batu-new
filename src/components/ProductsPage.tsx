@@ -777,10 +777,10 @@ export const ProductsPage = () => {
                   >
                     Drive Applications
                   </h4>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {/* HVAC Systems */}
-                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                      <div className="relative h-32 overflow-hidden">
+                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                      <div className="relative h-40 overflow-hidden flex-shrink-0">
                         <img
                           src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/b5fe815c-5957-481b-8545-3f373880a1c0.png"
                           alt="HVAC Systems"
@@ -802,8 +802,8 @@ export const ProductsPage = () => {
                     </div>
 
                     {/* Pump Control */}
-                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                      <div className="relative h-32 overflow-hidden">
+                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                      <div className="relative h-40 overflow-hidden flex-shrink-0">
                         <img
                           src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/f28de406-d75d-4e54-aa97-abf95be8f6f5.png"
                           alt="Pump Control"
@@ -825,8 +825,8 @@ export const ProductsPage = () => {
                     </div>
 
                     {/* Conveyor Systems */}
-                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                      <div className="relative h-32 overflow-hidden">
+                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                      <div className="relative h-40 overflow-hidden flex-shrink-0">
                         <img
                           src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/f4e18d85-5ff5-440b-b103-b498640e3253.png"
                           alt="Conveyor Systems"
@@ -848,8 +848,8 @@ export const ProductsPage = () => {
                     </div>
 
                     {/* Compressors */}
-                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                      <div className="relative h-32 overflow-hidden">
+                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                      <div className="relative h-40 overflow-hidden flex-shrink-0">
                         <img
                           src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/41810048-1114-4cda-8888-b74210a3aeba.png"
                           alt="Compressors"
@@ -871,8 +871,8 @@ export const ProductsPage = () => {
                     </div>
 
                     {/* Process Control */}
-                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                      <div className="relative h-32 overflow-hidden">
+                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                      <div className="relative h-40 overflow-hidden flex-shrink-0">
                         <img
                           src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/fcd60f75-7b6f-4136-976d-988189aa7e68.png"
                           alt="Process Control"
@@ -894,8 +894,8 @@ export const ProductsPage = () => {
                     </div>
 
                     {/* Machine Tools */}
-                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                      <div className="relative h-32 overflow-hidden">
+                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                      <div className="relative h-40 overflow-hidden flex-shrink-0">
                         <img
                           src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/446163e1-0c48-42d0-8981-3b9433684f85.png"
                           alt="Machine Tools"
