@@ -20,7 +20,7 @@ export const ContactPage = () => {
 
             <h2
               className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
-              data-translate="contact.title"
+              data-translate="contact.heroTitle"
             >
               Contact Our
               <br />
@@ -30,7 +30,7 @@ export const ContactPage = () => {
             </h2>
             <p
               className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
-              data-translate="contact.subtitle"
+              data-translate="contact.heroSubtitle"
             >
               Reach out to our certified team for consultation, support, or project inquiries.
               We're here to help transform your industrial processes.
