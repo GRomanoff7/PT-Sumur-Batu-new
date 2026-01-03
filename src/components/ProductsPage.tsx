@@ -370,285 +370,357 @@ export const ProductsPage = () => {
         </div>
       </section>
 
-      {/* Drives */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center bg-secondary/10 rounded-full px-6 py-2 mb-6">
-              <i className="fas fa-tachometer-alt text-secondary mr-2"></i>
-              <span
-                className="text-secondary font-semibold"
-                data-translate="productsPage.drivesBadge"
-              >
-                Motor Drives
+      {/* Drives - Modern & Elegant Redesign */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-secondary/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-accent/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-secondary"></div>
+              <span className="mx-4 text-sm font-semibold text-secondary uppercase tracking-widest">
+                <i className="fas fa-tachometer-alt mr-2"></i>
+                <span data-translate="productsPage.drivesBadge">
+                  Motor Drives
+                </span>
               </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-secondary"></div>
             </div>
+
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               data-translate="productsPage.drivesTitle"
             >
-              PowerFlex Drive Series
+              PowerFlex
+              <br />
+              <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+                Drive Series
+              </span>
             </h2>
             <p
-              className="text-xl text-gray-600"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="productsPage.drivesSubtitle"
             >
               Advanced AC and DC drives for precise motor control
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 mb-12">
+          {/* Modern Two-Column Layout */}
+          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+            {/* Left Column - AC Drives */}
             <div>
               <h3
-                className="text-3xl font-bold text-gray-800 mb-8"
+                className="text-3xl font-bold text-gray-900 mb-8"
                 data-translate="productsPage.acDrivesTitle"
               >
                 AC Drives / Inverters
               </h3>
               <div className="space-y-6">
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                      <i className="fas fa-bolt text-blue-600"></i>
+                {/* PowerFlex 525 */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10">
+                    <div className="flex items-center mb-4">
+                      <div className="relative w-16 h-16 mr-4">
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                        <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                          <i className="fas fa-bolt text-blue-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                      </div>
+                      <h4
+                        className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300"
+                        data-translate="productsPage.powerFlex525Title"
+                      >
+                        PowerFlex 525
+                      </h4>
                     </div>
-                    <h4
-                      className="text-xl font-bold text-gray-800"
-                      data-translate="productsPage.powerFlex525Title"
+                    <p
+                      className="text-gray-600 mb-4 leading-relaxed"
+                      data-translate="productsPage.powerFlex525Desc"
                     >
-                      PowerFlex 525
-                    </h4>
-                  </div>
-                  <p
-                    className="text-gray-600 mb-3"
-                    data-translate="productsPage.powerFlex525Desc"
-                  >
-                    Compact drive for basic to advanced applications with
-                    integrated safety features
-                  </p>
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div>
-                      <span
-                        className="font-medium text-gray-700"
-                        data-translate="productsPage.powerRange"
-                      >
-                        Power Range:
-                      </span>
-                      <br />
-                      <span data-translate="productsPage.powerFlex525Range">
-                        0.4 to 22 kW
-                      </span>
+                      Compact drive for basic to advanced applications with
+                      integrated safety features
+                    </p>
+                    <div className="grid grid-cols-2 gap-4 text-sm">
+                      <div>
+                        <span
+                          className="font-semibold text-gray-800"
+                          data-translate="productsPage.powerRange"
+                        >
+                          Power Range:
+                        </span>
+                        <br />
+                        <span className="text-gray-600" data-translate="productsPage.powerFlex525Range">
+                          0.4 to 22 kW
+                        </span>
+                      </div>
+                      <div>
+                        <span
+                          className="font-semibold text-gray-800"
+                          data-translate="productsPage.applications"
+                        >
+                          Applications:
+                        </span>
+                        <br />
+                        <span className="text-gray-600" data-translate="productsPage.powerFlex525Apps">
+                          Pumps, fans, conveyors
+                        </span>
+                      </div>
                     </div>
-                    <div>
-                      <span
-                        className="font-medium text-gray-700"
-                        data-translate="productsPage.applications"
-                      >
-                        Applications:
-                      </span>
-                      <br />
-                      <span data-translate="productsPage.powerFlex525Apps">
-                        Pumps, fans, conveyors
-                      </span>
-                    </div>
+                    <div className="mt-4 h-1 w-16 bg-gradient-to-r from-blue-500 to-blue-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                      <i className="fas fa-cogs text-green-600"></i>
+                {/* PowerFlex 753 */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-green-300 transition-all duration-500 hover:shadow-2xl hover:shadow-green-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10">
+                    <div className="flex items-center mb-4">
+                      <div className="relative w-16 h-16 mr-4">
+                        <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                        <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                          <i className="fas fa-cogs text-green-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                      </div>
+                      <h4
+                        className="text-2xl font-bold text-gray-900 group-hover:text-green-600 transition-colors duration-300"
+                        data-translate="productsPage.powerFlex753Title"
+                      >
+                        PowerFlex 753
+                      </h4>
                     </div>
-                    <h4
-                      className="text-xl font-bold text-gray-800"
-                      data-translate="productsPage.powerFlex753Title"
+                    <p
+                      className="text-gray-600 mb-4 leading-relaxed"
+                      data-translate="productsPage.powerFlex753Desc"
                     >
-                      PowerFlex 753
-                    </h4>
-                  </div>
-                  <p
-                    className="text-gray-600 mb-3"
-                    data-translate="productsPage.powerFlex753Desc"
-                  >
-                    High-performance drive with advanced control algorithms and
-                    networking
-                  </p>
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div>
-                      <span
-                        className="font-medium text-gray-700"
-                        data-translate="productsPage.powerRange"
-                      >
-                        Power Range:
-                      </span>
-                      <br />
-                      <span data-translate="productsPage.powerFlex753Range">
-                        0.4 to 2.3 MW
-                      </span>
+                      High-performance drive with advanced control algorithms and
+                      networking
+                    </p>
+                    <div className="grid grid-cols-2 gap-4 text-sm">
+                      <div>
+                        <span
+                          className="font-semibold text-gray-800"
+                          data-translate="productsPage.powerRange"
+                        >
+                          Power Range:
+                        </span>
+                        <br />
+                        <span className="text-gray-600" data-translate="productsPage.powerFlex753Range">
+                          0.4 to 2.3 MW
+                        </span>
+                      </div>
+                      <div>
+                        <span
+                          className="font-semibold text-gray-800"
+                          data-translate="productsPage.applications"
+                        >
+                          Applications:
+                        </span>
+                        <br />
+                        <span className="text-gray-600" data-translate="productsPage.powerFlex753Apps">
+                          Process control, precision applications
+                        </span>
+                      </div>
                     </div>
-                    <div>
-                      <span
-                        className="font-medium text-gray-700"
-                        data-translate="productsPage.applications"
-                      >
-                        Applications:
-                      </span>
-                      <br />
-                      <span data-translate="productsPage.powerFlex753Apps">
-                        Process control, precision applications
-                      </span>
-                    </div>
+                    <div className="mt-4 h-1 w-16 bg-gradient-to-r from-green-500 to-green-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                      <i className="fas fa-server text-purple-600"></i>
+                {/* PowerFlex 755 */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-purple-300 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10">
+                    <div className="flex items-center mb-4">
+                      <div className="relative w-16 h-16 mr-4">
+                        <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                        <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                          <i className="fas fa-server text-purple-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                      </div>
+                      <h4
+                        className="text-2xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-300"
+                        data-translate="productsPage.powerFlex755Title"
+                      >
+                        PowerFlex 755
+                      </h4>
                     </div>
-                    <h4
-                      className="text-xl font-bold text-gray-800"
-                      data-translate="productsPage.powerFlex755Title"
+                    <p
+                      className="text-gray-600 mb-4 leading-relaxed"
+                      data-translate="productsPage.powerFlex755Desc"
                     >
-                      PowerFlex 755
-                    </h4>
-                  </div>
-                  <p
-                    className="text-gray-600 mb-3"
-                    data-translate="productsPage.powerFlex755Desc"
-                  >
-                    Modular drive system for complex applications requiring
-                    maximum flexibility
-                  </p>
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div>
-                      <span
-                        className="font-medium text-gray-700"
-                        data-translate="productsPage.powerRange"
-                      >
-                        Power Range:
-                      </span>
-                      <br />
-                      <span data-translate="productsPage.powerFlex755Range">
-                        90 kW to 5.7 MW
-                      </span>
+                      Modular drive system for complex applications requiring
+                      maximum flexibility
+                    </p>
+                    <div className="grid grid-cols-2 gap-4 text-sm">
+                      <div>
+                        <span
+                          className="font-semibold text-gray-800"
+                          data-translate="productsPage.powerRange"
+                        >
+                          Power Range:
+                        </span>
+                        <br />
+                        <span className="text-gray-600" data-translate="productsPage.powerFlex755Range">
+                          90 kW to 5.7 MW
+                        </span>
+                      </div>
+                      <div>
+                        <span
+                          className="font-semibold text-gray-800"
+                          data-translate="productsPage.applications"
+                        >
+                          Applications:
+                        </span>
+                        <br />
+                        <span className="text-gray-600" data-translate="productsPage.powerFlex755Apps">
+                          Large motors, harsh environments
+                        </span>
+                      </div>
                     </div>
-                    <div>
-                      <span
-                        className="font-medium text-gray-700"
-                        data-translate="productsPage.applications"
-                      >
-                        Applications:
-                      </span>
-                      <br />
-                      <span data-translate="productsPage.powerFlex755Apps">
-                        Large motors, harsh environments
-                      </span>
-                    </div>
+                    <div className="mt-4 h-1 w-16 bg-gradient-to-r from-purple-500 to-purple-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                 </div>
               </div>
             </div>
 
+            {/* Right Column - DC Drives & Special Applications */}
             <div>
               <h3
-                className="text-3xl font-bold text-gray-800 mb-8"
+                className="text-3xl font-bold text-gray-900 mb-8"
                 data-translate="productsPage.dcDrivesTitle"
               >
                 DC Drives & Special Applications
               </h3>
               <div className="space-y-6">
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
-                      <i className="fas fa-battery-three-quarters text-red-600"></i>
+                {/* PowerFlex DC */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-red-300 transition-all duration-500 hover:shadow-2xl hover:shadow-red-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10">
+                    <div className="flex items-center mb-4">
+                      <div className="relative w-16 h-16 mr-4">
+                        <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                        <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                          <i className="fas fa-battery-three-quarters text-red-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                      </div>
+                      <h4
+                        className="text-2xl font-bold text-gray-900 group-hover:text-red-600 transition-colors duration-300"
+                        data-translate="productsPage.powerFlexDCTitle"
+                      >
+                        PowerFlex DC
+                      </h4>
                     </div>
-                    <h4
-                      className="text-xl font-bold text-gray-800"
-                      data-translate="productsPage.powerFlexDCTitle"
+                    <p
+                      className="text-gray-600 mb-4 leading-relaxed"
+                      data-translate="productsPage.powerFlexDCDesc"
                     >
-                      PowerFlex DC
-                    </h4>
-                  </div>
-                  <p
-                    className="text-gray-600 mb-4"
-                    data-translate="productsPage.powerFlexDCDesc"
-                  >
-                    High-performance DC drives for applications requiring
-                    precise speed and torque control
-                  </p>
-                  <div className="space-y-2 text-sm text-gray-600">
-                    <div className="flex items-center">
-                      <i className="fas fa-check text-green-600 mr-2"></i>
-                      <span data-translate="productsPage.regenerativeCapabilities">
-                        Regenerative capabilities
-                      </span>
+                      High-performance DC drives for applications requiring
+                      precise speed and torque control
+                    </p>
+                    <div className="space-y-2 text-sm text-gray-600">
+                      <div className="flex items-center">
+                        <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-2">
+                          <i className="fas fa-check text-green-600 text-xs"></i>
+                        </div>
+                        <span data-translate="productsPage.regenerativeCapabilities">
+                          Regenerative capabilities
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-2">
+                          <i className="fas fa-check text-green-600 text-xs"></i>
+                        </div>
+                        <span data-translate="productsPage.fieldWeakening">
+                          Field weakening control
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-2">
+                          <i className="fas fa-check text-green-600 text-xs"></i>
+                        </div>
+                        <span data-translate="productsPage.advancedDiagnostics">
+                          Advanced diagnostics
+                        </span>
+                      </div>
                     </div>
-                    <div className="flex items-center">
-                      <i className="fas fa-check text-green-600 mr-2"></i>
-                      <span data-translate="productsPage.fieldWeakening">
-                        Field weakening control
-                      </span>
-                    </div>
-                    <div className="flex items-center">
-                      <i className="fas fa-check text-green-600 mr-2"></i>
-                      <span data-translate="productsPage.advancedDiagnostics">
-                        Advanced diagnostics
-                      </span>
-                    </div>
+                    <div className="mt-4 h-1 w-16 bg-gradient-to-r from-red-500 to-red-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4">
-                      <i className="fas fa-thermometer-half text-indigo-600"></i>
+                {/* PowerFlex 755T */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-indigo-300 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10">
+                    <div className="flex items-center mb-4">
+                      <div className="relative w-16 h-16 mr-4">
+                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                        <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                          <i className="fas fa-thermometer-half text-indigo-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                      </div>
+                      <h4
+                        className="text-2xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300"
+                        data-translate="productsPage.powerFlex755TTitle"
+                      >
+                        PowerFlex 755T
+                      </h4>
                     </div>
-                    <h4
-                      className="text-xl font-bold text-gray-800"
-                      data-translate="productsPage.powerFlex755TTitle"
+                    <p
+                      className="text-gray-600 mb-4 leading-relaxed"
+                      data-translate="productsPage.powerFlex755TDesc"
                     >
-                      PowerFlex 755T
-                    </h4>
-                  </div>
-                  <p
-                    className="text-gray-600 mb-4"
-                    data-translate="productsPage.powerFlex755TDesc"
-                  >
-                    Total Force Technology drives designed for harsh industrial
-                    environments
-                  </p>
-                  <div className="space-y-2 text-sm text-gray-600">
-                    <div className="flex items-center">
-                      <i className="fas fa-check text-green-600 mr-2"></i>
-                      <span data-translate="productsPage.enhancedProtection">
-                        Enhanced environmental protection
-                      </span>
+                      Total Force Technology drives designed for harsh industrial
+                      environments
+                    </p>
+                    <div className="space-y-2 text-sm text-gray-600">
+                      <div className="flex items-center">
+                        <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-2">
+                          <i className="fas fa-check text-green-600 text-xs"></i>
+                        </div>
+                        <span data-translate="productsPage.enhancedProtection">
+                          Enhanced environmental protection
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-2">
+                          <i className="fas fa-check text-green-600 text-xs"></i>
+                        </div>
+                        <span data-translate="productsPage.reducedHarmonic">
+                          Reduced harmonic distortion
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-2">
+                          <i className="fas fa-check text-green-600 text-xs"></i>
+                        </div>
+                        <span data-translate="productsPage.extendedTemp">
+                          Extended operating temperature range
+                        </span>
+                      </div>
                     </div>
-                    <div className="flex items-center">
-                      <i className="fas fa-check text-green-600 mr-2"></i>
-                      <span data-translate="productsPage.reducedHarmonic">
-                        Reduced harmonic distortion
-                      </span>
-                    </div>
-                    <div className="flex items-center">
-                      <i className="fas fa-check text-green-600 mr-2"></i>
-                      <span data-translate="productsPage.extendedTemp">
-                        Extended operating temperature range
-                      </span>
-                    </div>
+                    <div className="mt-4 h-1 w-16 bg-gradient-to-r from-indigo-500 to-indigo-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-accent/5 to-orange-100 rounded-xl p-6">
+                {/* Drive Applications Card */}
+                <div className="relative bg-gradient-to-br from-accent/10 via-orange-50 to-accent/5 backdrop-blur-sm rounded-3xl p-6 border border-accent/20">
                   <h4
-                    className="font-bold text-gray-800 mb-4"
+                    className="text-xl font-bold text-gray-900 mb-4"
                     data-translate="productsPage.driveApplicationsTitle"
                   >
                     Drive Applications
                   </h4>
                   <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div>
-                      <i className="fas fa-fan text-blue-600 mr-2"></i>
+                    <div className="flex items-center">
+                      <i className="fas fa-fan text-accent mr-2"></i>
                       <span
                         className="text-gray-700"
                         data-translate="productsPage.hvacSystems"
@@ -656,8 +728,8 @@ export const ProductsPage = () => {
                         HVAC Systems
                       </span>
                     </div>
-                    <div>
-                      <i className="fas fa-tint text-blue-600 mr-2"></i>
+                    <div className="flex items-center">
+                      <i className="fas fa-tint text-accent mr-2"></i>
                       <span
                         className="text-gray-700"
                         data-translate="productsPage.pumpControl"
@@ -665,8 +737,8 @@ export const ProductsPage = () => {
                         Pump Control
                       </span>
                     </div>
-                    <div>
-                      <i className="fas fa-conveyor-belt text-blue-600 mr-2"></i>
+                    <div className="flex items-center">
+                      <i className="fas fa-conveyor-belt text-accent mr-2"></i>
                       <span
                         className="text-gray-700"
                         data-translate="productsPage.conveyorSystems"
@@ -674,8 +746,8 @@ export const ProductsPage = () => {
                         Conveyor Systems
                       </span>
                     </div>
-                    <div>
-                      <i className="fas fa-compress text-blue-600 mr-2"></i>
+                    <div className="flex items-center">
+                      <i className="fas fa-compress text-accent mr-2"></i>
                       <span
                         className="text-gray-700"
                         data-translate="productsPage.compressors"
@@ -683,8 +755,8 @@ export const ProductsPage = () => {
                         Compressors
                       </span>
                     </div>
-                    <div>
-                      <i className="fas fa-industry text-blue-600 mr-2"></i>
+                    <div className="flex items-center">
+                      <i className="fas fa-industry text-accent mr-2"></i>
                       <span
                         className="text-gray-700"
                         data-translate="productsPage.processControl"
@@ -692,8 +764,8 @@ export const ProductsPage = () => {
                         Process Control
                       </span>
                     </div>
-                    <div>
-                      <i className="fas fa-cogs text-blue-600 mr-2"></i>
+                    <div className="flex items-center">
+                      <i className="fas fa-cogs text-accent mr-2"></i>
                       <span
                         className="text-gray-700"
                         data-translate="productsPage.machineTools"
@@ -705,6 +777,13 @@ export const ProductsPage = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Optional Additional Info */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 text-sm font-medium">
+              All drives backed by our certified integration expertise
+            </p>
           </div>
         </div>
       </section>
