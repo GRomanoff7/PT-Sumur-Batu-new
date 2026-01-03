@@ -1,181 +1,187 @@
 export const ContactPage = () => {
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-16">
-        <div className="container mx-auto px-6">
-          <div className="text-center">
-            <h1
-              className="text-5xl font-bold mb-6"
-              data-translate="contact.heroTitle"
+      {/* Modern Contact Header - Elegant & Minimal */}
+      <section className="relative py-20 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-primary/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-secondary/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
+              <span className="mx-4 text-sm font-semibold text-primary uppercase tracking-widest">
+                Get In Touch
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary"></div>
+            </div>
+
+            <h2
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+              data-translate="contact.title"
             >
-              Contact Us
-            </h1>
+              Contact Our
+              <br />
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Automation Experts
+              </span>
+            </h2>
             <p
-              className="text-xl text-blue-100 max-w-3xl mx-auto"
-              data-translate="contact.heroSubtitle"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
+              data-translate="contact.subtitle"
             >
-              Get in touch with our automation experts for consultation,
-              support, or project inquiries
+              Reach out to our certified team for consultation, support, or project inquiries.
+              We're here to help transform your industrial processes.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Contact Information & Form */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Information */}
-            <div>
-              <h2
-                className="text-3xl font-bold text-gray-800 mb-8"
-                data-translate="contact.getInTouch"
-              >
-                Get In Touch
-              </h2>
-              <div className="space-y-6">
-                <div className="bg-white rounded-xl p-6 shadow-lg">
-                  <div className="flex items-start">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 mt-1">
-                      <i className="fas fa-map-marker-alt text-primary text-xl"></i>
-                    </div>
-                    <div>
-                      <h3
-                        className="text-lg font-bold text-gray-800 mb-2"
-                        data-translate="contact.officeAddress"
-                      >
-                        Office Address
-                      </h3>
-                      <p className="text-gray-600 leading-relaxed">
-                        Rungkut Megah Raya N33
-                        <br />
-                        Jl. Raya Kalirungkut No. 5<br />
-                        Surabaya, Jawa Timur, Indonesia
-                        <br />
-                        60293
-                      </p>
-                    </div>
-                  </div>
-                </div>
+      {/* Modern Contact Information & Form - Elegant Redesign */}
+      <section className="relative py-16 bg-white overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl z-0 animate-pulse-slow"></div>
+        <div className="absolute bottom-20 left-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-3xl z-0 animate-pulse-slower"></div>
 
-                <div className="bg-white rounded-xl p-6 shadow-lg">
-                  <div className="flex items-start">
-                    <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mr-4 mt-1">
-                      <i className="fas fa-phone text-secondary text-xl"></i>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* Modern Contact Information - Glassmorphism Design */}
+            <div>
+              <div className="mb-12">
+                <h3
+                  className="text-3xl font-bold text-gray-800 mb-6"
+                  data-translate="contact.getInTouch"
+                >
+                  Connect With Us
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  Our team of certified automation engineers is ready to assist you with
+                  comprehensive solutions tailored to your industrial needs.
+                </p>
+              </div>
+
+              {/* Modern Contact Cards Grid */}
+              <div className="grid gap-6">
+                {/* Address Card */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10 flex items-start">
+                    <div className="relative w-16 h-16 mr-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-map-marker-alt text-primary text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
                     </div>
-                    <div>
-                      <h3
-                        className="text-lg font-bold text-gray-800 mb-2"
-                        data-translate="contact.phoneAndFax"
-                      >
-                        Phone & Fax
-                      </h3>
-                      <div className="space-y-1 text-gray-600">
-                        <p>
-                          <span
-                            className="font-medium"
-                            data-translate="contact.phone"
-                          >
-                            Phone:
-                          </span>
-                          <a
-                            href="tel:+6231879168"
-                            className="text-primary hover:text-secondary transition-colors"
-                          >
-                            +62-31-879.8168
-                          </a>
-                        </p>
-                        <p>
-                          <span
-                            className="font-medium"
-                            data-translate="contact.fax"
-                          >
-                            Fax:
-                          </span>{" "}
-                          +62-31-870.0875
-                        </p>
+                    
+                    <div className="flex-1">
+                      <h4 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-primary transition-colors duration-300">
+                        Office Address
+                      </h4>
+                      <div className="space-y-2 text-gray-600">
+                        <p className="font-medium">Rungkut Megah Raya N33</p>
+                        <p>Jl. Raya Kalirungkut No. 5</p>
+                        <p>Surabaya, Jawa Timur, Indonesia</p>
+                        <p className="font-semibold text-primary">60293</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-xl p-6 shadow-lg">
-                  <div className="flex items-start">
-                    <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mr-4 mt-1">
-                      <i className="fas fa-envelope text-accent text-xl"></i>
+                {/* Contact Details Card */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10">
+                    <div className="flex items-start mb-6">
+                      <div className="relative w-16 h-16 mr-6">
+                        <div className="absolute inset-0 bg-gradient-to-br from-secondary to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                        <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                          <i className="fas fa-phone text-secondary text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                      </div>
+                      
+                      <div className="flex-1">
+                        <h4 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-secondary transition-colors duration-300">
+                          Phone & Fax
+                        </h4>
+                        <div className="space-y-3">
+                          <div>
+                            <p className="font-medium text-gray-700">Phone:</p>
+                            <a
+                              href="tel:+6231879168"
+                              className="text-primary hover:text-secondary transition-colors text-lg font-semibold"
+                            >
+                              +62-31-879.8168
+                            </a>
+                          </div>
+                          <div>
+                            <p className="font-medium text-gray-700">Fax:</p>
+                            <p className="text-gray-600">+62-31-870.0875</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div>
-                      <h3
-                        className="text-lg font-bold text-gray-800 mb-2"
-                        data-translate="contact.email"
-                      >
-                        Email
-                      </h3>
-                      <p className="text-gray-600">
+
+                    <div className="flex items-start">
+                      <div className="relative w-16 h-16 mr-6">
+                        <div className="absolute inset-0 bg-gradient-to-br from-accent to-yellow-500 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                        <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                          <i className="fas fa-envelope text-accent text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                      </div>
+                      
+                      <div className="flex-1">
+                        <h4 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-accent transition-colors duration-300">
+                          Email
+                        </h4>
                         <a
                           href="mailto:SumurBatu@gmail.com"
-                          className="text-primary hover:text-secondary transition-colors"
+                          className="text-primary hover:text-secondary transition-colors text-lg font-semibold"
                         >
                           SumurBatu@gmail.com
                         </a>
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-xl p-6 shadow-lg">
-                  <div className="flex items-start">
-                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4 mt-1">
-                      <i className="fas fa-clock text-green-600 text-xl"></i>
+                {/* Business Hours Card */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-green-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/10 hover:-translate-y-2">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+                  
+                  <div className="relative z-10 flex items-start">
+                    <div className="relative w-16 h-16 mr-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-clock text-green-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
                     </div>
-                    <div>
-                      <h3
-                        className="text-lg font-bold text-gray-800 mb-2"
-                        data-translate="contact.businessHours"
-                      >
+                    
+                    <div className="flex-1">
+                      <h4 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-green-600 transition-colors duration-300">
                         Business Hours
-                      </h3>
-                      <div className="space-y-1 text-gray-600 text-sm">
-                        <p>
-                          <span
-                            className="font-medium"
-                            data-translate="contact.mondayFriday"
-                          >
-                            Monday - Friday:
-                          </span>{" "}
-                          <span data-translate="contact.mondayFridayTime">
-                            8:00 AM - 5:00 PM
-                          </span>
-                        </p>
-                        <p>
-                          <span
-                            className="font-medium"
-                            data-translate="contact.saturday"
-                          >
-                            Saturday:
-                          </span>{" "}
-                          <span data-translate="contact.saturdayTime">
-                            8:00 AM - 12:00 PM
-                          </span>
-                        </p>
-                        <p>
-                          <span
-                            className="font-medium"
-                            data-translate="contact.sunday"
-                          >
-                            Sunday:
-                          </span>{" "}
-                          <span data-translate="contact.sundayTime">
-                            Closed
-                          </span>
-                        </p>
-                        <p
-                          className="text-xs text-gray-500 mt-2"
-                          data-translate="contact.emergencySupport"
-                        >
-                          * Emergency support available 24/7
-                        </p>
+                      </h4>
+                      <div className="space-y-3">
+                        <div>
+                          <p className="font-medium text-gray-700">Monday - Friday:</p>
+                          <p className="text-gray-600">8:00 AM - 5:00 PM</p>
+                        </div>
+                        <div>
+                          <p className="font-medium text-gray-700">Saturday:</p>
+                          <p className="text-gray-600">8:00 AM - 12:00 PM</p>
+                        </div>
+                        <div>
+                          <p className="font-medium text-gray-700">Sunday:</p>
+                          <p className="text-gray-600">Closed</p>
+                        </div>
+                        <div className="pt-2 border-t border-gray-200">
+                          <p className="text-sm text-gray-500">
+                            * Emergency support available 24/7
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -183,287 +189,301 @@ export const ContactPage = () => {
               </div>
             </div>
 
-            {/* Contact Form */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <h2
-                className="text-3xl font-bold text-gray-800 mb-8"
-                data-translate="contact.sendMessage"
-              >
-                Send us a Message
-              </h2>
-              <form id="contactForm" className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label
-                      htmlFor="firstName"
-                      className="block text-sm font-medium text-gray-700 mb-2"
-                      data-translate="contact.firstName"
+            {/* Contact Form - Modern Design */}
+            <div className="relative group">
+              <div className="relative bg-gradient-to-br from-white/95 via-white/90 to-white/95 backdrop-blur-xl rounded-3xl p-8 border border-gray-200/50 shadow-2xl">
+                {/* Gradient Overlay on Hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-700"></div>
+
+                <div className="relative z-10">
+                  <h2
+                    className="text-3xl font-bold text-gray-800 mb-8"
+                    data-translate="contact.sendMessage"
+                  >
+                    Send us a Message
+                  </h2>
+                  <form id="contactForm" className="space-y-6">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <label
+                          htmlFor="firstName"
+                          className="block text-sm font-medium text-gray-700 mb-2"
+                          data-translate="contact.firstName"
+                        >
+                          First Name *
+                        </label>
+                        <input
+                          type="text"
+                          id="firstName"
+                          name="firstName"
+                          required
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors bg-white/50 backdrop-blur-sm"
+                          placeholder="Enter your first name"
+                          data-translate="contact.firstNamePlaceholder"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          htmlFor="lastName"
+                          className="block text-sm font-medium text-gray-700 mb-2"
+                          data-translate="contact.lastName"
+                        >
+                          Last Name *
+                        </label>
+                        <input
+                          type="text"
+                          id="lastName"
+                          name="lastName"
+                          required
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors bg-white/50 backdrop-blur-sm"
+                          placeholder="Enter your last name"
+                          data-translate="contact.lastNamePlaceholder"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label
+                        htmlFor="email"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                        data-translate="contact.emailAddress"
+                      >
+                        Email Address *
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors bg-white/50 backdrop-blur-sm"
+                        placeholder="Enter your email address"
+                        data-translate="contact.emailPlaceholder"
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        htmlFor="phone"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                        data-translate="contact.phoneNumber"
+                      >
+                        Phone Number
+                      </label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors bg-white/50 backdrop-blur-sm"
+                        placeholder="Enter your phone number"
+                        data-translate="contact.phonePlaceholder"
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        htmlFor="company"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                        data-translate="contact.companyName"
+                      >
+                        Company Name
+                      </label>
+                      <input
+                        type="text"
+                        id="company"
+                        name="company"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors bg-white/50 backdrop-blur-sm"
+                        placeholder="Enter your company name"
+                        data-translate="contact.companyPlaceholder"
+                      />
+                    </div>
+
+                    <div>
+                      <label
+                        htmlFor="industry"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                        data-translate="contact.industry"
+                      >
+                        Industry
+                      </label>
+                      <select
+                        id="industry"
+                        name="industry"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors bg-white/50 backdrop-blur-sm"
+                      >
+                        <option value="" data-translate="contact.selectIndustry">
+                          Select your industry
+                        </option>
+                        <option
+                          value="water-treatment"
+                          data-translate="contact.waterTreatment"
+                        >
+                          Water Treatment
+                        </option>
+                        <option
+                          value="pulp-paper"
+                          data-translate="contact.pulpPaper"
+                        >
+                          Pulp and Paper
+                        </option>
+                        <option
+                          value="metal"
+                          data-translate="contact.metalIndustry"
+                        >
+                          Metal Industry
+                        </option>
+                        <option value="mining" data-translate="contact.mining">
+                          Mining
+                        </option>
+                        <option
+                          value="process-plant"
+                          data-translate="contact.processPlant"
+                        >
+                          Process Plant (Food, Chemical)
+                        </option>
+                        <option
+                          value="material-handling"
+                          data-translate="contact.materialHandling"
+                        >
+                          Material Handling
+                        </option>
+                        <option
+                          value="consumer-goods"
+                          data-translate="contact.consumerGoods"
+                        >
+                          Consumer Goods Machinery
+                        </option>
+                        <option
+                          value="power-plant"
+                          data-translate="contact.powerPlant"
+                        >
+                          Power Plant
+                        </option>
+                        <option value="printing" data-translate="contact.printing">
+                          Printing
+                        </option>
+                        <option value="other" data-translate="contact.other">
+                          Other
+                        </option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label
+                        htmlFor="projectType"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                        data-translate="contact.projectType"
+                      >
+                        Project Type
+                      </label>
+                      <select
+                        id="projectType"
+                        name="projectType"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors bg-white/50 backdrop-blur-sm"
+                      >
+                        <option value="" data-translate="contact.selectProjectType">
+                          Select project type
+                        </option>
+                        <option
+                          value="new-installation"
+                          data-translate="contact.newInstallation"
+                        >
+                          New Installation
+                        </option>
+                        <option
+                          value="system-upgrade"
+                          data-translate="contact.systemUpgrade"
+                        >
+                          System Upgrade
+                        </option>
+                        <option
+                          value="maintenance-support"
+                          data-translate="contact.maintenanceSupport"
+                        >
+                          Maintenance & Support
+                        </option>
+                        <option
+                          value="consultation"
+                          data-translate="contact.consultation"
+                        >
+                          Consultation
+                        </option>
+                        <option value="training" data-translate="contact.training">
+                          Training
+                        </option>
+                        <option
+                          value="emergency-repair"
+                          data-translate="contact.emergencyRepair"
+                        >
+                          Emergency Repair
+                        </option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label
+                        htmlFor="message"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                        data-translate="contact.projectDetails"
+                      >
+                        Project Details / Message *
+                      </label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows={5}
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors bg-white/50 backdrop-blur-sm resize-vertical"
+                        placeholder="Please describe your project requirements, timeline, or any specific questions..."
+                        data-translate="contact.projectDetailsPlaceholder"
+                      ></textarea>
+                    </div>
+
+                    <div className="flex items-start">
+                      <input
+                        type="checkbox"
+                        id="privacy"
+                        name="privacy"
+                        required
+                        className="mt-1 w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary"
+                      />
+                      <label
+                        htmlFor="privacy"
+                        className="ml-2 text-sm text-gray-600"
+                        data-translate="contact.privacyPolicy"
+                      >
+                        I agree to PT Sumur Batu's privacy policy and consent to
+                        being contacted regarding my inquiry. *
+                      </label>
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="w-full bg-gradient-to-r from-primary to-blue-700 hover:from-blue-700 hover:to-primary text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-105"
                     >
-                      First Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                      placeholder="Enter your first name"
-                      data-translate="contact.firstNamePlaceholder"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="lastName"
-                      className="block text-sm font-medium text-gray-700 mb-2"
-                      data-translate="contact.lastName"
-                    >
-                      Last Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      name="lastName"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                      placeholder="Enter your last name"
-                      data-translate="contact.lastNamePlaceholder"
-                    />
-                  </div>
+                      <i className="fas fa-paper-plane mr-2"></i>
+                      <span data-translate="contact.sendMessageBtn">
+                        Send Message
+                      </span>
+                    </button>
+
+                    <div id="formMessage" className="hidden p-4 rounded-lg"></div>
+                  </form>
                 </div>
 
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                    data-translate="contact.emailAddress"
-                  >
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                    placeholder="Enter your email address"
-                    data-translate="contact.emailPlaceholder"
-                  />
-                </div>
+                {/* Corner Accent Decorations */}
+                <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-primary/20 rounded-tl-3xl"></div>
+                <div className="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-secondary/20 rounded-br-3xl"></div>
+              </div>
 
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                    data-translate="contact.phoneNumber"
-                  >
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                    placeholder="Enter your phone number"
-                    data-translate="contact.phonePlaceholder"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="company"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                    data-translate="contact.companyName"
-                  >
-                    Company Name
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                    placeholder="Enter your company name"
-                    data-translate="contact.companyPlaceholder"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="industry"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                    data-translate="contact.industry"
-                  >
-                    Industry
-                  </label>
-                  <select
-                    id="industry"
-                    name="industry"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                  >
-                    <option value="" data-translate="contact.selectIndustry">
-                      Select your industry
-                    </option>
-                    <option
-                      value="water-treatment"
-                      data-translate="contact.waterTreatment"
-                    >
-                      Water Treatment
-                    </option>
-                    <option
-                      value="pulp-paper"
-                      data-translate="contact.pulpPaper"
-                    >
-                      Pulp and Paper
-                    </option>
-                    <option
-                      value="metal"
-                      data-translate="contact.metalIndustry"
-                    >
-                      Metal Industry
-                    </option>
-                    <option value="mining" data-translate="contact.mining">
-                      Mining
-                    </option>
-                    <option
-                      value="process-plant"
-                      data-translate="contact.processPlant"
-                    >
-                      Process Plant (Food, Chemical)
-                    </option>
-                    <option
-                      value="material-handling"
-                      data-translate="contact.materialHandling"
-                    >
-                      Material Handling
-                    </option>
-                    <option
-                      value="consumer-goods"
-                      data-translate="contact.consumerGoods"
-                    >
-                      Consumer Goods Machinery
-                    </option>
-                    <option
-                      value="power-plant"
-                      data-translate="contact.powerPlant"
-                    >
-                      Power Plant
-                    </option>
-                    <option value="printing" data-translate="contact.printing">
-                      Printing
-                    </option>
-                    <option value="other" data-translate="contact.other">
-                      Other
-                    </option>
-                  </select>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="projectType"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                    data-translate="contact.projectType"
-                  >
-                    Project Type
-                  </label>
-                  <select
-                    id="projectType"
-                    name="projectType"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                  >
-                    <option value="" data-translate="contact.selectProjectType">
-                      Select project type
-                    </option>
-                    <option
-                      value="new-installation"
-                      data-translate="contact.newInstallation"
-                    >
-                      New Installation
-                    </option>
-                    <option
-                      value="system-upgrade"
-                      data-translate="contact.systemUpgrade"
-                    >
-                      System Upgrade
-                    </option>
-                    <option
-                      value="maintenance-support"
-                      data-translate="contact.maintenanceSupport"
-                    >
-                      Maintenance & Support
-                    </option>
-                    <option
-                      value="consultation"
-                      data-translate="contact.consultation"
-                    >
-                      Consultation
-                    </option>
-                    <option value="training" data-translate="contact.training">
-                      Training
-                    </option>
-                    <option
-                      value="emergency-repair"
-                      data-translate="contact.emergencyRepair"
-                    >
-                      Emergency Repair
-                    </option>
-                  </select>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                    data-translate="contact.projectDetails"
-                  >
-                    Project Details / Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-vertical"
-                    placeholder="Please describe your project requirements, timeline, or any specific questions..."
-                    data-translate="contact.projectDetailsPlaceholder"
-                  ></textarea>
-                </div>
-
-                <div className="flex items-start">
-                  <input
-                    type="checkbox"
-                    id="privacy"
-                    name="privacy"
-                    required
-                    className="mt-1 w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary"
-                  />
-                  <label
-                    htmlFor="privacy"
-                    className="ml-2 text-sm text-gray-600"
-                    data-translate="contact.privacyPolicy"
-                  >
-                    I agree to PT Sumur Batu's privacy policy and consent to
-                    being contacted regarding my inquiry. *
-                  </label>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-primary hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center"
-                >
-                  <i className="fas fa-paper-plane mr-2"></i>
-                  <span data-translate="contact.sendMessageBtn">
-                    Send Message
-                  </span>
-                </button>
-
-                <div id="formMessage" className="hidden p-4 rounded-lg"></div>
-              </form>
+              {/* Outer Glow Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-16 bg-white">
+      {/* Map Section - Modern Redesign */}
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2
@@ -480,7 +500,7 @@ export const ContactPage = () => {
             </p>
           </div>
 
-          <div className="bg-gray-100 rounded-2xl p-8 lg:p-12">
+          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 shadow-lg">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h3
@@ -546,7 +566,7 @@ export const ContactPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-8 p-6 bg-white rounded-lg shadow-md">
+                <div className="mt-8 p-6 bg-white rounded-xl shadow-md">
                   <h4
                     className="font-bold text-gray-800 mb-2"
                     data-translate="contact.directions"
@@ -576,7 +596,7 @@ export const ContactPage = () => {
               </div>
 
               <div className="bg-white rounded-xl p-6 shadow-lg">
-                <div className="aspect-w-16 aspect-h-12 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
+                <div className="aspect-w-16 aspect-h-12 bg-gray-100 rounded-xl mb-4 flex items-center justify-center">
                   <div className="text-center text-gray-500">
                     <i className="fas fa-map-marked-alt text-4xl mb-2"></i>
                     <p
@@ -595,7 +615,7 @@ export const ContactPage = () => {
                     href="https://maps.google.com/?q=Rungkut+Megah+Raya+N33,+Jl.+Raya+Kalirungkut+No.+5,+Surabaya,+Jawa+Timur+60293"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center"
+                    className="bg-gradient-to-r from-primary to-blue-700 hover:from-blue-700 hover:to-primary text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl"
                   >
                     <i className="fas fa-map-marker-alt mr-2"></i>
                     <span data-translate="contact.viewOnGoogleMaps">
@@ -609,8 +629,8 @@ export const ContactPage = () => {
         </div>
       </section>
 
-      {/* Quick Contact Options */}
-      <section className="py-16 bg-gray-50">
+      {/* Quick Contact Options - Modern Redesign */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2
@@ -628,96 +648,114 @@ export const ContactPage = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center hover:shadow-xl transition-shadow">
-              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i className="fas fa-phone text-green-600 text-3xl"></i>
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-green-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/10 hover:-translate-y-2">
+              <div className="relative w-20 h-20 mx-auto mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-full transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                <div className="absolute inset-0 bg-white rounded-full flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                  <i className="fas fa-phone text-green-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                </div>
               </div>
               <h3
-                className="text-xl font-bold text-gray-800 mb-4"
+                className="text-xl font-bold text-gray-800 mb-4 text-center"
                 data-translate="contact.callUsNow"
               >
                 Call Us Now
               </h3>
               <p
-                className="text-gray-600 mb-6"
+                className="text-gray-600 mb-6 text-center"
                 data-translate="contact.callUsDesc"
               >
                 Speak directly with our technical team for immediate assistance
                 and consultation
               </p>
-              <a
-                href="tel:+6231879168"
-                className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center"
-              >
-                <i className="fas fa-phone mr-2"></i>
-                +62-31-879.8168
-              </a>
+              <div className="text-center">
+                <a
+                  href="tel:+6231879168"
+                  className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl"
+                >
+                  <i className="fas fa-phone mr-2"></i>
+                  +62-31-879.8168
+                </a>
+              </div>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center hover:shadow-xl transition-shadow">
-              <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i className="fas fa-envelope text-blue-600 text-3xl"></i>
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-2">
+              <div className="relative w-20 h-20 mx-auto mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                <div className="absolute inset-0 bg-white rounded-full flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                  <i className="fas fa-envelope text-blue-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                </div>
               </div>
               <h3
-                className="text-xl font-bold text-gray-800 mb-4"
+                className="text-xl font-bold text-gray-800 mb-4 text-center"
                 data-translate="contact.emailUs"
               >
                 Email Us
               </h3>
               <p
-                className="text-gray-600 mb-6"
+                className="text-gray-600 mb-6 text-center"
                 data-translate="contact.emailUsDesc"
               >
                 Send detailed project requirements and receive comprehensive
                 technical proposals
               </p>
-              <a
-                href="mailto:SumurBatu@gmail.com?subject=Automation Project Inquiry"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center"
-              >
-                <i className="fas fa-envelope mr-2"></i>
-                <span data-translate="contact.email">Send Email</span>
-              </a>
+              <div className="text-center">
+                <a
+                  href="mailto:SumurBatu@gmail.com?subject=Automation Project Inquiry"
+                  className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl"
+                >
+                  <i className="fas fa-envelope mr-2"></i>
+                  <span data-translate="contact.email">Send Email</span>
+                </a>
+              </div>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center hover:shadow-xl transition-shadow">
-              <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i className="fas fa-calendar-alt text-purple-600 text-3xl"></i>
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-purple-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10 hover:-translate-y-2">
+              <div className="relative w-20 h-20 mx-auto mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                <div className="absolute inset-0 bg-white rounded-full flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                  <i className="fas fa-calendar-alt text-purple-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                </div>
               </div>
               <h3
-                className="text-xl font-bold text-gray-800 mb-4"
+                className="text-xl font-bold text-gray-800 mb-4 text-center"
                 data-translate="contact.scheduleVisit"
               >
                 Schedule Visit
               </h3>
               <p
-                className="text-gray-600 mb-6"
+                className="text-gray-600 mb-6 text-center"
                 data-translate="contact.scheduleVisitDesc"
               >
                 Arrange an on-site consultation to discuss your automation
                 requirements in detail
               </p>
-              <a
-                href="mailto:SumurBatu@gmail.com?subject=Schedule Site Visit&body=I would like to schedule a site visit to discuss our automation requirements."
-                className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center"
-              >
-                <i className="fas fa-calendar-plus mr-2"></i>
-                <span data-translate="contact.scheduleMeeting">
-                  Schedule Meeting
-                </span>
-              </a>
+              <div className="text-center">
+                <a
+                  href="mailto:SumurBatu@gmail.com?subject=Schedule Site Visit&body=I would like to schedule a site visit to discuss our automation requirements."
+                  className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl"
+                >
+                  <i className="fas fa-calendar-plus mr-2"></i>
+                  <span data-translate="contact.scheduleMeeting">
+                    Schedule Meeting
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Emergency Support */}
+      {/* Emergency Support - Modern Redesign */}
       <section className="py-16 bg-gradient-to-r from-red-600 to-red-700 text-white">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-center justify-center mb-6">
-              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mr-4">
-                <i className="fas fa-exclamation-triangle text-white text-2xl"></i>
+              <div className="relative w-16 h-16 mr-4">
+                <div className="absolute inset-0 bg-white/20 rounded-full transform rotate-6"></div>
+                <div className="absolute inset-0 bg-white/10 rounded-full flex items-center justify-center transform -rotate-6">
+                  <i className="fas fa-exclamation-triangle text-white text-2xl"></i>
+                </div>
               </div>
               <h2
                 className="text-3xl font-bold"
@@ -736,7 +774,7 @@ export const ContactPage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+6231879168"
-                className="bg-white text-red-600 hover:bg-red-50 px-8 py-4 rounded-lg font-semibold transition-colors inline-flex items-center justify-center"
+                className="bg-white text-red-600 hover:bg-red-50 px-8 py-4 rounded-lg font-semibold transition-colors inline-flex items-center justify-center shadow-lg hover:shadow-xl"
               >
                 <i className="fas fa-phone mr-2"></i>
                 <span data-translate="contact.emergencyHotline">
@@ -745,7 +783,7 @@ export const ContactPage = () => {
               </a>
               <a
                 href="mailto:SumurBatu@gmail.com?subject=EMERGENCY: System Failure"
-                className="border-2 border-white text-white hover:bg-white hover:text-red-600 px-8 py-4 rounded-lg font-semibold transition-all inline-flex items-center justify-center"
+                className="border-2 border-white text-white hover:bg-white hover:text-red-600 px-8 py-4 rounded-lg font-semibold transition-all inline-flex items-center justify-center shadow-lg hover:shadow-xl"
               >
                 <i className="fas fa-envelope mr-2"></i>
                 <span data-translate="contact.emergencyEmail">
