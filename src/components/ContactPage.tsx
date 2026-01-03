@@ -482,45 +482,75 @@ export const ContactPage = () => {
         </div>
       </section>
 
-      {/* Map Section - Modern Redesign */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
+      {/* Map Section - Modern Redesign with OpenStreetMap */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements - Matching Homepage Style */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-primary/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-secondary/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography - Matching Homepage */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
+              <span className="mx-4 text-sm font-semibold text-primary uppercase tracking-widest">
+                Visit Us
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary"></div>
+            </div>
+
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               data-translate="contact.findOffice"
             >
-              Find Our Office
+              Find Our Office in
+              <br />
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Surabaya
+              </span>
             </h2>
             <p
-              className="text-xl text-gray-600"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="contact.findOfficeSubtitle"
             >
-              Located in the heart of Surabaya's industrial district
+              Located in the heart of Surabaya's industrial district with easy access
+              to major manufacturing facilities and transportation networks
             </p>
           </div>
 
-          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 shadow-lg">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
+          {/* Modern Card Grid with Glassmorphism - Matching Homepage Style */}
+          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+            {/* Location Information Card */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-10 border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
                 <h3
-                  className="text-2xl font-bold text-gray-800 mb-6"
+                  className="text-3xl font-bold text-gray-900 mb-8 group-hover:text-primary transition-colors duration-300"
                   data-translate="contact.strategicLocation"
                 >
                   Strategic Location
                 </h3>
-                <div className="space-y-4">
+
+                <div className="space-y-6">
+                  {/* Industrial Hub */}
                   <div className="flex items-start">
-                    <i className="fas fa-building text-primary mt-1 mr-3"></i>
+                    <div className="relative w-14 h-14 mr-5 flex-shrink-0">
+                      <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-building text-primary text-xl"></i>
+                      </div>
+                    </div>
                     <div>
                       <h4
-                        className="font-semibold text-gray-800"
+                        className="text-xl font-bold text-gray-800 mb-2"
                         data-translate="contact.industrialHub"
                       >
                         Industrial Hub
                       </h4>
                       <p
-                        className="text-gray-600 text-sm"
+                        className="text-gray-600 leading-relaxed"
                         data-translate="contact.industrialHubDesc"
                       >
                         Located in Surabaya's major industrial area with easy
@@ -528,17 +558,24 @@ export const ContactPage = () => {
                       </p>
                     </div>
                   </div>
+
+                  {/* Easy Access */}
                   <div className="flex items-start">
-                    <i className="fas fa-car text-primary mt-1 mr-3"></i>
+                    <div className="relative w-14 h-14 mr-5 flex-shrink-0">
+                      <div className="absolute inset-0 bg-gradient-to-br from-secondary to-red-700 rounded-xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-car text-secondary text-xl"></i>
+                      </div>
+                    </div>
                     <div>
                       <h4
-                        className="font-semibold text-gray-800"
+                        className="text-xl font-bold text-gray-800 mb-2"
                         data-translate="contact.easyAccess"
                       >
                         Easy Access
                       </h4>
                       <p
-                        className="text-gray-600 text-sm"
+                        className="text-gray-600 leading-relaxed"
                         data-translate="contact.easyAccessDesc"
                       >
                         Convenient location with parking facilities and main
@@ -546,17 +583,24 @@ export const ContactPage = () => {
                       </p>
                     </div>
                   </div>
+
+                  {/* Transport Links */}
                   <div className="flex items-start">
-                    <i className="fas fa-plane text-primary mt-1 mr-3"></i>
+                    <div className="relative w-14 h-14 mr-5 flex-shrink-0">
+                      <div className="absolute inset-0 bg-gradient-to-br from-accent to-yellow-500 rounded-xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-plane text-accent text-xl"></i>
+                      </div>
+                    </div>
                     <div>
                       <h4
-                        className="font-semibold text-gray-800"
+                        className="text-xl font-bold text-gray-800 mb-2"
                         data-translate="contact.transportLinks"
                       >
                         Transport Links
                       </h4>
                       <p
-                        className="text-gray-600 text-sm"
+                        className="text-gray-600 leading-relaxed"
                         data-translate="contact.transportLinksDesc"
                       >
                         Close to Juanda International Airport and major
@@ -566,15 +610,17 @@ export const ContactPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-8 p-6 bg-white rounded-xl shadow-md">
+                {/* Directions Card */}
+                <div className="mt-8 p-6 bg-gradient-to-br from-white/95 to-white/80 rounded-2xl shadow-md border border-gray-100">
                   <h4
-                    className="font-bold text-gray-800 mb-2"
+                    className="text-lg font-bold text-gray-800 mb-3 flex items-center"
                     data-translate="contact.directions"
                   >
+                    <i className="fas fa-route text-primary mr-2"></i>
                     Directions
                   </h4>
                   <p
-                    className="text-gray-600 text-sm mb-4"
+                    className="text-gray-600 leading-relaxed mb-4"
                     data-translate="contact.directionsDesc"
                   >
                     Our office is located on Jl. Raya Kalirungkut, easily
@@ -582,49 +628,87 @@ export const ContactPage = () => {
                     Raya complex.
                   </p>
                   <a
-                    href="https://maps.google.com/?q=Rungkut+Megah+Raya+N33,+Jl.+Raya+Kalirungkut+No.+5,+Surabaya,+Jawa+Timur+60293"
+                    href="https://www.openstreetmap.org/?mlat=-7.3386&mlon=112.7661#map=17/-7.3386/112.7661"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-primary hover:text-secondary font-medium transition-colors"
+                    className="inline-flex items-center text-primary hover:text-secondary font-semibold transition-colors group/link"
                   >
-                    <i className="fas fa-external-link-alt mr-2"></i>
+                    <i className="fas fa-external-link-alt mr-2 group-hover/link:scale-110 transition-transform"></i>
                     <span data-translate="contact.openInGoogleMaps">
-                      Open in Google Maps
+                      Open in OpenStreetMap
                     </span>
+                    <i className="fas fa-arrow-right ml-2 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all"></i>
                   </a>
                 </div>
-              </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg">
-                <div className="aspect-w-16 aspect-h-12 bg-gray-100 rounded-xl mb-4 flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <i className="fas fa-map-marked-alt text-4xl mb-2"></i>
-                    <p
-                      className="text-sm"
-                      data-translate="contact.interactiveMap"
-                    >
-                      Interactive Map
-                    </p>
-                    <p className="text-xs" data-translate="contact.clickToView">
-                      Click below to view location
-                    </p>
-                  </div>
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-24 bg-gradient-to-r from-primary to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+            </div>
+
+            {/* Interactive OpenStreetMap Card */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-10 border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                <h3 className="text-3xl font-bold text-gray-900 mb-8 group-hover:text-secondary transition-colors duration-300">
+                  Interactive Map
+                </h3>
+
+                {/* OpenStreetMap Embed */}
+                <div className="relative bg-gradient-to-br from-gray-100 to-gray-50 rounded-2xl overflow-hidden shadow-inner mb-6 aspect-[4/3]">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    scrolling="no"
+                    marginHeight={0}
+                    marginWidth={0}
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=112.7611%2C-7.3436%2C112.7711%2C-7.3336&layer=mapnik&marker=-7.3386%2C112.7661"
+                    style={{ border: 0, borderRadius: '1rem' }}
+                    title="Office Location Map"
+                  ></iframe>
                 </div>
-                <div className="text-center">
-                  <a
-                    href="https://maps.google.com/?q=Rungkut+Megah+Raya+N33,+Jl.+Raya+Kalirungkut+No.+5,+Surabaya,+Jawa+Timur+60293"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-gradient-to-r from-primary to-blue-700 hover:from-blue-700 hover:to-primary text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl"
+
+                {/* CTA Button */}
+                <a
+                  href="https://www.openstreetmap.org/?mlat=-7.3386&mlon=112.7661#map=17/-7.3386/112.7661"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group/btn relative w-full bg-gradient-to-r from-primary to-blue-700 hover:from-blue-700 hover:to-primary text-white px-8 py-5 rounded-xl font-bold text-lg transition-all duration-300 inline-flex items-center justify-center shadow-xl hover:shadow-2xl hover:scale-105 overflow-hidden"
+                >
+                  <span className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
+                  
+                  <i className="fas fa-map-marker-alt mr-3 relative z-10 group-hover/btn:scale-110 transition-transform duration-300"></i>
+                  <span 
+                    className="relative z-10"
+                    data-translate="contact.viewOnGoogleMaps"
                   >
-                    <i className="fas fa-map-marker-alt mr-2"></i>
-                    <span data-translate="contact.viewOnGoogleMaps">
-                      View on Google Maps
-                    </span>
-                  </a>
+                    View Larger Map
+                  </span>
+                  <i className="fas fa-arrow-right ml-3 relative z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all duration-300"></i>
+                  
+                  {/* Shine Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
+                </a>
+
+                {/* Additional Info */}
+                <div className="mt-6 p-4 bg-blue-50 rounded-xl border border-blue-100">
+                  <p className="text-sm text-gray-600 text-center">
+                    <i className="fas fa-info-circle text-primary mr-2"></i>
+                    Interactive map powered by OpenStreetMap
+                  </p>
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Optional Trust Indicator */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 text-sm font-medium">
+              Serving Surabaya and East Java region for over 17 years
+            </p>
           </div>
         </div>
       </section>
