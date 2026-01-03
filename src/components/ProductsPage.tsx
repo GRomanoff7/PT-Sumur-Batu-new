@@ -2242,43 +2242,157 @@ export const ProductsPage = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-primary to-secondary text-white">
-        <div className="container mx-auto px-6 text-center">
-          <h2
-            className="text-4xl font-bold mb-4"
-            data-translate="productsPage.ctaTitle"
-          >
-            Ready to Implement Rockwell Automation?
-          </h2>
-          <p
-            className="text-xl mb-8 text-blue-100"
-            data-translate="productsPage.ctaSubtitle"
-          >
-            Consult with our certified engineers to select the perfect products
-            for your application
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
-              className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-colors inline-flex items-center justify-center"
-            >
-              <i className="fas fa-phone mr-2"></i>
-              <span data-translate="productsPage.ctaConsultation">
-                Get Product Consultation
-              </span>
-            </a>
-            <a
-              href="/services"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all inline-flex items-center justify-center"
-            >
-              <i className="fas fa-cogs mr-2"></i>
-              <span data-translate="productsPage.ctaServices">
-                Integration Services
-              </span>
-            </a>
+      {/* Call to Action - Modern Glassmorphism Design */}
+      <section className="relative py-24 lg:py-32 bg-gradient-to-b from-gray-50 via-white to-gray-50 overflow-hidden">
+        {/* Decorative Background Elements - Matching Homepage Style */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tl from-secondary/10 to-transparent rounded-full blur-3xl animate-pulse-slower"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl"></div>
+
+        {/* Top Decorative Line */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Main Content Container with Glassmorphism */}
+          <div className="max-w-5xl mx-auto">
+            {/* Badge with Glassmorphism - Matching Homepage Style */}
+            <div className="flex justify-center mb-8">
+              <div className="inline-flex items-center bg-white/80 backdrop-blur-md rounded-full px-6 py-3 border border-gray-200/50 shadow-lg hover:shadow-xl hover:bg-white/90 transition-all duration-300">
+                <div className="h-2 w-2 bg-secondary rounded-full mr-3 animate-pulse"></div>
+                <span className="text-sm font-bold text-gray-700 uppercase tracking-widest">
+                  Product Solutions
+                </span>
+              </div>
+            </div>
+
+            {/* Main CTA Card with Enhanced Design */}
+            <div className="relative group">
+              {/* Glassmorphism Card */}
+              <div className="relative bg-gradient-to-br from-white/95 via-white/90 to-white/95 backdrop-blur-xl rounded-3xl p-12 lg:p-16 border border-gray-200/50 shadow-2xl">
+                {/* Gradient Overlay on Hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-700"></div>
+
+                {/* Spotlight Effect */}
+                <div className="spotlight-overlay"></div>
+
+                <div className="relative z-10 text-center">
+                  {/* Enhanced Typography */}
+                  <h2
+                    className="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-gray-900 mb-6 leading-tight"
+                    data-translate="productsPage.ctaTitle"
+                    data-testid="products-cta-title"
+                  >
+                    <span className="block mb-2">Ready to Implement</span>
+                    <span className="block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                      Rockwell Automation?
+                    </span>
+                  </h2>
+
+                  <p
+                    className="text-xl lg:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-light"
+                    data-translate="productsPage.ctaSubtitle"
+                    data-testid="products-cta-subtitle"
+                  >
+                    Consult with our certified engineers to select the perfect products
+                    for your application
+                  </p>
+
+                  {/* Enhanced CTA Buttons with Modern Effects */}
+                  <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
+                    {/* Primary CTA - Product Consultation */}
+                    <a
+                      href="/contact"
+                      className="group/btn relative bg-gradient-to-r from-secondary to-red-700 hover:from-red-700 hover:to-secondary text-white px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 inline-flex items-center justify-center shadow-xl hover:shadow-2xl hover:shadow-secondary/30 hover:scale-105 overflow-hidden min-w-[280px]"
+                      data-testid="products-cta-consultation-btn"
+                    >
+                      <span className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-800 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
+
+                      {/* Animated Icon Container */}
+                      <div className="relative z-10 mr-3 w-6 h-6 flex items-center justify-center">
+                        <i className="fas fa-phone transform group-hover/btn:rotate-12 group-hover/btn:scale-110 transition-all duration-300"></i>
+                      </div>
+
+                      <span
+                        className="relative z-10"
+                        data-translate="productsPage.ctaConsultation"
+                      >
+                        Get Product Consultation
+                      </span>
+
+                      <i className="fas fa-arrow-right ml-3 relative z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all duration-300"></i>
+
+                      {/* Shine Effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
+                    </a>
+
+                    {/* Secondary CTA - Integration Services */}
+                    <a
+                      href="/services"
+                      className="group/btn relative bg-white hover:bg-gradient-to-r hover:from-primary hover:to-blue-700 text-primary hover:text-white border-2 border-primary px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-105 overflow-hidden min-w-[280px]"
+                      data-testid="products-cta-services-btn"
+                    >
+                      {/* Animated Icon Container */}
+                      <div className="relative z-10 mr-3 w-6 h-6 flex items-center justify-center">
+                        <i className="fas fa-cogs transform group-hover/btn:rotate-180 transition-all duration-500"></i>
+                      </div>
+
+                      <span
+                        className="relative z-10"
+                        data-translate="productsPage.ctaServices"
+                      >
+                        Integration Services
+                      </span>
+
+                      <i className="fas fa-arrow-right ml-3 relative z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all duration-300"></i>
+                    </a>
+                  </div>
+
+                  {/* Additional Trust Indicators */}
+                  <div className="mt-12 pt-8 border-t border-gray-200/50">
+                    <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-gray-500">
+                      <div className="flex items-center">
+                        <i className="fas fa-check-circle text-secondary mr-2"></i>
+                        <span>Certified Partner</span>
+                      </div>
+                      <div className="flex items-center">
+                        <i className="fas fa-check-circle text-secondary mr-2"></i>
+                        <span>Expert Engineering</span>
+                      </div>
+                      <div className="flex items-center">
+                        <i className="fas fa-check-circle text-secondary mr-2"></i>
+                        <span>Complete Support</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Corner Accent Decorations */}
+                <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-primary/20 rounded-tl-3xl"></div>
+                <div className="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-secondary/20 rounded-br-3xl"></div>
+              </div>
+
+              {/* Outer Glow Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
+            </div>
+
+            {/* Bottom Contact Info */}
+            <div className="text-center mt-12">
+              <p className="text-gray-500 text-sm font-medium mb-2">
+                Or reach us directly at
+              </p>
+              <a
+                href="tel:+62318798168"
+                className="text-primary hover:text-secondary font-bold text-lg transition-colors inline-flex items-center"
+              >
+                <i className="fas fa-phone-alt mr-2"></i>
+                +62-31-879.8168
+              </a>
+            </div>
           </div>
         </div>
+
+        {/* Bottom Decorative Line */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-secondary/30 to-transparent"></div>
       </section>
     </div>
   );
