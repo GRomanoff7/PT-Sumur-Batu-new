@@ -1638,210 +1638,457 @@ export const ProductsPage = () => {
         </div>
       </section>
 
-      {/* Networking */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center bg-blue-100 rounded-full px-6 py-2 mb-6">
-              <i className="fas fa-network-wired text-blue-600 mr-2"></i>
-              <span
-                className="text-blue-600 font-semibold"
-                data-translate="productsPage.networkingBadge"
-              >
-                Industrial Networking
+      {/* Networking - Modern & Elegant Redesign */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-500/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-cyan-500/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-blue-600"></div>
+              <span className="mx-4 text-sm font-semibold text-blue-600 uppercase tracking-widest">
+                <i className="fas fa-network-wired mr-2"></i>
+                <span data-translate="productsPage.networkingBadge">
+                  Industrial Networking
+                </span>
               </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-blue-600"></div>
             </div>
+
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               data-translate="productsPage.networkingTitle"
             >
-              Stratix Ethernet Switches
+              Stratix
+              <br />
+              <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                Ethernet Switches
+              </span>
             </h2>
             <p
-              className="text-xl text-gray-600"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="productsPage.networkingSubtitle"
             >
               Robust industrial networking solutions for reliable communication
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 lg:p-12">
-            <div className="grid lg:grid-cols-2 gap-12">
-              <div>
-                <h3
-                  className="text-2xl font-bold text-gray-800 mb-6"
-                  data-translate="productsPage.managedSwitchesTitle"
-                >
-                  Managed Switches
-                </h3>
-                <div className="space-y-4">
-                  <div className="bg-white rounded-lg p-4 shadow-md">
+          {/* Modern Two-Column Layout */}
+          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+            {/* Left Column - Managed Switches */}
+            <div>
+              <h3
+                className="text-3xl font-bold text-gray-900 mb-8"
+                data-translate="productsPage.managedSwitchesTitle"
+              >
+                Managed Switches
+              </h3>
+              <div className="space-y-6">
+                {/* Advanced Features Card */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                  <div className="relative z-10">
+                    {/* Modern Icon Design */}
+                    <div className="relative w-20 h-20 mb-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-sliders-h text-blue-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
+                    </div>
+
                     <h4
-                      className="font-bold text-gray-800 mb-2"
+                      className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300"
                       data-translate="productsPage.advancedFeatures"
                     >
                       Advanced Features
                     </h4>
-                    <ul className="text-sm text-gray-600 space-y-1">
-                      <li data-translate="productsPage.vlanSupport">
-                        • VLAN support and traffic management
-                      </li>
-                      <li data-translate="productsPage.qosPrioritization">
-                        • Quality of Service (QoS) prioritization
-                      </li>
-                      <li data-translate="productsPage.networkRedundancy">
-                        • Network redundancy protocols
-                      </li>
-                      <li data-translate="productsPage.snmpMonitoring">
-                        • SNMP monitoring and diagnostics
-                      </li>
-                    </ul>
+
+                    <div className="space-y-3">
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-blue-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.vlanSupport"
+                        >
+                          VLAN support and traffic management
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-blue-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.qosPrioritization"
+                        >
+                          Quality of Service (QoS) prioritization
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-blue-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.networkRedundancy"
+                        >
+                          Network redundancy protocols
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-blue-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.snmpMonitoring"
+                        >
+                          SNMP monitoring and diagnostics
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Decorative Bottom Element */}
+                    <div className="mt-6 h-1 w-16 bg-gradient-to-r from-blue-500 to-blue-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
-                  <div className="bg-white rounded-lg p-4 shadow-md">
+                </div>
+
+                {/* Security Features Card */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-cyan-300 transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                  <div className="relative z-10">
+                    {/* Modern Icon Design */}
+                    <div className="relative w-20 h-20 mb-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-cyan-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-shield-alt text-cyan-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
+                    </div>
+
                     <h4
-                      className="font-bold text-gray-800 mb-2"
+                      className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-cyan-600 transition-colors duration-300"
                       data-translate="productsPage.securityFeatures"
                     >
                       Security Features
                     </h4>
-                    <ul className="text-sm text-gray-600 space-y-1">
-                      <li data-translate="productsPage.portAccess">
-                        • Port-based access control
-                      </li>
-                      <li data-translate="productsPage.macFiltering">
-                        • MAC address filtering
-                      </li>
-                      <li data-translate="productsPage.industrialFirewall">
-                        • Industrial firewall capabilities
-                      </li>
-                      <li data-translate="productsPage.secureRemote">
-                        • Secure remote management
-                      </li>
-                    </ul>
+
+                    <div className="space-y-3">
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-cyan-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-cyan-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.portAccess"
+                        >
+                          Port-based access control
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-cyan-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-cyan-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.macFiltering"
+                        >
+                          MAC address filtering
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-cyan-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-cyan-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.industrialFirewall"
+                        >
+                          Industrial firewall capabilities
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-cyan-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-cyan-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.secureRemote"
+                        >
+                          Secure remote management
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Decorative Bottom Element */}
+                    <div className="mt-6 h-1 w-16 bg-gradient-to-r from-cyan-500 to-cyan-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div>
-                <h3
-                  className="text-2xl font-bold text-gray-800 mb-6"
-                  data-translate="productsPage.unmanagedSwitchesTitle"
-                >
-                  Unmanaged Switches
-                </h3>
-                <div className="space-y-4">
-                  <div className="bg-white rounded-lg p-4 shadow-md">
+            {/* Right Column - Unmanaged Switches */}
+            <div>
+              <h3
+                className="text-3xl font-bold text-gray-900 mb-8"
+                data-translate="productsPage.unmanagedSwitchesTitle"
+              >
+                Unmanaged Switches
+              </h3>
+              <div className="space-y-6">
+                {/* Simple & Reliable Card */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-green-300 transition-all duration-500 hover:shadow-2xl hover:shadow-green-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                  <div className="relative z-10">
+                    {/* Modern Icon Design */}
+                    <div className="relative w-20 h-20 mb-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-plug text-green-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
+                    </div>
+
                     <h4
-                      className="font-bold text-gray-800 mb-2"
+                      className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors duration-300"
                       data-translate="productsPage.simpleReliable"
                     >
                       Simple & Reliable
                     </h4>
-                    <ul className="text-sm text-gray-600 space-y-1">
-                      <li data-translate="productsPage.plugAndPlay">
-                        • Plug-and-play operation
-                      </li>
-                      <li data-translate="productsPage.industrialTemp">
-                        • Industrial temperature rating
-                      </li>
-                      <li data-translate="productsPage.dinRailMounting">
-                        • DIN rail mounting options
-                      </li>
-                      <li data-translate="productsPage.costEffectiveNet">
-                        • Cost-effective networking
-                      </li>
-                    </ul>
+
+                    <div className="space-y-3">
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-green-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.plugAndPlay"
+                        >
+                          Plug-and-play operation
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-green-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.industrialTemp"
+                        >
+                          Industrial temperature rating
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-green-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.dinRailMounting"
+                        >
+                          DIN rail mounting options
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-green-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.costEffectiveNet"
+                        >
+                          Cost-effective networking
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Decorative Bottom Element */}
+                    <div className="mt-6 h-1 w-16 bg-gradient-to-r from-green-500 to-green-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
-                  <div className="bg-white rounded-lg p-4 shadow-md">
+                </div>
+
+                {/* Applications Card */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-indigo-300 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                  <div className="relative z-10">
+                    {/* Modern Icon Design */}
+                    <div className="relative w-20 h-20 mb-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-industry text-indigo-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
+                    </div>
+
                     <h4
-                      className="font-bold text-gray-800 mb-2"
+                      className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-indigo-600 transition-colors duration-300"
                       data-translate="productsPage.unmanagedApps"
                     >
                       Applications
                     </h4>
-                    <ul className="text-sm text-gray-600 space-y-1">
-                      <li data-translate="productsPage.smallControlSystems">
-                        • Small control systems
-                      </li>
-                      <li data-translate="productsPage.deviceLevel">
-                        • Device-level networking
-                      </li>
-                      <li data-translate="productsPage.machineLevel">
-                        • Machine-level communication
-                      </li>
-                      <li data-translate="productsPage.basicEthernet">
-                        • Basic Ethernet connectivity
-                      </li>
-                    </ul>
+
+                    <div className="space-y-3">
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-indigo-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.smallControlSystems"
+                        >
+                          Small control systems
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-indigo-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.deviceLevel"
+                        >
+                          Device-level networking
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-indigo-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.machineLevel"
+                        >
+                          Machine-level communication
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-indigo-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.basicEthernet"
+                        >
+                          Basic Ethernet connectivity
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Decorative Bottom Element */}
+                    <div className="mt-6 h-1 w-16 bg-gradient-to-r from-indigo-500 to-indigo-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="mt-8 pt-8 border-t border-blue-200">
-              <div className="grid md:grid-cols-4 gap-6 text-center">
-                <div>
-                  <i className="fas fa-tachometer-alt text-blue-600 text-3xl mb-2"></i>
-                  <h4
-                    className="font-bold text-gray-800"
-                    data-translate="productsPage.gigabitSpeed"
-                  >
-                    High Performance
-                  </h4>
-                  <p
-                    className="text-sm text-gray-600"
-                    data-translate="productsPage.gigabitSpeedDesc"
-                  >
-                    Gigabit Ethernet speeds
-                  </p>
+          {/* Key Benefits Grid */}
+          <div className="mt-16 grid md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            {/* High Performance */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-xl hover:shadow-blue-100 hover:-translate-y-1 text-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+              
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <i className="fas fa-tachometer-alt text-blue-600 text-3xl"></i>
                 </div>
-                <div>
-                  <i className="fas fa-shield-alt text-blue-600 text-3xl mb-2"></i>
-                  <h4
-                    className="font-bold text-gray-800"
-                    data-translate="productsPage.industrialGrade"
-                  >
-                    Industrial Grade
-                  </h4>
-                  <p
-                    className="text-sm text-gray-600"
-                    data-translate="productsPage.industrialGradeDesc"
-                  >
-                    Harsh environment rated
-                  </p>
-                </div>
-                <div>
-                  <i className="fas fa-link text-blue-600 text-3xl mb-2"></i>
-                  <h4
-                    className="font-bold text-gray-800"
-                    data-translate="productsPage.ethernetIP"
-                  >
-                    EtherNet/IP
-                  </h4>
-                  <p
-                    className="text-sm text-gray-600"
-                    data-translate="productsPage.ethernetIPDesc"
-                  >
-                    Native protocol support
-                  </p>
-                </div>
-                <div>
-                  <i className="fas fa-sync text-blue-600 text-3xl mb-2"></i>
-                  <h4
-                    className="font-bold text-gray-800"
-                    data-translate="productsPage.redundancy"
-                  >
-                    Redundancy
-                  </h4>
-                  <p
-                    className="text-sm text-gray-600"
-                    data-translate="productsPage.redundancyDesc"
-                  >
-                    Network fault tolerance
-                  </p>
-                </div>
+                <h4
+                  className="font-bold text-gray-800 mb-2"
+                  data-translate="productsPage.gigabitSpeed"
+                >
+                  High Performance
+                </h4>
+                <p
+                  className="text-sm text-gray-600"
+                  data-translate="productsPage.gigabitSpeedDesc"
+                >
+                  Gigabit Ethernet speeds
+                </p>
               </div>
             </div>
+
+            {/* Industrial Grade */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-green-300 transition-all duration-500 hover:shadow-xl hover:shadow-green-100 hover:-translate-y-1 text-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+              
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <i className="fas fa-shield-alt text-green-600 text-3xl"></i>
+                </div>
+                <h4
+                  className="font-bold text-gray-800 mb-2"
+                  data-translate="productsPage.industrialGrade"
+                >
+                  Industrial Grade
+                </h4>
+                <p
+                  className="text-sm text-gray-600"
+                  data-translate="productsPage.industrialGradeDesc"
+                >
+                  Harsh environment rated
+                </p>
+              </div>
+            </div>
+
+            {/* EtherNet/IP */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-cyan-300 transition-all duration-500 hover:shadow-xl hover:shadow-cyan-100 hover:-translate-y-1 text-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+              
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <i className="fas fa-link text-cyan-600 text-3xl"></i>
+                </div>
+                <h4
+                  className="font-bold text-gray-800 mb-2"
+                  data-translate="productsPage.ethernetIP"
+                >
+                  EtherNet/IP
+                </h4>
+                <p
+                  className="text-sm text-gray-600"
+                  data-translate="productsPage.ethernetIPDesc"
+                >
+                  Native protocol support
+                </p>
+              </div>
+            </div>
+
+            {/* Redundancy */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-indigo-300 transition-all duration-500 hover:shadow-xl hover:shadow-indigo-100 hover:-translate-y-1 text-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+              
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <i className="fas fa-sync text-indigo-600 text-3xl"></i>
+                </div>
+                <h4
+                  className="font-bold text-gray-800 mb-2"
+                  data-translate="productsPage.redundancy"
+                >
+                  Redundancy
+                </h4>
+                <p
+                  className="text-sm text-gray-600"
+                  data-translate="productsPage.redundancyDesc"
+                >
+                  Network fault tolerance
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Optional Additional Info */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 text-sm font-medium">
+              All networking products backed by our certified integration expertise
+            </p>
           </div>
         </div>
       </section>
