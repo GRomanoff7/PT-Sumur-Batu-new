@@ -857,59 +857,146 @@ export const ContactPage = () => {
         </div>
       </section>
 
-      {/* Emergency Support - Modern Redesign */}
-      <section className="py-16 bg-gradient-to-r from-red-600 to-red-700 text-white">
-        <div className="container mx-auto px-6 text-center">
-          <div className="max-w-3xl mx-auto">
-            <div className="flex items-center justify-center mb-6">
-              <div className="relative w-16 h-16 mr-4">
-                <div className="absolute inset-0 bg-white/20 rounded-full transform rotate-6"></div>
-                <div className="absolute inset-0 bg-white/10 rounded-full flex items-center justify-center transform -rotate-6">
-                  <i className="fas fa-exclamation-triangle text-white text-2xl"></i>
-                </div>
+      {/* Emergency Support - Modern Redesign - Matching Homepage Style */}
+      <section className="relative py-24 lg:py-32 bg-gradient-to-b from-gray-50 via-white to-gray-50 overflow-hidden">
+        {/* Decorative Background Elements - Matching Homepage Style */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-secondary/10 to-transparent rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tl from-red-500/10 to-transparent rounded-full blur-3xl animate-pulse-slower"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-red-500/5 rounded-full blur-3xl"></div>
+
+        {/* Top Decorative Line */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-secondary/30 to-transparent"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Main Content Container with Glassmorphism */}
+          <div className="max-w-5xl mx-auto">
+            {/* Badge with Glassmorphism - Matching Homepage Style */}
+            <div className="flex justify-center mb-8">
+              <div className="inline-flex items-center bg-white/80 backdrop-blur-md rounded-full px-6 py-3 border border-gray-200/50 shadow-lg hover:shadow-xl hover:bg-white/90 transition-all duration-300">
+                <div className="h-2 w-2 bg-secondary rounded-full mr-3 animate-pulse"></div>
+                <span className="text-sm font-bold text-gray-700 uppercase tracking-widest">
+                  24/7 Emergency Support
+                </span>
               </div>
-              <h2
-                className="text-3xl font-bold"
-                data-translate="contact.emergencySupportAvailable"
-              >
-                Emergency Support Available
-              </h2>
             </div>
-            <p
-              className="text-xl text-red-100 mb-8"
-              data-translate="contact.emergencySupportDesc"
-            >
-              System down? Critical automation failure? Our emergency response
-              team is available 24/7 to get your operations back online quickly.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:+6231879168"
-                className="bg-white text-red-600 hover:bg-red-50 px-8 py-4 rounded-lg font-semibold transition-colors inline-flex items-center justify-center shadow-lg hover:shadow-xl"
-              >
-                <i className="fas fa-phone mr-2"></i>
-                <span data-translate="contact.emergencyHotline">
-                  Emergency Hotline: +62-31-879.8168
-                </span>
-              </a>
-              <a
-                href="mailto:SumurBatu@gmail.com?subject=EMERGENCY: System Failure"
-                className="border-2 border-white text-white hover:bg-white hover:text-red-600 px-8 py-4 rounded-lg font-semibold transition-all inline-flex items-center justify-center shadow-lg hover:shadow-xl"
-              >
-                <i className="fas fa-envelope mr-2"></i>
-                <span data-translate="contact.emergencyEmail">
-                  Emergency Email
-                </span>
-              </a>
+
+            {/* Main Emergency Card with Enhanced Design */}
+            <div className="relative group">
+              {/* Glassmorphism Card */}
+              <div className="relative bg-gradient-to-br from-white/95 via-white/90 to-white/95 backdrop-blur-xl rounded-3xl p-12 lg:p-16 border border-gray-200/50 shadow-2xl">
+                {/* Gradient Overlay on Hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-red-500/5 opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-700"></div>
+
+                {/* Spotlight Effect */}
+                <div className="spotlight-overlay"></div>
+
+                <div className="relative z-10 text-center">
+                  {/* Icon with Modern Design */}
+                  <div className="relative w-24 h-24 mx-auto mb-8">
+                    <div className="absolute inset-0 bg-gradient-to-br from-secondary to-red-700 rounded-3xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500 animate-pulse-slow"></div>
+                    <div className="absolute inset-0 bg-white rounded-3xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-2xl">
+                      <i className="fas fa-exclamation-triangle text-secondary text-4xl group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                  </div>
+
+                  {/* Enhanced Typography */}
+                  <h2
+                    className="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-gray-900 mb-6 leading-tight"
+                    data-translate="contact.emergencySupportAvailable"
+                  >
+                    <span className="block mb-2">Emergency Support</span>
+                    <span className="block bg-gradient-to-r from-secondary via-red-600 to-red-700 bg-clip-text text-transparent">
+                      Available 24/7
+                    </span>
+                  </h2>
+
+                  <p
+                    className="text-xl lg:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-light"
+                    data-translate="contact.emergencySupportDesc"
+                  >
+                    System down? Critical automation failure? Our emergency response
+                    team is available 24/7 to get your operations back online quickly.
+                  </p>
+
+                  {/* Enhanced CTA Buttons with Modern Effects */}
+                  <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
+                    {/* Primary CTA - Emergency Hotline */}
+                    <a
+                      href="tel:+6231879168"
+                      className="group/btn relative bg-gradient-to-r from-secondary to-red-700 hover:from-red-700 hover:to-secondary text-white px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 inline-flex items-center justify-center shadow-xl hover:shadow-2xl hover:shadow-secondary/30 hover:scale-105 overflow-hidden min-w-[280px]"
+                    >
+                      <span className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-800 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
+
+                      {/* Animated Icon Container */}
+                      <div className="relative z-10 mr-3 w-6 h-6 flex items-center justify-center">
+                        <i className="fas fa-phone transform group-hover/btn:rotate-12 group-hover/btn:scale-110 transition-all duration-300"></i>
+                      </div>
+
+                      <span
+                        className="relative z-10"
+                        data-translate="contact.emergencyHotline"
+                      >
+                        Emergency Hotline: +62-31-879.8168
+                      </span>
+
+                      <i className="fas fa-arrow-right ml-3 relative z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all duration-300"></i>
+
+                      {/* Shine Effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
+                    </a>
+
+                    {/* Secondary CTA - Emergency Email */}
+                    <a
+                      href="mailto:SumurBatu@gmail.com?subject=EMERGENCY: System Failure"
+                      className="group/btn relative bg-white hover:bg-gradient-to-r hover:from-secondary hover:to-red-700 text-secondary hover:text-white border-2 border-secondary px-10 py-5 rounded-xl font-bold text-lg transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-105 overflow-hidden min-w-[280px]"
+                    >
+                      {/* Animated Icon Container */}
+                      <div className="relative z-10 mr-3 w-6 h-6 flex items-center justify-center">
+                        <i className="fas fa-envelope transform group-hover/btn:scale-110 transition-all duration-300"></i>
+                      </div>
+
+                      <span
+                        className="relative z-10"
+                        data-translate="contact.emergencyEmail"
+                      >
+                        Emergency Email
+                      </span>
+
+                      <i className="fas fa-arrow-right ml-3 relative z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all duration-300"></i>
+                    </a>
+                  </div>
+
+                  {/* Additional Info */}
+                  <div className="mt-12 pt-8 border-t border-gray-200/50">
+                    <p
+                      className="text-sm text-gray-500"
+                      data-translate="contact.emergencyCharges"
+                    >
+                      * Emergency support charges may apply for after-hours service
+                    </p>
+                  </div>
+                </div>
+
+                {/* Corner Accent Decorations */}
+                <div className="absolute top-0 left-0 w-20 h-20 border-t-2 border-l-2 border-secondary/20 rounded-tl-3xl"></div>
+                <div className="absolute bottom-0 right-0 w-20 h-20 border-b-2 border-r-2 border-red-500/20 rounded-br-3xl"></div>
+              </div>
+
+              {/* Outer Glow Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-secondary/10 via-red-500/10 to-red-700/10 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
             </div>
-            <p
-              className="text-sm text-red-200 mt-4"
-              data-translate="contact.emergencyCharges"
-            >
-              * Emergency support charges may apply for after-hours service
-            </p>
+
+            {/* Bottom Trust Indicator */}
+            <div className="text-center mt-12">
+              <p className="text-gray-500 text-sm font-medium">
+                Rapid response team ready to assist with critical automation failures
+              </p>
+            </div>
           </div>
         </div>
+
+        {/* Bottom Decorative Line */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-secondary/30 to-transparent"></div>
       </section>
     </div>
   );
