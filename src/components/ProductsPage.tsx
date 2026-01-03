@@ -1226,248 +1226,369 @@ export const ProductsPage = () => {
         </div>
       </section>
 
-      {/* HMI & Visualization */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center bg-indigo-100 rounded-full px-6 py-2 mb-6">
-              <i className="fas fa-desktop text-indigo-600 mr-2"></i>
-              <span
-                className="text-indigo-600 font-semibold"
-                data-translate="productsPage.hmiBadge"
-              >
-                Operator Interface & Visualization
+      {/* HMI & Visualization - Modern & Elegant Redesign */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-indigo-500/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-purple-500/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-indigo-600"></div>
+              <span className="mx-4 text-sm font-semibold text-indigo-600 uppercase tracking-widest">
+                <i className="fas fa-desktop mr-2"></i>
+                <span data-translate="productsPage.hmiBadge">
+                  Operator Interface & Visualization
+                </span>
               </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-indigo-600"></div>
             </div>
+
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               data-translate="productsPage.hmiTitle"
             >
-              PanelView & FactoryTalk Solutions
+              PanelView &
+              <br />
+              <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                FactoryTalk Solutions
+              </span>
             </h2>
             <p
-              className="text-xl text-gray-600"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="productsPage.hmiSubtitle"
             >
               Intuitive operator interfaces and powerful visualization software
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          {/* Modern Two-Column Layout */}
+          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+            {/* Left Column - PanelView */}
             <div>
               <h3
-                className="text-3xl font-bold text-gray-800 mb-8"
+                className="text-3xl font-bold text-gray-900 mb-8"
                 data-translate="productsPage.panelViewTitle"
               >
                 PanelView Operator Interfaces
               </h3>
               <div className="space-y-6">
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4
-                    className="text-xl font-bold text-gray-800 mb-3"
-                    data-translate="productsPage.panelView5000Title"
-                  >
-                    PanelView 5000
-                  </h4>
-                  <p
-                    className="text-gray-600 mb-4"
-                    data-translate="productsPage.panelView5000Desc"
-                  >
-                    Advanced graphic terminals with multi-touch displays and
-                    enhanced performance
-                  </p>
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div className="space-y-2">
-                      <div className="flex items-center">
-                        <i className="fas fa-tv text-indigo-600 mr-2"></i>
-                        <span
-                          className="text-gray-700"
-                          data-translate="productsPage.displaySizes"
-                        >
-                          4" to 15" displays
-                        </span>
-                      </div>
-                      <div className="flex items-center">
-                        <i className="fas fa-hand-pointer text-indigo-600 mr-2"></i>
-                        <span
-                          className="text-gray-700"
-                          data-translate="productsPage.multiTouch"
-                        >
-                          Multi-touch capability
-                        </span>
+                {/* PanelView 5000 */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-indigo-300 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                  <div className="relative z-10">
+                    {/* Modern Icon Design */}
+                    <div className="relative w-20 h-20 mb-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-tv text-indigo-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
                       </div>
                     </div>
-                    <div className="space-y-2">
-                      <div className="flex items-center">
-                        <i className="fas fa-ethernet text-indigo-600 mr-2"></i>
-                        <span
-                          className="text-gray-700"
-                          data-translate="productsPage.ethernetConn"
-                        >
-                          Ethernet connectivity
-                        </span>
+
+                    <h4
+                      className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-indigo-600 transition-colors duration-300"
+                      data-translate="productsPage.panelView5000Title"
+                    >
+                      PanelView 5000
+                    </h4>
+                    <p
+                      className="text-gray-600 mb-6 leading-relaxed text-lg"
+                      data-translate="productsPage.panelView5000Desc"
+                    >
+                      Advanced graphic terminals with multi-touch displays and
+                      enhanced performance
+                    </p>
+
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="space-y-3">
+                        <div className="flex items-center">
+                          <div className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+                            <i className="fas fa-check text-indigo-600 text-sm"></i>
+                          </div>
+                          <span
+                            className="text-gray-700 text-sm"
+                            data-translate="productsPage.displaySizes"
+                          >
+                            4" to 15" displays
+                          </span>
+                        </div>
+                        <div className="flex items-center">
+                          <div className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+                            <i className="fas fa-check text-indigo-600 text-sm"></i>
+                          </div>
+                          <span
+                            className="text-gray-700 text-sm"
+                            data-translate="productsPage.multiTouch"
+                          >
+                            Multi-touch capability
+                          </span>
+                        </div>
                       </div>
-                      <div className="flex items-center">
-                        <i className="fas fa-shield-alt text-indigo-600 mr-2"></i>
-                        <span
-                          className="text-gray-700"
-                          data-translate="productsPage.industrialRated"
-                        >
-                          Industrial rated
-                        </span>
+                      <div className="space-y-3">
+                        <div className="flex items-center">
+                          <div className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+                            <i className="fas fa-check text-indigo-600 text-sm"></i>
+                          </div>
+                          <span
+                            className="text-gray-700 text-sm"
+                            data-translate="productsPage.ethernetConn"
+                          >
+                            Ethernet connectivity
+                          </span>
+                        </div>
+                        <div className="flex items-center">
+                          <div className="w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center mr-3">
+                            <i className="fas fa-check text-indigo-600 text-sm"></i>
+                          </div>
+                          <span
+                            className="text-gray-700 text-sm"
+                            data-translate="productsPage.industrialRated"
+                          >
+                            Industrial rated
+                          </span>
+                        </div>
                       </div>
                     </div>
+
+                    {/* Decorative Bottom Element */}
+                    <div className="mt-6 h-1 w-16 bg-gradient-to-r from-indigo-500 to-indigo-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4
-                    className="text-xl font-bold text-gray-800 mb-3"
-                    data-translate="productsPage.panelViewPlus7Title"
-                  >
-                    PanelView Plus 7
-                  </h4>
-                  <p
-                    className="text-gray-600 mb-4"
-                    data-translate="productsPage.panelViewPlus7Desc"
-                  >
-                    Cost-effective terminals with built-in communication and
-                    application flexibility
-                  </p>
-                  <div className="space-y-2 text-sm text-gray-600">
-                    <div className="flex items-center">
-                      <i className="fas fa-check text-green-600 mr-2"></i>
-                      <span data-translate="productsPage.multipleScreens">
-                        Multiple screen sizes available
-                      </span>
+                {/* PanelView Plus 7 */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-purple-300 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                  <div className="relative z-10">
+                    {/* Modern Icon Design */}
+                    <div className="relative w-20 h-20 mb-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-hand-pointer text-purple-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
                     </div>
-                    <div className="flex items-center">
-                      <i className="fas fa-check text-green-600 mr-2"></i>
-                      <span data-translate="productsPage.webBrowser">
-                        Web browser capabilities
-                      </span>
+
+                    <h4
+                      className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors duration-300"
+                      data-translate="productsPage.panelViewPlus7Title"
+                    >
+                      PanelView Plus 7
+                    </h4>
+                    <p
+                      className="text-gray-600 mb-6 leading-relaxed text-lg"
+                      data-translate="productsPage.panelViewPlus7Desc"
+                    >
+                      Cost-effective terminals with built-in communication and
+                      application flexibility
+                    </p>
+
+                    <div className="space-y-3">
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-green-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.multipleScreens"
+                        >
+                          Multiple screen sizes available
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-green-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.webBrowser"
+                        >
+                          Web browser capabilities
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-green-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.recipeManagement"
+                        >
+                          Recipe management
+                        </span>
+                      </div>
                     </div>
-                    <div className="flex items-center">
-                      <i className="fas fa-check text-green-600 mr-2"></i>
-                      <span data-translate="productsPage.recipeManagement">
-                        Recipe management
-                      </span>
-                    </div>
+
+                    {/* Decorative Bottom Element */}
+                    <div className="mt-6 h-1 w-16 bg-gradient-to-r from-purple-500 to-purple-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                 </div>
               </div>
             </div>
 
+            {/* Right Column - FactoryTalk */}
             <div>
               <h3
-                className="text-3xl font-bold text-gray-800 mb-8"
+                className="text-3xl font-bold text-gray-900 mb-8"
                 data-translate="productsPage.factoryTalkTitle"
               >
                 FactoryTalk Software
               </h3>
               <div className="space-y-6">
-                <div className="bg-white rounded-xl p-6 shadow-md">
-                  <h4
-                    className="text-xl font-bold text-gray-800 mb-3"
-                    data-translate="productsPage.factoryTalkSETitle"
-                  >
-                    FactoryTalk View SE
-                  </h4>
-                  <p
-                    className="text-gray-600 mb-4"
-                    data-translate="productsPage.factoryTalkSEDesc"
-                  >
-                    Scalable HMI/SCADA software for plant-wide visualization and
-                    control
-                  </p>
-                  <div className="space-y-2 text-sm text-gray-600">
-                    <div className="flex items-center">
-                      <i className="fas fa-chart-line text-indigo-600 mr-2"></i>
-                      <span data-translate="productsPage.realtimeTrending">
-                        Real-time and historical trending
-                      </span>
+                {/* FactoryTalk View SE */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                  <div className="relative z-10">
+                    {/* Modern Icon Design */}
+                    <div className="relative w-20 h-20 mb-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-chart-line text-blue-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
                     </div>
-                    <div className="flex items-center">
-                      <i className="fas fa-bell text-indigo-600 mr-2"></i>
-                      <span data-translate="productsPage.alarmManagement">
-                        Alarm management system
-                      </span>
+
+                    <h4
+                      className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300"
+                      data-translate="productsPage.factoryTalkSETitle"
+                    >
+                      FactoryTalk View SE
+                    </h4>
+                    <p
+                      className="text-gray-600 mb-6 leading-relaxed text-lg"
+                      data-translate="productsPage.factoryTalkSEDesc"
+                    >
+                      Scalable HMI/SCADA software for plant-wide visualization
+                      and control
+                    </p>
+
+                    <div className="space-y-3">
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-blue-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.realtimeTrending"
+                        >
+                          Real-time and historical trending
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-blue-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.alarmManagement"
+                        >
+                          Alarm management system
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-blue-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.multiUserSecurity"
+                        >
+                          Multi-user security system
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                          <i className="fas fa-check text-blue-600 text-sm"></i>
+                        </div>
+                        <span
+                          className="text-gray-700"
+                          data-translate="productsPage.reportingTools"
+                        >
+                          Comprehensive reporting tools
+                        </span>
+                      </div>
                     </div>
-                    <div className="flex items-center">
-                      <i className="fas fa-users text-indigo-600 mr-2"></i>
-                      <span data-translate="productsPage.multiUserSecurity">
-                        Multi-user security system
-                      </span>
-                    </div>
-                    <div className="flex items-center">
-                      <i className="fas fa-file-alt text-indigo-600 mr-2"></i>
-                      <span data-translate="productsPage.reportingTools">
-                        Comprehensive reporting tools
-                      </span>
-                    </div>
+
+                    {/* Decorative Bottom Element */}
+                    <div className="mt-6 h-1 w-16 bg-gradient-to-r from-blue-500 to-blue-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-indigo-50 to-purple-100 rounded-xl p-6">
+                {/* Visualization Capabilities */}
+                <div className="relative bg-gradient-to-br from-indigo-50 to-purple-100 rounded-3xl p-8 border border-indigo-200/50 shadow-md">
                   <h4
-                    className="font-bold text-gray-800 mb-4"
+                    className="text-2xl font-bold text-gray-900 mb-6"
                     data-translate="productsPage.visualizationCapabilities"
                   >
                     Visualization Capabilities
                   </h4>
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div className="space-y-3">
-                      <div>
-                        <i className="fas fa-palette text-purple-600 mr-2"></i>
+                  <div className="grid grid-cols-2 gap-6">
+                    <div className="space-y-4">
+                      <div className="flex items-center">
+                        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mr-3 shadow-sm">
+                          <i className="fas fa-palette text-purple-600 text-xl"></i>
+                        </div>
                         <span
-                          className="text-gray-700"
+                          className="text-gray-800 font-semibold"
                           data-translate="productsPage.richGraphics"
                         >
                           Rich Graphics
                         </span>
                       </div>
-                      <div>
-                        <i className="fas fa-mobile-alt text-purple-600 mr-2"></i>
+                      <div className="flex items-center">
+                        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mr-3 shadow-sm">
+                          <i className="fas fa-mobile-alt text-purple-600 text-xl"></i>
+                        </div>
                         <span
-                          className="text-gray-700"
+                          className="text-gray-800 font-semibold"
                           data-translate="productsPage.remoteAccess"
                         >
                           Remote Access
                         </span>
                       </div>
-                      <div>
-                        <i className="fas fa-database text-purple-600 mr-2"></i>
+                      <div className="flex items-center">
+                        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mr-3 shadow-sm">
+                          <i className="fas fa-database text-purple-600 text-xl"></i>
+                        </div>
                         <span
-                          className="text-gray-700"
+                          className="text-gray-800 font-semibold"
                           data-translate="productsPage.dataLogging"
                         >
                           Data Logging
                         </span>
                       </div>
                     </div>
-                    <div className="space-y-3">
-                      <div>
-                        <i className="fas fa-chart-pie text-purple-600 mr-2"></i>
+                    <div className="space-y-4">
+                      <div className="flex items-center">
+                        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mr-3 shadow-sm">
+                          <i className="fas fa-chart-pie text-purple-600 text-xl"></i>
+                        </div>
                         <span
-                          className="text-gray-700"
+                          className="text-gray-800 font-semibold"
                           data-translate="productsPage.analytics"
                         >
                           Analytics
                         </span>
                       </div>
-                      <div>
-                        <i className="fas fa-cloud text-purple-600 mr-2"></i>
+                      <div className="flex items-center">
+                        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mr-3 shadow-sm">
+                          <i className="fas fa-cloud text-purple-600 text-xl"></i>
+                        </div>
                         <span
-                          className="text-gray-700"
+                          className="text-gray-800 font-semibold"
                           data-translate="productsPage.cloudConnectivity"
                         >
                           Cloud Connectivity
                         </span>
                       </div>
-                      <div>
-                        <i className="fas fa-cog text-purple-600 mr-2"></i>
+                      <div className="flex items-center">
+                        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mr-3 shadow-sm">
+                          <i className="fas fa-cog text-purple-600 text-xl"></i>
+                        </div>
                         <span
-                          className="text-gray-700"
+                          className="text-gray-800 font-semibold"
                           data-translate="productsPage.customApplications"
                         >
                           Custom Applications
@@ -1478,6 +1599,14 @@ export const ProductsPage = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Optional Additional Info */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 text-sm font-medium">
+              All HMI and visualization products backed by our certified
+              integration expertise
+            </p>
           </div>
         </div>
       </section>
