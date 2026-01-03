@@ -1276,10 +1276,19 @@ export const ProductsPage = () => {
               </h3>
               <div className="space-y-6">
                 {/* PanelView 5000 */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-indigo-300 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-100 hover:-translate-y-1">
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-indigo-300 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-100 hover:-translate-y-1">
                   <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
 
-                  <div className="relative z-10">
+                  {/* Product Image */}
+                  <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                    <img
+                      src="https://mgx-backend-cdn.metadl.com/generate/images/879192/2026-01-02/f6f95b37-84fc-451f-bd14-c865a3469892.png"
+                      alt="PanelView 5000 HMI Terminal"
+                      className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+
+                  <div className="relative z-10 p-8">
                     {/* Modern Icon Design */}
                     <div className="relative w-20 h-20 mb-6">
                       <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
@@ -1359,10 +1368,19 @@ export const ProductsPage = () => {
                 </div>
 
                 {/* PanelView Plus 7 */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-purple-300 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-100 hover:-translate-y-1">
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-purple-300 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-100 hover:-translate-y-1">
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
 
-                  <div className="relative z-10">
+                  {/* Product Image */}
+                  <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                    <img
+                      src="https://mgx-backend-cdn.metadl.com/generate/images/879192/2026-01-02/927d1f4c-59a2-4cb7-9ef2-2df055046195.png"
+                      alt="PanelView Plus 7 Terminal"
+                      className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+
+                  <div className="relative z-10 p-8">
                     {/* Modern Icon Design */}
                     <div className="relative w-20 h-20 mb-6">
                       <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
@@ -1438,10 +1456,19 @@ export const ProductsPage = () => {
               </h3>
               <div className="space-y-6">
                 {/* FactoryTalk View SE */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-100 hover:-translate-y-1">
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-100 hover:-translate-y-1">
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
 
-                  <div className="relative z-10">
+                  {/* Product Image */}
+                  <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                    <img
+                      src="https://mgx-backend-cdn.metadl.com/generate/images/879192/2026-01-02/87a06546-e2d9-4bfb-9493-4bf0de5e69e6.png"
+                      alt="FactoryTalk View SE Software"
+                      className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+
+                  <div className="relative z-10 p-8">
                     {/* Modern Icon Design */}
                     <div className="relative w-20 h-20 mb-6">
                       <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
