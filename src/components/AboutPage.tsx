@@ -20,10 +20,10 @@ export const AboutPage = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full mb-6">
                 <i className="fas fa-building text-white text-2xl"></i>
               </div>
-              <h1 className="text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+              <h1 className="text-5xl font-bold text-gray-900 mb-6 tracking-tight" data-translate="about.companyStoryTitle">
                 Our Journey of Excellence
               </h1>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed" data-translate="about.heroSubtitle">
                 Pioneering automation solutions with innovation and expertise
                 since 2007
               </p>
@@ -33,19 +33,19 @@ export const AboutPage = () => {
               {/* Left Column - Story Content */}
               <div className="space-y-8">
                 <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-soft border border-gray-100">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                  <h2 className="text-3xl font-bold text-gray-900 mb-6" data-translate="about.companyStoryTitle">
                     Building the Future of Automation
                   </h2>
 
                   <div className="space-y-6 text-gray-700 leading-relaxed">
-                    <p className="text-lg">
+                    <p className="text-lg" data-translate="about.companyStoryP1">
                       Established in 2007 and headquartered in Surabaya, East
                       Java, PT Sumur Batu has evolved into a premier automation
                       and drives system engineering company, trusted by
                       industries across Indonesia.
                     </p>
 
-                    <p className="text-lg">
+                    <p className="text-lg" data-translate="about.companyStoryP2">
                       As an official{" "}
                       <span className="font-semibold text-blue-600">
                         Silver System Integrator Partner
@@ -54,7 +54,7 @@ export const AboutPage = () => {
                       excellence with deep local industry understanding.
                     </p>
 
-                    <p className="text-lg">
+                    <p className="text-lg" data-translate="about.companyStoryP3">
                       Our journey is defined by a relentless pursuit of
                       engineering excellence. With over 17 years of experience
                       and a dedicated team of 30+ professionals, we continue to
@@ -70,7 +70,7 @@ export const AboutPage = () => {
                     <div className="text-3xl font-bold text-blue-700 mb-2">
                       2007
                     </div>
-                    <div className="text-sm font-medium text-blue-600 uppercase tracking-wider">
+                    <div className="text-sm font-medium text-blue-600 uppercase tracking-wider" data-translate="about.founded">
                       Year Founded
                     </div>
                   </div>
@@ -79,7 +79,7 @@ export const AboutPage = () => {
                     <div className="text-3xl font-bold text-indigo-700 mb-2">
                       17+
                     </div>
-                    <div className="text-sm font-medium text-indigo-600 uppercase tracking-wider">
+                    <div className="text-sm font-medium text-indigo-600 uppercase tracking-wider" data-translate="about.yearsExperience">
                       Years Experience
                     </div>
                   </div>
@@ -88,7 +88,7 @@ export const AboutPage = () => {
                     <div className="text-3xl font-bold text-purple-700 mb-2">
                       30+
                     </div>
-                    <div className="text-sm font-medium text-purple-600 uppercase tracking-wider">
+                    <div className="text-sm font-medium text-purple-600 uppercase tracking-wider" data-translate="about.teamMembers">
                       Team Members
                     </div>
                   </div>
@@ -97,7 +97,7 @@ export const AboutPage = () => {
                     <div className="text-3xl font-bold text-green-700 mb-2">
                       500+
                     </div>
-                    <div className="text-sm font-medium text-green-600 uppercase tracking-wider">
+                    <div className="text-sm font-medium text-green-600 uppercase tracking-wider" data-translate="about.projects">
                       Projects Delivered
                     </div>
                   </div>
@@ -134,10 +134,10 @@ export const AboutPage = () => {
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-3">
+                      <h3 className="text-xl font-semibold mb-3" data-translate="about.partnershipStatusTitle">
                         Partnership Excellence
                       </h3>
-                      <p className="text-gray-300 leading-relaxed">
+                      <p className="text-gray-300 leading-relaxed" data-translate="about.partnershipDesc">
                         Our Silver System Integrator status with Rockwell
                         Automation represents our commitment to certified
                         expertise and industry-leading solutions.
@@ -154,10 +154,10 @@ export const AboutPage = () => {
                       </div>
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-1">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-1" data-translate="about.expertTeamTitle">
                         Expert Team
                       </h4>
-                      <p className="text-gray-600 text-sm">
+                      <p className="text-gray-600 text-sm" data-translate="about.expertTeamSubtitle">
                         30+ skilled professionals dedicated to automation
                         excellence
                       </p>
@@ -189,13 +189,13 @@ export const AboutPage = () => {
             </div>
 
             <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Vision & Mission
+              <span data-translate="about.visionMissionTitle">Vision & Mission</span>
               <br />
-              <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent" data-translate="about.visionMissionSubtitle">
                 Guiding Our Journey
               </span>
             </h2>
-            <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
+            <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light" data-translate="about.visionMissionSubtitle">
               The principles that drive our commitment to excellence and
               innovation in automation engineering
             </p>
@@ -240,7 +240,7 @@ export const AboutPage = () => {
                   <div className="text-center">
                     <div className="inline-flex items-center bg-gradient-to-r from-blue-50 to-indigo-50 rounded-full px-6 py-2 mb-6">
                       <i className="fas fa-star text-blue-600 mr-2"></i>
-                      <span className="text-blue-700 font-semibold text-sm uppercase tracking-wider">
+                      <span className="text-blue-700 font-semibold text-sm uppercase tracking-wider" data-translate="about.ourVision">
                         Our Vision
                       </span>
                     </div>
@@ -250,7 +250,7 @@ export const AboutPage = () => {
                     </h3>
 
                     <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
-                      <p>
+                      <p data-translate="about.visionText">
                         To become the premier automation and drives system
                         engineering company in Indonesia and across Southeast
                         Asia, setting the standard for excellence in industrial
@@ -311,7 +311,7 @@ export const AboutPage = () => {
                   <div className="text-center">
                     <div className="inline-flex items-center bg-gradient-to-r from-purple-50 to-pink-50 rounded-full px-6 py-2 mb-6">
                       <i className="fas fa-bullseye text-purple-600 mr-2"></i>
-                      <span className="text-purple-700 font-semibold text-sm uppercase tracking-wider">
+                      <span className="text-purple-700 font-semibold text-sm uppercase tracking-wider" data-translate="about.ourMission">
                         Our Mission
                       </span>
                     </div>
@@ -321,7 +321,7 @@ export const AboutPage = () => {
                     </h3>
 
                     <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
-                      <p>
+                      <p data-translate="about.missionText">
                         To provide innovative, reliable, and cost-effective
                         automation solutions that enhance operational efficiency
                         and drive business success for our customers across
@@ -382,13 +382,13 @@ export const AboutPage = () => {
             </div>
 
             <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Rockwell Automation
+              <span data-translate="about.partnershipTitle">Rockwell Automation</span>
               <br />
               <span className="bg-gradient-to-r from-blue-600 via-red-600 to-amber-600 bg-clip-text text-transparent">
                 Partnership Excellence
               </span>
             </h2>
-            <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
+            <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light" data-translate="about.partnershipSubtitle">
               Certified expertise in cutting-edge automation technology through
               our official Silver System Integrator status
             </p>
@@ -422,16 +422,16 @@ export const AboutPage = () => {
                       {/* Badge - Matching Homepage Style */}
                       <div className="inline-flex items-center bg-gradient-to-r from-blue-50 to-red-50 rounded-full px-6 py-3 mb-8 border border-blue-100/50 shadow-sm">
                         <i className="fas fa-award text-blue-600 mr-3 text-lg"></i>
-                        <span className="text-blue-700 font-bold text-sm uppercase tracking-wider">
+                        <span className="text-blue-700 font-bold text-sm uppercase tracking-wider" data-translate="about.silverIntegrator">
                           Silver System Integrator
                         </span>
                       </div>
 
-                      <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 group-hover:text-blue-700 transition-colors duration-300">
+                      <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 group-hover:text-blue-700 transition-colors duration-300" data-translate="about.partnershipStatusTitle">
                         Official Partnership Status
                       </h3>
 
-                      <p className="text-gray-700 text-lg mb-8 leading-relaxed">
+                      <p className="text-gray-700 text-lg mb-8 leading-relaxed" data-translate="about.partnershipDesc">
                         Our Silver System Integrator status with Rockwell
                         Automation demonstrates our commitment to excellence and
                         expertise in implementing Allen-Bradley automation
@@ -446,7 +446,7 @@ export const AboutPage = () => {
                             <i className="fas fa-check text-green-600 text-sm"></i>
                           </div>
                           <div>
-                            <span className="text-gray-800 font-medium text-lg">
+                            <span className="text-gray-800 font-medium text-lg" data-translate="about.certifiedExpertise">
                               Certified technical expertise and training
                             </span>
                           </div>
@@ -457,7 +457,7 @@ export const AboutPage = () => {
                             <i className="fas fa-check text-green-600 text-sm"></i>
                           </div>
                           <div>
-                            <span className="text-gray-800 font-medium text-lg">
+                            <span className="text-gray-800 font-medium text-lg" data-translate="about.latestTechnology">
                               Access to latest Rockwell Automation technology
                             </span>
                           </div>
@@ -468,7 +468,7 @@ export const AboutPage = () => {
                             <i className="fas fa-check text-green-600 text-sm"></i>
                           </div>
                           <div>
-                            <span className="text-gray-800 font-medium text-lg">
+                            <span className="text-gray-800 font-medium text-lg" data-translate="about.qualityAssurance">
                               Quality assurance and reliability guarantee
                             </span>
                           </div>
@@ -483,7 +483,7 @@ export const AboutPage = () => {
                           <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mr-4">
                             <i className="fas fa-certificate text-white text-xl"></i>
                           </div>
-                          <h4 className="text-2xl font-bold text-gray-900">
+                          <h4 className="text-2xl font-bold text-gray-900" data-translate="about.programDisciplines">
                             Program Disciplines
                           </h4>
                         </div>
@@ -494,21 +494,25 @@ export const AboutPage = () => {
                               name: "Control",
                               status: "Certified",
                               color: "blue",
+                              translateKey: "about.control"
                             },
                             {
                               name: "Visualization",
                               status: "Certified",
                               color: "indigo",
+                              translateKey: "about.visualization"
                             },
                             {
                               name: "Low Voltage Drives",
                               status: "Certified",
                               color: "purple",
+                              translateKey: "about.lowVoltageDrives"
                             },
                             {
                               name: "CUBIC Modular Assemblies",
                               status: "Certified",
                               color: "pink",
+                              translateKey: "about.cubicModular"
                             },
                           ].map((discipline, index) => (
                             <div
@@ -519,13 +523,13 @@ export const AboutPage = () => {
                                 <div
                                   className={`w-2 h-2 bg-${discipline.color}-500 rounded-full mr-3 group-hover/discipline:scale-150 transition-transform duration-300`}
                                 ></div>
-                                <span className="text-gray-800 font-semibold text-lg">
+                                <span className="text-gray-800 font-semibold text-lg" data-translate={discipline.translateKey}>
                                   {discipline.name}
                                 </span>
                               </div>
                               <span className="bg-gradient-to-r from-green-50 to-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-bold border border-green-200/50 flex items-center">
                                 <i className="fas fa-check-circle mr-2"></i>
-                                {discipline.status}
+                                <span data-translate="about.certified">{discipline.status}</span>
                               </span>
                             </div>
                           ))}
@@ -570,10 +574,10 @@ export const AboutPage = () => {
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4" data-translate="about.expertTeamTitle">
               Our Expert Team
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto" data-translate="about.expertTeamSubtitle">
               30+ skilled professionals dedicated to automation excellence and
               continuous innovation
             </p>
@@ -606,22 +610,28 @@ export const AboutPage = () => {
             {[
               {
                 title: "Senior Automation Engineers",
+                titleKey: "about.seniorEngineers",
                 count: "3",
                 experience: "Over 20 years of experience",
+                experienceKey: "about.seniorExperience",
                 stars: 5,
                 color: "blue",
               },
               {
                 title: "Experienced Engineers",
+                titleKey: "about.experiencedEngineers",
                 count: "8",
                 experience: "3-10 years of experience",
+                experienceKey: "about.experiencedYears",
                 stars: 4,
                 color: "indigo",
               },
               {
                 title: "Junior Engineers",
+                titleKey: "about.juniorEngineers",
                 count: "7",
                 experience: "1-3 years of experience",
+                experienceKey: "about.juniorYears",
                 stars: 3,
                 color: "purple",
               },
@@ -637,13 +647,13 @@ export const AboutPage = () => {
                     className={`fas fa-user-tie text-${team.color}-600 text-3xl`}
                   ></i>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center" data-translate={team.titleKey}>
                   {team.title}
                 </h3>
                 <div className="text-3xl font-bold text-center mb-2">
                   <span className={`text-${team.color}-700`}>{team.count}</span>
                 </div>
-                <p className="text-gray-600 text-center mb-4">
+                <p className="text-gray-600 text-center mb-4" data-translate={team.experienceKey}>
                   {team.experience}
                 </p>
                 <div className="flex justify-center">
@@ -666,10 +676,10 @@ export const AboutPage = () => {
 
           <div className="text-center mt-16">
             <div className="bg-white rounded-2xl p-8 shadow-soft border border-gray-100 inline-block max-w-2xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-xl font-bold text-gray-900 mb-4" data-translate="about.continuousLearning">
                 Continuous Learning & Development
               </h3>
-              <p className="text-gray-700 mb-6">
+              <p className="text-gray-700 mb-6" data-translate="about.learningDesc">
                 Our team is committed to continuous skill improvement through
                 comprehensive internal and external training programs, ensuring
                 we stay at the forefront of automation technology and industry
@@ -678,15 +688,15 @@ export const AboutPage = () => {
               <div className="flex flex-wrap justify-center gap-3">
                 <span className="bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-100">
                   <i className="fas fa-certificate mr-2"></i>
-                  Rockwell Training
+                  <span data-translate="about.rockwellTraining">Rockwell Training</span>
                 </span>
                 <span className="bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium border border-indigo-100">
                   <i className="fas fa-book mr-2"></i>
-                  Technical Workshops
+                  <span data-translate="about.technicalWorkshops">Technical Workshops</span>
                 </span>
                 <span className="bg-purple-50 text-purple-700 px-4 py-2 rounded-full text-sm font-medium border border-purple-100">
                   <i className="fas fa-users mr-2"></i>
-                  Industry Conferences
+                  <span data-translate="about.industryConferences">Industry Conferences</span>
                 </span>
               </div>
             </div>
@@ -730,13 +740,13 @@ export const AboutPage = () => {
                 <div className="relative z-10 text-center">
                   {/* Enhanced Typography */}
                   <h2 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
-                    <span className="block mb-2">Ready to Transform</span>
+                    <span className="block mb-2" data-translate="about.ctaTitle">Ready to Transform</span>
                     <span className="block bg-gradient-to-r from-blue-600 via-red-600 to-amber-600 bg-clip-text text-transparent">
                       Your Automation Journey?
                     </span>
                   </h2>
 
-                  <p className="text-xl lg:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+                  <p className="text-xl lg:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-light" data-translate="about.ctaSubtitle">
                     Partner with certified experts who combine global technology
                     with local expertise to deliver exceptional automation
                     solutions
@@ -756,7 +766,7 @@ export const AboutPage = () => {
                         <i className="fas fa-handshake transform group-hover/btn:rotate-12 group-hover/btn:scale-110 transition-all duration-300"></i>
                       </div>
 
-                      <span className="relative z-10">Start Your Project</span>
+                      <span className="relative z-10" data-translate="about.startProject">Start Your Project</span>
 
                       <i className="fas fa-arrow-right ml-3 relative z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all duration-300"></i>
 
@@ -774,7 +784,7 @@ export const AboutPage = () => {
                         <i className="fas fa-cogs transform group-hover/btn:rotate-180 transition-all duration-500"></i>
                       </div>
 
-                      <span className="relative z-10">
+                      <span className="relative z-10" data-translate="about.ourServices">
                         Explore Our Services
                       </span>
 
