@@ -971,246 +971,243 @@ export const ProductsPage = () => {
             </p>
           </div>
 
-          {/* Modern Two-Column Layout */}
-          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-start">
-            {/* Left Column - Key Features */}
-            <div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-8">
-                Key Features
-              </h3>
-              <div className="space-y-6">
-                {/* Feature 1 */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-green-300 transition-all duration-500 hover:shadow-xl hover:shadow-green-100 hover:-translate-y-1">
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+          {/* Key Features Section - 3 Column Grid */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+              Key Features
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+              {/* Feature 1 */}
+              <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-green-300 transition-all duration-500 hover:shadow-xl hover:shadow-green-100 hover:-translate-y-1">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
 
-                  <div className="relative z-10 flex items-start">
-                    <div className="relative w-16 h-16 mr-4 flex-shrink-0">
-                      <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
-                        <i className="fas fa-rocket text-green-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <h4
-                        className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300"
-                        data-translate="productsPage.highPerformance"
-                      >
-                        High Performance
-                      </h4>
-                      <p
-                        className="text-gray-600 leading-relaxed"
-                        data-translate="productsPage.highPerformanceDesc"
-                      >
-                        Exceptional speed, accuracy, and repeatability
-                      </p>
+                <div className="relative z-10 flex flex-col items-center text-center">
+                  <div className="relative w-16 h-16 mb-4">
+                    <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                    <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                      <i className="fas fa-rocket text-green-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
                     </div>
                   </div>
-                </div>
-
-                {/* Feature 2 */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-xl hover:shadow-blue-100 hover:-translate-y-1">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-
-                  <div className="relative z-10 flex items-start">
-                    <div className="relative w-16 h-16 mr-4 flex-shrink-0">
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
-                        <i className="fas fa-link text-blue-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <h4
-                        className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300"
-                        data-translate="productsPage.integratedControl"
-                      >
-                        Integrated Control
-                      </h4>
-                      <p
-                        className="text-gray-600 leading-relaxed"
-                        data-translate="productsPage.integratedControlDesc"
-                      >
-                        Seamless integration with ControlLogix systems
-                      </p>
-                    </div>
+                  <div>
+                    <h4
+                      className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300"
+                      data-translate="productsPage.highPerformance"
+                    >
+                      High Performance
+                    </h4>
+                    <p
+                      className="text-gray-600 leading-relaxed"
+                      data-translate="productsPage.highPerformanceDesc"
+                    >
+                      Exceptional speed, accuracy, and repeatability
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                {/* Feature 3 */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-purple-300 transition-all duration-500 hover:shadow-xl hover:shadow-purple-100 hover:-translate-y-1">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+              {/* Feature 2 */}
+              <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-xl hover:shadow-blue-100 hover:-translate-y-1">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
 
-                  <div className="relative z-10 flex items-start">
-                    <div className="relative w-16 h-16 mr-4 flex-shrink-0">
-                      <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
-                        <i className="fas fa-tools text-purple-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
-                      </div>
+                <div className="relative z-10 flex flex-col items-center text-center">
+                  <div className="relative w-16 h-16 mb-4">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                    <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                      <i className="fas fa-link text-blue-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
                     </div>
-                    <div>
-                      <h4
-                        className="text-xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors duration-300"
-                        data-translate="productsPage.easyConfiguration"
-                      >
-                        Easy Configuration
-                      </h4>
-                      <p
-                        className="text-gray-600 leading-relaxed"
-                        data-translate="productsPage.easyConfigurationDesc"
-                      >
-                        Simple setup and commissioning tools
-                      </p>
+                  </div>
+                  <div>
+                    <h4
+                      className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300"
+                      data-translate="productsPage.integratedControl"
+                    >
+                      Integrated Control
+                    </h4>
+                    <p
+                      className="text-gray-600 leading-relaxed"
+                      data-translate="productsPage.integratedControlDesc"
+                    >
+                      Seamless integration with ControlLogix systems
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Feature 3 */}
+              <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-purple-300 transition-all duration-500 hover:shadow-xl hover:shadow-purple-100 hover:-translate-y-1">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                <div className="relative z-10 flex flex-col items-center text-center">
+                  <div className="relative w-16 h-16 mb-4">
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                    <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                      <i className="fas fa-tools text-purple-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
                     </div>
+                  </div>
+                  <div>
+                    <h4
+                      className="text-xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors duration-300"
+                      data-translate="productsPage.easyConfiguration"
+                    >
+                      Easy Configuration
+                    </h4>
+                    <p
+                      className="text-gray-600 leading-relaxed"
+                      data-translate="productsPage.easyConfigurationDesc"
+                    >
+                      Simple setup and commissioning tools
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* Right Column - Product Range WITH IMAGES */}
-            <div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-8">
-                <span data-translate="productsPage.kinetixRangeTitle">
-                  Kinetix Product Range
-                </span>
-              </h3>
-              <div className="space-y-6">
-                {/* Servo Drives */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-green-300 transition-all duration-500 hover:shadow-2xl hover:shadow-green-100 hover:-translate-y-1">
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+          {/* Kinetix Product Range Section - 4 Column Grid */}
+          <div>
+            <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+              <span data-translate="productsPage.kinetixRangeTitle">
+                Kinetix Product Range
+              </span>
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+              {/* Servo Drives */}
+              <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-green-300 transition-all duration-500 hover:shadow-2xl hover:shadow-green-100 hover:-translate-y-1">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
 
-                  {/* Product Image */}
-                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
-                    <img
-                      src="https://mgx-backend-cdn.metadl.com/generate/images/879160/2026-01-02/aff76192-240f-4538-b813-add930222dda.png"
-                      alt="Kinetix Servo Drives"
-                      className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
-                    />
-                  </div>
-
-                  <div className="relative z-10 p-6">
-                    <div className="flex items-center justify-between mb-3">
-                      <h4
-                        className="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors duration-300"
-                        data-translate="productsPage.servoDrives"
-                      >
-                        Servo Drives
-                      </h4>
-                      <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <i className="fas fa-microchip text-green-600 text-xl"></i>
-                      </div>
-                    </div>
-                    <p
-                      className="text-gray-600 leading-relaxed"
-                      data-translate="productsPage.servoDrivesDesc"
-                    >
-                      Kinetix 5700, 5500, 350 series drives
-                    </p>
-                    <div className="mt-4 h-1 w-16 bg-gradient-to-r from-green-500 to-green-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  </div>
+                {/* Product Image */}
+                <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/879160/2026-01-02/aff76192-240f-4538-b813-add930222dda.png"
+                    alt="Kinetix Servo Drives"
+                    className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                  />
                 </div>
 
-                {/* Servo Motors */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-100 hover:-translate-y-1">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-
-                  {/* Product Image */}
-                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
-                    <img
-                      src="https://mgx-backend-cdn.metadl.com/generate/images/879160/2026-01-02/c0ffd715-b659-495b-a450-03c93d3155f1.png"
-                      alt="Kinetix Servo Motors"
-                      className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
-                    />
-                  </div>
-
-                  <div className="relative z-10 p-6">
-                    <div className="flex items-center justify-between mb-3">
-                      <h4
-                        className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300"
-                        data-translate="productsPage.servoMotors"
-                      >
-                        Servo Motors
-                      </h4>
-                      <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <i className="fas fa-cog text-blue-600 text-xl"></i>
-                      </div>
+                <div className="relative z-10 p-6">
+                  <div className="flex flex-col items-center text-center mb-3">
+                    <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mb-3">
+                      <i className="fas fa-microchip text-green-600 text-xl"></i>
                     </div>
-                    <p
-                      className="text-gray-600 leading-relaxed"
-                      data-translate="productsPage.servoMotorsDesc"
+                    <h4
+                      className="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors duration-300"
+                      data-translate="productsPage.servoDrives"
                     >
-                      Rotary and linear servo motor options
-                    </p>
-                    <div className="mt-4 h-1 w-16 bg-gradient-to-r from-blue-500 to-blue-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      Servo Drives
+                    </h4>
                   </div>
+                  <p
+                    className="text-gray-600 leading-relaxed text-center"
+                    data-translate="productsPage.servoDrivesDesc"
+                  >
+                    Kinetix 5700, 5500, 350 series drives
+                  </p>
+                  <div className="mt-4 h-1 w-16 bg-gradient-to-r from-green-500 to-green-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
+                </div>
+              </div>
+
+              {/* Servo Motors */}
+              <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-100 hover:-translate-y-1">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                {/* Product Image */}
+                <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/879160/2026-01-02/c0ffd715-b659-495b-a450-03c93d3155f1.png"
+                    alt="Kinetix Servo Motors"
+                    className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                  />
                 </div>
 
-                {/* Motion Controllers */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-purple-300 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-100 hover:-translate-y-1">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-
-                  {/* Product Image */}
-                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
-                    <img
-                      src="https://mgx-backend-cdn.metadl.com/generate/images/879160/2026-01-02/0c642a56-ca98-49db-9ea8-1f155a8ddd38.png"
-                      alt="Kinetix Motion Controllers"
-                      className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
-                    />
-                  </div>
-
-                  <div className="relative z-10 p-6">
-                    <div className="flex items-center justify-between mb-3">
-                      <h4
-                        className="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-300"
-                        data-translate="productsPage.motionControllers"
-                      >
-                        Motion Controllers
-                      </h4>
-                      <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <i className="fas fa-gamepad text-purple-600 text-xl"></i>
-                      </div>
+                <div className="relative z-10 p-6">
+                  <div className="flex flex-col items-center text-center mb-3">
+                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mb-3">
+                      <i className="fas fa-cog text-blue-600 text-xl"></i>
                     </div>
-                    <p
-                      className="text-gray-600 leading-relaxed"
-                      data-translate="productsPage.motionControllersDesc"
+                    <h4
+                      className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300"
+                      data-translate="productsPage.servoMotors"
                     >
-                      Standalone and integrated motion control
-                    </p>
-                    <div className="mt-4 h-1 w-16 bg-gradient-to-r from-purple-500 to-purple-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      Servo Motors
+                    </h4>
                   </div>
+                  <p
+                    className="text-gray-600 leading-relaxed text-center"
+                    data-translate="productsPage.servoMotorsDesc"
+                  >
+                    Rotary and linear servo motor options
+                  </p>
+                  <div className="mt-4 h-1 w-16 bg-gradient-to-r from-blue-500 to-blue-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
+                </div>
+              </div>
+
+              {/* Motion Controllers */}
+              <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-purple-300 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-100 hover:-translate-y-1">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                {/* Product Image */}
+                <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/879160/2026-01-02/0c642a56-ca98-49db-9ea8-1f155a8ddd38.png"
+                    alt="Kinetix Motion Controllers"
+                    className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                  />
                 </div>
 
-                {/* Actuators */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-indigo-300 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-100 hover:-translate-y-1">
-                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-
-                  {/* Product Image */}
-                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
-                    <img
-                      src="https://mgx-backend-cdn.metadl.com/generate/images/879160/2026-01-02/ca8db90e-b9ab-4059-979d-642220d38e49.png"
-                      alt="Kinetix Actuators"
-                      className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
-                    />
-                  </div>
-
-                  <div className="relative z-10 p-6">
-                    <div className="flex items-center justify-between mb-3">
-                      <h4
-                        className="text-xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300"
-                        data-translate="productsPage.actuators"
-                      >
-                        Actuators
-                      </h4>
-                      <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <i className="fas fa-expand-arrows-alt text-indigo-600 text-xl"></i>
-                      </div>
+                <div className="relative z-10 p-6">
+                  <div className="flex flex-col items-center text-center mb-3">
+                    <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mb-3">
+                      <i className="fas fa-gamepad text-purple-600 text-xl"></i>
                     </div>
-                    <p
-                      className="text-gray-600 leading-relaxed"
-                      data-translate="productsPage.actuatorsDesc"
+                    <h4
+                      className="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-300"
+                      data-translate="productsPage.motionControllers"
                     >
-                      Electric cylinders and linear actuators
-                    </p>
-                    <div className="mt-4 h-1 w-16 bg-gradient-to-r from-indigo-500 to-indigo-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      Motion Controllers
+                    </h4>
                   </div>
+                  <p
+                    className="text-gray-600 leading-relaxed text-center"
+                    data-translate="productsPage.motionControllersDesc"
+                  >
+                    Standalone and integrated motion control
+                  </p>
+                  <div className="mt-4 h-1 w-16 bg-gradient-to-r from-purple-500 to-purple-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
+                </div>
+              </div>
+
+              {/* Actuators */}
+              <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-indigo-300 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-100 hover:-translate-y-1">
+                <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                {/* Product Image */}
+                <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/879160/2026-01-02/ca8db90e-b9ab-4059-979d-642220d38e49.png"
+                    alt="Kinetix Actuators"
+                    className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+
+                <div className="relative z-10 p-6">
+                  <div className="flex flex-col items-center text-center mb-3">
+                    <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mb-3">
+                      <i className="fas fa-expand-arrows-alt text-indigo-600 text-xl"></i>
+                    </div>
+                    <h4
+                      className="text-xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300"
+                      data-translate="productsPage.actuators"
+                    >
+                      Actuators
+                    </h4>
+                  </div>
+                  <p
+                    className="text-gray-600 leading-relaxed text-center"
+                    data-translate="productsPage.actuatorsDesc"
+                  >
+                    Electric cylinders and linear actuators
+                  </p>
+                  <div className="mt-4 h-1 w-16 bg-gradient-to-r from-indigo-500 to-indigo-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
                 </div>
               </div>
             </div>
