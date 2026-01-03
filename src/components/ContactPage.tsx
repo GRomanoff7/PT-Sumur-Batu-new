@@ -610,37 +610,6 @@ export const ContactPage = () => {
                   </div>
                 </div>
 
-                {/* Directions Card */}
-                <div className="mt-8 p-6 bg-gradient-to-br from-white/95 to-white/80 rounded-2xl shadow-md border border-gray-100">
-                  <h4
-                    className="text-lg font-bold text-gray-800 mb-3 flex items-center"
-                    data-translate="contact.directions"
-                  >
-                    <i className="fas fa-route text-primary mr-2"></i>
-                    Directions
-                  </h4>
-                  <p
-                    className="text-gray-600 leading-relaxed mb-4"
-                    data-translate="contact.directionsDesc"
-                  >
-                    Our office is located on Jl. Raya Kalirungkut, easily
-                    accessible from central Surabaya. Look for the Rungkut Megah
-                    Raya complex.
-                  </p>
-                  <a
-                    href="https://www.openstreetmap.org/?mlat=-7.3386&mlon=112.7661#map=17/-7.3386/112.7661"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-primary hover:text-secondary font-semibold transition-colors group/link"
-                  >
-                    <i className="fas fa-external-link-alt mr-2 group-hover/link:scale-110 transition-transform"></i>
-                    <span data-translate="contact.openInGoogleMaps">
-                      Open in OpenStreetMap
-                    </span>
-                    <i className="fas fa-arrow-right ml-2 opacity-0 group-hover/link:opacity-100 group-hover/link:translate-x-1 transition-all"></i>
-                  </a>
-                </div>
-
                 {/* Decorative Bottom Element */}
                 <div className="mt-6 h-1 w-24 bg-gradient-to-r from-primary to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
