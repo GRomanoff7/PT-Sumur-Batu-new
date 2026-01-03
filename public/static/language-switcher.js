@@ -256,14 +256,14 @@
         miningDesc:
           "Robust automation systems designed for harsh mining environments, from extraction to processing. Our solutions enhance safety, productivity, and operational efficiency while meeting stringent environmental and safety standards.",
         safetySystems: "Safety Systems",
-        safetySystemsDesc: "Advanced safety monitoring and emergency shutdown systems",
+        safetySystemsDesc: "Advanced safety monitoring and emergency shutdown systems for hazardous environments",
         crushingGrinding: "Crushing & Grinding",
         separationSystems: "Separation Systems",
         dewatering: "Dewatering",
         processMonitoring: "Process Monitoring",
-        processMonitoringDesc: "Real-time monitoring and optimization of mineral processing",
+        processMonitoringDesc: "Real-time monitoring and optimization of crushing, grinding, and separation processes",
         miningApplications: "Mining Applications",
-        materialHandlingMiningDesc: "Automated conveyor and material transport systems",
+        materialHandlingMiningDesc: "Automated conveyor systems and material transport control for efficient operations",
         extractionTransport: "Extraction & Transportation",
         extractionTransportDesc:
           "Conveyor systems, crushers, and material handling automation",
@@ -322,7 +322,7 @@
           "Committed to ongoing support and system optimization",
         readyToAutomate: "Ready to Automate Your Industry?",
         readyToAutomateDesc:
-          "Contact our industry experts to discuss your specific automation requirements",
+          "Contact our industry experts to discuss your specific automation requirements and transform your operations today",
         discussProject: "Discuss Your Project",
         viewServices: "View Our Services",
       },
@@ -1316,11 +1316,14 @@
         miningDesc:
           "Sistem otomasi tangguh yang dirancang untuk lingkungan pertambangan keras, dari ekstraksi hingga pemrosesan. Solusi kami meningkatkan keselamatan, produktivitas, dan efisiensi operasional sambil memenuhi standar lingkungan dan keselamatan yang ketat.",
         safetySystems: "Sistem Keselamatan",
+        safetySystemsDesc: "Pemantauan keselamatan dan sistem shutdown darurat yang canggih untuk lingkungan berbahaya",
         crushingGrinding: "Crushing & Grinding",
         separationSystems: "Sistem Pemisahan",
         dewatering: "Dewatering",
         processMonitoring: "Pemantauan Proses",
+        processMonitoringDesc: "Pemantauan dan optimisasi real-time dari proses crushing, grinding, dan pemisahan",
         miningApplications: "Aplikasi Pertambangan",
+        materialHandlingMiningDesc: "Sistem konveyor dan kontrol transportasi material otomatis untuk operasi yang efisien",
         extractionTransport: "Ekstraksi & Transportasi",
         extractionTransportDesc:
           "Sistem konveyor, crusher, dan otomasi material handling",
@@ -1377,7 +1380,7 @@
           "Berkomitmen untuk dukungan berkelanjutan dan optimisasi sistem",
         readyToAutomate: "Siap Mengotomatisasi Industri Anda?",
         readyToAutomateDesc:
-          "Hubungi ahli industri kami untuk mendiskusikan kebutuhan otomasi spesifik Anda",
+          "Hubungi ahli industri kami untuk mendiskusikan kebutuhan otomasi spesifik Anda dan transformasi operasi Anda hari ini",
         discussProject: "Diskusikan Proyek Anda",
         viewServices: "Lihat Layanan Kami",
       },
