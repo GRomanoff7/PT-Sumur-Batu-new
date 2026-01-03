@@ -792,7 +792,7 @@ export const Homepage = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-orange-900 via-orange-900/60 to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500"></div>
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
-                  <i className="fas fa-conveyor-belt text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
+                  <i className="fas fa-boxes text-4xl mb-3 group-hover:scale-110 transition-transform duration-300"></i>
                   <h3
                     className="text-xl font-bold text-center"
                     data-translate="industries.materialHandling"
