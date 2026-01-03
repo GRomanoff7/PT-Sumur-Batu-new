@@ -682,119 +682,177 @@ export const ContactPage = () => {
         </div>
       </section>
 
-      {/* Quick Contact Options - Modern Redesign */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
+      {/* Quick Contact Options - Modern Redesign - Matching Homepage Style */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements - Matching Homepage */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-primary/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-secondary/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography - Matching Homepage */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
+              <span className="mx-4 text-sm font-semibold text-primary uppercase tracking-widest">
+                Quick Contact
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary"></div>
+            </div>
+
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               data-translate="contact.quickContactOptions"
             >
-              Quick Contact Options
+              Multiple Ways to
+              <br />
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Reach Our Experts
+              </span>
             </h2>
             <p
-              className="text-xl text-gray-600"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="contact.quickContactSubtitle"
             >
-              Multiple ways to reach our automation experts
+              Choose your preferred communication method and connect with our automation specialists
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* Modern Card Grid with Glassmorphism - Matching Homepage Style */}
+          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {/* Call Us Card */}
             <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-green-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/10 hover:-translate-y-2">
-              <div className="relative w-20 h-20 mx-auto mb-6">
-                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-full transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                <div className="absolute inset-0 bg-white rounded-full flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
-                  <i className="fas fa-phone text-green-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mx-auto mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-phone text-green-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
                 </div>
-              </div>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4 text-center"
-                data-translate="contact.callUsNow"
-              >
-                Call Us Now
-              </h3>
-              <p
-                className="text-gray-600 mb-6 text-center"
-                data-translate="contact.callUsDesc"
-              >
-                Speak directly with our technical team for immediate assistance
-                and consultation
-              </p>
-              <div className="text-center">
-                <a
-                  href="tel:+6231879168"
-                  className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl"
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 text-center group-hover:text-green-600 transition-colors duration-300"
+                  data-translate="contact.callUsNow"
                 >
-                  <i className="fas fa-phone mr-2"></i>
-                  +62-31-879.8168
-                </a>
+                  Call Us Now
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-center mb-6"
+                  data-translate="contact.callUsDesc"
+                >
+                  Speak directly with our technical team for immediate assistance and consultation
+                </p>
+                <div className="text-center">
+                  <a
+                    href="tel:+6231879168"
+                    className="group/btn relative bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl hover:scale-105 overflow-hidden"
+                  >
+                    <span className="absolute inset-0 bg-gradient-to-r from-green-700 to-green-800 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
+                    <i className="fas fa-phone mr-2 relative z-10 group-hover/btn:rotate-12 transition-transform duration-300"></i>
+                    <span className="relative z-10">+62-31-879.8168</span>
+                  </a>
+                </div>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-green-500 to-green-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
               </div>
             </div>
 
+            {/* Email Us Card */}
             <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-2">
-              <div className="relative w-20 h-20 mx-auto mb-6">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                <div className="absolute inset-0 bg-white rounded-full flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
-                  <i className="fas fa-envelope text-blue-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mx-auto mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-envelope text-blue-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
                 </div>
-              </div>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4 text-center"
-                data-translate="contact.emailUs"
-              >
-                Email Us
-              </h3>
-              <p
-                className="text-gray-600 mb-6 text-center"
-                data-translate="contact.emailUsDesc"
-              >
-                Send detailed project requirements and receive comprehensive
-                technical proposals
-              </p>
-              <div className="text-center">
-                <a
-                  href="mailto:SumurBatu@gmail.com?subject=Automation Project Inquiry"
-                  className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl"
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 text-center group-hover:text-blue-600 transition-colors duration-300"
+                  data-translate="contact.emailUs"
                 >
-                  <i className="fas fa-envelope mr-2"></i>
-                  <span data-translate="contact.email">Send Email</span>
-                </a>
+                  Email Us
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-center mb-6"
+                  data-translate="contact.emailUsDesc"
+                >
+                  Send detailed project requirements and receive comprehensive technical proposals
+                </p>
+                <div className="text-center">
+                  <a
+                    href="mailto:SumurBatu@gmail.com?subject=Automation Project Inquiry"
+                    className="group/btn relative bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl hover:scale-105 overflow-hidden"
+                  >
+                    <span className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-800 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
+                    <i className="fas fa-envelope mr-2 relative z-10 group-hover/btn:scale-110 transition-transform duration-300"></i>
+                    <span className="relative z-10" data-translate="contact.email">Send Email</span>
+                  </a>
+                </div>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-blue-500 to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
               </div>
             </div>
 
+            {/* Schedule Visit Card */}
             <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-purple-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10 hover:-translate-y-2">
-              <div className="relative w-20 h-20 mx-auto mb-6">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                <div className="absolute inset-0 bg-white rounded-full flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
-                  <i className="fas fa-calendar-alt text-purple-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mx-auto mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-calendar-alt text-purple-600 text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
                 </div>
-              </div>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4 text-center"
-                data-translate="contact.scheduleVisit"
-              >
-                Schedule Visit
-              </h3>
-              <p
-                className="text-gray-600 mb-6 text-center"
-                data-translate="contact.scheduleVisitDesc"
-              >
-                Arrange an on-site consultation to discuss your automation
-                requirements in detail
-              </p>
-              <div className="text-center">
-                <a
-                  href="mailto:SumurBatu@gmail.com?subject=Schedule Site Visit&body=I would like to schedule a site visit to discuss our automation requirements."
-                  className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl"
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 text-center group-hover:text-purple-600 transition-colors duration-300"
+                  data-translate="contact.scheduleVisit"
                 >
-                  <i className="fas fa-calendar-plus mr-2"></i>
-                  <span data-translate="contact.scheduleMeeting">
-                    Schedule Meeting
-                  </span>
-                </a>
+                  Schedule Visit
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-center mb-6"
+                  data-translate="contact.scheduleVisitDesc"
+                >
+                  Arrange an on-site consultation to discuss your automation requirements in detail
+                </p>
+                <div className="text-center">
+                  <a
+                    href="mailto:SumurBatu@gmail.com?subject=Schedule Site Visit&body=I would like to schedule a site visit to discuss our automation requirements."
+                    className="group/btn relative bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl hover:scale-105 overflow-hidden"
+                  >
+                    <span className="absolute inset-0 bg-gradient-to-r from-purple-700 to-purple-800 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
+                    <i className="fas fa-calendar-plus mr-2 relative z-10 group-hover/btn:scale-110 transition-transform duration-300"></i>
+                    <span className="relative z-10" data-translate="contact.scheduleMeeting">
+                      Schedule Meeting
+                    </span>
+                  </a>
+                </div>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-purple-500 to-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
               </div>
             </div>
+          </div>
+
+          {/* Optional Trust Indicator */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 text-sm font-medium">
+              Available Monday-Friday 9:00 AM - 5:00 PM | Emergency support 24/7
+            </p>
           </div>
         </div>
       </section>
