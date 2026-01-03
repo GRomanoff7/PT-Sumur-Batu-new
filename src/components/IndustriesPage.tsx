@@ -653,7 +653,7 @@ export const IndustriesPage = () => {
             <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100">
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="/images/QualityInspection.jpg"
+                  src="https://mgx-backend-cdn.metadl.com/generate/images/879527/2026-01-03/e9cb7dbb-6b63-42ec-8984-df7a39690d7d.png"
                   alt="Quality Inspection"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
