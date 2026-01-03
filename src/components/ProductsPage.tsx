@@ -420,10 +420,19 @@ export const ProductsPage = () => {
               </h3>
               <div className="space-y-6">
                 {/* PowerFlex 525 */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-100 hover:-translate-y-1">
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-100 hover:-translate-y-1">
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
                   
-                  <div className="relative z-10">
+                  {/* Product Image */}
+                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                    <img
+                      src="https://mgx-backend-cdn.metadl.com/generate/images/879114/2026-01-02/06d2242f-c608-41c8-bf82-bfb372156d14.png"
+                      alt="PowerFlex 525 Drive"
+                      className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+
+                  <div className="relative z-10 p-6">
                     <div className="flex items-center mb-4">
                       <div className="relative w-16 h-16 mr-4">
                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
@@ -476,10 +485,19 @@ export const ProductsPage = () => {
                 </div>
 
                 {/* PowerFlex 753 */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-green-300 transition-all duration-500 hover:shadow-2xl hover:shadow-green-100 hover:-translate-y-1">
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-green-300 transition-all duration-500 hover:shadow-2xl hover:shadow-green-100 hover:-translate-y-1">
                   <div className="absolute inset-0 bg-gradient-to-br from-green-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
                   
-                  <div className="relative z-10">
+                  {/* Product Image */}
+                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                    <img
+                      src="https://mgx-backend-cdn.metadl.com/generate/images/879114/2026-01-02/d36f9f35-d3c5-4894-874a-7884859e820e.png"
+                      alt="PowerFlex 753 Drive"
+                      className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+
+                  <div className="relative z-10 p-6">
                     <div className="flex items-center mb-4">
                       <div className="relative w-16 h-16 mr-4">
                         <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
@@ -532,10 +550,19 @@ export const ProductsPage = () => {
                 </div>
 
                 {/* PowerFlex 755 */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-purple-300 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-100 hover:-translate-y-1">
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-purple-300 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-100 hover:-translate-y-1">
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
                   
-                  <div className="relative z-10">
+                  {/* Product Image */}
+                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                    <img
+                      src="https://mgx-backend-cdn.metadl.com/generate/images/879114/2026-01-02/e3169a40-d8de-4c11-a2eb-314645cfea7a.png"
+                      alt="PowerFlex 755 Drive"
+                      className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+
+                  <div className="relative z-10 p-6">
                     <div className="flex items-center mb-4">
                       <div className="relative w-16 h-16 mr-4">
                         <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
@@ -599,10 +626,19 @@ export const ProductsPage = () => {
               </h3>
               <div className="space-y-6">
                 {/* PowerFlex DC */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-red-300 transition-all duration-500 hover:shadow-2xl hover:shadow-red-100 hover:-translate-y-1">
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-red-300 transition-all duration-500 hover:shadow-2xl hover:shadow-red-100 hover:-translate-y-1">
                   <div className="absolute inset-0 bg-gradient-to-br from-red-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
                   
-                  <div className="relative z-10">
+                  {/* Product Image */}
+                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                    <img
+                      src="https://mgx-backend-cdn.metadl.com/generate/images/879114/2026-01-02/77108751-879b-4c49-a59e-4a5e7084e4c1.png"
+                      alt="PowerFlex DC Drive"
+                      className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+
+                  <div className="relative z-10 p-6">
                     <div className="flex items-center mb-4">
                       <div className="relative w-16 h-16 mr-4">
                         <div className="absolute inset-0 bg-gradient-to-br from-red-500 to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
@@ -655,10 +691,19 @@ export const ProductsPage = () => {
                 </div>
 
                 {/* PowerFlex 755T */}
-                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-indigo-300 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-100 hover:-translate-y-1">
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-indigo-300 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-100 hover:-translate-y-1">
                   <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
                   
-                  <div className="relative z-10">
+                  {/* Product Image */}
+                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                    <img
+                      src="https://mgx-backend-cdn.metadl.com/generate/images/879114/2026-01-02/5abcfb1d-3325-4c71-b84a-55a1b05b5635.png"
+                      alt="PowerFlex 755T Drive"
+                      className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+
+                  <div className="relative z-10 p-6">
                     <div className="flex items-center mb-4">
                       <div className="relative w-16 h-16 mr-4">
                         <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
