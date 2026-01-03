@@ -43,9 +43,7 @@ export const ProductsPage = () => {
           {/* Modern Card Grid with Glassmorphism */}
           <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {/* Card 1 - ControlLogix */}
-            <div
-              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2"
-            >
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2">
               {/* Gradient Overlay on Hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
@@ -150,9 +148,7 @@ export const ProductsPage = () => {
             </div>
 
             {/* Card 2 - CompactLogix */}
-            <div
-              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2"
-            >
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2">
               {/* Gradient Overlay on Hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
@@ -246,7 +242,8 @@ export const ProductsPage = () => {
                     className="text-sm text-gray-600"
                     data-translate="productsPage.compactLogixApps"
                   >
-                    Packaging machines, material handling, small to medium systems
+                    Packaging machines, material handling, small to medium
+                    systems
                   </p>
                 </div>
 
@@ -256,9 +253,7 @@ export const ProductsPage = () => {
             </div>
 
             {/* Card 3 - Micro800 */}
-            <div
-              className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-2"
-            >
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-2">
               {/* Gradient Overlay on Hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
@@ -351,7 +346,8 @@ export const ProductsPage = () => {
                     className="text-sm text-gray-600"
                     data-translate="productsPage.micro800Apps"
                   >
-                    Simple machinery, standalone equipment, basic process control
+                    Simple machinery, standalone equipment, basic process
+                    control
                   </p>
                 </div>
 
@@ -422,7 +418,7 @@ export const ProductsPage = () => {
                 {/* PowerFlex 525 */}
                 <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-100 hover:-translate-y-1">
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-                  
+
                   {/* Product Image */}
                   <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
                     <img
@@ -463,7 +459,10 @@ export const ProductsPage = () => {
                           Power Range:
                         </span>
                         <br />
-                        <span className="text-gray-600" data-translate="productsPage.powerFlex525Range">
+                        <span
+                          className="text-gray-600"
+                          data-translate="productsPage.powerFlex525Range"
+                        >
                           0.4 to 22 kW
                         </span>
                       </div>
@@ -475,7 +474,10 @@ export const ProductsPage = () => {
                           Applications:
                         </span>
                         <br />
-                        <span className="text-gray-600" data-translate="productsPage.powerFlex525Apps">
+                        <span
+                          className="text-gray-600"
+                          data-translate="productsPage.powerFlex525Apps"
+                        >
                           Pumps, fans, conveyors
                         </span>
                       </div>
@@ -487,7 +489,7 @@ export const ProductsPage = () => {
                 {/* PowerFlex 753 */}
                 <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-green-300 transition-all duration-500 hover:shadow-2xl hover:shadow-green-100 hover:-translate-y-1">
                   <div className="absolute inset-0 bg-gradient-to-br from-green-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-                  
+
                   {/* Product Image */}
                   <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
                     <img
@@ -516,8 +518,8 @@ export const ProductsPage = () => {
                       className="text-gray-600 mb-4 leading-relaxed"
                       data-translate="productsPage.powerFlex753Desc"
                     >
-                      High-performance drive with advanced control algorithms and
-                      networking
+                      High-performance drive with advanced control algorithms
+                      and networking
                     </p>
                     <div className="grid grid-cols-2 gap-4 text-sm">
                       <div>
@@ -528,7 +530,10 @@ export const ProductsPage = () => {
                           Power Range:
                         </span>
                         <br />
-                        <span className="text-gray-600" data-translate="productsPage.powerFlex753Range">
+                        <span
+                          className="text-gray-600"
+                          data-translate="productsPage.powerFlex753Range"
+                        >
                           0.4 to 2.3 MW
                         </span>
                       </div>
@@ -540,7 +545,10 @@ export const ProductsPage = () => {
                           Applications:
                         </span>
                         <br />
-                        <span className="text-gray-600" data-translate="productsPage.powerFlex753Apps">
+                        <span
+                          className="text-gray-600"
+                          data-translate="productsPage.powerFlex753Apps"
+                        >
                           Process control, precision applications
                         </span>
                       </div>
@@ -552,7 +560,7 @@ export const ProductsPage = () => {
                 {/* PowerFlex 755 */}
                 <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-purple-300 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-100 hover:-translate-y-1">
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-                  
+
                   {/* Product Image */}
                   <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
                     <img
@@ -593,7 +601,10 @@ export const ProductsPage = () => {
                           Power Range:
                         </span>
                         <br />
-                        <span className="text-gray-600" data-translate="productsPage.powerFlex755Range">
+                        <span
+                          className="text-gray-600"
+                          data-translate="productsPage.powerFlex755Range"
+                        >
                           90 kW to 5.7 MW
                         </span>
                       </div>
@@ -605,7 +616,10 @@ export const ProductsPage = () => {
                           Applications:
                         </span>
                         <br />
-                        <span className="text-gray-600" data-translate="productsPage.powerFlex755Apps">
+                        <span
+                          className="text-gray-600"
+                          data-translate="productsPage.powerFlex755Apps"
+                        >
                           Large motors, harsh environments
                         </span>
                       </div>
@@ -628,7 +642,7 @@ export const ProductsPage = () => {
                 {/* PowerFlex DC */}
                 <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-red-300 transition-all duration-500 hover:shadow-2xl hover:shadow-red-100 hover:-translate-y-1">
                   <div className="absolute inset-0 bg-gradient-to-br from-red-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-                  
+
                   {/* Product Image */}
                   <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
                     <img
@@ -693,7 +707,7 @@ export const ProductsPage = () => {
                 {/* PowerFlex 755T */}
                 <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-indigo-300 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-100 hover:-translate-y-1">
                   <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-                  
+
                   {/* Product Image */}
                   <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
                     <img
@@ -722,8 +736,8 @@ export const ProductsPage = () => {
                       className="text-gray-600 mb-4 leading-relaxed"
                       data-translate="productsPage.powerFlex755TDesc"
                     >
-                      Total Force Technology drives designed for harsh industrial
-                      environments
+                      Total Force Technology drives designed for harsh
+                      industrial environments
                     </p>
                     <div className="space-y-2 text-sm text-gray-600">
                       <div className="flex items-center">
@@ -916,167 +930,256 @@ export const ProductsPage = () => {
         </div>
       </section>
 
-      {/* Motion Control */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center bg-green-100 rounded-full px-6 py-2 mb-6">
-                <i className="fas fa-sync text-green-600 mr-2"></i>
-                <span
-                  className="text-green-600 font-semibold"
-                  data-translate="productsPage.motionBadge"
-                >
+      {/* Motion Control - Modern & Elegant Redesign */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-green-500/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-blue-500/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-green-600"></div>
+              <span className="mx-4 text-sm font-semibold text-green-600 uppercase tracking-widest">
+                <i className="fas fa-sync mr-2"></i>
+                <span data-translate="productsPage.motionBadge">
                   Motion Control
                 </span>
-              </div>
-              <h2
-                className="text-4xl font-bold text-gray-800 mb-6"
-                data-translate="productsPage.motionTitle"
-              >
-                Kinetix Servo Systems
-              </h2>
-              <p
-                className="text-gray-600 mb-6 leading-relaxed"
-                data-translate="productsPage.motionDesc"
-              >
-                Precision servo drives and motors for demanding motion control
-                applications. The Kinetix family provides integrated motion
-                solutions with superior performance and flexibility for complex
-                automation systems.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <i className="fas fa-rocket text-green-600 mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="productsPage.highPerformance"
-                    >
-                      High Performance
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="productsPage.highPerformanceDesc"
-                    >
-                      Exceptional speed, accuracy, and repeatability
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <i className="fas fa-link text-green-600 mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="productsPage.integratedControl"
-                    >
-                      Integrated Control
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="productsPage.integratedControlDesc"
-                    >
-                      Seamless integration with ControlLogix systems
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <i className="fas fa-tools text-green-600 mt-1 mr-3"></i>
-                  <div>
-                    <h4
-                      className="font-semibold text-gray-800"
-                      data-translate="productsPage.easyConfiguration"
-                    >
-                      Easy Configuration
-                    </h4>
-                    <p
-                      className="text-gray-600 text-sm"
-                      data-translate="productsPage.easyConfigurationDesc"
-                    >
-                      Simple setup and commissioning tools
-                    </p>
-                  </div>
-                </div>
-              </div>
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-green-600"></div>
             </div>
-            <div className="bg-gradient-to-br from-green-50 to-blue-100 rounded-2xl p-8">
-              <h3
-                className="text-2xl font-bold text-gray-800 mb-6 text-center"
-                data-translate="productsPage.kinetixRangeTitle"
-              >
-                Kinetix Product Range
+
+            <h2
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+              data-translate="productsPage.motionTitle"
+            >
+              Kinetix
+              <br />
+              <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+                Servo Systems
+              </span>
+            </h2>
+            <p
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
+              data-translate="productsPage.motionDesc"
+            >
+              Precision servo drives and motors for demanding motion control
+              applications. The Kinetix family provides integrated motion
+              solutions with superior performance and flexibility for complex
+              automation systems.
+            </p>
+          </div>
+
+          {/* Modern Two-Column Layout */}
+          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-start">
+            {/* Left Column - Key Features */}
+            <div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-8">
+                Key Features
               </h3>
-              <div className="space-y-4">
-                <div className="bg-white rounded-lg p-4 shadow-md">
-                  <div className="flex items-center justify-between mb-2">
-                    <h4
-                      className="font-bold text-gray-800"
-                      data-translate="productsPage.servoDrives"
-                    >
-                      Servo Drives
-                    </h4>
-                    <i className="fas fa-microchip text-green-600"></i>
+              <div className="space-y-6">
+                {/* Feature 1 */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-green-300 transition-all duration-500 hover:shadow-xl hover:shadow-green-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                  <div className="relative z-10 flex items-start">
+                    <div className="relative w-16 h-16 mr-4 flex-shrink-0">
+                      <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-rocket text-green-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <h4
+                        className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300"
+                        data-translate="productsPage.highPerformance"
+                      >
+                        High Performance
+                      </h4>
+                      <p
+                        className="text-gray-600 leading-relaxed"
+                        data-translate="productsPage.highPerformanceDesc"
+                      >
+                        Exceptional speed, accuracy, and repeatability
+                      </p>
+                    </div>
                   </div>
-                  <p
-                    className="text-sm text-gray-600"
-                    data-translate="productsPage.servoDrivesDesc"
-                  >
-                    Kinetix 5700, 5500, 350 series drives
-                  </p>
                 </div>
-                <div className="bg-white rounded-lg p-4 shadow-md">
-                  <div className="flex items-center justify-between mb-2">
-                    <h4
-                      className="font-bold text-gray-800"
-                      data-translate="productsPage.servoMotors"
-                    >
-                      Servo Motors
-                    </h4>
-                    <i className="fas fa-cog text-green-600"></i>
+
+                {/* Feature 2 */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-xl hover:shadow-blue-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                  <div className="relative z-10 flex items-start">
+                    <div className="relative w-16 h-16 mr-4 flex-shrink-0">
+                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-link text-blue-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <h4
+                        className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300"
+                        data-translate="productsPage.integratedControl"
+                      >
+                        Integrated Control
+                      </h4>
+                      <p
+                        className="text-gray-600 leading-relaxed"
+                        data-translate="productsPage.integratedControlDesc"
+                      >
+                        Seamless integration with ControlLogix systems
+                      </p>
+                    </div>
                   </div>
-                  <p
-                    className="text-sm text-gray-600"
-                    data-translate="productsPage.servoMotorsDesc"
-                  >
-                    Rotary and linear servo motor options
-                  </p>
                 </div>
-                <div className="bg-white rounded-lg p-4 shadow-md">
-                  <div className="flex items-center justify-between mb-2">
-                    <h4
-                      className="font-bold text-gray-800"
-                      data-translate="productsPage.motionControllers"
-                    >
-                      Motion Controllers
-                    </h4>
-                    <i className="fas fa-gamepad text-green-600"></i>
+
+                {/* Feature 3 */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 hover:border-purple-300 transition-all duration-500 hover:shadow-xl hover:shadow-purple-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+                  <div className="relative z-10 flex items-start">
+                    <div className="relative w-16 h-16 mr-4 flex-shrink-0">
+                      <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                      <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                        <i className="fas fa-tools text-purple-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <h4
+                        className="text-xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors duration-300"
+                        data-translate="productsPage.easyConfiguration"
+                      >
+                        Easy Configuration
+                      </h4>
+                      <p
+                        className="text-gray-600 leading-relaxed"
+                        data-translate="productsPage.easyConfigurationDesc"
+                      >
+                        Simple setup and commissioning tools
+                      </p>
+                    </div>
                   </div>
-                  <p
-                    className="text-sm text-gray-600"
-                    data-translate="productsPage.motionControllersDesc"
-                  >
-                    Standalone and integrated motion control
-                  </p>
-                </div>
-                <div className="bg-white rounded-lg p-4 shadow-md">
-                  <div className="flex items-center justify-between mb-2">
-                    <h4
-                      className="font-bold text-gray-800"
-                      data-translate="productsPage.actuators"
-                    >
-                      Actuators
-                    </h4>
-                    <i className="fas fa-expand-arrows-alt text-green-600"></i>
-                  </div>
-                  <p
-                    className="text-sm text-gray-600"
-                    data-translate="productsPage.actuatorsDesc"
-                  >
-                    Electric cylinders and linear actuators
-                  </p>
                 </div>
               </div>
             </div>
+
+            {/* Right Column - Product Range */}
+            <div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-8">
+                <span data-translate="productsPage.kinetixRangeTitle">
+                  Kinetix Product Range
+                </span>
+              </h3>
+              <div className="relative bg-gradient-to-br from-green-50 to-blue-100 rounded-3xl p-8 border border-gray-200/50">
+                <div className="space-y-4">
+                  {/* Servo Drives */}
+                  <div className="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div className="absolute inset-0 bg-gradient-to-br from-green-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500"></div>
+
+                    <div className="relative z-10 flex items-center justify-between mb-3">
+                      <h4
+                        className="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors duration-300"
+                        data-translate="productsPage.servoDrives"
+                      >
+                        Servo Drives
+                      </h4>
+                      <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <i className="fas fa-microchip text-green-600 text-xl"></i>
+                      </div>
+                    </div>
+                    <p
+                      className="text-gray-600 leading-relaxed"
+                      data-translate="productsPage.servoDrivesDesc"
+                    >
+                      Kinetix 5700, 5500, 350 series drives
+                    </p>
+                    <div className="mt-4 h-1 w-16 bg-gradient-to-r from-green-500 to-green-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
+
+                  {/* Servo Motors */}
+                  <div className="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500"></div>
+
+                    <div className="relative z-10 flex items-center justify-between mb-3">
+                      <h4
+                        className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300"
+                        data-translate="productsPage.servoMotors"
+                      >
+                        Servo Motors
+                      </h4>
+                      <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <i className="fas fa-cog text-blue-600 text-xl"></i>
+                      </div>
+                    </div>
+                    <p
+                      className="text-gray-600 leading-relaxed"
+                      data-translate="productsPage.servoMotorsDesc"
+                    >
+                      Rotary and linear servo motor options
+                    </p>
+                    <div className="mt-4 h-1 w-16 bg-gradient-to-r from-blue-500 to-blue-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
+
+                  {/* Motion Controllers */}
+                  <div className="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500"></div>
+
+                    <div className="relative z-10 flex items-center justify-between mb-3">
+                      <h4
+                        className="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-300"
+                        data-translate="productsPage.motionControllers"
+                      >
+                        Motion Controllers
+                      </h4>
+                      <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <i className="fas fa-gamepad text-purple-600 text-xl"></i>
+                      </div>
+                    </div>
+                    <p
+                      className="text-gray-600 leading-relaxed"
+                      data-translate="productsPage.motionControllersDesc"
+                    >
+                      Standalone and integrated motion control
+                    </p>
+                    <div className="mt-4 h-1 w-16 bg-gradient-to-r from-purple-500 to-purple-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
+
+                  {/* Actuators */}
+                  <div className="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500"></div>
+
+                    <div className="relative z-10 flex items-center justify-between mb-3">
+                      <h4
+                        className="text-xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300"
+                        data-translate="productsPage.actuators"
+                      >
+                        Actuators
+                      </h4>
+                      <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <i className="fas fa-expand-arrows-alt text-indigo-600 text-xl"></i>
+                      </div>
+                    </div>
+                    <p
+                      className="text-gray-600 leading-relaxed"
+                      data-translate="productsPage.actuatorsDesc"
+                    >
+                      Electric cylinders and linear actuators
+                    </p>
+                    <div className="mt-4 h-1 w-16 bg-gradient-to-r from-indigo-500 to-indigo-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Optional Additional Info */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 text-sm font-medium">
+              All motion control products backed by our certified integration
+              expertise
+            </p>
           </div>
         </div>
       </section>
