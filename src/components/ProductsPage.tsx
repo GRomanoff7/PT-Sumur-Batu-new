@@ -2093,18 +2093,35 @@ export const ProductsPage = () => {
         </div>
       </section>
 
-      {/* Product Integration Benefits */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
+      {/* Product Integration Benefits - Modern & Elegant Redesign */}
+      <section className="relative py-24 bg-gradient-to-b from-white via-gray-50/30 to-white overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-primary/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-secondary/5 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header Section with Enhanced Typography */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center justify-center mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary"></div>
+              <span className="mx-4 text-sm font-semibold text-primary uppercase tracking-widest">
+                Integration Benefits
+              </span>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary"></div>
+            </div>
+
             <h2
-              className="text-4xl font-bold text-gray-800 mb-4"
+              className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               data-translate="productsPage.integrationTitle"
             >
-              Why Choose Our Rockwell Integration?
+              Why Choose Our
+              <br />
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Rockwell Integration?
+              </span>
             </h2>
             <p
-              className="text-xl text-gray-600"
+              className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="productsPage.integrationSubtitle"
             >
               Certified expertise ensures optimal product performance and
@@ -2112,65 +2129,115 @@ export const ProductsPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i className="fas fa-certificate text-primary text-3xl"></i>
+          {/* Modern Card Grid with Glassmorphism */}
+          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {/* Card 1 - Certified Integration */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10 text-center">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6 mx-auto">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-certificate text-primary text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300"
+                  data-translate="productsPage.certifiedIntegration"
+                >
+                  Certified Integration
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="productsPage.certifiedIntegrationDesc"
+                >
+                  Our Silver System Integrator status ensures proper product
+                  selection, configuration, and integration for optimal
+                  performance.
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-primary to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
               </div>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4"
-                data-translate="productsPage.certifiedIntegration"
-              >
-                Certified Integration
-              </h3>
-              <p
-                className="text-gray-600"
-                data-translate="productsPage.certifiedIntegrationDesc"
-              >
-                Our Silver System Integrator status ensures proper product
-                selection, configuration, and integration for optimal
-                performance.
-              </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i className="fas fa-tools text-secondary text-3xl"></i>
+            {/* Card 2 - Complete Support */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10 text-center">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6 mx-auto">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-tools text-secondary text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-secondary transition-colors duration-300"
+                  data-translate="productsPage.completeSupport"
+                >
+                  Complete Support
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="productsPage.completeSupportDesc"
+                >
+                  From initial design through commissioning and ongoing
+                  maintenance, we provide comprehensive support for all Rockwell
+                  products.
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-secondary to-red-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
               </div>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4"
-                data-translate="productsPage.completeSupport"
-              >
-                Complete Support
-              </h3>
-              <p
-                className="text-gray-600"
-                data-translate="productsPage.completeSupportDesc"
-              >
-                From initial design through commissioning and ongoing
-                maintenance, we provide comprehensive support for all Rockwell
-                products.
-              </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i className="fas fa-handshake text-accent text-3xl"></i>
+            {/* Card 3 - Warranty & Service */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10 text-center">
+                {/* Modern Icon Design */}
+                <div className="relative w-20 h-20 mb-6 mx-auto">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent to-yellow-500 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-handshake text-accent text-3xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h3
+                  className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-accent transition-colors duration-300"
+                  data-translate="productsPage.warrantyService"
+                >
+                  Warranty & Service
+                </h3>
+                <p
+                  className="text-gray-600 leading-relaxed text-lg"
+                  data-translate="productsPage.warrantyServiceDesc"
+                >
+                  All products come with manufacturer warranty plus our additional
+                  service guarantees and local technical support.
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-accent to-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
               </div>
-              <h3
-                className="text-xl font-bold text-gray-800 mb-4"
-                data-translate="productsPage.warrantyService"
-              >
-                Warranty & Service
-              </h3>
-              <p
-                className="text-gray-600"
-                data-translate="productsPage.warrantyServiceDesc"
-              >
-                All products come with manufacturer warranty plus our additional
-                service guarantees and local technical support.
-              </p>
             </div>
+          </div>
+
+          {/* Optional Additional Info */}
+          <div className="text-center mt-16">
+            <p className="text-gray-500 text-sm font-medium">
+              Trusted integration partner backed by Rockwell Automation certification
+            </p>
           </div>
         </div>
       </section>
