@@ -1065,20 +1065,29 @@ export const ProductsPage = () => {
               </div>
             </div>
 
-            {/* Right Column - Product Range */}
+            {/* Right Column - Product Range WITH IMAGES */}
             <div>
               <h3 className="text-3xl font-bold text-gray-900 mb-8">
                 <span data-translate="productsPage.kinetixRangeTitle">
                   Kinetix Product Range
                 </span>
               </h3>
-              <div className="relative bg-gradient-to-br from-green-50 to-blue-100 rounded-3xl p-8 border border-gray-200/50">
-                <div className="space-y-4">
-                  {/* Servo Drives */}
-                  <div className="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div className="absolute inset-0 bg-gradient-to-br from-green-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500"></div>
+              <div className="space-y-6">
+                {/* Servo Drives */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-green-300 transition-all duration-500 hover:shadow-2xl hover:shadow-green-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
 
-                    <div className="relative z-10 flex items-center justify-between mb-3">
+                  {/* Product Image */}
+                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                    <img
+                      src="https://mgx-backend-cdn.metadl.com/generate/images/879160/2026-01-02/aff76192-240f-4538-b813-add930222dda.png"
+                      alt="Kinetix Servo Drives"
+                      className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+
+                  <div className="relative z-10 p-6">
+                    <div className="flex items-center justify-between mb-3">
                       <h4
                         className="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors duration-300"
                         data-translate="productsPage.servoDrives"
@@ -1097,12 +1106,23 @@ export const ProductsPage = () => {
                     </p>
                     <div className="mt-4 h-1 w-16 bg-gradient-to-r from-green-500 to-green-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
+                </div>
 
-                  {/* Servo Motors */}
-                  <div className="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500"></div>
+                {/* Servo Motors */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-blue-300 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
 
-                    <div className="relative z-10 flex items-center justify-between mb-3">
+                  {/* Product Image */}
+                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                    <img
+                      src="https://mgx-backend-cdn.metadl.com/generate/images/879160/2026-01-02/c0ffd715-b659-495b-a450-03c93d3155f1.png"
+                      alt="Kinetix Servo Motors"
+                      className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+
+                  <div className="relative z-10 p-6">
+                    <div className="flex items-center justify-between mb-3">
                       <h4
                         className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300"
                         data-translate="productsPage.servoMotors"
@@ -1121,12 +1141,23 @@ export const ProductsPage = () => {
                     </p>
                     <div className="mt-4 h-1 w-16 bg-gradient-to-r from-blue-500 to-blue-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
+                </div>
 
-                  {/* Motion Controllers */}
-                  <div className="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500"></div>
+                {/* Motion Controllers */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-purple-300 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
 
-                    <div className="relative z-10 flex items-center justify-between mb-3">
+                  {/* Product Image */}
+                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                    <img
+                      src="https://mgx-backend-cdn.metadl.com/generate/images/879160/2026-01-02/0c642a56-ca98-49db-9ea8-1f155a8ddd38.png"
+                      alt="Kinetix Motion Controllers"
+                      className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+
+                  <div className="relative z-10 p-6">
+                    <div className="flex items-center justify-between mb-3">
                       <h4
                         className="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-300"
                         data-translate="productsPage.motionControllers"
@@ -1145,12 +1176,23 @@ export const ProductsPage = () => {
                     </p>
                     <div className="mt-4 h-1 w-16 bg-gradient-to-r from-purple-500 to-purple-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
+                </div>
 
-                  {/* Actuators */}
-                  <div className="group relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500"></div>
+                {/* Actuators */}
+                <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 hover:border-indigo-300 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-100 hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
 
-                    <div className="relative z-10 flex items-center justify-between mb-3">
+                  {/* Product Image */}
+                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+                    <img
+                      src="https://mgx-backend-cdn.metadl.com/generate/images/879160/2026-01-02/ca8db90e-b9ab-4059-979d-642220d38e49.png"
+                      alt="Kinetix Actuators"
+                      className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+
+                  <div className="relative z-10 p-6">
+                    <div className="flex items-center justify-between mb-3">
                       <h4
                         className="text-xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300"
                         data-translate="productsPage.actuators"
