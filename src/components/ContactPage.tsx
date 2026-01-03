@@ -167,11 +167,11 @@ export const ContactPage = () => {
                       <div className="space-y-3">
                         <div>
                           <p className="font-medium text-gray-700">Monday - Friday:</p>
-                          <p className="text-gray-600">8:00 AM - 5:00 PM</p>
+                          <p className="text-gray-600">9:00 AM - 5:00 PM</p>
                         </div>
                         <div>
                           <p className="font-medium text-gray-700">Saturday:</p>
-                          <p className="text-gray-600">8:00 AM - 12:00 PM</p>
+                          <p className="text-gray-600">9:00 AM - 12:00 PM</p>
                         </div>
                         <div>
                           <p className="font-medium text-gray-700">Sunday:</p>
