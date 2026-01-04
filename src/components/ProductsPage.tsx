@@ -768,154 +768,154 @@ export const ProductsPage = () => {
                     <div className="mt-4 h-1 w-16 bg-gradient-to-r from-indigo-500 to-indigo-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                {/* Drive Applications Card - Enhanced with Images */}
-                <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 shadow-md">
-                  <h4
-                    className="text-2xl font-bold text-gray-900 mb-6 text-center"
-                    data-translate="productsPage.driveApplicationsTitle"
-                  >
-                    Drive Applications
-                  </h4>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {/* HVAC Systems */}
-                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
-                      <div className="relative h-40 overflow-hidden flex-shrink-0">
-                        <img
-                          src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/b5fe815c-5957-481b-8545-3f373880a1c0.png"
-                          alt="HVAC Systems"
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-accent/80 to-transparent opacity-60"></div>
-                        <div className="absolute bottom-2 left-2">
-                          <i className="fas fa-fan text-white text-2xl drop-shadow-lg"></i>
-                        </div>
-                      </div>
-                      <div className="p-3 text-center">
-                        <span
-                          className="text-sm font-semibold text-gray-800"
-                          data-translate="productsPage.hvacSystems"
-                        >
-                          HVAC Systems
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Pump Control */}
-                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
-                      <div className="relative h-40 overflow-hidden flex-shrink-0">
-                        <img
-                          src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/f28de406-d75d-4e54-aa97-abf95be8f6f5.png"
-                          alt="Pump Control"
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-blue-600/80 to-transparent opacity-60"></div>
-                        <div className="absolute bottom-2 left-2">
-                          <i className="fas fa-tint text-white text-2xl drop-shadow-lg"></i>
-                        </div>
-                      </div>
-                      <div className="p-3 text-center">
-                        <span
-                          className="text-sm font-semibold text-gray-800"
-                          data-translate="productsPage.pumpControl"
-                        >
-                          Pump Control
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Conveyor Systems */}
-                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
-                      <div className="relative h-40 overflow-hidden flex-shrink-0">
-                        <img
-                          src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/f4e18d85-5ff5-440b-b103-b498640e3253.png"
-                          alt="Conveyor Systems"
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-green-600/80 to-transparent opacity-60"></div>
-                        <div className="absolute bottom-2 left-2">
-                          <i className="fas fa-conveyor-belt text-white text-2xl drop-shadow-lg"></i>
-                        </div>
-                      </div>
-                      <div className="p-3 text-center">
-                        <span
-                          className="text-sm font-semibold text-gray-800"
-                          data-translate="productsPage.conveyorSystems"
-                        >
-                          Conveyor Systems
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Compressors */}
-                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
-                      <div className="relative h-40 overflow-hidden flex-shrink-0">
-                        <img
-                          src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/41810048-1114-4cda-8888-b74210a3aeba.png"
-                          alt="Compressors"
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-purple-600/80 to-transparent opacity-60"></div>
-                        <div className="absolute bottom-2 left-2">
-                          <i className="fas fa-compress text-white text-2xl drop-shadow-lg"></i>
-                        </div>
-                      </div>
-                      <div className="p-3 text-center">
-                        <span
-                          className="text-sm font-semibold text-gray-800"
-                          data-translate="productsPage.compressors"
-                        >
-                          Compressors
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Process Control */}
-                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
-                      <div className="relative h-40 overflow-hidden flex-shrink-0">
-                        <img
-                          src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/fcd60f75-7b6f-4136-976d-988189aa7e68.png"
-                          alt="Process Control"
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-red-600/80 to-transparent opacity-60"></div>
-                        <div className="absolute bottom-2 left-2">
-                          <i className="fas fa-industry text-white text-2xl drop-shadow-lg"></i>
-                        </div>
-                      </div>
-                      <div className="p-3 text-center">
-                        <span
-                          className="text-sm font-semibold text-gray-800"
-                          data-translate="productsPage.processControl"
-                        >
-                          Process Control
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Machine Tools */}
-                    <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
-                      <div className="relative h-40 overflow-hidden flex-shrink-0">
-                        <img
-                          src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/446163e1-0c48-42d0-8981-3b9433684f85.png"
-                          alt="Machine Tools"
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-indigo-600/80 to-transparent opacity-60"></div>
-                        <div className="absolute bottom-2 left-2">
-                          <i className="fas fa-cogs text-white text-2xl drop-shadow-lg"></i>
-                        </div>
-                      </div>
-                      <div className="p-3 text-center">
-                        <span
-                          className="text-sm font-semibold text-gray-800"
-                          data-translate="productsPage.machineTools"
-                        >
-                          Machine Tools
-                        </span>
-                      </div>
-                    </div>
+          {/* Drive Applications Card - Enhanced with Images - Full Width */}
+          <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-6 border border-gray-200/50 shadow-md max-w-7xl mx-auto mt-12">
+            <h4
+              className="text-2xl font-bold text-gray-900 mb-6 text-center"
+              data-translate="productsPage.driveApplicationsTitle"
+            >
+              Drive Applications
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* HVAC Systems */}
+              <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                <div className="relative h-40 overflow-hidden flex-shrink-0">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/b5fe815c-5957-481b-8545-3f373880a1c0.png"
+                    alt="HVAC Systems"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-accent/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-2 left-2">
+                    <i className="fas fa-fan text-white text-2xl drop-shadow-lg"></i>
                   </div>
+                </div>
+                <div className="p-3 text-center">
+                  <span
+                    className="text-sm font-semibold text-gray-800"
+                    data-translate="productsPage.hvacSystems"
+                  >
+                    HVAC Systems
+                  </span>
+                </div>
+              </div>
+
+              {/* Pump Control */}
+              <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                <div className="relative h-40 overflow-hidden flex-shrink-0">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/f28de406-d75d-4e54-aa97-abf95be8f6f5.png"
+                    alt="Pump Control"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-600/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-2 left-2">
+                    <i className="fas fa-tint text-white text-2xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+                <div className="p-3 text-center">
+                  <span
+                    className="text-sm font-semibold text-gray-800"
+                    data-translate="productsPage.pumpControl"
+                  >
+                    Pump Control
+                  </span>
+                </div>
+              </div>
+
+              {/* Conveyor Systems */}
+              <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                <div className="relative h-40 overflow-hidden flex-shrink-0">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/f4e18d85-5ff5-440b-b103-b498640e3253.png"
+                    alt="Conveyor Systems"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-green-600/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-2 left-2">
+                    <i className="fas fa-conveyor-belt text-white text-2xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+                <div className="p-3 text-center">
+                  <span
+                    className="text-sm font-semibold text-gray-800"
+                    data-translate="productsPage.conveyorSystems"
+                  >
+                    Conveyor Systems
+                  </span>
+                </div>
+              </div>
+
+              {/* Compressors */}
+              <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                <div className="relative h-40 overflow-hidden flex-shrink-0">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/41810048-1114-4cda-8888-b74210a3aeba.png"
+                    alt="Compressors"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-purple-600/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-2 left-2">
+                    <i className="fas fa-compress text-white text-2xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+                <div className="p-3 text-center">
+                  <span
+                    className="text-sm font-semibold text-gray-800"
+                    data-translate="productsPage.compressors"
+                  >
+                    Compressors
+                  </span>
+                </div>
+              </div>
+
+              {/* Process Control */}
+              <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                <div className="relative h-40 overflow-hidden flex-shrink-0">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/fcd60f75-7b6f-4136-976d-988189aa7e68.png"
+                    alt="Process Control"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-red-600/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-2 left-2">
+                    <i className="fas fa-industry text-white text-2xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+                <div className="p-3 text-center">
+                  <span
+                    className="text-sm font-semibold text-gray-800"
+                    data-translate="productsPage.processControl"
+                  >
+                    Process Control
+                  </span>
+                </div>
+              </div>
+
+              {/* Machine Tools */}
+              <div className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                <div className="relative h-40 overflow-hidden flex-shrink-0">
+                  <img
+                    src="https://mgx-backend-cdn.metadl.com/generate/images/879134/2026-01-02/446163e1-0c48-42d0-8981-3b9433684f85.png"
+                    alt="Machine Tools"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-indigo-600/80 to-transparent opacity-60"></div>
+                  <div className="absolute bottom-2 left-2">
+                    <i className="fas fa-cogs text-white text-2xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+                <div className="p-3 text-center">
+                  <span
+                    className="text-sm font-semibold text-gray-800"
+                    data-translate="productsPage.machineTools"
+                  >
+                    Machine Tools
+                  </span>
                 </div>
               </div>
             </div>
