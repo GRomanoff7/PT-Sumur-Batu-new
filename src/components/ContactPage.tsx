@@ -538,115 +538,123 @@ export const ContactPage = () => {
             </p>
           </div>
 
-          {/* Modern Card Grid with Glassmorphism - Matching Homepage Style */}
-          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
-            {/* Location Information Card */}
+          {/* Strategic Location Features - 3 Column Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-12">
+            {/* Industrial Hub Card */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10 text-center">
+                {/* Modern Icon Design */}
+                <div className="relative w-16 h-16 mx-auto mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-building text-primary text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h4
+                  className="text-xl font-bold text-gray-800 mb-3 group-hover:text-primary transition-colors duration-300"
+                  data-translate="contact.industrialHub"
+                >
+                  Industrial Hub
+                </h4>
+                <p
+                  className="text-gray-600 leading-relaxed"
+                  data-translate="contact.industrialHubDesc"
+                >
+                  Located in Surabaya's major industrial area with easy access to manufacturing facilities
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-primary to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
+              </div>
+            </div>
+
+            {/* Easy Access Card */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10 text-center">
+                {/* Modern Icon Design */}
+                <div className="relative w-16 h-16 mx-auto mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary to-red-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-car text-secondary text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h4
+                  className="text-xl font-bold text-gray-800 mb-3 group-hover:text-secondary transition-colors duration-300"
+                  data-translate="contact.easyAccess"
+                >
+                  Easy Access
+                </h4>
+                <p
+                  className="text-gray-600 leading-relaxed"
+                  data-translate="contact.easyAccessDesc"
+                >
+                  Convenient location with parking facilities and main road connectivity
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-secondary to-red-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
+              </div>
+            </div>
+
+            {/* Transport Links Card */}
+            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-2">
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
+
+              <div className="relative z-10 text-center">
+                {/* Modern Icon Design */}
+                <div className="relative w-16 h-16 mx-auto mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent to-yellow-500 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                  <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
+                    <i className="fas fa-plane text-accent text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+                  </div>
+                </div>
+
+                <h4
+                  className="text-xl font-bold text-gray-800 mb-3 group-hover:text-accent transition-colors duration-300"
+                  data-translate="contact.transportLinks"
+                >
+                  Transport Links
+                </h4>
+                <p
+                  className="text-gray-600 leading-relaxed"
+                  data-translate="contact.transportLinksDesc"
+                >
+                  Close to Juanda International Airport and major transportation networks
+                </p>
+
+                {/* Decorative Bottom Element */}
+                <div className="mt-6 h-1 w-16 bg-gradient-to-r from-accent to-yellow-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 mx-auto"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Interactive Map - Full Width with Cinematic Aspect */}
+          <div className="max-w-7xl mx-auto">
             <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-10 border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2">
               {/* Gradient Overlay on Hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
 
               <div className="relative z-10">
-                <h3
-                  className="text-3xl font-bold text-gray-900 mb-8 group-hover:text-primary transition-colors duration-300"
-                  data-translate="contact.strategicLocation"
-                >
-                  Strategic Location
-                </h3>
-
-                <div className="space-y-6">
-                  {/* Industrial Hub */}
-                  <div className="flex items-start">
-                    <div className="relative w-14 h-14 mr-5 flex-shrink-0">
-                      <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                      <div className="absolute inset-0 bg-white rounded-xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
-                        <i className="fas fa-building text-primary text-xl"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <h4
-                        className="text-xl font-bold text-gray-800 mb-2"
-                        data-translate="contact.industrialHub"
-                      >
-                        Industrial Hub
-                      </h4>
-                      <p
-                        className="text-gray-600 leading-relaxed"
-                        data-translate="contact.industrialHubDesc"
-                      >
-                        Located in Surabaya's major industrial area with easy
-                        access to manufacturing facilities
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Easy Access */}
-                  <div className="flex items-start">
-                    <div className="relative w-14 h-14 mr-5 flex-shrink-0">
-                      <div className="absolute inset-0 bg-gradient-to-br from-secondary to-red-700 rounded-xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                      <div className="absolute inset-0 bg-white rounded-xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
-                        <i className="fas fa-car text-secondary text-xl"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <h4
-                        className="text-xl font-bold text-gray-800 mb-2"
-                        data-translate="contact.easyAccess"
-                      >
-                        Easy Access
-                      </h4>
-                      <p
-                        className="text-gray-600 leading-relaxed"
-                        data-translate="contact.easyAccessDesc"
-                      >
-                        Convenient location with parking facilities and main
-                        road connectivity
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Transport Links */}
-                  <div className="flex items-start">
-                    <div className="relative w-14 h-14 mr-5 flex-shrink-0">
-                      <div className="absolute inset-0 bg-gradient-to-br from-accent to-yellow-500 rounded-xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
-                      <div className="absolute inset-0 bg-white rounded-xl flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-500 shadow-lg">
-                        <i className="fas fa-plane text-accent text-xl"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <h4
-                        className="text-xl font-bold text-gray-800 mb-2"
-                        data-translate="contact.transportLinks"
-                      >
-                        Transport Links
-                      </h4>
-                      <p
-                        className="text-gray-600 leading-relaxed"
-                        data-translate="contact.transportLinksDesc"
-                      >
-                        Close to Juanda International Airport and major
-                        transportation networks
-                      </p>
-                    </div>
-                  </div>
+                <div className="text-center mb-8">
+                  <h3 className="text-3xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
+                    Interactive Map
+                  </h3>
+                  <p className="text-gray-600">
+                    Explore our location and plan your visit
+                  </p>
                 </div>
 
-                {/* Decorative Bottom Element */}
-                <div className="mt-6 h-1 w-24 bg-gradient-to-r from-primary to-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </div>
-            </div>
-
-            {/* Interactive OpenStreetMap Card */}
-            <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-10 border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2">
-              {/* Gradient Overlay on Hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-
-              <div className="relative z-10">
-                <h3 className="text-3xl font-bold text-gray-900 mb-8 group-hover:text-secondary transition-colors duration-300">
-                  Interactive Map
-                </h3>
-
-                {/* OpenStreetMap Embed */}
-                <div className="relative bg-gradient-to-br from-gray-100 to-gray-50 rounded-2xl overflow-hidden shadow-inner mb-6 aspect-[4/3]">
+                {/* OpenStreetMap Embed - Cinematic Aspect Ratio */}
+                <div className="relative bg-gradient-to-br from-gray-100 to-gray-50 rounded-2xl overflow-hidden shadow-inner mb-6 h-[450px]">
                   <iframe
                     width="100%"
                     height="100%"
@@ -660,34 +668,37 @@ export const ContactPage = () => {
                   ></iframe>
                 </div>
 
-                {/* CTA Button */}
-                <a
-                  href="https://maps.app.goo.gl/z8r3a5UjUTasKpev8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group/btn relative w-full bg-gradient-to-r from-primary to-blue-700 hover:from-blue-700 hover:to-primary text-white px-8 py-5 rounded-xl font-bold text-lg transition-all duration-300 inline-flex items-center justify-center shadow-xl hover:shadow-2xl hover:scale-105 overflow-hidden"
-                >
-                  <span className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
-
-                  <i className="fas fa-map-marker-alt mr-3 relative z-10 group-hover/btn:scale-110 transition-transform duration-300"></i>
-                  <span
-                    className="relative z-10"
-                    data-translate="contact.viewOnGoogleMaps"
+                {/* Action Buttons Row */}
+                <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+                  {/* CTA Button */}
+                  <a
+                    href="https://maps.app.goo.gl/z8r3a5UjUTasKpev8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group/btn relative bg-gradient-to-r from-primary to-blue-700 hover:from-blue-700 hover:to-primary text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-flex items-center justify-center shadow-xl hover:shadow-2xl hover:scale-105 overflow-hidden min-w-[250px]"
                   >
-                    View Larger Map
-                  </span>
-                  <i className="fas fa-arrow-right ml-3 relative z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all duration-300"></i>
+                    <span className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
 
-                  {/* Shine Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
-                </a>
+                    <i className="fas fa-map-marker-alt mr-3 relative z-10 group-hover/btn:scale-110 transition-transform duration-300"></i>
+                    <span
+                      className="relative z-10"
+                      data-translate="contact.viewOnGoogleMaps"
+                    >
+                      View Larger Map
+                    </span>
+                    <i className="fas fa-arrow-right ml-3 relative z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all duration-300"></i>
 
-                {/* Additional Info */}
-                <div className="mt-6 p-4 bg-blue-50 rounded-xl border border-blue-100">
-                  <p className="text-sm text-gray-600 text-center">
-                    <i className="fas fa-info-circle text-primary mr-2"></i>
-                    Interactive map powered by OpenStreetMap
-                  </p>
+                    {/* Shine Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
+                  </a>
+
+                  {/* Additional Info Badge */}
+                  <div className="px-6 py-3 bg-blue-50 rounded-xl border border-blue-100">
+                    <p className="text-sm text-gray-600 flex items-center">
+                      <i className="fas fa-info-circle text-primary mr-2"></i>
+                      Interactive map powered by OpenStreetMap
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
