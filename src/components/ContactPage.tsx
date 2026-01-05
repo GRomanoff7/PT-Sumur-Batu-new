@@ -32,8 +32,9 @@ export const ContactPage = () => {
               className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="contact.heroSubtitle"
             >
-              Reach out to our certified team for consultation, support, or project inquiries.
-              We're here to help transform your industrial processes.
+              Reach out to our certified team for consultation, support, or
+              project inquiries. We're here to help transform your industrial
+              processes.
             </p>
           </div>
         </div>
@@ -57,8 +58,9 @@ export const ContactPage = () => {
                   Connect With Us
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
-                  Our team of certified automation engineers is ready to assist you with
-                  comprehensive solutions tailored to your industrial needs.
+                  Our team of certified automation engineers is ready to assist
+                  you with comprehensive solutions tailored to your industrial
+                  needs.
                 </p>
               </div>
 
@@ -67,7 +69,7 @@ export const ContactPage = () => {
                 {/* Address Card */}
                 <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-                  
+
                   <div className="relative z-10 flex items-start">
                     <div className="relative w-16 h-16 mr-6">
                       <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
@@ -75,7 +77,7 @@ export const ContactPage = () => {
                         <i className="fas fa-map-marker-alt text-primary text-2xl group-hover:scale-110 transition-transform duration-300"></i>
                       </div>
                     </div>
-                    
+
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-primary transition-colors duration-300">
                         Office Address
@@ -93,7 +95,7 @@ export const ContactPage = () => {
                 {/* Contact Details Card */}
                 <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-secondary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/10 hover:-translate-y-2">
                   <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-                  
+
                   <div className="relative z-10">
                     <div className="flex items-start mb-6">
                       <div className="relative w-16 h-16 mr-6">
@@ -102,7 +104,7 @@ export const ContactPage = () => {
                           <i className="fas fa-phone text-secondary text-2xl group-hover:scale-110 transition-transform duration-300"></i>
                         </div>
                       </div>
-                      
+
                       <div className="flex-1">
                         <h4 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-secondary transition-colors duration-300">
                           Phone & Fax
@@ -132,7 +134,7 @@ export const ContactPage = () => {
                           <i className="fas fa-envelope text-accent text-2xl group-hover:scale-110 transition-transform duration-300"></i>
                         </div>
                       </div>
-                      
+
                       <div className="flex-1">
                         <h4 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-accent transition-colors duration-300">
                           Email
@@ -151,7 +153,7 @@ export const ContactPage = () => {
                 {/* Business Hours Card */}
                 <div className="group relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200/50 hover:border-green-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/10 hover:-translate-y-2">
                   <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-transparent opacity-0 group-hover:opacity-100 rounded-3xl transition-opacity duration-500"></div>
-                  
+
                   <div className="relative z-10 flex items-start">
                     <div className="relative w-16 h-16 mr-6">
                       <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl transform rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
@@ -159,14 +161,16 @@ export const ContactPage = () => {
                         <i className="fas fa-clock text-green-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
                       </div>
                     </div>
-                    
+
                     <div className="flex-1">
                       <h4 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-green-600 transition-colors duration-300">
                         Business Hours
                       </h4>
                       <div className="space-y-3">
                         <div>
-                          <p className="font-medium text-gray-700">Monday - Friday:</p>
+                          <p className="font-medium text-gray-700">
+                            Monday - Friday:
+                          </p>
                           <p className="text-gray-600">9:00 AM - 5:00 PM</p>
                         </div>
                         <div>
@@ -310,7 +314,10 @@ export const ContactPage = () => {
                         name="industry"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors bg-white/50 backdrop-blur-sm"
                       >
-                        <option value="" data-translate="contact.selectIndustry">
+                        <option
+                          value=""
+                          data-translate="contact.selectIndustry"
+                        >
                           Select your industry
                         </option>
                         <option
@@ -358,7 +365,10 @@ export const ContactPage = () => {
                         >
                           Power Plant
                         </option>
-                        <option value="printing" data-translate="contact.printing">
+                        <option
+                          value="printing"
+                          data-translate="contact.printing"
+                        >
                           Printing
                         </option>
                         <option value="other" data-translate="contact.other">
@@ -380,7 +390,10 @@ export const ContactPage = () => {
                         name="projectType"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors bg-white/50 backdrop-blur-sm"
                       >
-                        <option value="" data-translate="contact.selectProjectType">
+                        <option
+                          value=""
+                          data-translate="contact.selectProjectType"
+                        >
                           Select project type
                         </option>
                         <option
@@ -407,7 +420,10 @@ export const ContactPage = () => {
                         >
                           Consultation
                         </option>
-                        <option value="training" data-translate="contact.training">
+                        <option
+                          value="training"
+                          data-translate="contact.training"
+                        >
                           Training
                         </option>
                         <option
@@ -466,7 +482,10 @@ export const ContactPage = () => {
                       </span>
                     </button>
 
-                    <div id="formMessage" className="hidden p-4 rounded-lg"></div>
+                    <div
+                      id="formMessage"
+                      className="hidden p-4 rounded-lg"
+                    ></div>
                   </form>
                 </div>
 
@@ -513,8 +532,9 @@ export const ContactPage = () => {
               className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="contact.findOfficeSubtitle"
             >
-              Located in the heart of Surabaya's industrial district with easy access
-              to major manufacturing facilities and transportation networks
+              Located in the heart of Surabaya's industrial district with easy
+              access to major manufacturing facilities and transportation
+              networks
             </p>
           </div>
 
@@ -635,29 +655,29 @@ export const ContactPage = () => {
                     marginHeight={0}
                     marginWidth={0}
                     src="https://www.openstreetmap.org/export/embed.html?bbox=112.7611%2C-7.3436%2C112.7711%2C-7.3336&layer=mapnik&marker=-7.3386%2C112.7661"
-                    style={{ border: 0, borderRadius: '1rem' }}
+                    style={{ border: 0, borderRadius: "1rem" }}
                     title="Office Location Map"
                   ></iframe>
                 </div>
 
                 {/* CTA Button */}
                 <a
-                  href="https://www.openstreetmap.org/?mlat=-7.3386&mlon=112.7661#map=17/-7.3386/112.7661"
+                  href="https://maps.app.goo.gl/z8r3a5UjUTasKpev8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group/btn relative w-full bg-gradient-to-r from-primary to-blue-700 hover:from-blue-700 hover:to-primary text-white px-8 py-5 rounded-xl font-bold text-lg transition-all duration-300 inline-flex items-center justify-center shadow-xl hover:shadow-2xl hover:scale-105 overflow-hidden"
                 >
                   <span className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
-                  
+
                   <i className="fas fa-map-marker-alt mr-3 relative z-10 group-hover/btn:scale-110 transition-transform duration-300"></i>
-                  <span 
+                  <span
                     className="relative z-10"
                     data-translate="contact.viewOnGoogleMaps"
                   >
                     View Larger Map
                   </span>
                   <i className="fas fa-arrow-right ml-3 relative z-10 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all duration-300"></i>
-                  
+
                   {/* Shine Effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
                 </a>
@@ -713,7 +733,8 @@ export const ContactPage = () => {
               className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light"
               data-translate="contact.quickContactSubtitle"
             >
-              Choose your preferred communication method and connect with our automation specialists
+              Choose your preferred communication method and connect with our
+              automation specialists
             </p>
           </div>
 
@@ -743,7 +764,8 @@ export const ContactPage = () => {
                   className="text-gray-600 leading-relaxed text-center mb-6"
                   data-translate="contact.callUsDesc"
                 >
-                  Speak directly with our technical team for immediate assistance and consultation
+                  Speak directly with our technical team for immediate
+                  assistance and consultation
                 </p>
                 <div className="text-center">
                   <a
@@ -785,7 +807,8 @@ export const ContactPage = () => {
                   className="text-gray-600 leading-relaxed text-center mb-6"
                   data-translate="contact.emailUsDesc"
                 >
-                  Send detailed project requirements and receive comprehensive technical proposals
+                  Send detailed project requirements and receive comprehensive
+                  technical proposals
                 </p>
                 <div className="text-center">
                   <a
@@ -794,7 +817,12 @@ export const ContactPage = () => {
                   >
                     <span className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-800 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
                     <i className="fas fa-envelope mr-2 relative z-10 group-hover/btn:scale-110 transition-transform duration-300"></i>
-                    <span className="relative z-10" data-translate="contact.email">Send Email</span>
+                    <span
+                      className="relative z-10"
+                      data-translate="contact.email"
+                    >
+                      Send Email
+                    </span>
                   </a>
                 </div>
 
@@ -827,7 +855,8 @@ export const ContactPage = () => {
                   className="text-gray-600 leading-relaxed text-center mb-6"
                   data-translate="contact.scheduleVisitDesc"
                 >
-                  Arrange an on-site consultation to discuss your automation requirements in detail
+                  Arrange an on-site consultation to discuss your automation
+                  requirements in detail
                 </p>
                 <div className="text-center">
                   <a
@@ -836,7 +865,10 @@ export const ContactPage = () => {
                   >
                     <span className="absolute inset-0 bg-gradient-to-r from-purple-700 to-purple-800 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
                     <i className="fas fa-calendar-plus mr-2 relative z-10 group-hover/btn:scale-110 transition-transform duration-300"></i>
-                    <span className="relative z-10" data-translate="contact.scheduleMeeting">
+                    <span
+                      className="relative z-10"
+                      data-translate="contact.scheduleMeeting"
+                    >
                       Schedule Meeting
                     </span>
                   </a>
@@ -914,8 +946,9 @@ export const ContactPage = () => {
                     className="text-xl lg:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-light"
                     data-translate="contact.emergencySupportDesc"
                   >
-                    System down? Critical automation failure? Our emergency response
-                    team is available 24/7 to get your operations back online quickly.
+                    System down? Critical automation failure? Our emergency
+                    response team is available 24/7 to get your operations back
+                    online quickly.
                   </p>
 
                   {/* Enhanced CTA Buttons with Modern Effects */}
@@ -972,7 +1005,8 @@ export const ContactPage = () => {
                       className="text-sm text-gray-500"
                       data-translate="contact.emergencyCharges"
                     >
-                      * Emergency support charges may apply for after-hours service
+                      * Emergency support charges may apply for after-hours
+                      service
                     </p>
                   </div>
                 </div>
@@ -989,7 +1023,8 @@ export const ContactPage = () => {
             {/* Bottom Trust Indicator */}
             <div className="text-center mt-12">
               <p className="text-gray-500 text-sm font-medium">
-                Rapid response team ready to assist with critical automation failures
+                Rapid response team ready to assist with critical automation
+                failures
               </p>
             </div>
           </div>

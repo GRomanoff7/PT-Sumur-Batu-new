@@ -29,22 +29,22 @@ export const Homepage = () => {
     {
       name: "PT Suez Water Treatment Indonesia",
       logo: "/static/logo/suez.png",
-      url: "https://indocement.co.id",
+      url: "https://www.suez.com/en",
     },
     {
       name: "PT. Tirta Lyonnaise Medan",
       logo: "/static/logos/holcim.svg",
-      url: "https://holcim.co.id",
+      url: "https://id914915-tirta-lyonnaise-medan-pt.contact.page/",
     },
     {
       name: "PT Tumbakmas Inti Mulia",
       logo: "/static/logo/tumbakmas.jpeg",
-      url: "https://unilever.co.id",
+      url: "https://www.tumbakmas.co.id/",
     },
     {
       name: "PT Lintech Duta Pratama",
       logo: "/static/logo/lintech.jpeg",
-      url: "https://astra.co.id",
+      url: "https://www.lintech.co.id/",
     },
   ];
 
